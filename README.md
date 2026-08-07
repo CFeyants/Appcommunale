@@ -1,64 +1,52 @@
-# App communale — Pilote (Brique 1)
+# Kraainem — Plateforme citoyenne (maquette)
 
-Maquette navigable de l'**application communale de transparence**, première des
-trois briques du projet pilote décrit dans le vault ATLAS
-(*Monde-Meilleur* → note de cadrage « Pilote communal »).
+Maquette interactive de la plateforme citoyenne du **pilote communal**, déclinaison
+à l'échelle d'une commune des principes du livre *Vivre pour produire*.
 
-> Le pilote traduit les propositions du livre à l'échelle d'une seule commune.
-> Cette maquette couvre la **Brique 1 — transparence**, à construire en premier :
-> données publiques, aucune contrainte réglementaire, valeur immédiate.
+> ⚠️ **Démonstration.** Les données de programme (décisions, budgets, projets,
+> engagements, activités) sont **fictives**. Les données de cadre sur la commune
+> (population, superficie, conseil, etc.) sont **réelles et sourcées** (2024).
 
-## Le principe central : l'étiquette de trajectoire
+## Sections
 
-Aucune décision, dépense ou projet n'est **orphelin**. Chacun porte un lien
-explicite vers l'**orientation de long terme** qu'il sert (le « cap communal »),
-elle-même reliée vers le haut aux caps régional, national et européen. Le citoyen
-ne voit jamais un élément isolé : il voit toujours *pourquoi* il existe et *à quoi*
-il se rattache.
+Pour vous (fil personnalisé, anti-capture) · Le cap · Décisions · **Engagements**
+(le recours) · Budget · Projets & fonds (triple comptabilité) · Familles · Jeunes ·
+Culture & sport · Entraide (identité via itsme) · Tableau de bord (KPI + pilote évaluable).
 
-Deux règles héritées du document :
+## Principes tenus
 
-- **Données brutes exportables** partout (sinon c'est une plaquette de com, pas un
-  commun de transparence).
-- **Aucun score agrégé**, aucune note, aucun classement des élus (un chiffre
-  agrégé transforme la transparence en arme partisane).
-
-## Les écrans
-
-| Route         | Écran            | Contenu                                                        |
-| ------------- | ---------------- | ------------------------------------------------------------- |
-| `/`           | Le cap           | Les 3 orientations, leur cible, et le lien montant            |
-| `/decisions`  | Décisions        | Décisions du conseil, coût, état, étiquette de trajectoire    |
-| `/budget`     | Budget           | Voté vs exécuté par orientation (graphique + détail)          |
-| `/projets`    | Projets          | Jalons, retards, écarts au plan                               |
-| `/donnees`    | Données ouvertes | Export JSON de chaque jeu de données                          |
-
-Les trois orientations de démonstration (commune fictive de *Tilleul-sur-Meuse*) :
-**alimentation & relocalisation**, **climat**, **transmission & soin**.
+Rendre visible **et** lisible (étiquette de trajectoire) · aucun score agrégé ni
+classement · données brutes exportables · transparence des institutions / protection
+des personnes · accessibilité rendue visible · pilote évaluable avec clause d'arrêt.
 
 ## Stack
 
-Next.js 15 (App Router) · React 18 · Tailwind CSS v4 · Recharts · lucide-react.
-Mêmes fondations que le site *ferme-des-hirondelles*, pour rester familier et
-directement déployable (Vercel + domaine).
+React 18 · TypeScript · Vite · Tailwind CSS · shadcn/ui · lucide-react.
 
-## Démarrer
+## Développer
 
 ```bash
-npm install
-npm run dev      # http://localhost:3000
-npm run build    # build de production
+npm install      # ou pnpm install
+npm run dev      # http://localhost:5173
+npm run build    # build de production -> dist/
+npm run preview  # prévisualiser le build
 ```
 
-## Statut & suite
+## Déployer sur Vercel
 
-- [x] **Brique 1** — transparence (cette maquette) : cap, décisions, budget,
-      projets, données ouvertes.
-- [ ] **Brique 1 (guichet)** — face transactionnelle « dites-le-nous une fois »
-      (itsme, eBox, traçabilité d'accès).
-- [ ] **Brique 2** — monnaie locale adossée à l'euro (cadrage MiCA d'abord).
-- [ ] **Brique 3** — infrastructure de lien / Maison de la transmission
-      (hors application : terrain).
+Le projet est un site Vite standard — Vercel le détecte automatiquement.
 
-> ⚠️ Toutes les données de cette maquette sont **fictives**, à titre de
-> démonstration. La structure, elle, est fidèle au document de cadrage.
+1. Sur [vercel.com](https://vercel.com), **Add New… → Project**.
+2. **Import** le dépôt GitHub `CFeyants/Appcommunale`.
+3. Vercel détecte **Framework Preset : Vite** — laisser les valeurs par défaut :
+   - Build Command : `vite build` (ou `npm run build`)
+   - Output Directory : `dist`
+   - Install Command : `npm install` (ou `pnpm install`)
+4. **Deploy**. À la fin, une URL `https://appcommunale.vercel.app` (ou similaire) est créée.
+5. Chaque `git push` sur `main` redéploie automatiquement ; chaque branche/PR obtient
+   une URL de prévisualisation.
+
+### Brancher un nom de domaine
+
+Project → **Settings → Domains** → ajouter le domaine, puis suivre l'instruction DNS
+(un enregistrement `CNAME` vers `cname.vercel-dns.com`, ou les `A` records indiqués).
