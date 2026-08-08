@@ -6,3 +6,8 @@ dist
 .env.*
 .DS_Store
 .vercel
+
+# outils d’aperçu (non nécessaires au déploiement)
+bundle.html
+.parcelrc
+shot-*.mjs

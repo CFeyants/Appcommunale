@@ -78,8 +78,9 @@ export const budget = { annee: 2026, lignes: [
 
 export interface Projet { id: string; titre: string; o: OId; objectif: number; collecte: number; contrib: number; eco: string; soc: string; env: string; }
 export const projets: Projet[] = [
-  { id: "P-01", titre: "Toiture solaire citoyenne — halle des sports", o: "climat", objectif: 120000, collecte: 78400, contrib: 143,
-    eco: "Retour ~6 %/an sur 15 ans (revente + économies d'énergie)", soc: "Coopérative ouverte, 1 personne = 1 voix", env: "≈ 46 t CO₂ évitées / an" },
+  { id: "P-01", titre: "Panneaux solaires citoyens sur 3 bâtiments communaux (Ecopower · Druifkracht)", o: "climat", objectif: 120000, collecte: 78400, contrib: 143,
+    eco: "Dividende variable, plafonné légalement à 6 % — 0 à 4 % observés ces 3 dernières années (Ecopower 0 % en 2024, ZuidtrAnt 2 %, BeauVent 4 %). Part à 250 €.",
+    soc: "Coopérative ouverte, 1 personne = 1 voix. Projet réel, déjà voté en 2021.", env: "≈ 46 t CO₂ évitées / an" },
   { id: "P-02", titre: "Épicerie coopérative & circuits courts", o: "alimentation", objectif: 60000, collecte: 41250, contrib: 210,
     eco: "Équilibre à 18 mois, 3 emplois locaux", soc: "12 producteurs à moins de 30 km, prix justes", env: "−32 % d'emballages vs grande distribution" },
   { id: "P-03", titre: "Maison de la transmission — aménagement", o: "transmission", objectif: 45000, collecte: 12800, contrib: 64,
@@ -101,15 +102,21 @@ export const jeunes: Jeune[] = [
 ];
 
 export interface Aide { mode: "offre" | "demande"; cat: string; titre: string; k: string; nom: string; quartier: string; av: string; col: string; }
+// Le côté DEMANDE d'abord, en commençant par le faible enjeu (l'échec ne coûte rien) :
+// c'est ce qui rend « demander » gratuit en effort et en honte, et « répondre » un
+// geste unique sans engagement. Les enjeux élevés (garde d'enfants) viennent en dernier,
+// quand la confiance est construite.
 export const entraide: Aide[] = [
-  { mode: "offre", cat: "Aide aux devoirs", titre: "Aide aux devoirs (primaire)", k: "Ancienne institutrice, 2 après-midis/semaine.", nom: "Françoise L.", quartier: "Kraainem-Centre", av: "FL", col: "262 72% 52%" },
-  { mode: "offre", cat: "Mobilité", titre: "Trajets courses & rendez-vous médicaux", k: "Courses le mardi, place pour 2 personnes.", nom: "Marc D.", quartier: "Val des Seigneurs", av: "MD", col: "200 90% 40%" },
+  { mode: "demande", cat: "Emprunt", titre: "Emprunter une échelle ce week-end", k: "Pour nettoyer une gouttière — deux heures suffisent.", nom: "Nadia K.", quartier: "Bas Kraainem", av: "NK", col: "200 90% 40%" },
+  { mode: "demande", cat: "Coup de main", titre: "Réceptionner un colis jeudi après-midi", k: "Je travaille, le point relais est loin.", nom: "Tom V.", quartier: "Val des Seigneurs", av: "TV", col: "176 62% 38%" },
+  { mode: "demande", cat: "Plantes", titre: "Arroser mes plantes pendant 5 jours", k: "Petit balcon, une fois par jour, la semaine prochaine.", nom: "Els D.", quartier: "Haut Kraainem", av: "ED", col: "142 62% 38%" },
+  { mode: "demande", cat: "Mobilité", titre: "Covoiturage vers la gare le matin", k: "Vers 8h, direction Bruxelles.", nom: "Peter H.", quartier: "Val des Seigneurs", av: "PH", col: "32 90% 42%" },
+  { mode: "demande", cat: "Numérique", titre: "Un coup de main pour l'eBox et itsme", k: "Une démarche à faire en ligne, je débute.", nom: "Rita M.", quartier: "Stockel-frontière", av: "RM", col: "200 90% 40%" },
+  { mode: "demande", cat: "Garde d'enfants", titre: "Garde ponctuelle en fin de journée", k: "Relais 17-18h les jours de réunion (2×/mois).", nom: "Camille D.", quartier: "Haut Kraainem", av: "CD", col: "262 72% 52%" },
   { mode: "offre", cat: "Bricolage", titre: "Petites réparations vélo", k: "Atelier ouvert le samedi matin, j'apprends volontiers.", nom: "Sofie V.", quartier: "Stockel-frontière", av: "SV", col: "176 62% 38%" },
-  { mode: "offre", cat: "Répit aidant", titre: "Présence pour aîné isolé", k: "Une visite hebdomadaire, compagnie et promenade.", nom: "Amina B.", quartier: "Kraainem-Centre", av: "AB", col: "330 78% 48%" },
-  { mode: "demande", cat: "Garde d'enfants", titre: "Garde ponctuelle en fin de journée", k: "Relais 17-18h les jours de réunion (2×/mois).", nom: "Camille D.", quartier: "Kraainem-Centre", av: "CD", col: "32 90% 42%" },
-  { mode: "demande", cat: "Mobilité", titre: "Covoiturage vers la gare", k: "Le matin vers 8h, direction Bruxelles.", nom: "Peter H.", quartier: "Val des Seigneurs", av: "PH", col: "142 62% 38%" },
-  { mode: "demande", cat: "Numérique", titre: "Aide pour démarches en ligne", k: "Un coup de main pour l'eBox et itsme.", nom: "Rita M.", quartier: "Stockel-frontière", av: "RM", col: "200 90% 40%" },
-  { mode: "demande", cat: "Jardin", titre: "Coup de main potager (saison)", k: "Parcelle un peu grande, partager l'entretien.", nom: "Luc T.", quartier: "Kraainem-Centre", av: "LT", col: "262 72% 52%" },
+  { mode: "offre", cat: "Mobilité", titre: "Trajets courses & rendez-vous médicaux", k: "Courses le mardi, place pour 2 personnes.", nom: "Marc D.", quartier: "Val des Seigneurs", av: "MD", col: "200 90% 40%" },
+  { mode: "offre", cat: "Répit aidant", titre: "Présence pour aîné isolé", k: "Une visite hebdomadaire, compagnie et promenade.", nom: "Amina B.", quartier: "Bas Kraainem", av: "AB", col: "330 78% 48%" },
+  { mode: "offre", cat: "Aide aux devoirs", titre: "Aide aux devoirs (primaire)", k: "Ancienne institutrice, 2 après-midis/semaine.", nom: "Françoise L.", quartier: "Haut Kraainem", av: "FL", col: "262 72% 52%" },
 ];
 
 export interface Conseil { titre: string; k: string; source: string; icon: string; }
@@ -145,6 +152,19 @@ export const agenda: Agenda[] = [
   { type: "sport", titre: "Yoga au parc — séances d'automne", k: "Tous niveaux, en plein air, tapis fournis.", quand: "Dim. · 9h30", lieu: "Parc communal", prix: "Gratuit" },
 ];
 
+// Inscription unique — un seul formulaire pour tout ce qui concerne l'enfant,
+// échéances tenues à la place du parent (supprime des décisions répétées).
+export const enfant = { prenom: "Léa", age: 8, ecole: "École communale du Centre" };
+export type EtatDemarche = "fait" | "a-faire";
+export interface Demarche { domaine: string; detail: string; etat: EtatDemarche; echeance?: string; }
+export const inscriptionUnique: Demarche[] = [
+  { domaine: "École", detail: "Inscription 2026-2027 confirmée", etat: "fait" },
+  { domaine: "Garderie (matin + soir)", detail: "Reconduite automatiquement", etat: "fait" },
+  { domaine: "Cantine — repas locaux", detail: "À confirmer pour la rentrée", etat: "a-faire", echeance: "2026-08-25" },
+  { domaine: "Sport du mercredi", detail: "Multisports — place réservée", etat: "fait" },
+  { domaine: "Académie de musique", detail: "Réinscription à valider", etat: "a-faire", echeance: "2026-09-05" },
+];
+
 export const interets: [string, string][] = [
   ["alimentation", "Alimentation locale"], ["climat", "Climat & énergie"], ["mobilite", "Mobilité douce"],
   ["famille", "Familles & parentalité"], ["enfance", "Enfance & école"], ["jeunesse", "Jeunesse"], ["aines", "Aînés"],
@@ -170,8 +190,13 @@ export const feed: FeedItem[] = [
 export const kpiCommune = [
   { k: "Approvisionnement local des cantines", v: "38 %", t: "+12 pts sur 1 an" },
   { k: "Émissions du patrimoine communal", v: "−18 %", t: "vs 2019 (cible −40 % en 2030)" },
-  { k: "Participation à la plateforme", v: "31 %", t: "des adultes, +6 pts" },
-  { k: "Heures d'entraide échangées", v: "2 140 h", t: "cette année" },
+  { k: "Heures d'entraide échangées", v: "2 140 h", t: "lien noué hors de l'app" },
+];
+// Le service, mesuré sans se flatter (pas de « temps passé dans l'app »).
+export const kpiService = [
+  { k: "Délai décision → publication lisible", v: "4 j", t: "médiane" },
+  { k: "Réutilisations des données par des tiers", v: "5", t: "presse locale + 2 assos + 2 chercheurs" },
+  { k: "Réponse aux demandes d'entraide", v: "82 %", t: "1re réponse en 6 h (médiane)" },
 ];
 export const kpiPerso = [
   { k: "Mes heures d'entraide", v: "12 h", t: "données · 4 h reçues" },
@@ -206,14 +231,54 @@ export const engagements: Engagement[] = [
 // PILOTE — critères chiffrés, échéance, clause d'arrêt (ch. 36).
 // ---------------------------------------------------------------------------
 export const pilotesEval = [
-  { brique: "Transparence (Brique 1)", critere: "Part des adultes ayant consulté la plateforme", seuil: "15–20 % à 12 mois", etat: "31 %", ok: true },
-  { brique: "Transparence (Brique 1)", critere: "Jeux de données brutes réutilisés par des tiers", seuil: "≥ 3 réutilisations", etat: "presse locale + 2 assos", ok: true },
-  { brique: "Lien / transmission (Brique 3)", critere: "Indicateur de capacité relationnelle", seuil: "en progression à 18 mois", etat: "en cours d'évaluation", ok: null },
+  { brique: "Transparence (Brique 1)", critere: "Délai décision → publication lisible", seuil: "≤ 7 jours", etat: "4 j (médiane)", ok: true },
+  { brique: "Transparence (Brique 1)", critere: "Jeux de données brutes réutilisés par des tiers", seuil: "≥ 3 réutilisations", etat: "5 (presse + assos + chercheurs)", ok: true },
+  { brique: "Lien / transmission (Brique 3)", critere: "Réponse aux demandes d'entraide", seuil: "en progression à 18 mois", etat: "82 %, 1re réponse 6 h", ok: null },
   { brique: "Lien / transmission (Brique 3)", critere: "Activités proposées par les habitants eux-mêmes", seuil: "≥ 10", etat: "6 à ce jour", ok: null },
 ];
 export const registreEchecs = [
   { titre: "Application communale de covoiturage (2023)", verdict: "Arrêtée", raison: "Moins de 4 % d'usage à 12 mois, sous le seuil fixé. Leçon : sans masse d'usagers dès le départ, l'outil reste vide — on redirige vers l'entraide de proximité." },
   { titre: "Newsletter PDF mensuelle (2022)", verdict: "Remplacée", raison: "Illisible et peu ouverte. Leçon : la donnée doit être reliée à une orientation (lisibilité), pas empilée." },
+];
+
+// ---------------------------------------------------------------------------
+// SOURCES DE DONNÉES RÉELLES (dossier « Les données », 7 août 2026).
+// ---------------------------------------------------------------------------
+export const dataMeta = {
+  sessionsTotal: 1063,
+  sessionsFrom: "27 mai 2021",
+  sessionsTo: "4 août 2026",
+  connecteur: "Lokaal Beslist — API JSON:API, sans clé",
+  lien: "https://lokaalbeslist.vlaanderen.be/",
+  epurationFlandre: "89 %",
+};
+export type SourceStatut = "disponible" | "a-tester" | "a-parser" | "manquant";
+export interface DataSource { nom: string; source: string; statut: SourceStatut; note?: string; licence?: string; }
+export const dataSources: DataSource[] = [
+  { nom: "Décisions du conseil & du collège", source: "Lokaal Beslist — API JSON:API", statut: "disponible", note: "1 063 séances indexées (2021→2026) : séances, points, délibérations, votes, mandataires.", licence: "Modellicentie Gratis Hergebruik" },
+  { nom: "Qualité de l'air (grille à la rue)", source: "IRCELINE — grilles RIO-IFDM / ATMO-Street", statut: "disponible", note: "Aucune station à Kraainem ; valeur communale via la grille modélisée.", licence: "CC BY 4.0" },
+  { nom: "Assainissement & égouttage", source: "VMM — geoserver HDGIS (WFS/WMS)", statut: "disponible", licence: "Modellicentie" },
+  { nom: "Bâti, adresses, parcelles", source: "Basisregisters Vlaanderen — API", statut: "disponible", licence: "Modellicentie" },
+  { nom: "Consommation élec/gaz & photovoltaïque", source: "Fluvius — Opendatasoft", statut: "a-tester", note: "Par commune et par rue ; confirmer le gestionnaire (Sibelgas)." },
+  { nom: "Finances comparables entre communes (BBC)", source: "data.gov.be / Stadsmonitor", statut: "a-tester", note: "Comparaison budgétaire automatique si le dataset hebdo tient sa promesse." },
+  { nom: "Raccordement & épuration des eaux", source: "VMM — XLSX annuel", statut: "a-parser", note: "Repère flamand : 89 % des eaux usées épurées fin 2024." },
+  { nom: "Accidents de la route géolocalisés", source: "Statbel — open data", statut: "a-parser" },
+  { nom: "Criminalité par commune / trimestre", source: "Police fédérale — XLSX", statut: "a-parser" },
+  { nom: "Revenus fiscaux par secteur statistique", source: "Statbel", statut: "a-parser", note: "Échelle infracommunale — dit enfin quelque chose des écarts internes à Kraainem." },
+  { nom: "Canopée & imperméabilisation", source: "Groenkaart / Boswijzer (rasters)", statut: "a-parser", note: "À découper sur le contour communal." },
+];
+export const dataGaps = [
+  { nom: "Résultats d'analyse de l'eau", raison: "Rapport interactif (Cognos), sans export en masse." },
+  { nom: "Potentiel solaire par toiture, labels EPC", raison: "Enfermés dans des rapports Power BI." },
+  { nom: "Mesures citoyennes NO₂ (CurieuzeNeuzen)", raison: "20 000 points en Flandre, aucun jeu ouvert." },
+  { nom: "Résultats électoraux communaux 2024", raison: "Application monopage, sans téléchargement documenté." },
+  { nom: "Activation de Kraainem Connect (Hoplr)", raison: "Donnée privée — à demander." },
+  { nom: "Non-recours aux droits sociaux (communal)", raison: "N'existe nulle part — le pilote devra le produire lui-même." },
+];
+export const dataLicences = [
+  "Décisions locales : Modellicentie Gratis Hergebruik (Vlaanderen) — mention de la source obligatoire.",
+  "Qualité de l'air : IRCELINE, CC BY 4.0.",
+  "Statbel : réutilisation autorisée.",
 ];
 
 export const eur = (n: number) => new Intl.NumberFormat("fr-BE", { style: "currency", currency: "EUR", maximumFractionDigits: 0 }).format(n);

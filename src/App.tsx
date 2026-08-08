@@ -6,12 +6,14 @@ import {
   Baby, Heart, HeartHandshake, Home, Utensils, Smartphone, BookOpen, FileText, ShoppingBasket,
   Landmark, Info, Search, Menu, X, ChevronRight,
   ClipboardCheck, Flag, Eye, CheckCircle2, Clock, Timer, AlertTriangle, Gift, DoorOpen, PiggyBank, PenLine, Ban,
+  Database, ExternalLink, GraduationCap, Radio,
 } from "lucide-react";
 import {
   me, commune, communeFacts, communeSources, orientations, oriById, decisions, budget, projets, jeunes,
   entraide, agenda, familleConseils, familleAide, interets, interetLabel, feed,
-  kpiCommune, kpiPerso, synergies, engagements, pilotesEval, registreEchecs,
-  eur, pct, dateFr, type OId, type AccesType,
+  kpiCommune, kpiService, kpiPerso, synergies, engagements, pilotesEval, registreEchecs,
+  dataMeta, dataSources, dataGaps, dataLicences, enfant, inscriptionUnique,
+  eur, pct, dateFr, type OId, type AccesType, type SourceStatut,
 } from "./data";
 
 /* ---------- helpers ---------- */
@@ -283,42 +285,106 @@ function Cap() {
   );
 }
 
+type SeanceReelle = { id: string; date: string; url: string };
 function Decisions() {
   const [filtre, setFiltre] = useState<OId | "toutes">("toutes");
+  const [reel, setReel] = useState<{ items: SeanceReelle[]; total: number | null } | null>(null);
+  const [charge, setCharge] = useState(true);
   const data = filtre === "toutes" ? decisions : decisions.filter((d) => d.o === filtre);
   const stateStyle: Record<string, React.CSSProperties> = {
     "adoptée": { color: "hsl(var(--ok))", background: "hsl(var(--ok-bg))", borderColor: "hsl(var(--ok-line))" },
     "en cours": { color: "hsl(var(--clim))", background: "hsl(var(--clim-bg))", borderColor: "hsl(var(--clim-line))" },
     "en projet": { color: "hsl(var(--muted-foreground))", background: "hsl(var(--muted))", borderColor: "hsl(var(--border))" },
   };
+
+  useEffect(() => {
+    let vivant = true;
+    fetch("/api/lokaalbeslist?size=30", { headers: { Accept: "application/json" } })
+      .then((r) => (r.ok ? r.json() : null))
+      .then((j) => {
+        if (!vivant) return;
+        if (j && j.ok && Array.isArray(j.items) && j.items.length > 0) setReel({ items: j.items, total: j.total ?? null });
+      })
+      .catch(() => {})
+      .finally(() => vivant && setCharge(false));
+    return () => { vivant = false; };
+  }, []);
+
+  const dateLongue = (iso: string) => {
+    try { return new Date(iso).toLocaleDateString("fr-BE", { weekday: "long", day: "numeric", month: "long", year: "numeric" }); }
+    catch { return iso; }
+  };
+
   return (
     <div>
       <H1>Décisions du conseil</H1>
-      <Lede>Chaque décision porte son coût, son état et l'orientation qu'elle sert.</Lede>
-      <div className="my-5 flex flex-wrap gap-2">
-        <FilterChip active={filtre === "toutes"} onClick={() => setFiltre("toutes")}>Toutes ({decisions.length})</FilterChip>
-        {orientations.map((o) => (
-          <FilterChip key={o.id} active={filtre === o.id} onClick={() => setFiltre(o.id)} accent={o.key}>{o.court}</FilterChip>
-        ))}
-      </div>
-      <div className="flex flex-col gap-4">
-        {data.map((d) => (
-          <article key={d.id} className="rounded-lg border bg-card p-4">
-            <div className="flex flex-wrap items-center gap-2">
-              <span className="font-mono text-[12px] text-muted-foreground/80">{d.id}</span>
-              <span className="rounded-full border px-2.5 py-0.5 text-[12px] font-semibold" style={stateStyle[d.etat]}>{d.etat}</span>
-              <TrajBadge o={d.o} />
-            </div>
-            <h3 className="mt-2 text-[16.5px] font-semibold">{d.titre}</h3>
-            <p className="mt-0.5 max-w-[74ch] text-[14px] text-muted-foreground">{d.desc}</p>
-            <div className="mt-2.5 flex flex-wrap items-center gap-x-5 gap-y-1 text-[13px] text-muted-foreground">
-              <span className="inline-flex items-center gap-1.5"><Calendar className="h-4 w-4" />{dateFr(d.date)}</span>
-              <span className="font-semibold text-foreground tnum">{eur(d.cout)}</span>
-            </div>
-          </article>
-        ))}
-      </div>
-      <ExportBar msg="Les décisions sont ouvertes." name="decisions.json" data={data} />
+      {reel ? (
+        <>
+          <Lede>Les séances réelles du conseil communal et du collège de Kraainem — déjà publiques, enfin lisibles.</Lede>
+          <div className="mt-4 flex items-start gap-2.5 rounded-lg border p-3.5 text-[13px]" style={{ background: "hsl(var(--ok-bg))", borderColor: "hsl(var(--ok-line))" }}>
+            <Radio className="mt-0.5 h-4 w-4 shrink-0" style={{ color: "hsl(var(--ok))" }} />
+            <p className="text-muted-foreground">
+              <strong className="text-foreground" style={{ color: "hsl(var(--ok))" }}>Données réelles · Lokaal Beslist.</strong>{" "}
+              {reel.total ?? dataMeta.sessionsTotal} séances publiées depuis {dataMeta.sessionsFrom}.{" "}
+              <a href={dataMeta.lien} target="_blank" rel="noreferrer" className="inline-flex items-center gap-1 font-medium text-[hsl(var(--link))] hover:underline">source <ExternalLink className="h-3 w-3" /></a>
+              <span className="opacity-70"> · Modellicentie Gratis Hergebruik</span>
+            </p>
+          </div>
+          <div className="mt-5 flex flex-col gap-3">
+            {reel.items.map((s) => (
+              <article key={s.id} className="flex items-center justify-between gap-3 rounded-lg border bg-card p-4">
+                <div className="flex items-center gap-3">
+                  <span className="grid h-9 w-9 shrink-0 place-items-center rounded-lg" style={{ background: "hsl(var(--clim-bg))", color: "hsl(var(--clim))" }}><Landmark className="h-4.5 w-4.5" /></span>
+                  <div>
+                    <h3 className="text-[15px] font-semibold capitalize">Séance du {dateLongue(s.date)}</h3>
+                    <div className="font-mono text-[11.5px] text-muted-foreground/70">{s.id}</div>
+                  </div>
+                </div>
+                <a href={s.url} target="_blank" rel="noreferrer" className="inline-flex shrink-0 items-center gap-1.5 rounded-lg border border-input bg-card px-3 py-1.5 text-[12.5px] font-semibold transition hover:bg-secondary">
+                  Délibérations <ExternalLink className="h-3.5 w-3.5" />
+                </a>
+              </article>
+            ))}
+          </div>
+          <ExportBar msg="Les décisions du conseil sont ouvertes (source Lokaal Beslist)." name="seances-kraainem.json" data={reel.items} />
+        </>
+      ) : (
+        <>
+          <Lede>Chaque décision porte son coût, son état et l'orientation qu'elle sert.</Lede>
+          <div className="mt-4 flex items-start gap-2.5 rounded-lg border p-3.5 text-[13px]" style={{ background: "hsl(var(--warn-bg))", borderColor: "hsl(var(--warn-line))" }}>
+            <Info className="mt-0.5 h-4 w-4 shrink-0" style={{ color: "hsl(var(--warn))" }} />
+            <p className="text-muted-foreground">
+              <strong className="text-foreground">Démonstration du principe.</strong> Les vraies décisions de Kraainem — <strong className="text-foreground">{dataMeta.sessionsTotal} séances publiées depuis {dataMeta.sessionsFrom}</strong> — sont déjà publiques en JSON ({dataMeta.connecteur}) ; personne ne les lit. Le connecteur est prêt : au déploiement, cet onglet affiche les séances réelles.{" "}
+              <a href={dataMeta.lien} target="_blank" rel="noreferrer" className="inline-flex items-center gap-1 font-medium text-[hsl(var(--link))] hover:underline">voir la source <ExternalLink className="h-3 w-3" /></a>
+              {charge ? " · connexion…" : ""}
+            </p>
+          </div>
+          <div className="my-5 flex flex-wrap gap-2">
+            <FilterChip active={filtre === "toutes"} onClick={() => setFiltre("toutes")}>Toutes ({decisions.length})</FilterChip>
+            {orientations.map((o) => (
+              <FilterChip key={o.id} active={filtre === o.id} onClick={() => setFiltre(o.id)} accent={o.key}>{o.court}</FilterChip>
+            ))}
+          </div>
+          <div className="flex flex-col gap-4">
+            {data.map((d) => (
+              <article key={d.id} className="rounded-lg border bg-card p-4">
+                <div className="flex flex-wrap items-center gap-2">
+                  <span className="font-mono text-[12px] text-muted-foreground/80">{d.id}</span>
+                  <span className="rounded-full border px-2.5 py-0.5 text-[12px] font-semibold" style={stateStyle[d.etat]}>{d.etat}</span>
+                  <TrajBadge o={d.o} />
+                </div>
+                <h3 className="mt-2 text-[16.5px] font-semibold">{d.titre}</h3>
+                <p className="mt-0.5 max-w-[74ch] text-[14px] text-muted-foreground">{d.desc}</p>
+                <div className="mt-2.5 flex flex-wrap items-center gap-x-5 gap-y-1 text-[13px] text-muted-foreground">
+                  <span className="inline-flex items-center gap-1.5"><Calendar className="h-4 w-4" />{dateFr(d.date)}</span>
+                  <span className="font-semibold text-foreground tnum">{eur(d.cout)}</span>
+                </div>
+              </article>
+            ))}
+          </div>
+          <ExportBar msg="Les décisions (démonstration) sont ouvertes." name="decisions-demo.json" data={data} />
+        </>
+      )}
     </div>
   );
 }
@@ -489,18 +555,21 @@ function Jeunes() {
 }
 
 function Entraide() {
-  const [mode, setMode] = useState<"offre" | "demande">("offre");
+  const [mode, setMode] = useState<"demande" | "offre">("demande");
   const data = entraide.filter((e) => e.mode === mode);
   return (
     <div>
       <H1>Entraide entre voisins</H1>
-      <Lede>Des offres et des demandes de proximité. Chaque personne est <strong>identifiée via itsme</strong> — la confiance sans l'anonymat, mais les coordonnées restent privées&nbsp;: la mise en relation passe par la plateforme.</Lede>
+      <Lede><strong>Demander est gratuit — sans frais, sans engagement, sans gêne.</strong> Et répondre est un geste unique&nbsp;: une fois, sans s'inscrire à rien. Chaque personne est identifiée via itsme (la confiance sans l'anonymat) ; les coordonnées restent privées.</Lede>
       <div className="my-5 inline-flex gap-1 rounded-xl border bg-secondary/60 p-1">
-        {[["offre", "Propositions d'aide"], ["demande", "Demandes"]].map(([id, l]) => (
+        {[["demande", "Demandes"], ["offre", "Propositions d'aide"]].map(([id, l]) => (
           <button key={id} aria-pressed={mode === id} onClick={() => setMode(id as any)}
             className={`rounded-lg px-3.5 py-1.5 text-[13.5px] font-semibold transition ${mode === id ? "bg-card text-foreground shadow-sm" : "text-muted-foreground"}`}>{l}</button>
         ))}
       </div>
+      {mode === "demande" && (
+        <p className="mb-4 -mt-1 text-[13px] text-muted-foreground">Un petit coup de main suffit — une échelle, un colis, des plantes à arroser. Répondre prend deux minutes.</p>
+      )}
       <div className="grid gap-4 sm:grid-cols-2">
         {data.map((e, i) => (
           <article key={i} className="flex h-full flex-col gap-2 rounded-lg border bg-card p-4">
@@ -545,7 +614,9 @@ function Bord() {
       <H1>Tableau de bord</H1>
       <Lede>Les indicateurs de la commune et les vôtres, côte à côte — et comment l'action publique et votre action personnelle se renforcent.</Lede>
       <div className="mt-6"><CapLabel><Gauge className="h-3.5 w-3.5" /> Les KPI de la commune</CapLabel></div>
-      <div className="mt-3 grid gap-4 sm:grid-cols-2">{kpiCommune.map((k) => <Tile key={k.k} {...k} />)}</div>
+      <div className="mt-3 grid gap-4 sm:grid-cols-3">{kpiCommune.map((k) => <Tile key={k.k} {...k} />)}</div>
+      <div className="mt-7"><CapLabel><Radio className="h-3.5 w-3.5" /> Le service, mesuré sans se flatter <span className="ml-1 font-medium normal-case tracking-normal opacity-70">— on mesure le lien noué, pas le temps passé dans l'app</span></CapLabel></div>
+      <div className="mt-3 grid gap-4 sm:grid-cols-3">{kpiService.map((k) => <Tile key={k.k} {...k} />)}</div>
       <div className="mt-7"><CapLabel>Mes indicateurs <span className="ml-1 font-medium normal-case tracking-normal opacity-70">— privés, non comparatifs, sans classement ni score citoyen</span></CapLabel></div>
       <div className="mt-3 grid gap-4 sm:grid-cols-2">{kpiPerso.map((k) => <Tile key={k.k} {...k} perso />)}</div>
       <div className="mt-7"><CapLabel><Sparkles className="h-3.5 w-3.5" /> Quand le politique renforce le personnel</CapLabel></div>
@@ -651,24 +722,74 @@ function AgendaVue() {
 }
 
 function Familles() {
-  const [part, setPart] = useState<"conseils" | "aide">("conseils");
+  const [part, setPart] = useState<"inscription" | "conseils" | "aide">("inscription");
   return (
     <div>
       <H1 eyebrow="Enfants de moins de 12 ans">Familles</H1>
       <Lede>
-        Un espace pour les parents de jeunes enfants. Des <strong>conseils</strong> — pensés d'abord pour les
-        mamans, sur qui la charge repose souvent le plus, et ouverts à tous les parents — et de l'<strong>aide
-        à domicile</strong> concrète, à activer via le guichet unique.
+        Une <strong>inscription unique</strong> pour tout ce qui concerne l'enfant, des <strong>conseils</strong>
+        (pensés d'abord pour les mamans, sur qui la charge repose le plus, et ouverts à tous les parents), et de
+        l'<strong>aide à domicile</strong> concrète.
       </Lede>
 
-      <div className="my-5 inline-flex gap-1 rounded-xl border bg-secondary/60 p-1">
-        {[["conseils", "Conseils & ressources"], ["aide", "Aide à domicile"]].map(([id, l]) => (
+      <div className="my-5 inline-flex flex-wrap gap-1 rounded-xl border bg-secondary/60 p-1">
+        {[["inscription", "Inscription unique"], ["conseils", "Conseils & ressources"], ["aide", "Aide à domicile"]].map(([id, l]) => (
           <button key={id} aria-pressed={part === id} onClick={() => setPart(id as any)}
             className={`rounded-lg px-3.5 py-1.5 text-[13.5px] font-semibold transition ${part === id ? "bg-card text-foreground shadow-sm" : "text-muted-foreground"}`}>{l}</button>
         ))}
       </div>
 
-      {part === "conseils" ? (
+      {part === "inscription" ? (
+        <div>
+          <div className="rounded-lg border bg-card">
+            <div className="flex flex-wrap items-center gap-2 border-b px-5 py-3.5">
+              <GraduationCap className="h-4.5 w-4.5 text-primary" />
+              <h2 className="text-[15.5px] font-semibold">Le dossier de {enfant.prenom}, {enfant.age} ans</h2>
+              <span className="ml-auto rounded-full bg-secondary px-2.5 py-0.5 text-[11px] font-semibold text-muted-foreground">{enfant.ecole}</span>
+            </div>
+            <ul className="divide-y">
+              {inscriptionUnique.map((d, i) => {
+                const fait = d.etat === "fait";
+                return (
+                  <li key={i} className="flex items-center gap-3 px-5 py-3">
+                    <span className="shrink-0" style={{ color: fait ? "hsl(var(--ok))" : "hsl(var(--warn))" }}>
+                      {fait ? <CheckCircle2 className="h-5 w-5" /> : <Clock className="h-5 w-5" />}
+                    </span>
+                    <div className="min-w-0 flex-1">
+                      <div className="text-[14.5px] font-medium">{d.domaine}</div>
+                      <div className="text-[12.5px] text-muted-foreground">{d.detail}</div>
+                    </div>
+                    {fait ? (
+                      <span className="shrink-0 text-[12px] font-semibold" style={{ color: "hsl(var(--ok))" }}>Fait</span>
+                    ) : (
+                      <button onClick={() => alert("Démo — préremplissage à partir de ce que la commune sait déjà, via itsme.")}
+                        className="shrink-0 rounded-lg bg-primary px-3 py-1.5 text-[12px] font-semibold text-primary-foreground hover:opacity-90">
+                        Confirmer · avant le {dateFr(d.echeance!)}
+                      </button>
+                    )}
+                  </li>
+                );
+              })}
+            </ul>
+            <div className="flex flex-wrap items-center justify-between gap-2 border-t px-5 py-3.5">
+              <span className="text-[12.5px] text-muted-foreground">Les échéances sont tenues à votre place — rappel unique, jamais de relance inutile.</span>
+              <button onClick={() => alert("Démo — un seul formulaire pour école, garderie, cantine, sport et académie (guichet unique, itsme).")}
+                className="inline-flex items-center gap-2 rounded-lg bg-primary px-4 py-2 text-[13px] font-semibold text-primary-foreground hover:opacity-90">
+                <ClipboardCheck className="h-4 w-4" /> Tout gérer en une fois
+              </button>
+            </div>
+          </div>
+          <div className="mt-6 rounded-lg border bg-secondary/50 p-5">
+            <h3 className="text-[15px] font-semibold">« Dites-le-nous une fois »</h3>
+            <p className="mt-1.5 max-w-[72ch] text-[13.5px] text-muted-foreground">
+              Un seul point d'entrée pour école, garderie, cantine, sport et académie. La commune préremplit ce
+              qu'elle sait déjà (loi « Only Once ») ; quand un droit est acquis, l'inscription est <strong>d'office</strong>.
+              C'est le seul endroit où l'application <strong>rend du temps</strong> au lieu d'en informer — chaque
+              soirée qu'un parent ne passe plus à remplir des formulaires est le gain le plus tangible du pilote.
+            </p>
+          </div>
+        </div>
+      ) : part === "conseils" ? (
         <div className="grid gap-4 sm:grid-cols-2">
           {familleConseils.map((c, i) => {
             const Icon = conseilIcons[c.icon] ?? Heart;
@@ -757,9 +878,9 @@ function Engagements() {
                   className={`inline-flex items-center gap-1.5 rounded-lg border px-3 py-1.5 text-[12.5px] font-semibold transition ${suivi ? "border-primary bg-primary text-primary-foreground" : "border-input bg-card hover:bg-secondary"}`}>
                   <Eye className="h-4 w-4" />{suivi ? "Suivi" : "Suivre"}
                 </button>
-                <button onClick={() => alert("Démo — votre interpellation serait adressée au conseil communal, avec accusé de réception et réponse publique.")}
-                  className="inline-flex items-center gap-1.5 rounded-lg border border-input bg-card px-3 py-1.5 text-[12.5px] font-semibold transition hover:bg-secondary">
-                  <Flag className="h-4 w-4" />Interpeller le conseil
+                <button onClick={() => alert("Démo — question écrite au conseil communal. Droit prévu par le règlement d'ordre intérieur : le collège doit répondre, et la réponse est publiée. Délai indicatif : 30 jours.")}
+                  className="inline-flex items-center gap-1.5 rounded-lg border border-input bg-card px-3 py-1.5 text-[12.5px] font-semibold transition hover:bg-secondary" title="Question écrite au conseil — réponse due sous 30 jours">
+                  <Flag className="h-4 w-4" />Poser une question au conseil
                 </button>
                 <span className="ml-auto text-[12px] text-muted-foreground/80">{e.suiveurs + (suivi ? 1 : 0)} citoyens suivent</span>
               </div>
@@ -768,14 +889,68 @@ function Engagements() {
         })}
       </div>
       <div className="mt-7 rounded-lg border bg-secondary/50 p-5">
-        <h3 className="text-[15px] font-semibold">Pourquoi « suivre » et « interpeller »</h3>
+        <h3 className="text-[15px] font-semibold">Suivre, et poser une question qui a une réponse due</h3>
         <p className="mt-1.5 max-w-[72ch] text-[13.5px] text-muted-foreground">
-          La transparence seule ne change rien là où celui qui décide ne subit aucun coût de l'inaction. Suivre rend
-          l'intérêt visible ; interpeller le fait porter par quelqu'un. Ce n'est pas un « j'aime » ni un vote —
-          c'est un accusé de réception dû, et une réponse publique.
+          La transparence seule ne change rien là où celui qui décide ne subit aucun coût de l'inaction. « Suivre »
+          rend l'intérêt visible ; « poser une question » l'adresse par le <strong>droit de question écrite au conseil</strong> —
+          un canal réel, avec une réponse due sous 30 jours et publiée. Ce n'est ni un « j'aime » ni un vote : c'est
+          une promesse que la commune doit tenir, pas une boîte à idées sans suite.
         </p>
       </div>
       <ExportBar msg="Le registre des engagements est ouvert." name="engagements.json" data={engagements} />
+    </div>
+  );
+}
+
+function Sources() {
+  const meta: Record<SourceStatut, { label: string; style: React.CSSProperties }> = {
+    "disponible": { label: "Disponible", style: { color: "hsl(var(--ok))", background: "hsl(var(--ok-bg))", borderColor: "hsl(var(--ok-line))" } },
+    "a-tester": { label: "À tester", style: { color: "hsl(var(--clim))", background: "hsl(var(--clim-bg))", borderColor: "hsl(var(--clim-line))" } },
+    "a-parser": { label: "Fichier à parser", style: { color: "hsl(var(--warn))", background: "hsl(var(--warn-bg))", borderColor: "hsl(var(--warn-line))" } },
+    "manquant": { label: "Manquant", style: { color: "hsl(var(--muted-foreground))", background: "hsl(var(--muted))", borderColor: "hsl(var(--border))" } },
+  };
+  return (
+    <div>
+      <H1>Sources & données</H1>
+      <Lede>D'où viennent les chiffres — et ce qui n'existe pas encore. Un pilote qui commence par dire ce qu'il ne peut pas mesurer est plus crédible que celui qui prétend tout savoir.</Lede>
+
+      <div className="mt-5 flex items-start gap-2.5 rounded-lg border p-3.5 text-[13.5px]" style={{ background: "hsl(var(--brand-weak))", borderColor: "hsl(var(--clim-line))" }}>
+        <Database className="mt-0.5 h-4 w-4 shrink-0" style={{ color: "hsl(var(--brand))" }} />
+        <p className="text-muted-foreground"><strong className="text-foreground">{dataMeta.sessionsTotal} séances du conseil déjà publiques en JSON depuis {dataMeta.sessionsFrom}</strong> — et personne ne les lit. Rendre lisible ce qui est déjà public, c'est tout le pilote.</p>
+      </div>
+
+      <div className="mt-5 overflow-hidden rounded-lg border bg-card">
+        {dataSources.map((s, i) => (
+          <div key={i} className="flex flex-wrap items-center gap-x-4 gap-y-1 border-b px-4 py-3 last:border-0">
+            <div className="min-w-0 flex-1">
+              <div className="text-[14px] font-medium">{s.nom}</div>
+              <div className="text-[12.5px] text-muted-foreground">{s.source}{s.note ? <span className="opacity-80"> — {s.note}</span> : null}</div>
+            </div>
+            <div className="flex shrink-0 items-center gap-2">
+              {s.licence && <span className="hidden text-[11px] text-muted-foreground/70 sm:inline">{s.licence}</span>}
+              <span className="rounded-full border px-2.5 py-0.5 text-[11px] font-semibold" style={meta[s.statut].style}>{meta[s.statut].label}</span>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <div className="mt-7"><CapLabel><Ban className="h-3.5 w-3.5" /> Ce qui n'existe pas — et qu'on assume</CapLabel></div>
+      <div className="mt-3 grid gap-3 sm:grid-cols-2">
+        {dataGaps.map((g, i) => (
+          <div key={i} className="rounded-lg border bg-card p-4">
+            <h3 className="text-[14px] font-semibold">{g.nom}</h3>
+            <p className="mt-1 text-[12.5px] text-muted-foreground">{g.raison}</p>
+          </div>
+        ))}
+      </div>
+
+      <div className="mt-7 rounded-lg border bg-secondary/50 p-5">
+        <h3 className="text-[15px] font-semibold">Licences & mentions</h3>
+        <ul className="mt-1.5 list-disc space-y-1 pl-5 text-[12.5px] text-muted-foreground">
+          {dataLicences.map((l, i) => <li key={i}>{l}</li>)}
+        </ul>
+      </div>
+      <ExportBar msg="L'inventaire des sources est ouvert." name="sources-donnees.json" data={{ sources: dataSources, manquant: dataGaps }} />
     </div>
   );
 }
@@ -787,6 +962,7 @@ const NAV_GROUPS: { label: string; items: NavItem[] }[] = [
   { label: "Ma commune", items: [
     ["cap", "Le cap", Compass], ["decisions", "Décisions", ListChecks], ["engagements", "Engagements", ClipboardCheck],
     ["budget", "Budget", Wallet], ["projets", "Projets & fonds", Rocket], ["bord", "Tableau de bord", Gauge],
+    ["sources", "Sources & données", Database],
   ] },
   { label: "Services aux citoyens", items: [
     ["familles", "Familles", Baby], ["jeunes", "Jeunes", Users],
@@ -916,6 +1092,7 @@ export default function App() {
             {tab === "agenda" && <AgendaVue />}
             {tab === "entraide" && <Entraide />}
             {tab === "bord" && <Bord />}
+            {tab === "sources" && <Sources />}
           </main>
 
           <footer className="border-t bg-card">
