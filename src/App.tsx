@@ -1,19 +1,22 @@
 import { useEffect, useMemo, useState } from "react";
 import {
   Compass, ListChecks, Wallet, Rocket, Users, Handshake, Gauge, Sparkles,
-  Sun, Moon, Target, ArrowUp, ArrowRight, Calendar, MapPin, Download,
+  Sun, Moon, Target, ArrowUp, Calendar, MapPin, Download,
   ShieldCheck, Bell, BadgeCheck, Vote, Plus, HandHeart, CalendarDays, Music, Trophy, Ticket,
   Baby, Heart, HeartHandshake, Home, Utensils, Smartphone, BookOpen, FileText, ShoppingBasket,
   Landmark, Info, Search, Menu, X, ChevronRight,
   ClipboardCheck, Flag, Eye, CheckCircle2, Clock, Timer, AlertTriangle, Gift, DoorOpen, PiggyBank, PenLine, Ban,
-  Database, ExternalLink, GraduationCap, Radio,
+  Database, ExternalLink, GraduationCap, Radio, Droplets, Wind, Zap, Lock, Scale, Terminal,
+  Store, Car, Hammer, Phone, Globe,
 } from "lucide-react";
 import {
   me, commune, communeFacts, communeSources, orientations, oriById, decisions, budget, projets, jeunes,
   entraide, agenda, familleConseils, familleAide, interets, interetLabel, feed,
   kpiCommune, kpiService, kpiPerso, synergies, engagements, pilotesEval, registreEchecs,
-  dataMeta, dataSources, dataGaps, dataLicences, enfant, inscriptionUnique,
-  eur, pct, dateFr, type OId, type AccesType, type SourceStatut,
+  dataMeta, dataSources, dataGaps, dataLicences, dataPriorites, dataNotes, etatZero, pointsEau,
+  commerces, commerceCats, commercesMeta, horairesFr,
+  enfant, inscriptionUnique,
+  eur, pct, dateFr, type OId, type AccesType, type SourceStatut, type SourceTheme, type CommerceCat,
 } from "./data";
 
 /* ---------- helpers ---------- */
@@ -902,37 +905,272 @@ function Engagements() {
   );
 }
 
-function Sources() {
-  const meta: Record<SourceStatut, { label: string; style: React.CSSProperties }> = {
-    "disponible": { label: "Disponible", style: { color: "hsl(var(--ok))", background: "hsl(var(--ok-bg))", borderColor: "hsl(var(--ok-line))" } },
-    "a-tester": { label: "À tester", style: { color: "hsl(var(--clim))", background: "hsl(var(--clim-bg))", borderColor: "hsl(var(--clim-line))" } },
-    "a-parser": { label: "Fichier à parser", style: { color: "hsl(var(--warn))", background: "hsl(var(--warn-bg))", borderColor: "hsl(var(--warn-line))" } },
-    "manquant": { label: "Manquant", style: { color: "hsl(var(--muted-foreground))", background: "hsl(var(--muted))", borderColor: "hsl(var(--border))" } },
-  };
+const commerceIcons: Record<string, typeof Bell> = {
+  basket: ShoppingBasket, utensils: Utensils, heart: Heart, file: FileText,
+  home: Home, gift: Gift, car: Car, hammer: Hammer,
+};
+
+function Commerces() {
+  const [cat, setCat] = useState<CommerceCat | "toutes">("toutes");
+  const [q, setQ] = useState("");
+
+  const liste = useMemo(() => {
+    const terme = q.trim().toLowerCase();
+    return commerces.filter((c) => {
+      if (cat !== "toutes" && c.cat !== cat) return false;
+      if (!terme) return true;
+      return [c.nom, c.type, c.rue].some((v) => v?.toLowerCase().includes(terme));
+    });
+  }, [cat, q]);
+
+  const nb = (id: CommerceCat) => commerces.filter((c) => c.cat === id).length;
+
   return (
     <div>
-      <H1>Sources & données</H1>
+      <H1>Commerces & artisans</H1>
+      <Lede>Les {commerces.length} commerces et artisans recensés à Kraainem — ce qui tient encore debout dans la commune, et qu'on ne remplace pas par un centre commercial à dix kilomètres.</Lede>
+
+      <div className="mt-5 flex items-start gap-2.5 rounded-lg border p-3.5 text-[13px]" style={{ background: "hsl(var(--ok-bg))", borderColor: "hsl(var(--ok-line))" }}>
+        <Radio className="mt-0.5 h-4 w-4 shrink-0" style={{ color: "hsl(var(--ok))" }} />
+        <p className="text-muted-foreground">
+          <strong className="text-foreground" style={{ color: "hsl(var(--ok))" }}>Données réelles · OpenStreetMap.</strong>{" "}
+          Relevé du {dateFr(commercesMeta.releve)}, {commerces.length} établissements.{" "}
+          <a href={commercesMeta.lien} target="_blank" rel="noreferrer" className="inline-flex items-center gap-1 font-medium text-[hsl(var(--link))] hover:underline">source <ExternalLink className="h-3 w-3" /></a>
+          <span className="opacity-70"> · {commercesMeta.licence}</span>
+        </p>
+      </div>
+
+      <div className="mt-3 flex items-start gap-2.5 rounded-lg border p-3.5 text-[13px]" style={{ background: "hsl(var(--warn-bg))", borderColor: "hsl(var(--warn-line))" }}>
+        <Info className="mt-0.5 h-4 w-4 shrink-0" style={{ color: "hsl(var(--warn))" }} />
+        <p className="text-muted-foreground">
+          <strong className="text-foreground">Cette liste est incomplète, et c'est dit.</strong> La commune ne publie aucun registre ouvert de ses commerçants, et la Banque-Carrefour des Entreprises ne permet pas de filtrer « commerce ouvert au public » par commune. La seule source ouverte est OpenStreetMap — contributive, donc perfectible : {commerces.filter((c) => c.rue).length} fiches sur {commerces.length} portent une adresse complète, {commerces.filter((c) => c.horaires).length} des horaires. Un commerçant absent ou fermé doit pouvoir le signaler en un clic : c'est la première chose à construire ici.
+        </p>
+      </div>
+
+      <div className="mt-5 relative">
+        <Search className="pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
+        <input value={q} onChange={(e) => setQ(e.target.value)} aria-label="Rechercher un commerce"
+          placeholder="Rechercher un commerce, un métier, une rue…"
+          className="h-10 w-full rounded-lg border border-input bg-card pl-9 pr-3 text-[14px] outline-none placeholder:text-muted-foreground/70 focus:border-primary" />
+      </div>
+
+      <div className="my-4 flex flex-wrap gap-2">
+        <FilterChip active={cat === "toutes"} onClick={() => setCat("toutes")}>Tous ({commerces.length})</FilterChip>
+        {commerceCats.map((c) => (
+          <FilterChip key={c.id} active={cat === c.id} onClick={() => setCat(c.id)}>{c.label} ({nb(c.id)})</FilterChip>
+        ))}
+      </div>
+
+      {liste.length === 0 ? (
+        <p className="rounded-lg border bg-card p-6 text-center text-[14px] text-muted-foreground">
+          Aucun commerce ne correspond. Il manque peut-être simplement d'OpenStreetMap — c'est corrigeable.
+        </p>
+      ) : (
+        <div className="grid gap-3 sm:grid-cols-2 xl:grid-cols-3">
+          {liste.map((c) => {
+            const Icon = commerceIcons[commerceCats.find((k) => k.id === c.cat)?.icon ?? "basket"] ?? Store;
+            return (
+              <article key={c.osm} className="flex flex-col rounded-lg border bg-card p-4">
+                <div className="flex items-start gap-3">
+                  <span className="grid h-9 w-9 shrink-0 place-items-center rounded-lg" style={{ background: "hsl(var(--brand-weak))", color: "hsl(var(--brand))" }}>
+                    <Icon className="h-[18px] w-[18px]" />
+                  </span>
+                  <div className="min-w-0">
+                    <h3 className="text-[15px] font-semibold leading-tight">{c.nom}</h3>
+                    <div className="text-[12.5px] text-muted-foreground">{c.type}</div>
+                  </div>
+                </div>
+                <div className="mt-2.5 flex flex-col gap-1 text-[12.5px] text-muted-foreground">
+                  {c.rue && (
+                    <span className="inline-flex items-start gap-1.5"><MapPin className="mt-0.5 h-3.5 w-3.5 shrink-0" />{c.rue}{c.num ? ` ${c.num}` : ""}</span>
+                  )}
+                  {c.horaires && (
+                    <span className="inline-flex items-start gap-1.5"><Clock className="mt-0.5 h-3.5 w-3.5 shrink-0" />{horairesFr(c.horaires)}</span>
+                  )}
+                </div>
+                {(c.tel || c.web) && (
+                  <div className="mt-3 flex flex-wrap gap-2 border-t pt-3">
+                    {c.tel && (
+                      <a href={`tel:${c.tel.replace(/\s/g, "")}`} className="inline-flex items-center gap-1.5 rounded-lg border border-input bg-card px-2.5 py-1.5 text-[12px] font-semibold transition hover:bg-secondary">
+                        <Phone className="h-3.5 w-3.5" />{c.tel}
+                      </a>
+                    )}
+                    {c.web && (
+                      <a href={c.web} target="_blank" rel="noreferrer" className="inline-flex items-center gap-1.5 rounded-lg border border-input bg-card px-2.5 py-1.5 text-[12px] font-semibold transition hover:bg-secondary">
+                        <Globe className="h-3.5 w-3.5" />Site
+                      </a>
+                    )}
+                  </div>
+                )}
+              </article>
+            );
+          })}
+        </div>
+      )}
+
+      <ExportBar msg={`Les ${commerces.length} commerces recensés sont ouverts (source OpenStreetMap, ODbL).`}
+        name="commerces-kraainem.json" data={{ ...commercesMeta, total: commerces.length, commerces }} />
+    </div>
+  );
+}
+
+// Un chiffre d'état zéro : la valeur, puis d'où elle sort. Jamais l'inverse.
+function ZeroTile({ Icon, v, u, k, s, accent }: {
+  Icon: typeof Zap; v: string; u: string; k: string; s: string; accent: string;
+}) {
+  const c = A(accent);
+  return (
+    <div className="rounded-lg border bg-card p-4">
+      <span className="grid h-8 w-8 place-items-center rounded-lg" style={{ background: c.bg, color: c.text }}>
+        <Icon className="h-4 w-4" />
+      </span>
+      <div className="mt-2.5 text-[24px] font-semibold leading-none tnum">
+        {v}<span className="ml-1 text-[13px] font-medium text-muted-foreground">{u}</span>
+      </div>
+      <div className="mt-1.5 text-[13px] font-medium">{k}</div>
+      <div className="mt-0.5 text-[11.5px] leading-snug text-muted-foreground">{s}</div>
+    </div>
+  );
+}
+
+const gwh = (kwh: number) => new Intl.NumberFormat("fr-BE", { maximumFractionDigits: 1 }).format(kwh / 1_000_000);
+const nfr = (n: number) => new Intl.NumberFormat("fr-BE").format(n);
+
+function Sources() {
+  const meta: Record<SourceStatut, { label: string; style: React.CSSProperties }> = {
+    "verifie": { label: "Vérifié ici", style: { color: "hsl(var(--ok))", background: "hsl(var(--ok-bg))", borderColor: "hsl(var(--ok-line))" } },
+    "disponible": { label: "Automatisable", style: { color: "hsl(var(--env))", background: "hsl(var(--ok-bg))", borderColor: "hsl(var(--ok-line))" } },
+    "a-tester": { label: "À tester", style: { color: "hsl(var(--clim))", background: "hsl(var(--clim-bg))", borderColor: "hsl(var(--clim-line))" } },
+    "a-parser": { label: "Fichier à parser", style: { color: "hsl(var(--warn))", background: "hsl(var(--warn-bg))", borderColor: "hsl(var(--warn-line))" } },
+    "manuel": { label: "Manuel ou demande", style: { color: "hsl(var(--tran))", background: "hsl(var(--tran-bg))", borderColor: "hsl(var(--tran-line))" } },
+    "compte": { label: "Compte requis", style: { color: "hsl(var(--tran))", background: "hsl(var(--tran-bg))", borderColor: "hsl(var(--tran-line))" } },
+    "manquant": { label: "Non accessible", style: { color: "hsl(var(--muted-foreground))", background: "hsl(var(--muted))", borderColor: "hsl(var(--border))" } },
+  };
+  const themes: { id: SourceTheme; label: string; Icon: typeof Database }[] = [
+    { id: "gouvernance", label: "Ce que la commune fait — gouvernance & finances", Icon: Landmark },
+    { id: "environnement", label: "L'état zéro environnemental", Icon: Droplets },
+    { id: "cadre", label: "Cadre de vie — mobilité, sécurité, logement", Icon: MapPin },
+    { id: "comparaison", label: "Comparaison entre communes", Icon: Scale },
+  ];
+  const compte = (st: SourceStatut[]) => dataSources.filter((s) => st.includes(s.statut)).length;
+
+  return (
+    <div>
+      <H1 eyebrow="Projet Atlas · tome 2 · pilote communal">Sources & données</H1>
       <Lede>D'où viennent les chiffres — et ce qui n'existe pas encore. Un pilote qui commence par dire ce qu'il ne peut pas mesurer est plus crédible que celui qui prétend tout savoir.</Lede>
 
       <div className="mt-5 flex items-start gap-2.5 rounded-lg border p-3.5 text-[13.5px]" style={{ background: "hsl(var(--brand-weak))", borderColor: "hsl(var(--clim-line))" }}>
         <Database className="mt-0.5 h-4 w-4 shrink-0" style={{ color: "hsl(var(--brand))" }} />
-        <p className="text-muted-foreground"><strong className="text-foreground">{dataMeta.sessionsTotal} séances du conseil déjà publiques en JSON depuis {dataMeta.sessionsFrom}</strong> — et personne ne les lit. Rendre lisible ce qui est déjà public, c'est tout le pilote.</p>
+        <p className="text-muted-foreground">
+          <strong className="text-foreground">{dataMeta.sessionsTotal} séances du conseil déjà publiques en JSON depuis {dataMeta.sessionsFrom}</strong> — et personne ne les lit. Rendre lisible ce qui est déjà public, c'est tout le pilote.
+          <span className="mt-1 block text-[12.5px] opacity-80">
+            {dataSources.length} sources inventoriées, dont <strong className="text-foreground">{compte(["verifie"])} rappelées et confirmées</strong> le {dateFr(dataMeta.verifieLe)} depuis cette machine, {compte(["disponible"])} ouvertes non encore rappelées, {compte(["a-tester", "a-parser"])} à instrumenter et {compte(["manuel", "compte", "manquant"])} hors d'atteinte automatique.
+          </span>
+        </p>
       </div>
 
-      <div className="mt-5 overflow-hidden rounded-lg border bg-card">
-        {dataSources.map((s, i) => (
-          <div key={i} className="flex flex-wrap items-center gap-x-4 gap-y-1 border-b px-4 py-3 last:border-0">
-            <div className="min-w-0 flex-1">
-              <div className="text-[14px] font-medium">{s.nom}</div>
-              <div className="text-[12.5px] text-muted-foreground">{s.source}{s.note ? <span className="opacity-80"> — {s.note}</span> : null}</div>
-            </div>
-            <div className="flex shrink-0 items-center gap-2">
-              {s.licence && <span className="hidden text-[11px] text-muted-foreground/70 sm:inline">{s.licence}</span>}
-              <span className="rounded-full border px-2.5 py-0.5 text-[11px] font-semibold" style={meta[s.statut].style}>{meta[s.statut].label}</span>
+      {/* ---- état zéro : les chiffres qui ne sont pas des exemples ---- */}
+      <div className="mt-8"><CapLabel><Radio className="h-3.5 w-3.5" /> État zéro — chiffres réels, relevés le {dateFr(dataMeta.verifieLe)}</CapLabel></div>
+      <p className="mt-1.5 max-w-[74ch] text-[13.5px] text-muted-foreground">
+        Contrairement au reste de la maquette, ces valeurs ne sont pas des exemples : elles sortent des API citées, pour Kraainem, sur la période indiquée.
+      </p>
+      <div className="mt-3 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+        <ZeroTile Icon={Zap} accent="clim" v={gwh(etatZero.elecKwh)} u="GWh" k="Électricité prélevée"
+          s={`${etatZero.periode} · soit ≈ ${nfr(Math.round(etatZero.elecKwh / commune.habitants))} kWh par habitant · Fluvius`} />
+        <ZeroTile Icon={Home} accent="alim" v={gwh(etatZero.gazKwh)} u="GWh" k="Gaz prélevé"
+          s={`${etatZero.periode} · près de trois fois l'électricité — le chauffage est le vrai sujet · Fluvius`} />
+        <ZeroTile Icon={Rocket} accent="env" v={nfr(etatZero.pvInstallations)} u="install."
+          k="Production décentralisée"
+          s={`${nfr(etatZero.pvKva)} kVA installés, quasi tout en photovoltaïque · Fluvius, relevé de juillet 2026`} />
+        <ZeroTile Icon={Droplets} accent="clim" v={String(etatZero.pointsEauCommune)} u={`/ ${etatZero.pointsEauFenetre}`}
+          k="Points de mesure de l'eau"
+          s={`${etatZero.pointsEauCommune} sur le territoire communal, sur ${etatZero.pointsEauFenetre} dans la fenêtre · VMM`} />
+      </div>
+
+      <div className="mt-3 grid gap-3 sm:grid-cols-2">
+        <div className="rounded-lg border bg-card p-4">
+          <div className="flex items-center gap-2 text-[13px] font-semibold"><Wind className="h-4 w-4" style={{ color: "hsl(var(--clim))" }} /> Aucune station de mesure de l'air à Kraainem</div>
+          <p className="mt-1 text-[12.5px] text-muted-foreground">
+            {etatZero.stationsAirBelgique} stations en Belgique, zéro ici. La plus proche : {etatZero.stationLaPlusProche}. Une valeur communale ne peut venir que de la grille modélisée RIO-IFDM ou ATMO-Street, qui descend à la rue — et il faut le dire plutôt que d'afficher un chiffre emprunté à Bruxelles.
+          </p>
+        </div>
+        <div className="rounded-lg border bg-card p-4">
+          <div className="flex items-center gap-2 text-[13px] font-semibold"><ArrowUp className="h-4 w-4" style={{ color: "hsl(var(--env))" }} /> {gwh(etatZero.injectionKwh)} GWh réinjectés dans le réseau</div>
+          <p className="mt-1 text-[12.5px] text-muted-foreground">
+            Soit {pct((etatZero.injectionKwh / etatZero.elecKwh) * 100)} de l'électricité prélevée sur la même période. C'est le point de départ mesuré de la brique « toiture solaire citoyenne » — pas une intuition.
+          </p>
+        </div>
+      </div>
+
+      {/* ---- les 7 points d'eau, nommés ---- */}
+      <div className="mt-8"><CapLabel><Droplets className="h-3.5 w-3.5" /> Les {etatZero.pointsEauCommune} points de mesure situés à Kraainem</CapLabel></div>
+      <div className="mt-3 overflow-hidden rounded-lg border bg-card">
+        {pointsEau.map((p) => (
+          <div key={p.code} className="flex flex-wrap items-baseline gap-x-3 gap-y-0.5 border-b px-4 py-2.5 text-[13px] last:border-0">
+            <span className="font-mono text-[12px] font-semibold" style={{ color: "hsl(var(--clim))" }}>{p.code}</span>
+            <span className="text-muted-foreground">{p.ou}</span>
+          </div>
+        ))}
+      </div>
+      <div className="mt-3 flex items-start gap-2.5 rounded-lg border p-3.5 text-[13px]" style={{ background: "hsl(var(--warn-bg))", borderColor: "hsl(var(--warn-line))" }}>
+        <AlertTriangle className="mt-0.5 h-4 w-4 shrink-0" style={{ color: "hsl(var(--warn))" }} />
+        <p className="text-muted-foreground">
+          <strong className="text-foreground">Les points sont ouverts, les mesures ne le sont pas.</strong> Les résultats d'analyse de ces sept points existent, mais sont servis par un rapport interactif sans export en masse. C'est exactement le genre d'écart que le pilote a vocation à nommer plutôt qu'à contourner.
+        </p>
+      </div>
+
+      {/* ---- par où commencer ---- */}
+      <div className="mt-8"><CapLabel><Flag className="h-3.5 w-3.5" /> Par où commencer — par rapport entre effort et crédibilité gagnée</CapLabel></div>
+      <div className="mt-3 flex flex-col gap-2.5">
+        {dataPriorites.map((p) => (
+          <div key={p.rang} className="flex items-start gap-3 rounded-lg border bg-card p-3.5">
+            <span className="mt-0.5 grid h-7 w-7 shrink-0 place-items-center rounded-full border text-[12px] font-bold"
+              style={p.fait
+                ? { color: "hsl(var(--ok))", background: "hsl(var(--ok-bg))", borderColor: "hsl(var(--ok-line))" }
+                : { color: "hsl(var(--muted-foreground))", background: "hsl(var(--muted))", borderColor: "hsl(var(--border))" }}>
+              {p.fait ? <CheckCircle2 className="h-4 w-4" /> : p.rang}
+            </span>
+            <div className="min-w-0">
+              <h3 className="text-[14px] font-semibold">
+                {p.titre}
+                {p.fait && <span className="ml-2 rounded-full border px-2 py-0.5 align-middle text-[10.5px] font-semibold"
+                  style={{ color: "hsl(var(--ok))", background: "hsl(var(--ok-bg))", borderColor: "hsl(var(--ok-line))" }}>branché</span>}
+              </h3>
+              <p className="mt-0.5 max-w-[78ch] text-[12.5px] text-muted-foreground">{p.pourquoi}</p>
             </div>
           </div>
         ))}
       </div>
+
+      {/* ---- l'inventaire, par thème ---- */}
+      <div className="mt-8"><CapLabel><Database className="h-3.5 w-3.5" /> L'inventaire des sources</CapLabel></div>
+      {themes.map(({ id, label, Icon }) => (
+        <section key={id} className="mt-4">
+          <h3 className="flex items-center gap-2 text-[14.5px] font-semibold"><Icon className="h-4 w-4 text-muted-foreground" />{label}</h3>
+          <div className="mt-2 overflow-hidden rounded-lg border bg-card">
+            {dataSources.filter((s) => s.theme === id).map((s, i) => (
+              <div key={i} className="border-b px-4 py-3 last:border-0">
+                <div className="flex flex-wrap items-center gap-x-4 gap-y-1.5">
+                  <div className="min-w-0 flex-1">
+                    <div className="text-[14px] font-medium">{s.nom}</div>
+                    <div className="text-[12.5px] text-muted-foreground">{s.source}</div>
+                  </div>
+                  <div className="flex shrink-0 items-center gap-2">
+                    {s.licence && <span className="hidden text-[11px] text-muted-foreground/70 sm:inline">{s.licence}</span>}
+                    <span className="rounded-full border px-2.5 py-0.5 text-[11px] font-semibold" style={meta[s.statut].style}>{meta[s.statut].label}</span>
+                  </div>
+                </div>
+                {s.note && <p className="mt-1.5 max-w-[80ch] text-[12.5px] leading-snug text-muted-foreground">{s.note}</p>}
+                {s.endpoint && (
+                  <div className="mt-2 overflow-x-auto rounded-md bg-secondary/70 px-2.5 py-1.5">
+                    <code className="whitespace-pre font-mono text-[11.5px] text-muted-foreground">{s.endpoint}</code>
+                  </div>
+                )}
+              </div>
+            ))}
+          </div>
+        </section>
+      ))}
 
       <div className="mt-7"><CapLabel><Ban className="h-3.5 w-3.5" /> Ce qui n'existe pas — et qu'on assume</CapLabel></div>
       <div className="mt-3 grid gap-3 sm:grid-cols-2">
@@ -944,13 +1182,28 @@ function Sources() {
         ))}
       </div>
 
+      <div className="mt-7"><CapLabel><Terminal className="h-3.5 w-3.5" /> Contraintes que le code respecte</CapLabel></div>
+      <div className="mt-3 grid gap-3 sm:grid-cols-2">
+        {dataNotes.map((n, i) => (
+          <div key={i} className="flex items-start gap-2.5 rounded-lg border bg-card p-4">
+            <Lock className="mt-0.5 h-4 w-4 shrink-0 text-muted-foreground" />
+            <div>
+              <h3 className="text-[13.5px] font-semibold">{n.titre}</h3>
+              <p className="mt-0.5 text-[12.5px] leading-snug text-muted-foreground">{n.texte}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+
       <div className="mt-7 rounded-lg border bg-secondary/50 p-5">
         <h3 className="text-[15px] font-semibold">Licences & mentions</h3>
         <ul className="mt-1.5 list-disc space-y-1 pl-5 text-[12.5px] text-muted-foreground">
           {dataLicences.map((l, i) => <li key={i}>{l}</li>)}
         </ul>
       </div>
-      <ExportBar msg="L'inventaire des sources est ouvert." name="sources-donnees.json" data={{ sources: dataSources, manquant: dataGaps }} />
+      <ExportBar msg="L'inventaire des sources est ouvert."
+        name="sources-donnees-kraainem.json"
+        data={{ commune: { nom: commune.nom, nis: dataMeta.nis, postal: dataMeta.postal }, verifieLe: dataMeta.verifieLe, etatZero, pointsEau, priorites: dataPriorites, sources: dataSources, manquant: dataGaps, contraintes: dataNotes, licences: dataLicences }} />
     </div>
   );
 }
@@ -966,7 +1219,8 @@ const NAV_GROUPS: { label: string; items: NavItem[] }[] = [
   ] },
   { label: "Services aux citoyens", items: [
     ["familles", "Familles", Baby], ["jeunes", "Jeunes", Users],
-    ["agenda", "Culture & sport", CalendarDays], ["entraide", "Entraide", Handshake],
+    ["agenda", "Culture & sport", CalendarDays], ["commerces", "Commerces", Store],
+    ["entraide", "Entraide", Handshake],
   ] },
 ];
 const NAV_FLAT = NAV_GROUPS.flatMap((g) => g.items);
@@ -1090,6 +1344,7 @@ export default function App() {
             {tab === "familles" && <Familles />}
             {tab === "jeunes" && <Jeunes />}
             {tab === "agenda" && <AgendaVue />}
+            {tab === "commerces" && <Commerces />}
             {tab === "entraide" && <Entraide />}
             {tab === "bord" && <Bord />}
             {tab === "sources" && <Sources />}

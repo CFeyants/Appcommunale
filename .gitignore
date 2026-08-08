@@ -7,6 +7,9 @@ dist
 .DS_Store
 .vercel
 
+# le projet est en pnpm : un lockfile npm rendrait la détection Vercel ambiguë
+package-lock.json
+
 # outils d’aperçu (non nécessaires au déploiement)
 bundle.html
 .parcelrc
