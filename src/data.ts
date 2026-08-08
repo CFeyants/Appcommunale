@@ -76,6 +76,30 @@ export const budget = { annee: 2026, lignes: [
   { o: "transmission" as OId, intitule: "Transmission, jeunesse & lien social", vote: 205000, exec: 118000 },
 ] };
 
+/**
+ * Décomposition du budget en une seule image. Les quatre postes couvrent
+ * l'intégralité du total ; le dernier est exactement la somme de budget.lignes.
+ * Le fait que cette page doit rendre visible : 5,5 % du budget est piloté par
+ * une orientation, 94,5 % ne l'est pas.
+ */
+export interface PosteBudget { nom: string; v: number; slot: 1 | 2 | 3 | 4; }
+export const budgetTotal = { annee: 2026, total: 31_500_000, parHabitant: 2265 };
+export const budgetPostes: PosteBudget[] = [
+  { nom: "Personnel & fonctionnement", v: 16_800_000, slot: 1 },
+  { nom: "Transferts obligatoires (police, CPAS, zones)", v: 7_900_000, slot: 2 },
+  { nom: "Dette & investissements hors orientations", v: 5_075_000, slot: 3 },
+  { nom: "Rattaché aux trois orientations", v: 1_725_000, slot: 4 },
+];
+/** Un budget seul ne dit rien ; c'est la comparaison qui le rend lisible. */
+export interface Voisine { nom: string; v: number; moi?: boolean; }
+export const budgetVoisines: Voisine[] = [
+  { nom: "Wezembeek-Oppem", v: 2410 },
+  { nom: "Kraainem", v: 2265, moi: true },
+  { nom: "Tervuren", v: 2180 },
+  { nom: "Zaventem", v: 2095 },
+  { nom: "Moyenne — Brabant flamand", v: 1980 },
+];
+
 export interface Projet { id: string; titre: string; o: OId; objectif: number; collecte: number; contrib: number; eco: string; soc: string; env: string; }
 export const projets: Projet[] = [
   { id: "P-01", titre: "Panneaux solaires citoyens sur 3 bâtiments communaux (Ecopower · Druifkracht)", o: "climat", objectif: 120000, collecte: 78400, contrib: 143,
@@ -187,22 +211,84 @@ export const feed: FeedItem[] = [
   { kind: "Familles", titre: "Permanence conseils parents 0-12 ans", p: "Chaque mardi matin, sans rendez-vous : sommeil, alimentation, écrans, charge mentale.", tags: ["famille", "enfance", "entraide"], icon: "baby", accent: "tran" },
 ];
 
-export const kpiCommune = [
-  { k: "Approvisionnement local des cantines", v: "38 %", t: "+12 pts sur 1 an" },
-  { k: "Émissions du patrimoine communal", v: "−18 %", t: "vs 2019 (cible −40 % en 2030)" },
-  { k: "Heures d'entraide échangées", v: "2 140 h", t: "lien noué hors de l'app" },
-];
-// Le service, mesuré sans se flatter (pas de « temps passé dans l'app »).
-export const kpiService = [
-  { k: "Délai décision → publication lisible", v: "4 j", t: "médiane" },
-  { k: "Réutilisations des données par des tiers", v: "5", t: "presse locale + 2 assos + 2 chercheurs" },
-  { k: "Réponse aux demandes d'entraide", v: "82 %", t: "1re réponse en 6 h (médiane)" },
-];
-export const kpiPerso = [
-  { k: "Mes heures d'entraide", v: "12 h", t: "données · 4 h reçues" },
-  { k: "Projets citoyens soutenus", v: "3", t: "270 € engagés" },
-  { k: "Part de mes achats en local", v: "65 %", t: "via la monnaie locale" },
-  { k: "Activités jeunesse (mes enfants)", v: "4", t: "ce trimestre" },
+/**
+ * TABLEAU DE BORD — quatre échelles emboîtées, du monde à soi.
+ *
+ * Ce qui compte n'est pas la valeur d'aujourd'hui mais la TRAJECTOIRE : chaque
+ * indicateur porte huit relevés semestriels sur quatre ans. Chaque échelle
+ * mesure à la fois l'environnemental et le social — un tableau de bord qui ne
+ * suivrait que le carbone raterait la moitié de ce qui tient une commune, et
+ * l'inverse est vrai aussi.
+ *
+ * `sens` dit dans quelle direction se trouve le progrès, pas la direction
+ * observée : une baisse d'émissions est un progrès, une baisse de délai aussi.
+ * Quand la courbe part dans l'autre sens, c'est affiché comme tel (`recul`).
+ */
+export type AxeKpi = "env" | "soc";
+export interface KpiEvol {
+  k: string; v: string; d: string;
+  axe: AxeKpi; sens: "hausse" | "baisse"; serie: number[];
+  cible?: string; recul?: boolean;
+}
+export interface GroupeKpi { id: string; titre: string; sous: string; kpis: KpiEvol[]; }
+export const bordPeriode = "8 relevés semestriels · 2022 → 2026";
+export const bordGroupes: GroupeKpi[] = [
+  {
+    id: "global", titre: "Objectifs globaux",
+    sous: "Ce à quoi Kraainem se rattache. Une commune de 5,8 km² ne fait pas bouger ces courbes seule — mais elle doit savoir dans quelle trajectoire elle s'inscrit, sinon « agir localement » ne veut rien dire.",
+    kpis: [
+      { k: "Émissions de gaz à effet de serre — UE (vs 1990)", v: "−37 %", d: "−12 pts en 4 ans",
+        axe: "env", sens: "baisse", cible: "−55 % en 2030 (Fit for 55)", serie: [-25, -27, -29, -31, -32, -34, -36, -37] },
+      { k: "Part d'énergie renouvelable en Flandre", v: "17 %", d: "+8 pts en 4 ans",
+        axe: "env", sens: "hausse", cible: "≥ 25 % en 2030", serie: [9, 10, 11, 13, 14, 15, 16, 17] },
+      { k: "Risque de pauvreté ou d'exclusion — Belgique", v: "18,4 %", d: "−1,9 pt en 4 ans",
+        axe: "soc", sens: "baisse", cible: "≤ 15 % en 2030", serie: [20.3, 20, 19.6, 19.3, 19, 18.8, 18.6, 18.4] },
+      { k: "Personnes déclarant se sentir seules — Flandre", v: "12 %", d: "+3 pts en 4 ans — le seul indicateur qui se dégrade",
+        axe: "soc", sens: "baisse", recul: true, serie: [9, 9.5, 10, 11, 11.5, 12, 12, 12] },
+    ],
+  },
+  {
+    id: "commune", titre: "Objectifs communaux",
+    sous: "Ce que la commune pilote directement, et sur quoi elle peut être tenue. Aucun de ces indicateurs ne mesure l'usage de cette application : on mesure ce qui se passe dehors.",
+    kpis: [
+      { k: "Émissions du patrimoine communal (vs 2019)", v: "−18 %", d: "−18 pts en 4 ans",
+        axe: "env", sens: "baisse", cible: "−40 % en 2030", serie: [0, -3, -6, -8, -11, -14, -16, -18] },
+      { k: "Puissance photovoltaïque installée sur la commune", v: "5 188 kVA", d: "+1 260 kVA en 4 ans · chiffre réel, source Fluvius",
+        axe: "env", sens: "hausse", serie: [3928, 4180, 4390, 4610, 4780, 4950, 5080, 5188] },
+      { k: "Approvisionnement local des cantines communales", v: "38 %", d: "+19 pts en 4 ans",
+        axe: "soc", sens: "hausse", cible: "50 % en 2035", serie: [19, 22, 24, 26, 29, 33, 36, 38] },
+      { k: "Délai entre une décision du conseil et sa publication lisible", v: "6 j", d: "−13 j en 4 ans",
+        axe: "soc", sens: "baisse", cible: "≤ 7 jours", serie: [19, 17, 15, 14, 11, 9, 7, 6] },
+    ],
+  },
+  {
+    id: "commerces", titre: "Objectifs des commerces participants",
+    sous: "31 des 108 commerces de la commune se sont engagés dans le pilote. Ce qu'ils font compte double : c'est de l'effet réel, et c'est la preuve que l'engagement n'est pas réservé à l'administration.",
+    kpis: [
+      { k: "Commerces alimentés en électricité 100 % renouvelable", v: "34 %", d: "+22 pts en 4 ans",
+        axe: "env", sens: "hausse", cible: "60 % en 2030", serie: [12, 15, 19, 23, 26, 29, 32, 34] },
+      { k: "Emballages évités — vrac, consigne et Repair Café", v: "4,1 t/an", d: "×7 en 4 ans",
+        axe: "env", sens: "hausse", serie: [0.6, 1.1, 1.7, 2.3, 2.9, 3.4, 3.8, 4.1] },
+      { k: "Commerces acceptant le tarif social ou la monnaie locale", v: "27 %", d: "+23 pts en 4 ans",
+        axe: "soc", sens: "hausse", serie: [4, 7, 10, 14, 18, 21, 24, 27] },
+      { k: "Commerces engagés dans le pilote", v: "31 / 108", d: "+19 commerces en 4 ans",
+        axe: "soc", sens: "hausse", cible: "50 en 2028", serie: [12, 15, 18, 21, 24, 27, 29, 31] },
+    ],
+  },
+  {
+    id: "moi", titre: "Mes objectifs",
+    sous: "Privés, non comparatifs, sans classement ni score citoyen. Personne d'autre que vous ne les voit, et ils ne sont jamais agrégés en une note.",
+    kpis: [
+      { k: "Part de mes achats faits dans la commune", v: "65 %", d: "+37 pts en 4 ans",
+        axe: "env", sens: "hausse", serie: [28, 34, 40, 46, 52, 57, 61, 65] },
+      { k: "Ma consommation d'électricité (vs il y a 4 ans)", v: "−14 %", d: "−14 pts en 4 ans",
+        axe: "env", sens: "baisse", serie: [0, -2, -4, -6, -8, -10, -12, -14] },
+      { k: "Mes heures d'entraide", v: "12 h", d: "données · 4 h reçues",
+        axe: "soc", sens: "hausse", serie: [0, 1, 3, 5, 6, 8, 10, 12] },
+      { k: "Activités jeunesse suivies par mes enfants", v: "4", d: "+3 en 4 ans",
+        axe: "soc", sens: "hausse", serie: [1, 1, 2, 2, 3, 3, 4, 4] },
+    ],
+  },
 ];
 export const synergies = [
   { pol: "La commune finance 3 potagers partagés et l'épicerie coopérative.", per: "Vous cultivez une parcelle et achetez local à 65 %.", res: "≈ 210 kg de légumes locaux/an pour votre foyer, et un circuit court renforcé pour tout le quartier." },
@@ -230,11 +316,25 @@ export const engagements: Engagement[] = [
 // ---------------------------------------------------------------------------
 // PILOTE — critères chiffrés, échéance, clause d'arrêt (ch. 36).
 // ---------------------------------------------------------------------------
-export const pilotesEval = [
-  { brique: "Transparence (Brique 1)", critere: "Délai décision → publication lisible", seuil: "≤ 7 jours", etat: "4 j (médiane)", ok: true },
-  { brique: "Transparence (Brique 1)", critere: "Jeux de données brutes réutilisés par des tiers", seuil: "≥ 3 réutilisations", etat: "5 (presse + assos + chercheurs)", ok: true },
-  { brique: "Lien / transmission (Brique 3)", critere: "Réponse aux demandes d'entraide", seuil: "en progression à 18 mois", etat: "82 %, 1re réponse 6 h", ok: null },
-  { brique: "Lien / transmission (Brique 3)", critere: "Activités proposées par les habitants eux-mêmes", seuil: "≥ 10", etat: "6 à ce jour", ok: null },
+/**
+ * Chaque critère a été fixé AVANT le lancement. `inverse` marque les critères
+ * où le seuil est un plafond à ne pas dépasser (« sans réponse sous 48 h »).
+ * Le statut n'est jamais porté par la couleur seule : il porte une icône et un mot.
+ */
+export type SeuilStatut = "atteint" | "retard" | "hors";
+export interface Seuil {
+  critere: string; brique: string; unite: string;
+  seuil: number; mesure: number; echeance: string; statut: SeuilStatut; inverse?: boolean;
+}
+export const seuilsPilote: Seuil[] = [
+  { critere: "Part des adultes ayant consulté au moins une décision", brique: "Lisibilité", unite: " %",
+    seuil: 20, mesure: 31, echeance: "12 mois", statut: "atteint" },
+  { critere: "Jeux de données brutes réutilisés par des tiers", brique: "Lisibilité", unite: "",
+    seuil: 3, mesure: 3, echeance: "12 mois", statut: "atteint" },
+  { critere: "Activités proposées par les habitants eux-mêmes", brique: "Lien", unite: "",
+    seuil: 10, mesure: 6, echeance: "18 mois", statut: "retard" },
+  { critere: "Demandes d'entraide sans aucune réponse sous 48 h", brique: "Lien", unite: " %",
+    seuil: 15, mesure: 29, echeance: "12 mois", statut: "hors", inverse: true },
 ];
 export const registreEchecs = [
   { titre: "Application communale de covoiturage (2023)", verdict: "Arrêtée", raison: "Moins de 4 % d'usage à 12 mois, sous le seuil fixé. Leçon : sans masse d'usagers dès le départ, l'outil reste vide — on redirige vers l'entraide de proximité." },
@@ -407,6 +507,34 @@ export const dataNotes = [
   { titre: "Trois portails sont des applications monopage", texte: "Stadsmonitor, lokaalklimaatpact.be et okt24.vlaanderenkiest.be. Un navigateur sans interface est nécessaire pour la première passe de découverte ; l'accès ultérieur peut être scripté." },
   { titre: "Deux adresses sont mortes", texte: "lokalestatistieken.vlaanderen.be ne résout plus, et lokaalbestuur.vlaanderen.be/* redirige vers vlaanderen.be/lokaalbestuur — ce qui casse tous les liens profonds antérieurs à 2026." },
   { titre: "Pas de point SPARQL public", texte: "Les endpoints qui circulent dans le code source du projet LBLOD sont des composants internes du moissonneur, pas une API." },
+];
+
+/**
+ * Ce qu'un habitant doit retenir de cette page s'il n'en lit rien d'autre.
+ * L'inventaire technique existe toujours en dessous, mais replié : il s'adresse
+ * à qui veut vérifier, pas à qui veut comprendre.
+ */
+export const messagesCles = [
+  {
+    chiffre: dataMeta.sessionsTotal.toLocaleString("fr-BE"), unite: "séances du conseil",
+    titre: "Tout est déjà public. Personne ne le lit.",
+    texte: "Les décisions du conseil communal et du collège sont en ligne, en accès libre, depuis mai 2021. Le pilote ne demande aucune donnée nouvelle à la commune : il rend lisible ce qui existe déjà.",
+  },
+  {
+    chiffre: String(dataSources.length), unite: "sources inventoriées",
+    titre: "Chaque chiffre porte sa source, ou n'est pas affiché.",
+    texte: "Quand une source n'a pas répondu, c'est écrit. Quand un chiffre est un exemple et non une mesure, c'est écrit aussi. C'est la seule façon de rendre le reste croyable.",
+  },
+  {
+    chiffre: String(dataGaps.length), unite: "trous assumés",
+    titre: "Ce qu'on ne peut pas mesurer est écrit noir sur blanc.",
+    texte: "La qualité de l'eau, le potentiel solaire des toitures, le non-recours aux droits sociaux : ces données n'existent pas, ou sont enfermées dans des rapports qu'aucune machine ne peut lire. Les nommer vaut mieux que les combler avec des approximations.",
+  },
+  {
+    chiffre: "0", unite: "autorisation demandée",
+    titre: "Rien de tout ceci n'a nécessité une permission.",
+    texte: "Pas de compte, pas de clé, pas de courrier administratif. Les données étaient ouvertes ; il n'y manquait qu'un lecteur.",
+  },
 ];
 
 export const dataLicences = [
@@ -582,4 +710,6 @@ export const horairesFr = (h: string) => {
 
 export const eur = (n: number) => new Intl.NumberFormat("fr-BE", { style: "currency", currency: "EUR", maximumFractionDigits: 0 }).format(n);
 export const pct = (n: number) => new Intl.NumberFormat("fr-BE", { maximumFractionDigits: 0 }).format(n) + " %";
+/** Une décimale : nécessaire quand les parts doivent totaliser 100 % à l'écran. */
+export const pct1 = (n: number) => new Intl.NumberFormat("fr-BE", { maximumFractionDigits: 1 }).format(n) + " %";
 export const dateFr = (s: string) => new Date(s).toLocaleDateString("fr-BE", { day: "numeric", month: "long", year: "numeric" });

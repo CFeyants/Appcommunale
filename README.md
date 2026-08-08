@@ -39,6 +39,45 @@ Chaque source porte sa mention et sa licence dans l'interface : c'est une
 obligation juridique (Modellicentie Gratis Hergebruik, CC BY 4.0, ODbL) autant
 que ce qui rend l'outil crédible.
 
+## Budget & tableau de bord
+
+**Budget** — le total décomposé une seule fois (part-to-whole), puis le voté
+comparé à l'engagé par orientation, puis Kraainem face à ses voisines. Le fait
+que la page doit rendre visible : **5,5 % du budget est rattaché à une
+orientation**, 94,5 % ne le sont pas.
+
+**Tableau de bord** — quatre échelles emboîtées, chacune avec sa trajectoire
+sur huit relevés, et chacune mesurant à la fois l'environnemental **et** le
+social :
+
+1. Objectifs globaux (ce à quoi la commune se rattache)
+2. Objectifs communaux (ce qu'elle pilote, et sur quoi elle peut être tenue)
+3. Objectifs des commerces participants (31 des 108 commerces)
+4. Mes objectifs (privés, non comparatifs, jamais agrégés en une note)
+
+Un indicateur qui se dégrade est affiché comme tel, pas masqué.
+
+### Règles de visualisation tenues
+
+- Palette catégorielle **validée pour la vision des couleurs** — écart minimal
+  9,1 (protanopie) et 22,9 (vision normale) sur la paire adjacente la plus
+  serrée ; revalidée séparément pour le thème sombre (8,4 / 19,8).
+- Les quatre teintes passant sous 3:1 en thème clair, **chaque segment porte une
+  étiquette et chaque graphique a sa vue tableau** — ce n'est pas un agrément,
+  c'est ce qui rend l'encodage licite.
+- Un statut n'est **jamais** porté par la couleur seule : icône + mot.
+- Couleurs de statut choisies pour tenir le contraste texte AA (≥ 4,5:1) dans
+  les deux thèmes.
+- Écart de 2 px de surface entre les remplissages, jamais un contour ; le repère
+  de seuil est doublé d'un anneau de surface pour rester visible sur la partie
+  remplie.
+- Thème sombre **choisi**, pas déduit : chaque teinte reprise un cran plus clair
+  et revalidée sur la surface sombre.
+
+Les sections sont adressables par ancre — `#budget`, `#bord`, `#sources`,
+`#commerces` — pour qu'une décision qu'on veut faire lire puisse s'envoyer par
+un lien.
+
 ## Principes tenus
 
 Rendre visible **et** lisible (étiquette de trajectoire) · aucun score agrégé ni

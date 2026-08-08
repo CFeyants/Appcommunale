@@ -7,16 +7,18 @@ import {
   Landmark, Info, Search, Menu, X, ChevronRight,
   ClipboardCheck, Flag, Eye, CheckCircle2, Clock, Timer, AlertTriangle, Gift, DoorOpen, PiggyBank, PenLine, Ban,
   Database, ExternalLink, GraduationCap, Radio, Droplets, Wind, Zap, Lock, Scale, Terminal,
-  Store, Car, Hammer, Phone, Globe,
+  Store, Car, Hammer, Phone, Globe, Leaf,
 } from "lucide-react";
 import {
   me, commune, communeFacts, communeSources, orientations, oriById, decisions, budget, projets, jeunes,
   entraide, agenda, familleConseils, familleAide, interets, interetLabel, feed,
-  kpiCommune, kpiService, kpiPerso, synergies, engagements, pilotesEval, registreEchecs,
+  bordGroupes, bordPeriode, synergies, engagements, seuilsPilote, registreEchecs,
+  budgetTotal, budgetPostes, budgetVoisines,
   dataMeta, dataSources, dataGaps, dataLicences, dataPriorites, dataNotes, etatZero, pointsEau,
-  commerces, commerceCats, commercesMeta, horairesFr,
+  messagesCles, commerces, commerceCats, commercesMeta, horairesFr,
   enfant, inscriptionUnique,
-  eur, pct, dateFr, type OId, type AccesType, type SourceStatut, type SourceTheme, type CommerceCat,
+  eur, pct, pct1, dateFr, type OId, type AccesType, type SourceStatut, type SourceTheme, type CommerceCat,
+  type SeuilStatut, type AxeKpi, type KpiEvol,
 } from "./data";
 
 /* ---------- helpers ---------- */
@@ -401,75 +403,192 @@ function FilterChip({ active, onClick, accent, children }: { active: boolean; on
   );
 }
 
-function BudgetChart() {
-  const W = 680, H = 230, padL = 44, padB = 32, padT = 8;
-  const max = Math.max(...budget.lignes.map((l) => l.vote));
-  const gw = (W - padL) / budget.lignes.length;
-  const yS = (v: number) => (H - padB) - (v / max) * (H - padB - padT);
+/* ---------- primitives de visualisation ----------
+   Palette validée (voir index.css). Trois règles tenues partout ici :
+   un écart de 2 px de surface sépare les remplissages (jamais un contour) ;
+   chaque graphique a sa vue tableau ; un statut porte toujours une icône
+   et un mot, jamais la couleur seule.                                    */
+
+// Vue tableau — l'équivalent lisible de chaque graphique, replié par défaut.
+function VueTableau({ entetes, lignes }: { entetes: string[]; lignes: (string | number)[][] }) {
+  const [ouvert, setOuvert] = useState(false);
   return (
-    <div className="overflow-x-auto">
-      <svg viewBox={`0 0 ${W} ${H}`} width="100%" style={{ minWidth: 520, display: "block" }}>
-        {[0, max / 2, max].map((v, i) => (
-          <g key={i}>
-            <line x1={padL} x2={W} y1={yS(v)} y2={yS(v)} stroke="hsl(var(--border))" />
-            <text x={padL - 8} y={yS(v) + 4} textAnchor="end" fontSize="11" fill="hsl(var(--muted-foreground))">{Math.round(v / 1000)}k</text>
-          </g>
-        ))}
-        {budget.lignes.map((l, i) => {
-          const cx = padL + gw * i + gw / 2, bw = Math.min(44, gw / 3), or = oriById(l.o);
-          return (
-            <g key={l.o}>
-              <rect x={cx - bw - 3} y={yS(l.vote)} width={bw} height={(H - padB) - yS(l.vote)} rx="4" fill="hsl(var(--muted-foreground))" opacity="0.35"><title>Voté {eur(l.vote)}</title></rect>
-              <rect x={cx + 3} y={yS(l.exec)} width={bw} height={(H - padB) - yS(l.exec)} rx="4" fill={`hsl(var(--${or.key}))`}><title>Exécuté {eur(l.exec)}</title></rect>
-              <text x={cx} y={H - padB + 18} textAnchor="middle" fontSize="12" fill="hsl(var(--muted-foreground))">{or.court}</text>
-            </g>
-          );
-        })}
-      </svg>
+    <div className="mt-4">
+      <button onClick={() => setOuvert((v) => !v)} aria-expanded={ouvert}
+        className="rounded-full border border-input px-3 py-1.5 text-[12px] font-medium text-muted-foreground transition hover:text-foreground">
+        {ouvert ? "Masquer le tableau" : "Voir le tableau"}
+      </button>
+      {ouvert && (
+        <div className="mt-3 overflow-x-auto">
+          <table className="w-full border-collapse text-[13px]">
+            <thead>
+              <tr>{entetes.map((h, i) => (
+                <th key={i} className={`border-b px-2.5 py-2 text-[11px] font-semibold uppercase tracking-wide text-muted-foreground/80 ${i ? "text-right" : "text-left"}`}>{h}</th>
+              ))}</tr>
+            </thead>
+            <tbody>
+              {lignes.map((r, i) => (
+                <tr key={i}>{r.map((c, j) => (
+                  <td key={j} className={`border-b px-2.5 py-2 ${j ? "text-right tnum" : "text-left"}`}>{c}</td>
+                ))}</tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      )}
     </div>
   );
 }
-function Budget() {
-  const tv = budget.lignes.reduce((s, l) => s + l.vote, 0);
-  const te = budget.lignes.reduce((s, l) => s + l.exec, 0);
+
+// Part-to-whole : le budget décomposé une seule fois.
+function PartDuTout() {
+  const total = budgetTotal.total;
+  const cols = ["var(--c1)", "var(--c2)", "var(--c3)", "var(--c4)"];
   return (
-    <div>
-      <H1>Budget {budget.annee}</H1>
-      <Lede>Du voté à l'exécuté, orientation par orientation. Où va l'argent — sans note ni classement.</Lede>
-      <div className="mt-6 grid gap-4 sm:grid-cols-3">
-        {[["Budget total", eur(commune.totalBudget), ""], ["Voté sur les orientations", eur(tv), `${pct((tv / commune.totalBudget) * 100)} du budget`], ["Exécuté à ce jour", eur(te), `${pct((te / tv) * 100)} du voté`]].map(([k, v, s]) => (
-          <div key={k} className="rounded-lg border bg-card p-4">
-            <div className="text-[13px] text-muted-foreground">{k}</div>
-            <div className="mt-1 text-[24px] font-semibold tnum">{v}</div>
-            {s && <div className="text-[12px] text-muted-foreground/80">{s}</div>}
-          </div>
-        ))}
-      </div>
-      <div className="mt-4 rounded-lg border bg-card p-5">
-        <h2 className="text-[19px] font-semibold">Voté vs exécuté</h2>
-        <div className="my-3 flex gap-4 text-[13px] text-muted-foreground">
-          <span className="inline-flex items-center gap-1.5"><i className="h-3 w-3 rounded-sm" style={{ background: "hsl(var(--muted-foreground))", opacity: .35 }} />Voté</span>
-          <span className="inline-flex items-center gap-1.5"><i className="h-3 w-3 rounded-sm bg-primary" />Exécuté (couleur d'orientation)</span>
-        </div>
-        <BudgetChart />
-      </div>
-      <div className="mt-4 flex flex-col gap-4">
-        {budget.lignes.map((l) => {
-          const or = oriById(l.o), taux = (l.exec / l.vote) * 100;
+    <>
+      <div className="flex h-12 w-full gap-[2px]">
+        {budgetPostes.map((p) => {
+          const part = (p.v / total) * 100;
           return (
-            <div key={l.o} className="rounded-lg border bg-card p-4">
-              <div className="flex flex-wrap items-start justify-between gap-2">
-                <div><h3 className="mb-1.5 text-[15px] font-semibold">{l.intitule}</h3><TrajBadge o={l.o} /></div>
-                <div className="text-right"><div className="text-[12px] text-muted-foreground/80">Exécuté / voté</div>
-                  <div className="font-semibold tnum">{eur(l.exec)} <span className="text-muted-foreground/70">/ {eur(l.vote)}</span></div></div>
-              </div>
-              <div className="mt-3"><Bar value={taux} color={`hsl(var(--${or.key}))`} /></div>
-              <div className="mt-1.5 text-[12.5px] text-muted-foreground">{pct(taux)} engagé</div>
+            <div key={p.nom} title={`${p.nom} — ${eur(p.v)} · ${pct(part)}`}
+              className="relative grid place-items-center rounded-[2px] first:rounded-l-md last:rounded-r-md"
+              style={{ flex: part, background: cols[p.slot - 1] }}>
+              {/* étiquette dans le segment seulement si elle y tient */}
+              {part > 9 && (
+                <span className="whitespace-nowrap text-[12px] font-semibold text-white tnum" style={{ textShadow: "0 1px 2px rgba(0,0,0,.3)" }}>
+                  {pct1(part)}
+                </span>
+              )}
             </div>
           );
         })}
       </div>
-      <ExportBar msg="Le budget est ouvert." name="budget.json" data={budget} />
+      <div className="mt-3.5 flex flex-wrap gap-x-5 gap-y-2">
+        {budgetPostes.map((p) => (
+          <span key={p.nom} className="inline-flex items-center gap-2 text-[12.5px] text-muted-foreground">
+            <i className="h-2.5 w-2.5 shrink-0 rounded-sm" style={{ background: cols[p.slot - 1] }} />
+            {p.nom} <b className="font-semibold text-foreground tnum">{pct1((p.v / total) * 100)}</b>
+          </span>
+        ))}
+      </div>
+      <VueTableau entetes={["Poste", "Montant", "Part"]}
+        lignes={[
+          ...budgetPostes.map((p) => [p.nom, eur(p.v), pct1((p.v / total) * 100)]),
+          ["Total", eur(total), "100 %"],
+        ]} />
+    </>
+  );
+}
+
+// Repère de seuil. Il doit rester lisible qu'il tombe sur la piste vide ou sur
+// le remplissage : d'où l'anneau de surface derrière le trait d'encre.
+function RepereSeuil({ x }: { x: number }) {
+  return (
+    <>
+      <div className="absolute -top-1.5 -bottom-1.5 w-1 rounded-sm" style={{ left: `calc(${x}% - 2px)`, background: "hsl(var(--card))" }} />
+      <div className="absolute -top-1 -bottom-1 w-0.5 rounded-sm" style={{ left: `calc(${x}% - 1px)`, background: "var(--capmark)" }} />
+    </>
+  );
+}
+
+// Jauge voté → engagé. Le trait vertical marque le montant voté.
+function Jauge({ nom, voté, fait, max, teinte }: { nom: string; voté: number; fait: number; max: number; teinte: string }) {
+  const wV = (voté / max) * 100, wF = (fait / max) * 100, part = (fait / voté) * 100;
+  return (
+    <div>
+      <div className="mb-2 flex flex-wrap items-baseline gap-x-3 gap-y-1">
+        <span className="text-[14px] font-semibold">{nom}</span>
+        <span className="ml-auto text-[13px] text-muted-foreground">
+          <b className="font-semibold text-foreground tnum">{eur(fait)}</b> engagés sur {eur(voté)}
+        </span>
+      </div>
+      <div className="relative h-3 rounded-full" style={{ background: "var(--track)" }}
+        title={`${nom} — ${eur(fait)} sur ${eur(voté)} · ${pct(part)}`}>
+        <div className="absolute inset-y-0 left-0 rounded-full" style={{ width: `${wF}%`, background: teinte }} />
+        <RepereSeuil x={wV} />
+      </div>
+      <div className="mt-1.5 text-[11.5px] text-muted-foreground tnum">{pct(part)} du voté engagé</div>
+    </div>
+  );
+}
+
+// Comparaison par emphase : Kraainem en couleur, les voisines en gris.
+function Comparaison() {
+  const max = Math.max(...budgetVoisines.map((c) => c.v));
+  const tri = [...budgetVoisines].sort((a, b) => b.v - a.v);
+  return (
+    <>
+      <div className="flex flex-col gap-2.5">
+        {tri.map((c) => (
+          <div key={c.nom} className="grid grid-cols-[minmax(96px,150px)_1fr_66px] items-center gap-3">
+            <div className={`text-right text-[13px] ${c.moi ? "font-semibold text-foreground" : "text-muted-foreground"}`}>{c.nom}</div>
+            <div>
+              <div className="h-5 rounded-l-sm rounded-r-md" title={`${c.nom} — ${c.v.toLocaleString("fr-BE")} € par habitant`}
+                style={{ width: `${(c.v / max) * 100}%`, background: c.moi ? "var(--c1)" : "var(--capmark)" }} />
+            </div>
+            <div className={`text-[13px] tnum ${c.moi ? "font-semibold text-foreground" : "text-muted-foreground"}`}>{c.v.toLocaleString("fr-BE")} €</div>
+          </div>
+        ))}
+      </div>
+      <VueTableau entetes={["Commune", "€ / habitant"]} lignes={tri.map((c) => [c.nom, c.v.toLocaleString("fr-BE") + " €"])} />
+    </>
+  );
+}
+
+function Budget() {
+  const max = Math.max(...budget.lignes.map((l) => l.vote));
+  const seq = ["var(--seq-3)", "var(--seq-4)", "var(--seq-2)"];
+  return (
+    <div>
+      <H1>Budget {budgetTotal.annee}</H1>
+      <Lede>Le budget voté, décomposé une seule fois. Le reste de la page détaille ce qui est rattaché aux trois orientations — sans note ni classement.</Lede>
+
+      <section className="mt-6 rounded-xl border bg-card p-5 sm:p-6">
+        <CapLabel>Où va l'argent, en une image</CapLabel>
+        {/* chiffre héros : figures proportionnelles, pas de chasse fixe */}
+        <div className="mt-2.5 text-[clamp(34px,6vw,52px)] font-semibold leading-none tracking-tight">{eur(budgetTotal.total)}</div>
+        <p className="mt-1.5 text-[13.5px] text-muted-foreground">
+          budget communal {budgetTotal.annee} · {budgetTotal.parHabitant.toLocaleString("fr-BE")} € par habitant · {commune.habitants.toLocaleString("fr-BE")} habitants
+        </p>
+        <div className="mt-5"><PartDuTout /></div>
+        <div className="mt-5 rounded-r-lg border-l-[3px] p-3.5 text-[13.5px] text-muted-foreground"
+          style={{ borderColor: "var(--c1)", background: "hsl(var(--brand-weak))" }}>
+          <strong className="text-foreground">5,5 % du budget est rattaché aux trois orientations de la commune.</strong>{" "}
+          Les 94,5 % restants financent le fonctionnement courant, la dette et les transferts obligatoires — des dépenses nécessaires, mais qu'aucune orientation ne pilote. C'est le premier fait que cette page doit rendre visible.
+        </div>
+      </section>
+
+      <section className="mt-4 rounded-xl border bg-card p-5 sm:p-6">
+        <CapLabel>Du voté à l'exécuté</CapLabel>
+        <p className="mt-1.5 max-w-[66ch] text-[13.5px] text-muted-foreground">
+          Pour chaque orientation : ce qui a été voté, et ce qui est réellement engagé à ce jour. Le trait vertical marque le montant voté.
+        </p>
+        <div className="mt-5 flex flex-col gap-5">
+          {budget.lignes.map((l, i) => (
+            <Jauge key={l.o} nom={l.intitule} voté={l.vote} fait={l.exec} max={max} teinte={seq[i]} />
+          ))}
+        </div>
+        <VueTableau entetes={["Orientation", "Voté", "Exécuté", "Engagé"]}
+          lignes={budget.lignes.map((l) => [l.intitule, eur(l.vote), eur(l.exec), pct((l.exec / l.vote) * 100)])} />
+      </section>
+
+      <section className="mt-4 rounded-xl border bg-card p-5 sm:p-6">
+        <CapLabel>Kraainem comparée à ses voisines</CapLabel>
+        <p className="mt-1.5 max-w-[66ch] text-[13.5px] text-muted-foreground">
+          Dépenses ordinaires par habitant, {budgetTotal.annee}. Un budget seul ne dit rien ; c'est la comparaison qui le rend lisible.
+        </p>
+        <div className="mt-5"><Comparaison /></div>
+        <div className="mt-4 flex items-start gap-2.5 rounded-lg border p-3 text-[12.5px]" style={{ background: "hsl(var(--warn-bg))", borderColor: "hsl(var(--warn-line))" }}>
+          <Info className="mt-0.5 h-4 w-4 shrink-0" style={{ color: "hsl(var(--warn))" }} />
+          <p className="text-muted-foreground">
+            <strong className="text-foreground">Ces cinq valeurs sont illustratives.</strong> La source qui les rendrait réelles — les données BBC de l'Agentschap Binnenlands Bestuur — existe pour toutes les communes flamandes depuis 2014, mais n'a pas encore d'accès automatisable établi.{" "}
+            <button onClick={() => (window as any).__go("sources")} className="font-medium text-[hsl(var(--link))] hover:underline">voir où en est la source</button>
+          </p>
+        </div>
+      </section>
+
+      <ExportBar msg="Le budget est ouvert." name="budget-kraainem.json"
+        data={{ ...budgetTotal, postes: budgetPostes, orientations: budget.lignes, comparaison: budgetVoisines }} />
     </div>
   );
 }
@@ -604,24 +723,103 @@ function Entraide() {
   );
 }
 
-function Bord() {
-  const Tile = ({ k, v, t, perso }: { k: string; v: string; t: string; perso?: boolean }) => (
-    <div className="rounded-lg border bg-card p-4">
-      <div className="text-[13px] text-muted-foreground">{k}</div>
-      <div className="mt-1 text-[23px] font-semibold tnum">{v}</div>
-      <div className="mt-0.5 text-[12px] font-semibold" style={{ color: perso ? "hsl(var(--muted-foreground))" : "hsl(var(--ok))" }}>{perso ? "" : "▲ "}{t}</div>
+// Trajectoire : huit relevés sous le chiffre. Le chiffre reste le message ;
+// la courbe dit d'où l'on vient — c'est elle qu'on est venu chercher.
+function Trajectoire({ serie, teinte }: { serie: number[]; teinte: string }) {
+  const mn = Math.min(...serie), mx = Math.max(...serie), amp = mx - mn || 1;
+  const pts = serie.map((v, i) => [(i / (serie.length - 1)) * 100, 30 - ((v - mn) / amp) * 24]);
+  const d = pts.map((p, i) => `${i ? "L" : "M"}${p[0].toFixed(1)} ${p[1].toFixed(1)}`).join(" ");
+  const fin = pts[pts.length - 1];
+  return (
+    <svg viewBox="0 0 100 34" width="100%" height="34" preserveAspectRatio="none" aria-hidden="true" className="mt-3 block">
+      <path d={d} fill="none" stroke={teinte} strokeWidth="2" vectorEffect="non-scaling-stroke" strokeLinecap="round" strokeLinejoin="round" />
+      <circle cx={fin[0].toFixed(1)} cy={fin[1].toFixed(1)} r="4" fill={teinte}
+        stroke="hsl(var(--card))" strokeWidth="2" vectorEffect="non-scaling-stroke" />
+    </svg>
+  );
+}
+
+// L'axe (environnemental / social) est une identité, pas un statut : il porte
+// une icône et un mot, la couleur ne fait que redoubler.
+const axeMeta: Record<AxeKpi, { label: string; Icon: typeof Leaf; v: string }> = {
+  env: { label: "Environnemental", Icon: Leaf, v: "hsl(var(--env))" },
+  soc: { label: "Social", Icon: HeartHandshake, v: "hsl(var(--soc))" },
+};
+
+function TuileEvol({ t }: { t: KpiEvol }) {
+  const a = axeMeta[t.axe];
+  return (
+    <div className="flex flex-col rounded-lg border bg-card p-4">
+      <span className="inline-flex w-fit items-center gap-1.5 rounded-full border px-2 py-0.5 text-[11px] font-semibold"
+        style={{ color: a.v, borderColor: a.v, background: "transparent" }}>
+        <a.Icon className="h-3 w-3" />{a.label}
+      </span>
+      <div className="mt-2.5 min-h-[36px] text-[12.5px] leading-snug text-muted-foreground">{t.k}</div>
+      <div className="mt-1 text-[29px] font-semibold leading-none tracking-tight">{t.v}</div>
+      <div className="mt-1.5 flex items-start gap-1.5 text-[12.5px] leading-snug"
+        style={{ color: t.recul ? "var(--st-serious)" : "hsl(var(--muted-foreground))" }}>
+        <span aria-hidden="true" className="shrink-0" style={{ color: t.recul ? "var(--st-serious)" : "var(--st-good)" }}>
+          {t.recul ? "!" : t.sens === "baisse" ? "▼" : "▲"}
+        </span>
+        {t.d}
+      </div>
+      <div className="mt-auto"><Trajectoire serie={t.serie} teinte={t.recul ? "var(--st-serious)" : "var(--c1)"} /></div>
+      {t.cible && <div className="mt-2 border-t pt-2 text-[11.5px] text-muted-foreground">Cible : {t.cible}</div>}
     </div>
   );
+}
+
+// Le statut porte une icône ET un mot — jamais la couleur seule.
+const seuilMeta: Record<SeuilStatut, { label: string; Icon: typeof CheckCircle2; v: string }> = {
+  atteint: { label: "Seuil atteint", Icon: CheckCircle2, v: "--st-good" },
+  retard: { label: "En retard", Icon: AlertTriangle, v: "--st-serious" },
+  hors: { label: "Hors seuil", Icon: Ban, v: "--st-crit" },
+};
+
+function Bord() {
+  const echelleIcons: Record<string, typeof Gauge> = {
+    global: Globe, commune: Landmark, commerces: Store, moi: Sparkles,
+  };
   return (
     <div>
       <H1>Tableau de bord</H1>
-      <Lede>Les indicateurs de la commune et les vôtres, côte à côte — et comment l'action publique et votre action personnelle se renforcent.</Lede>
-      <div className="mt-6"><CapLabel><Gauge className="h-3.5 w-3.5" /> Les KPI de la commune</CapLabel></div>
-      <div className="mt-3 grid gap-4 sm:grid-cols-3">{kpiCommune.map((k) => <Tile key={k.k} {...k} />)}</div>
-      <div className="mt-7"><CapLabel><Radio className="h-3.5 w-3.5" /> Le service, mesuré sans se flatter <span className="ml-1 font-medium normal-case tracking-normal opacity-70">— on mesure le lien noué, pas le temps passé dans l'app</span></CapLabel></div>
-      <div className="mt-3 grid gap-4 sm:grid-cols-3">{kpiService.map((k) => <Tile key={k.k} {...k} />)}</div>
-      <div className="mt-7"><CapLabel>Mes indicateurs <span className="ml-1 font-medium normal-case tracking-normal opacity-70">— privés, non comparatifs, sans classement ni score citoyen</span></CapLabel></div>
-      <div className="mt-3 grid gap-4 sm:grid-cols-2">{kpiPerso.map((k) => <Tile key={k.k} {...k} perso />)}</div>
+      <Lede>
+        Quatre échelles emboîtées, du monde à soi. Ce qui compte n'est pas la valeur d'aujourd'hui mais la <strong className="text-foreground">trajectoire</strong> : chaque indicateur porte huit relevés, et chaque échelle mesure à la fois l'environnemental et le social.
+      </Lede>
+
+      <div className="mt-5 flex flex-wrap items-center gap-x-5 gap-y-2 rounded-lg border bg-card px-4 py-3 text-[12.5px] text-muted-foreground">
+        <span className="font-semibold text-foreground">Lecture :</span>
+        {(["env", "soc"] as AxeKpi[]).map((id) => {
+          const a = axeMeta[id];
+          return (
+            <span key={id} className="inline-flex items-center gap-1.5 rounded-full border px-2 py-0.5 text-[11px] font-semibold" style={{ color: a.v, borderColor: a.v }}>
+              <a.Icon className="h-3 w-3" />{a.label}
+            </span>
+          );
+        })}
+        <span>{bordPeriode}</span>
+        <span className="inline-flex items-center gap-1.5"><span style={{ color: "var(--st-serious)" }}>!</span> indicateur qui se dégrade</span>
+      </div>
+
+      {bordGroupes.map((g, gi) => {
+        const Icon = echelleIcons[g.id] ?? Gauge;
+        return (
+          <section key={g.id} className="mt-5 rounded-xl border bg-card p-5 sm:p-6">
+            <div className="flex items-baseline gap-2.5">
+              <span className="text-[11.5px] font-bold tabular-nums text-muted-foreground/70">{gi + 1}/4</span>
+              <h2 className="flex items-center gap-2 text-[17px] font-semibold">
+                <Icon className="h-[18px] w-[18px] text-muted-foreground" />Évolution — {g.titre.toLowerCase()}
+              </h2>
+            </div>
+            <p className="mt-1.5 max-w-[70ch] text-[13.5px] leading-relaxed text-muted-foreground">{g.sous}</p>
+            <div className="mt-4 grid gap-3.5 sm:grid-cols-2 xl:grid-cols-4">
+              {g.kpis.map((t) => <TuileEvol key={t.k} t={t} />)}
+            </div>
+            <VueTableau entetes={["Indicateur", "Axe", "Valeur", "Évolution", "Cible"]}
+              lignes={g.kpis.map((t) => [t.k, axeMeta[t.axe].label, t.v, t.d, t.cible ?? "—"])} />
+          </section>
+        );
+      })}
       <div className="mt-7"><CapLabel><Sparkles className="h-3.5 w-3.5" /> Quand le politique renforce le personnel</CapLabel></div>
       <div className="mt-3 flex flex-col gap-4">
         {synergies.map((s, i) => (
@@ -642,21 +840,45 @@ function Bord() {
           </div>
         ))}
       </div>
-      <div className="mt-7"><CapLabel><Target className="h-3.5 w-3.5" /> Le pilote est évaluable — et peut s'arrêter</CapLabel></div>
-      <div className="mt-3 overflow-hidden rounded-lg border bg-card">
-        <div className="grid grid-cols-[1fr_auto] gap-x-4 border-b bg-secondary/50 px-4 py-2 text-[11px] font-bold uppercase tracking-wide text-muted-foreground/80 sm:grid-cols-[1.4fr_1fr_auto]">
-          <span>Critère</span><span className="hidden sm:block">Seuil / échéance</span><span className="text-right">État</span>
+      <section className="mt-7 rounded-xl border bg-card p-5 sm:p-6">
+        <CapLabel><Target className="h-3.5 w-3.5" /> Le pilote est évaluable — et peut s'arrêter</CapLabel>
+        <p className="mt-1.5 max-w-[66ch] text-[13.5px] text-muted-foreground">
+          Chaque critère a été fixé avant le lancement. Si le seuil n'est pas atteint à l'échéance, le dispositif s'arrête sans nouvelle décision : le prolonger exige un vote motivé.
+        </p>
+        <div className="mt-4">
+          {seuilsPilote.map((s, i) => {
+            const m = seuilMeta[s.statut];
+            const echelle = Math.max(s.seuil, s.mesure) * 1.25;
+            return (
+              <div key={i} className="border-t py-4 last:border-b">
+                <div className="mb-2.5 flex flex-wrap items-baseline gap-x-3 gap-y-2">
+                  <span className="text-[14px] font-semibold">{s.critere}</span>
+                  <span className="rounded border px-1.5 py-px text-[11.5px] text-muted-foreground">{s.brique}</span>
+                  <span className="ml-auto inline-flex items-center gap-1.5 rounded-full px-2.5 py-0.5 text-[12.5px] font-semibold"
+                    style={{ color: `var(${m.v})`, background: `color-mix(in srgb, var(${m.v}) 14%, transparent)` }}>
+                    <m.Icon className="h-3.5 w-3.5" />{m.label}
+                  </span>
+                </div>
+                <div className="relative h-3 rounded-full" style={{ background: "var(--track)" }}>
+                  <div className="absolute inset-y-0 left-0 rounded-full"
+                    style={{ width: `${(s.mesure / echelle) * 100}%`, background: `var(${m.v})` }} />
+                  <RepereSeuil x={(s.seuil / echelle) * 100} />
+                </div>
+                <div className="mt-2 flex flex-wrap gap-x-5 gap-y-1 text-[12px] text-muted-foreground tnum">
+                  <span>Mesuré : <b className="font-semibold text-foreground">{s.mesure}{s.unite}</b></span>
+                  <span>Seuil : {s.inverse ? "≤ " : "≥ "}{s.seuil}{s.unite}</span>
+                  <span>Échéance : {s.echeance}</span>
+                </div>
+              </div>
+            );
+          })}
         </div>
-        {pilotesEval.map((p, i) => (
-          <div key={i} className="grid grid-cols-[1fr_auto] items-center gap-x-4 border-b px-4 py-2.5 text-[13.5px] last:border-0 sm:grid-cols-[1.4fr_1fr_auto]">
-            <div><div className="font-medium">{p.critere}</div><div className="text-[12px] text-muted-foreground/80">{p.brique}</div></div>
-            <div className="hidden text-[12.5px] text-muted-foreground sm:block">{p.seuil}</div>
-            <div className="flex items-center justify-end gap-1.5 text-right text-[12.5px] font-semibold" style={{ color: p.ok ? "hsl(var(--ok))" : "hsl(var(--muted-foreground))" }}>
-              {p.ok ? <CheckCircle2 className="h-4 w-4" /> : <Timer className="h-4 w-4" />}{p.etat}
-            </div>
-          </div>
-        ))}
-      </div>
+        <p className="mt-3 text-[12px] text-muted-foreground">
+          Le trait vertical marque le seuil. Un statut n'est jamais porté par la couleur seule : il porte une icône et un mot.
+        </p>
+        <VueTableau entetes={["Critère", "Mesuré", "Seuil", "Échéance", "État"]}
+          lignes={seuilsPilote.map((s) => [s.critere, `${s.mesure}${s.unite}`, `${s.inverse ? "≤" : "≥"} ${s.seuil}${s.unite}`, s.echeance, seuilMeta[s.statut].label])} />
+      </section>
       <div className="mt-3 flex items-start gap-2.5 rounded-lg border p-3 text-[13px]" style={{ background: "hsl(var(--warn-bg))", borderColor: "hsl(var(--warn-line))" }}>
         <AlertTriangle className="mt-0.5 h-4 w-4 shrink-0" style={{ color: "hsl(var(--warn))" }} />
         <p className="text-muted-foreground"><strong className="text-foreground">Clause d'arrêt.</strong> Si un seuil n'est pas atteint à l'échéance, le dispositif concerné s'arrête sans nouvelle décision. Le prolonger exige un vote motivé ; l'arrêter est le défaut.</p>
@@ -675,7 +897,14 @@ function Bord() {
         ))}
       </div>
 
-      <ExportBar msg="Les KPI publics de la commune sont ouverts (vos KPI restent privés)." name="kpi-commune.json" data={kpiCommune} />
+      <ExportBar msg="Les indicateurs publics sont ouverts — les vôtres restent sur votre appareil et ne sont pas exportés."
+        name="tableau-de-bord.json"
+        data={{
+          periode: bordPeriode,
+          echelles: bordGroupes.filter((g) => g.id !== "moi"),
+          seuils: seuilsPilote,
+          echecs: registreEchecs,
+        }} />
     </div>
   );
 }
@@ -1053,20 +1282,25 @@ function Sources() {
     { id: "comparaison", label: "Comparaison entre communes", Icon: Scale },
   ];
   const compte = (st: SourceStatut[]) => dataSources.filter((s) => st.includes(s.statut)).length;
+  const [technique, setTechnique] = useState(false);
 
   return (
     <div>
       <H1 eyebrow="Projet Atlas · tome 2 · pilote communal">Sources & données</H1>
       <Lede>D'où viennent les chiffres — et ce qui n'existe pas encore. Un pilote qui commence par dire ce qu'il ne peut pas mesurer est plus crédible que celui qui prétend tout savoir.</Lede>
 
-      <div className="mt-5 flex items-start gap-2.5 rounded-lg border p-3.5 text-[13.5px]" style={{ background: "hsl(var(--brand-weak))", borderColor: "hsl(var(--clim-line))" }}>
-        <Database className="mt-0.5 h-4 w-4 shrink-0" style={{ color: "hsl(var(--brand))" }} />
-        <p className="text-muted-foreground">
-          <strong className="text-foreground">{dataMeta.sessionsTotal} séances du conseil déjà publiques en JSON depuis {dataMeta.sessionsFrom}</strong> — et personne ne les lit. Rendre lisible ce qui est déjà public, c'est tout le pilote.
-          <span className="mt-1 block text-[12.5px] opacity-80">
-            {dataSources.length} sources inventoriées, dont <strong className="text-foreground">{compte(["verifie"])} rappelées et confirmées</strong> le {dateFr(dataMeta.verifieLe)} depuis cette machine, {compte(["disponible"])} ouvertes non encore rappelées, {compte(["a-tester", "a-parser"])} à instrumenter et {compte(["manuel", "compte", "manquant"])} hors d'atteinte automatique.
-          </span>
-        </p>
+      {/* ---- ce qu'il faut retenir, avant tout détail technique ---- */}
+      <div className="mt-6 grid gap-3.5 sm:grid-cols-2">
+        {messagesCles.map((m, i) => (
+          <div key={i} className="rounded-xl border bg-card p-5">
+            <div className="flex items-baseline gap-2">
+              <span className="text-[30px] font-semibold leading-none tracking-tight" style={{ color: "var(--c1)" }}>{m.chiffre}</span>
+              <span className="text-[12.5px] text-muted-foreground">{m.unite}</span>
+            </div>
+            <h3 className="mt-2.5 text-[15.5px] font-semibold leading-snug">{m.titre}</h3>
+            <p className="mt-1.5 text-[13.5px] leading-relaxed text-muted-foreground">{m.texte}</p>
+          </div>
+        ))}
       </div>
 
       {/* ---- état zéro : les chiffres qui ne sont pas des exemples ---- */}
@@ -1102,9 +1336,50 @@ function Sources() {
         </div>
       </div>
 
+      {/* ---- ce qui manque : c'est un message clé, pas un détail ---- */}
+      <div className="mt-8"><CapLabel><Ban className="h-3.5 w-3.5" /> Ce qu'on ne peut pas mesurer — et qu'on écrit quand même</CapLabel></div>
+      <div className="mt-3 grid gap-3 sm:grid-cols-2">
+        {dataGaps.map((g, i) => (
+          <div key={i} className="rounded-lg border bg-card p-4">
+            <h3 className="text-[14px] font-semibold">{g.nom}</h3>
+            <p className="mt-1 text-[12.5px] text-muted-foreground">{g.raison}</p>
+          </div>
+        ))}
+      </div>
+
+      <div className="mt-7 rounded-lg border bg-secondary/50 p-5">
+        <h3 className="text-[15px] font-semibold">Licences & mentions</h3>
+        <p className="mt-1 text-[12.5px] text-muted-foreground">
+          Citer la source n'est pas une politesse : c'est la condition juridique de la réutilisation, et ce qui permet à quiconque d'aller vérifier.
+        </p>
+        <ul className="mt-2 list-disc space-y-1 pl-5 text-[12.5px] text-muted-foreground">
+          {dataLicences.map((l, i) => <li key={i}>{l}</li>)}
+        </ul>
+      </div>
+
+      {/* ---- tout le reste : pour qui veut vérifier, pas pour qui veut comprendre ---- */}
+      <button onClick={() => setTechnique((v) => !v)} aria-expanded={technique}
+        className="mt-7 flex w-full items-center justify-between gap-3 rounded-lg border bg-card px-4 py-3.5 text-left transition hover:bg-secondary">
+        <span className="flex items-center gap-2.5">
+          <Terminal className="h-4 w-4 shrink-0 text-muted-foreground" />
+          <span>
+            <span className="block text-[14.5px] font-semibold">Le détail technique</span>
+            <span className="block text-[12.5px] text-muted-foreground">
+              Les {dataSources.length} sources une par une, avec leur endpoint et leur état — pour qui veut vérifier ou reprendre le travail.
+            </span>
+          </span>
+        </span>
+        <ChevronRight className={`h-5 w-5 shrink-0 text-muted-foreground transition-transform ${technique ? "rotate-90" : ""}`} />
+      </button>
+
+      {technique && (<div className="mt-2 rounded-lg border bg-card p-5">
+      <p className="text-[13px] text-muted-foreground">
+        {dataSources.length} sources inventoriées, dont <strong className="text-foreground">{compte(["verifie"])} rappelées et confirmées</strong> le {dateFr(dataMeta.verifieLe)}, {compte(["disponible"])} ouvertes non encore rappelées, {compte(["a-tester", "a-parser"])} à instrumenter et {compte(["manuel", "compte", "manquant"])} hors d'atteinte automatique.
+      </p>
+
       {/* ---- les 7 points d'eau, nommés ---- */}
-      <div className="mt-8"><CapLabel><Droplets className="h-3.5 w-3.5" /> Les {etatZero.pointsEauCommune} points de mesure situés à Kraainem</CapLabel></div>
-      <div className="mt-3 overflow-hidden rounded-lg border bg-card">
+      <div className="mt-6"><CapLabel><Droplets className="h-3.5 w-3.5" /> Les {etatZero.pointsEauCommune} points de mesure situés à Kraainem</CapLabel></div>
+      <div className="mt-3 overflow-hidden rounded-lg border">
         {pointsEau.map((p) => (
           <div key={p.code} className="flex flex-wrap items-baseline gap-x-3 gap-y-0.5 border-b px-4 py-2.5 text-[13px] last:border-0">
             <span className="font-mono text-[12px] font-semibold" style={{ color: "hsl(var(--clim))" }}>{p.code}</span>
@@ -1120,7 +1395,7 @@ function Sources() {
       </div>
 
       {/* ---- par où commencer ---- */}
-      <div className="mt-8"><CapLabel><Flag className="h-3.5 w-3.5" /> Par où commencer — par rapport entre effort et crédibilité gagnée</CapLabel></div>
+      <div className="mt-7"><CapLabel><Flag className="h-3.5 w-3.5" /> Par où commencer — par rapport entre effort et crédibilité gagnée</CapLabel></div>
       <div className="mt-3 flex flex-col gap-2.5">
         {dataPriorites.map((p) => (
           <div key={p.rang} className="flex items-start gap-3 rounded-lg border bg-card p-3.5">
@@ -1143,11 +1418,11 @@ function Sources() {
       </div>
 
       {/* ---- l'inventaire, par thème ---- */}
-      <div className="mt-8"><CapLabel><Database className="h-3.5 w-3.5" /> L'inventaire des sources</CapLabel></div>
+      <div className="mt-7"><CapLabel><Database className="h-3.5 w-3.5" /> L'inventaire des sources</CapLabel></div>
       {themes.map(({ id, label, Icon }) => (
         <section key={id} className="mt-4">
           <h3 className="flex items-center gap-2 text-[14.5px] font-semibold"><Icon className="h-4 w-4 text-muted-foreground" />{label}</h3>
-          <div className="mt-2 overflow-hidden rounded-lg border bg-card">
+          <div className="mt-2 overflow-hidden rounded-lg border">
             {dataSources.filter((s) => s.theme === id).map((s, i) => (
               <div key={i} className="border-b px-4 py-3 last:border-0">
                 <div className="flex flex-wrap items-center gap-x-4 gap-y-1.5">
@@ -1172,20 +1447,10 @@ function Sources() {
         </section>
       ))}
 
-      <div className="mt-7"><CapLabel><Ban className="h-3.5 w-3.5" /> Ce qui n'existe pas — et qu'on assume</CapLabel></div>
-      <div className="mt-3 grid gap-3 sm:grid-cols-2">
-        {dataGaps.map((g, i) => (
-          <div key={i} className="rounded-lg border bg-card p-4">
-            <h3 className="text-[14px] font-semibold">{g.nom}</h3>
-            <p className="mt-1 text-[12.5px] text-muted-foreground">{g.raison}</p>
-          </div>
-        ))}
-      </div>
-
-      <div className="mt-7"><CapLabel><Terminal className="h-3.5 w-3.5" /> Contraintes que le code respecte</CapLabel></div>
+      <div className="mt-7"><CapLabel><Lock className="h-3.5 w-3.5" /> Contraintes que le code respecte</CapLabel></div>
       <div className="mt-3 grid gap-3 sm:grid-cols-2">
         {dataNotes.map((n, i) => (
-          <div key={i} className="flex items-start gap-2.5 rounded-lg border bg-card p-4">
+          <div key={i} className="flex items-start gap-2.5 rounded-lg border p-4">
             <Lock className="mt-0.5 h-4 w-4 shrink-0 text-muted-foreground" />
             <div>
               <h3 className="text-[13.5px] font-semibold">{n.titre}</h3>
@@ -1194,13 +1459,8 @@ function Sources() {
           </div>
         ))}
       </div>
+      </div>)}
 
-      <div className="mt-7 rounded-lg border bg-secondary/50 p-5">
-        <h3 className="text-[15px] font-semibold">Licences & mentions</h3>
-        <ul className="mt-1.5 list-disc space-y-1 pl-5 text-[12.5px] text-muted-foreground">
-          {dataLicences.map((l, i) => <li key={i}>{l}</li>)}
-        </ul>
-      </div>
       <ExportBar msg="L'inventaire des sources est ouvert."
         name="sources-donnees-kraainem.json"
         data={{ commune: { nom: commune.nom, nis: dataMeta.nis, postal: dataMeta.postal }, verifieLe: dataMeta.verifieLe, etatZero, pointsEau, priorites: dataPriorites, sources: dataSources, manquant: dataGaps, contraintes: dataNotes, licences: dataLicences }} />
@@ -1264,8 +1524,16 @@ function Brand({ onClick }: { onClick?: () => void }) {
   );
 }
 
+// Chaque section est adressable : #budget, #sources, #commerces… Une décision
+// qu'on veut faire lire doit pouvoir s'envoyer par un lien.
+const TAB_IDS = NAV_FLAT.map((i) => i[0]);
+const tabDepuisAncre = () => {
+  const h = typeof location !== "undefined" ? location.hash.replace("#", "") : "";
+  return TAB_IDS.includes(h) ? h : "vous";
+};
+
 export default function App() {
-  const [tab, setTab] = useState<string>("vous");
+  const [tab, setTab] = useState<string>(tabDepuisAncre);
   const [dark, setDark] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const [interests, setInterests] = useState<Set<string>>(new Set(["famille", "enfance", "alimentation", "entraide", "climat"]));
@@ -1281,7 +1549,17 @@ export default function App() {
     };
   }, []);
 
-  const go = (t: string) => { setTab(t); setMobileOpen(false); window.scrollTo({ top: 0 }); };
+  useEffect(() => {
+    const onHash = () => setTab(tabDepuisAncre());
+    window.addEventListener("hashchange", onHash);
+    return () => window.removeEventListener("hashchange", onHash);
+  }, []);
+
+  const go = (t: string) => {
+    setTab(t); setMobileOpen(false);
+    if (location.hash.replace("#", "") !== t) location.hash = t;
+    window.scrollTo({ top: 0 });
+  };
   const toggleInt = (id: string) => setInterests((prev) => { const n = new Set(prev); n.has(id) ? n.delete(id) : n.add(id); return n; });
 
   return (

@@ -40,6 +40,23 @@
     --ok: 158 72% 30%;  --ok-bg: 152 55% 94%;  --ok-line: 156 50% 78%;
     --warn: 30 80% 36%; --warn-bg: 40 85% 93%;  --warn-line: 38 78% 74%;
     --itsme: 12 90% 48%;
+
+    /* ------------------------------------------------------------------
+       Palette de visualisation — validée pour la vision des couleurs.
+       Catégorielle : écart minimal 9,1 (protanopie) et 22,9 (vision normale)
+       sur la paire adjacente la plus serrée. Les contrastes des quatre
+       teintes tombant sous 3:1 sur cette surface claire, chaque segment
+       porte une étiquette lisible ET une vue tableau — ce n'est pas
+       optionnel, c'est ce qui rend l'encodage licite.
+       Ordre fixe : c1 → c4, jamais recyclé, jamais réattribué au filtrage.
+       ------------------------------------------------------------------ */
+    --c1: #2a78d6; --c2: #eb6834; --c3: #1baf7a; --c4: #eda100;
+    /* séquentielle : une seule teinte, clair → foncé */
+    --seq-1: #cde2fb; --seq-2: #86b6ef; --seq-3: #2a78d6; --seq-4: #184f95;
+    /* statuts : réservés à l'état, jamais à l'identité. Toujours avec icône + mot.
+       Valeurs choisies pour tenir le contraste texte AA (≥ 4,5:1) sur fond clair. */
+    --st-good: #07700f; --st-warn: #8a6100; --st-serious: #a84a18; --st-crit: #c22f2f;
+    --track: #f0efec; --capmark: #3f3e3a;
   }
 
   .dark {
@@ -74,6 +91,16 @@
     --ok: 158 62% 46%;  --ok-bg: 158 45% 13%;  --ok-line: 158 40% 26%;
     --warn: 38 88% 58%; --warn-bg: 34 40% 13%;  --warn-line: 34 45% 26%;
     --itsme: 12 90% 60%;
+
+    /* Le thème sombre est CHOISI, pas déduit : chaque teinte est reprise un cran
+       plus clair sur la surface sombre, et revalidée (écart minimal 8,4 protan,
+       19,8 en vision normale ; les quatre passent 3:1 ici). */
+    --c1: #3987e5; --c2: #d95926; --c3: #199e70; --c4: #c98500;
+    --seq-1: #0d366b; --seq-2: #184f95; --seq-3: #3987e5; --seq-4: #86b6ef;
+    --st-good: #35c43a; --st-warn: #fab219; --st-serious: #f09468; --st-crit: #e86a6a;
+    /* le repère de seuil doit rester visible SUR la piste ET sur le remplissage :
+       jamais la même valeur que --track, et doublé d'un anneau de surface */
+    --track: #383835; --capmark: #d7d6cf;
   }
 }
 
