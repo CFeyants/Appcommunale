@@ -239,7 +239,7 @@ export const en: Dictionnaire = {
       'Private, local, non-comparative, not shared. Nothing is sent, nothing is ranked, nothing is compared with other citizens.',
     entreprises: 'Companies in the municipality',
     compteurDeclarations: 'companies out of',
-    ontPublie: 'have published their data',
+    ontPublie: 'Companies that have published their data',
     rienDeclare: 'Has declared nothing',
     declaration: 'Declaration',
     perimetre: 'Scope',

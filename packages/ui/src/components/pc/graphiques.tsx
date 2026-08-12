@@ -356,15 +356,20 @@ export function Trajectoire({
   cible,
   unite,
   hauteur = 180,
+  formater = (v: number) => (Math.abs(v) >= 100 ? Math.round(v).toString() : v.toFixed(1).replace('.', ',')),
 }: {
   points: Array<{ periode: string; valeur: number | null }>;
   cible?: { valeur: number; echeance: string };
   unite: string;
   hauteur?: number;
+  /** Les séries arrivent brutes de la source : 98.01241 n'est pas une étiquette. */
+  formater?: (valeur: number) => string;
 }) {
   const L = 520;
   const H = hauteur;
-  const m = { haut: 16, bas: 26, gauche: 8, droite: 58 };
+  // La marge droite loge l'étiquette de cible en entier. À 58 px, « cible
+  // 65 Mt » était coupé au bord — un chiffre tronqué est pire qu'absent.
+  const m = { haut: 16, bas: 26, gauche: 8, droite: 96 };
   const mesures = points.filter((p) => p.valeur !== null) as Array<{ periode: string; valeur: number }>;
 
   if (mesures.length === 0) {
@@ -404,7 +409,7 @@ export function Trajectoire({
             strokeDasharray="5 4"
           />
           <text x={L - m.droite + 6} y={y(cible.valeur) + 4} fontSize={11} fill="var(--pc-serie-4)">
-            cible {cible.valeur} {unite}
+            cible {formater(cible.valeur)} {unite}
           </text>
         </>
       )}
@@ -414,7 +419,7 @@ export function Trajectoire({
       ))}
       {/* Étiquette directe sur le dernier point, plutôt qu'une valeur partout. */}
       <text x={x(points.indexOf(dernier)) + 7} y={y(dernier.valeur) - 7} fontSize={11.5} fontWeight={600} fill="var(--pc-encre)">
-        {dernier.valeur} {unite}
+        {formater(dernier.valeur)} {unite}
       </text>
       {points.map((p, i) =>
         i === 0 || i === points.length - 1 ? (

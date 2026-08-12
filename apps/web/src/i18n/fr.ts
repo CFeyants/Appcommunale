@@ -237,7 +237,7 @@ export const fr = {
       'Privés, locaux, non comparatifs, non partagés. Rien n’est envoyé, rien n’est classé, rien n’est comparé à d’autres citoyens.',
     entreprises: 'Les entreprises de la commune',
     compteurDeclarations: 'entreprises sur',
-    ontPublie: 'ont publié leurs données',
+    ontPublie: 'Entreprises ayant publié leurs données environnementales',
     rienDeclare: 'N’a rien déclaré',
     declaration: 'Déclaration',
     perimetre: 'Périmètre',

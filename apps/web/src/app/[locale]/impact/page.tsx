@@ -27,7 +27,10 @@ export default async function PageImpact({ params }: { params: Promise<{ locale:
           message de l'écran. */}
       <NombreHeroique
         valeur={`${declarantes} / ${formaterNombre(total, l)}`}
-        legende={`${d.impact.compteurDeclarations} ${formaterNombre(total, l)} ${d.impact.ontPublie}`}
+        // La légende était composée de trois fragments et donnait une phrase
+        // cassée — « entreprises sur 179 ont publié leurs données ». Le nombre
+        // héroïque porte déjà le rapport ; la légende n'a qu'à le nommer.
+        legende={d.impact.ontPublie}
         precision={`Aucune entreprise de Kraainem ne publie ses données environnementales. Ce n’est pas un défaut de collecte : ces chiffres n’existent nulle part. Le point d’accès unique européen aux informations de durabilité ouvre le 10 juillet 2027, par vagues, et ne couvrira pas les entreprises d’une commune de dix mille habitants.`}
       />
 

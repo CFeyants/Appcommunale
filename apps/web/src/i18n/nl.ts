@@ -239,7 +239,7 @@ export const nl: Dictionnaire = {
       'Privé, lokaal, niet vergelijkend, niet gedeeld. Niets wordt verzonden, niets wordt gerangschikt, niets wordt met andere burgers vergeleken.',
     entreprises: 'De ondernemingen van de gemeente',
     compteurDeclarations: 'ondernemingen op',
-    ontPublie: 'hebben hun gegevens gepubliceerd',
+    ontPublie: 'Ondernemingen die hun gegevens hebben gepubliceerd',
     rienDeclare: 'Heeft niets verklaard',
     declaration: 'Verklaring',
     perimetre: 'Perimeter',
