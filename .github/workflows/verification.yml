@@ -1,0 +1,46 @@
+name: Vérification
+
+# Les règles non négociables sont des tests. S'ils ne tournent pas à chaque
+# poussée, ce ne sont que des commentaires bien écrits.
+
+on:
+  push:
+    branches: ['**']
+  pull_request:
+
+jobs:
+  verifier:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      - name: Types
+        run: npm run typecheck
+
+      - name: Règles non négociables et test d'admission
+        run: npm test
+
+      - name: Construction
+        run: npm run build
+
+      - name: Vérifier que les instantanés sont bien embarqués
+        # Le défaut le plus dangereux du déploiement : des fonctions qui se
+        # construisent sans erreur et servent des écrans vides parce que /data
+        # n'a pas été tracé. On le vérifie plutôt que de l'espérer.
+        run: |
+          TRACE=$(find apps/web/.next/server/app -name '*.nft.json' | head -1)
+          if ! grep -q 'data/kraainem/lokaalbeslist.json' "$TRACE"; then
+            echo "::error::Les instantanés de /data ne sont pas tracés dans les fonctions."
+            echo "Vérifier outputFileTracingRoot et outputFileTracingIncludes dans next.config.mjs."
+            exit 1
+          fi
+          echo "Instantanés tracés."

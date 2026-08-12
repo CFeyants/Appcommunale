@@ -1,0 +1,101 @@
+name: Ingestion planifiée
+
+# « Ingestion planifiée, jamais à la demande » : cette tâche remplit /data,
+# l'interface lit /data. Elle ne peut pas tourner sur Vercel, dont le système
+# de fichiers est en lecture seule à l'exécution — c'est ici qu'elle vit.
+#
+# Le résultat est commité sur la branche. Vercel redéploie sur ce commit, et
+# les instantanés partent avec les fonctions. La chaîne est donc :
+#
+#   cette tâche → commit de /data → déploiement Vercel → écrans à jour
+
+on:
+  schedule:
+    # 3 h 17 UTC. Une heure creuse, et un horaire décalé plutôt que rond :
+    # les portails publics reçoivent moins de tout le monde en même temps.
+    - cron: '17 3 * * *'
+  workflow_dispatch:
+    inputs:
+      fenetre_jours:
+        description: 'Fenêtre de collecte, en jours'
+        required: false
+        default: '60'
+      sources:
+        description: 'Sources à collecter (vide = toutes)'
+        required: false
+        default: ''
+
+concurrency:
+  # Deux ingestions simultanées produiraient deux commits concurrents sur le
+  # même fichier de dix mégaoctets. Une seule à la fois.
+  group: ingestion
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  collecte:
+    runs-on: ubuntu-latest
+    # La collecte complète prend environ une heure ; l'incrémentale, quelques
+    # minutes. La marge couvre une source lente sans laisser tourner à vide.
+    timeout-minutes: 150
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      - name: Calculer la fenêtre
+        id: fenetre
+        run: |
+          JOURS="${{ github.event.inputs.fenetre_jours || '60' }}"
+          echo "depuis=$(date -u -d "$JOURS days ago" +%Y-%m-%d)" >> "$GITHUB_OUTPUT"
+
+      - name: Collecter
+        env:
+          # Fenêtre courte : la collecte est incrémentale et fusionnée avec
+          # l'instantané existant, jamais substituée.
+          PC_DEPUIS: ${{ steps.fenetre.outputs.depuis }}
+          # Plus généreux qu'en local : personne ne surveille cette exécution.
+          PC_DELAI_MS: '500'
+        run: npm run ingest ${{ github.event.inputs.sources }}
+
+      - name: Vérifier que les instantanés restent valides
+        # Un instantané corrompu déployé silencieusement est pire qu'une
+        # collecte manquée : les tests tournent avant le commit, pas après.
+        run: npm test
+
+      - name: Commiter si quelque chose a changé
+        run: |
+          if [ -z "$(git status --porcelain data)" ]; then
+            echo "Aucune donnée nouvelle. Rien à commiter."
+            exit 0
+          fi
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data
+          POINTS=$(node -p "require('./data/kraainem/lokaalbeslist.json').statistiques.points")
+          git commit -m "Ingestion du $(date -u +%Y-%m-%d) — ${POINTS} points d'agenda"
+          git push
+
+      - name: Publier le journal en résumé
+        if: always()
+        run: |
+          {
+            echo "## État des sources après collecte"
+            echo
+            echo '| Connecteur | État | Items | Dernière collecte réussie |'
+            echo '|---|---|---|---|'
+            node -e "
+              const e = require('./data/etat-sources.json');
+              for (const s of e) {
+                console.log('| ' + s.libelle + ' | ' + s.etat + ' | ' + s.nombreItems + ' | ' + (s.derniereCollecteReussie ?? 'jamais') + ' |');
+              }
+            "
+          } >> "$GITHUB_STEP_SUMMARY"

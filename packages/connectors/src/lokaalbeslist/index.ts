@@ -24,6 +24,12 @@ import { enParallele, obtenirJson } from '../http';
 
 const BASE = 'https://lokaalbeslist.vlaanderen.be';
 const ACCEPT = 'application/vnd.api+json';
+
+/**
+ * Délai entre deux appels au même hôte. Réglable : la tâche planifiée tourne
+ * sans surveillance et se montre plus généreuse que la collecte manuelle.
+ */
+let delaiMs = 200;
 export const LICENCE = 'Modellicentie Gratis Hergebruik';
 export const ORGANISME = 'Agentschap Binnenlands Bestuur — Lokaal Beslist';
 
@@ -43,7 +49,7 @@ interface ReponseJsonApi {
 
 async function appeler(chemin: string): Promise<ReponseJsonApi | null> {
   const url = chemin.startsWith('http') ? chemin : `${BASE}${chemin}`;
-  return obtenirJson<ReponseJsonApi>(url, { accept: ACCEPT, delaiMs: 200, tentatives: 3 });
+  return obtenirJson<ReponseJsonApi>(url, { accept: ACCEPT, delaiMs, tentatives: 3 });
 }
 
 function tableau(r: ReponseJsonApi | null): RessourceJsonApi[] {
@@ -206,9 +212,16 @@ export async function resoudre(pointId: string): Promise<ResolutionBrute | null>
  */
 export async function collecter(
   commune: string,
-  options: { depuis: string; limiteSeances?: number; estCandidat?: (point: PointBrut) => boolean } ,
+  options: {
+    depuis: string;
+    limiteSeances?: number;
+    estCandidat?: (point: PointBrut) => boolean;
+    /** Délai entre deux appels. Par défaut 200 ms ; la tâche planifiée en met plus. */
+    delaiMs?: number;
+  },
 ): Promise<ResultatCollecte> {
   appels = 0;
+  if (options.delaiMs !== undefined) delaiMs = options.delaiMs;
   const { seances, total } = await collecterSeances(commune, options.depuis, options.limiteSeances ?? 400);
 
   const lots = await enParallele(seances, 4, (s) => collecterPoints(s));

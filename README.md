@@ -73,6 +73,14 @@ npx tsx scripts/captures.mts     # 56 captures d'écran, serveur sur le port 310
 Node 22 ou plus. Aucune clé d'API n'est nécessaire : toutes les sources branchées sont
 publiques et sans authentification.
 
+### Déploiement
+
+Vercel, avec `apps/web` comme répertoire racine et « Include files outside the root
+directory » coché. **L'ingestion ne tourne pas sur Vercel** — le système de fichiers y est
+en lecture seule : elle vit dans GitHub Actions, qui commite `/data`, ce qui déclenche le
+redéploiement. Tout est dans [`docs/deploiement.md`](docs/deploiement.md), y compris le
+piège qui fait servir des écrans vides sans la moindre erreur.
+
 ---
 
 ## Architecture
