@@ -67,9 +67,13 @@ export const KRAAINEM: TerritoirePilote = {
     {
       niveau: 'region',
       autorite: 'Région flamande',
-      connecteur: 'vlaamse-codex',
-      etat: 'partiel',
-      precision: "Législation flamande consultable ; aucun objectif chiffré n'est publié dans un format exploitable.",
+      // Aucun connecteur n'est écrit pour ce niveau. Une version antérieure de
+      // cette table annonçait « vlaamse-codex » et l'état « partiel » : la page
+      // qui existe pour ne pas mentir sur la couverture mentait sur la sienne.
+      connecteur: null,
+      etat: 'non-branche',
+      precision:
+        "Aucun connecteur n'est écrit. Le Vlaamse Codex publie la législation flamande, mais rien n'a encore été appelé : tant que ce n'est pas fait, ce niveau est non branché et le dit.",
     },
     {
       niveau: 'belgique',
@@ -83,8 +87,11 @@ export const KRAAINEM: TerritoirePilote = {
       niveau: 'europe',
       autorite: 'Union européenne',
       connecteur: 'eurlex-cellar',
-      etat: 'branche',
-      precision: 'EUR-Lex via CELLAR (SPARQL), sur les actes applicables en Belgique.',
+      // Collecté, pas affiché : les 40 actes sont dans /data et dans l'export,
+      // mais aucun écran ne les lit encore. « Partiel » est le mot juste.
+      etat: 'partiel',
+      precision:
+        'EUR-Lex via CELLAR (SPARQL) : 40 actes de 2026 collectés et exportés. Ils n’apparaissent pas encore dans le fil, faute d’impact rédigé — le fil reste donc intégralement communal.',
     },
   ],
 };
