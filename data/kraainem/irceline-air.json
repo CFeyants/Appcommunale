@@ -1,0 +1,76 @@
+{
+  "fiche": {
+    "connecteur": "irceline",
+    "libelle": "Qualité de l’air — IRCEL-CELINE",
+    "organisme": "Cellule interrégionale de l’environnement (IRCEL-CELINE)",
+    "licence": "CC BY 4.0",
+    "endpoint": "https://geo.irceline.be/sos/api/v1/stations",
+    "cadence": "Horaire",
+    "limitesConnues": [
+      "Aucune station de mesure sur le territoire de Kraainem.",
+      "La station la plus proche est une station trafic : sa valeur décrit un carrefour, pas une commune résidentielle.",
+      "Les grilles modélisées à 4 × 4 km existent mais ne sont pas exposées en API : elles ne sont disponibles que par FTP."
+    ]
+  },
+  "collecteLe": "2026-08-12T08:08:48.278Z",
+  "totalStationsBelgique": 137,
+  "aucuneStationSurLaCommune": true,
+  "stations": [
+    {
+      "id": 1143,
+      "libelle": "42R010 - Sint-Stevens-Woluwe",
+      "latitude": 50.86510788344465,
+      "longitude": 4.428427283561211,
+      "distanceKm": 3.4
+    },
+    {
+      "id": 1119,
+      "libelle": "41R002 - Ixelles",
+      "latitude": 50.825127872957104,
+      "longitude": 4.384718841699584,
+      "distanceKm": 6.6
+    },
+    {
+      "id": 1711,
+      "libelle": "41B008 - Brussel (Beliardstraat)",
+      "latitude": 50.84078856650011,
+      "longitude": 4.376149069749031,
+      "distanceKm": 6.7
+    },
+    {
+      "id": 1112,
+      "libelle": "41B006 - Bruxelles (Parlement UE)",
+      "latitude": 50.83863118763408,
+      "longitude": 4.374388283352737,
+      "distanceKm": 6.8
+    },
+    {
+      "id": 1109,
+      "libelle": "41B001 - Arts-Loi",
+      "latitude": 50.84571510092836,
+      "longitude": 4.3686812234614925,
+      "distanceKm": 7.1
+    },
+    {
+      "id": 1117,
+      "libelle": "41N043 - Haren",
+      "latitude": 50.883559811382206,
+      "longitude": 4.38296325180234,
+      "distanceKm": 7.2
+    },
+    {
+      "id": 1741,
+      "libelle": "41REG1 - Brussel (Bld du Régent)",
+      "latitude": 50.84356660319525,
+      "longitude": 4.367005785367071,
+      "distanceKm": 7.3
+    },
+    {
+      "id": 1116,
+      "libelle": "41MEU1 - Meudon",
+      "latitude": 50.89510056203224,
+      "longitude": 4.392717697566157,
+      "distanceKm": 7.4
+    }
+  ]
+}

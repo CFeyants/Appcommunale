@@ -1,0 +1,240 @@
+@import 'tailwindcss';
+
+/*
+ * Sources à scanner, déclarées explicitement.
+ *
+ * La détection automatique part du dossier de travail de la compilation, donc
+ * de apps/web : les classes utilitaires écrites dans packages/ui n'étaient
+ * jamais générées. Le défaut est silencieux et sournois — un composant paraît
+ * correct tant qu'il n'utilise que des classes présentes ailleurs, puis une
+ * barre de graphique se retrouve avec une hauteur nulle.
+ */
+@source "../../../packages/ui/src";
+@source "../../../apps/web/src";
+
+/*
+ * Jetons de design de la plateforme citoyenne.
+ *
+ * Deux contraintes ont décidé de la palette :
+ *   — aucun statut n'est porté par la couleur seule (WCAG 2.2 AA, § 3.3) ;
+ *   — les teintes de statut viennent de la palette d'Okabe et Ito, conçue pour
+ *     rester distinguable en deutéranopie, protanopie et tritanopie.
+ *
+ * Le mode sombre n'est pas une inversion : les teintes y sont désaturées et
+ * éclaircies pour tenir le contraste 4,5:1 sur fond sombre, vérifié teinte par
+ * teinte.
+ */
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  /* --- Fonds et texte, mode clair ---------------------------------------- */
+  --pc-fond: oklch(0.985 0.004 95);
+  --pc-fond-eleve: oklch(1 0 0);
+  --pc-fond-enfonce: oklch(0.955 0.006 95);
+  --pc-encre: oklch(0.19 0.012 265);
+  --pc-encre-douce: oklch(0.44 0.014 265);
+  --pc-encre-tenue: oklch(0.6 0.012 265);
+  --pc-trait: oklch(0.9 0.008 265);
+  --pc-trait-fort: oklch(0.8 0.01 265);
+
+  /* --- Accent institutionnel --------------------------------------------- */
+  --pc-accent: oklch(0.45 0.14 245);
+  --pc-accent-doux: oklch(0.94 0.03 245);
+  --pc-accent-encre: oklch(0.32 0.12 245);
+
+  /* --- Statuts (Okabe-Ito) — toujours accompagnés d'une icône et d'un mot - */
+  --pc-conforme: oklch(0.58 0.12 165);
+  --pc-conforme-fond: oklch(0.95 0.04 165);
+  --pc-retard: oklch(0.72 0.14 75);
+  --pc-retard-fond: oklch(0.96 0.05 75);
+  --pc-serieux: oklch(0.58 0.16 45);
+  --pc-serieux-fond: oklch(0.95 0.05 45);
+  --pc-hors-seuil: oklch(0.45 0.16 25);
+  --pc-hors-seuil-fond: oklch(0.94 0.05 25);
+  --pc-non-mesure: oklch(0.62 0.008 265);
+  --pc-non-mesure-fond: oklch(0.95 0.004 265);
+
+  /* --- Catégories de carte. La couleur est décorative : le mot porte le sens.
+         C'est pourquoi on peut réutiliser des teintes voisines sans perte. --- */
+  --pc-cat-decision: oklch(0.45 0.14 245);
+  --pc-cat-reglement-taxe: oklch(0.45 0.16 25);
+  --pc-cat-budget: oklch(0.5 0.13 300);
+  --pc-cat-consultation-ouverte: oklch(0.55 0.14 165);
+  --pc-cat-droit-aide: oklch(0.5 0.13 200);
+  --pc-cat-evenement: oklch(0.52 0.13 330);
+  --pc-cat-travaux-voirie: oklch(0.58 0.15 70);
+  --pc-cat-alerte: oklch(0.52 0.18 35);
+  --pc-cat-avancement-initiative: oklch(0.5 0.11 140);
+  --pc-cat-reponse-institution: oklch(0.45 0.06 265);
+
+  /* --- Séries de graphiques (Okabe-Ito, ordre de lisibilité) -------------- */
+  --pc-serie-1: oklch(0.52 0.13 245);
+  --pc-serie-2: oklch(0.68 0.13 60);
+  --pc-serie-3: oklch(0.6 0.12 165);
+  --pc-serie-4: oklch(0.55 0.16 30);
+  --pc-serie-5: oklch(0.62 0.11 330);
+  --pc-serie-6: oklch(0.7 0.1 200);
+  --pc-serie-7: oklch(0.5 0.09 290);
+  --pc-serie-8: oklch(0.55 0.05 265);
+
+  --pc-rayon: 0.625rem;
+  /* Extrémités arrondies de 4 px, séparateurs de 2 px dans la couleur du fond. */
+  --pc-marque-rayon: 4px;
+  --pc-separateur: 2px;
+}
+
+.dark {
+  --pc-fond: oklch(0.16 0.012 265);
+  --pc-fond-eleve: oklch(0.205 0.014 265);
+  --pc-fond-enfonce: oklch(0.13 0.012 265);
+  --pc-encre: oklch(0.96 0.004 95);
+  --pc-encre-douce: oklch(0.75 0.012 265);
+  --pc-encre-tenue: oklch(0.6 0.012 265);
+  --pc-trait: oklch(0.3 0.014 265);
+  --pc-trait-fort: oklch(0.42 0.018 265);
+
+  --pc-accent: oklch(0.74 0.12 245);
+  --pc-accent-doux: oklch(0.28 0.06 245);
+  --pc-accent-encre: oklch(0.85 0.09 245);
+
+  --pc-conforme: oklch(0.75 0.13 165);
+  --pc-conforme-fond: oklch(0.26 0.05 165);
+  --pc-retard: oklch(0.82 0.13 80);
+  --pc-retard-fond: oklch(0.3 0.06 80);
+  --pc-serieux: oklch(0.74 0.15 45);
+  --pc-serieux-fond: oklch(0.28 0.07 45);
+  --pc-hors-seuil: oklch(0.68 0.17 25);
+  --pc-hors-seuil-fond: oklch(0.27 0.08 25);
+  --pc-non-mesure: oklch(0.66 0.008 265);
+  --pc-non-mesure-fond: oklch(0.25 0.006 265);
+
+  --pc-cat-decision: oklch(0.75 0.12 245);
+  --pc-cat-reglement-taxe: oklch(0.7 0.14 25);
+  --pc-cat-budget: oklch(0.74 0.11 300);
+  --pc-cat-consultation-ouverte: oklch(0.75 0.12 165);
+  --pc-cat-droit-aide: oklch(0.75 0.11 200);
+  --pc-cat-evenement: oklch(0.75 0.11 330);
+  --pc-cat-travaux-voirie: oklch(0.8 0.13 70);
+  --pc-cat-alerte: oklch(0.74 0.15 35);
+  --pc-cat-avancement-initiative: oklch(0.74 0.1 140);
+  --pc-cat-reponse-institution: oklch(0.72 0.05 265);
+
+  --pc-serie-1: oklch(0.72 0.12 245);
+  --pc-serie-2: oklch(0.8 0.12 60);
+  --pc-serie-3: oklch(0.76 0.11 165);
+  --pc-serie-4: oklch(0.72 0.14 30);
+  --pc-serie-5: oklch(0.76 0.1 330);
+  --pc-serie-6: oklch(0.8 0.09 200);
+  --pc-serie-7: oklch(0.7 0.09 290);
+  --pc-serie-8: oklch(0.72 0.04 265);
+}
+
+@theme inline {
+  --color-fond: var(--pc-fond);
+  --color-eleve: var(--pc-fond-eleve);
+  --color-enfonce: var(--pc-fond-enfonce);
+  --color-encre: var(--pc-encre);
+  --color-encre-douce: var(--pc-encre-douce);
+  --color-encre-tenue: var(--pc-encre-tenue);
+  --color-trait: var(--pc-trait);
+  --color-trait-fort: var(--pc-trait-fort);
+  --color-accent: var(--pc-accent);
+  --color-accent-doux: var(--pc-accent-doux);
+  --color-accent-encre: var(--pc-accent-encre);
+
+  --color-conforme: var(--pc-conforme);
+  --color-conforme-fond: var(--pc-conforme-fond);
+  --color-retard: var(--pc-retard);
+  --color-retard-fond: var(--pc-retard-fond);
+  --color-serieux: var(--pc-serieux);
+  --color-serieux-fond: var(--pc-serieux-fond);
+  --color-hors-seuil: var(--pc-hors-seuil);
+  --color-hors-seuil-fond: var(--pc-hors-seuil-fond);
+  --color-non-mesure: var(--pc-non-mesure);
+  --color-non-mesure-fond: var(--pc-non-mesure-fond);
+
+  --radius-pc: var(--pc-rayon);
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-display), ui-serif, Georgia, serif;
+}
+
+@layer base {
+  * {
+    border-color: var(--pc-trait);
+  }
+  html {
+    -webkit-text-size-adjust: 100%;
+  }
+  body {
+    background-color: var(--pc-fond);
+    color: var(--pc-encre);
+    font-family: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+    font-feature-settings: 'cv02', 'cv03', 'cv04', 'ss01';
+    -webkit-font-smoothing: antialiased;
+  }
+  /* Chiffres alignés partout : une colonne de montants doit se lire d'un trait. */
+  .chiffre {
+    font-variant-numeric: tabular-nums;
+    font-feature-settings: 'tnum';
+  }
+  /* Le focus doit être visible sans dépendre de la couleur seule. */
+  :focus-visible {
+    outline: 2px solid var(--pc-accent);
+    outline-offset: 2px;
+    border-radius: 3px;
+  }
+  /*
+   * « Aucune animation qui retarde la lecture. » Les transitions sont courtes
+   * et portent sur l'orientation, jamais sur l'apparition du contenu.
+   */
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
+
+@layer components {
+  /* Le titre de section : petites capitales espacées, comme une étiquette. */
+  .etiquette {
+    font-size: 0.6875rem;
+    font-weight: 650;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+  }
+  .carte {
+    background-color: var(--pc-fond-eleve);
+    border: 1px solid var(--pc-trait);
+    border-radius: var(--pc-rayon);
+  }
+  /* Grille en filet : un trait fin, jamais une grille pleine. */
+  .filet {
+    stroke: var(--pc-trait);
+    stroke-width: 1;
+  }
+  .nombre-heroique {
+    font-family: var(--font-display), ui-serif, Georgia, serif;
+    font-variant-numeric: tabular-nums;
+    letter-spacing: -0.02em;
+    line-height: 0.95;
+  }
+  /* Le lien de saut, obligatoire et visible au clavier. */
+  .saut-contenu {
+    position: absolute;
+    left: -9999px;
+  }
+  .saut-contenu:focus {
+    left: 1rem;
+    top: 1rem;
+    z-index: 100;
+    padding: 0.5rem 1rem;
+    background: var(--pc-fond-eleve);
+    border: 1px solid var(--pc-accent);
+    border-radius: var(--pc-rayon);
+  }
+}

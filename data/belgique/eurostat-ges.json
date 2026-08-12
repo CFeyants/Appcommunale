@@ -1,0 +1,157 @@
+{
+  "geo": "BE",
+  "unite": "Mt CO₂e",
+  "perimetre": "Total hors UTCATF et hors postes pour mémoire (TOTX4_MEMO)",
+  "reference1990": 145.46665,
+  "serie": [
+    {
+      "periode": "1990",
+      "valeur": 145.46665
+    },
+    {
+      "periode": "1991",
+      "valeur": 148.23365
+    },
+    {
+      "periode": "1992",
+      "valeur": 147.73251
+    },
+    {
+      "periode": "1993",
+      "valeur": 146.47509
+    },
+    {
+      "periode": "1994",
+      "valeur": 151.07005
+    },
+    {
+      "periode": "1995",
+      "valeur": 153.18185
+    },
+    {
+      "periode": "1996",
+      "valeur": 156.73517
+    },
+    {
+      "periode": "1997",
+      "valeur": 148.23901
+    },
+    {
+      "periode": "1998",
+      "valeur": 153.51437
+    },
+    {
+      "periode": "1999",
+      "valeur": 147.05583
+    },
+    {
+      "periode": "2000",
+      "valeur": 148.23232
+    },
+    {
+      "periode": "2001",
+      "valeur": 146.64978
+    },
+    {
+      "periode": "2002",
+      "valeur": 146.66983
+    },
+    {
+      "periode": "2003",
+      "valeur": 146.98808
+    },
+    {
+      "periode": "2004",
+      "valeur": 147.86585
+    },
+    {
+      "periode": "2005",
+      "valeur": 144.68338
+    },
+    {
+      "periode": "2006",
+      "valeur": 142.06869
+    },
+    {
+      "periode": "2007",
+      "valeur": 138.40891
+    },
+    {
+      "periode": "2008",
+      "valeur": 138.39242
+    },
+    {
+      "periode": "2009",
+      "valeur": 125.77225
+    },
+    {
+      "periode": "2010",
+      "valeur": 132.97464
+    },
+    {
+      "periode": "2011",
+      "valeur": 122.52722
+    },
+    {
+      "periode": "2012",
+      "valeur": 119.79472
+    },
+    {
+      "periode": "2013",
+      "valeur": 119.88236
+    },
+    {
+      "periode": "2014",
+      "valeur": 114.1464
+    },
+    {
+      "periode": "2015",
+      "valeur": 118.41961
+    },
+    {
+      "periode": "2016",
+      "valeur": 116.99765
+    },
+    {
+      "periode": "2017",
+      "valeur": 116.37919
+    },
+    {
+      "periode": "2018",
+      "valeur": 117.15018
+    },
+    {
+      "periode": "2019",
+      "valeur": 116.06723
+    },
+    {
+      "periode": "2020",
+      "valeur": 106.73576
+    },
+    {
+      "periode": "2021",
+      "valeur": 109.46103
+    },
+    {
+      "periode": "2022",
+      "valeur": 102.62896
+    },
+    {
+      "periode": "2023",
+      "valeur": 97.81474
+    },
+    {
+      "periode": "2024",
+      "valeur": 98.01241
+    }
+  ],
+  "derniereMesure": {
+    "periode": "2024",
+    "valeur": 98.01241
+  },
+  "source": {
+    "organisme": "Eurostat — Commission européenne",
+    "url": "https://ec.europa.eu/eurostat/databrowser/view/env_air_gge/default/table",
+    "licence": "Réutilisation autorisée — décision 2011/833/UE"
+  }
+}

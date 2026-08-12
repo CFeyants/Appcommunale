@@ -1,0 +1,110 @@
+[
+  {
+    "connecteur": "lokaalbeslist",
+    "libelle": "Décisions locales — Lokaal Beslist",
+    "organisme": "Agentschap Binnenlands Bestuur — Lokaal Beslist",
+    "licence": "Modellicentie Gratis Hergebruik",
+    "endpoint": "https://lokaalbeslist.vlaanderen.be/sessions",
+    "cadence": "Quotidienne, la nuit",
+    "limitesConnues": [
+      "La commune publie la liste des décisions, pas leur motivation : le champ « texte » du besluit répète l’intitulé.",
+      "Aucun article de règlement n’est publié : la relation « articles » renvoie zéro pour tous les besluiten de Kraainem observés.",
+      "L’endpoint /resolutions n’accepte aucun filtre par commune (HTTP 406) et include= échoue en HTTP 500 : la résolution se fait point par point.",
+      "Les intitulés sont en néerlandais, y compris pour une commune à facilités.",
+      "Aucun vote nominatif n’est publié pour Kraainem sur la période observée."
+    ],
+    "derniereCollecteReussie": "2026-08-12T08:08:32.417Z",
+    "derniereTentative": "2026-08-12T08:08:32.417Z",
+    "nombreItems": 6799,
+    "etat": "ok"
+  },
+  {
+    "connecteur": "osm-overpass",
+    "libelle": "Établissements ouverts au public — OpenStreetMap",
+    "organisme": "OpenStreetMap — contributeurs",
+    "licence": "ODbL 1.0 (attribution obligatoire)",
+    "endpoint": "https://overpass-api.de/api/interpreter",
+    "cadence": "Hebdomadaire",
+    "limitesConnues": [
+      "Base contributive : la couverture est incomplète et inégale selon les quartiers.",
+      "Aucune source publique n’existe pour la liste des commerçants d’une commune belge : ni registre communal ouvert, ni filtre « ouvert au public » dans la Banque-Carrefour des Entreprises.",
+      "Une minorité de fiches porte une adresse complète ; le reste n’a que des coordonnées géographiques.",
+      "Rien ne garantit qu’un établissement fermé ait été retiré de la base."
+    ],
+    "derniereCollecteReussie": "2026-08-12T08:08:36.951Z",
+    "derniereTentative": "2026-08-12T08:08:36.951Z",
+    "nombreItems": 179,
+    "etat": "ok"
+  },
+  {
+    "connecteur": "fluvius",
+    "libelle": "Énergie prélevée et injectée par commune — Fluvius",
+    "organisme": "Fluvius System Operator",
+    "licence": "Licence ouverte Fluvius (Opendatasoft)",
+    "endpoint": "https://opendata.fluvius.be/api/explore/v2.1/catalog/datasets/1-19-totaal-gealloceerd-volume/records",
+    "cadence": "Mensuelle",
+    "limitesConnues": [
+      "Volumes de réseau, pas consommation réelle des ménages : l’autoconsommation solaire n’y figure pas.",
+      "Le champ commune est en majuscules dans la source ; toute requête en minuscules renvoie zéro ligne sans erreur.",
+      "Les identifiants de jeux de données Fluvius changent sans préavis : deux identifiants cités dans la version 1 du projet avaient déjà disparu.",
+      "Aucune ventilation par ménage : la donnée est agrégée à la commune."
+    ],
+    "derniereCollecteReussie": "2026-08-12T08:08:47.653Z",
+    "derniereTentative": "2026-08-12T08:08:47.653Z",
+    "nombreItems": 370,
+    "etat": "ok"
+  },
+  {
+    "connecteur": "irceline",
+    "libelle": "Qualité de l’air — IRCEL-CELINE",
+    "organisme": "Cellule interrégionale de l’environnement (IRCEL-CELINE)",
+    "licence": "CC BY 4.0",
+    "endpoint": "https://geo.irceline.be/sos/api/v1/stations",
+    "cadence": "Horaire",
+    "limitesConnues": [
+      "Aucune station de mesure sur le territoire de Kraainem.",
+      "La station la plus proche est une station trafic : sa valeur décrit un carrefour, pas une commune résidentielle.",
+      "Les grilles modélisées à 4 × 4 km existent mais ne sont pas exposées en API : elles ne sont disponibles que par FTP."
+    ],
+    "derniereCollecteReussie": "2026-08-12T08:08:48.287Z",
+    "derniereTentative": "2026-08-12T08:08:48.287Z",
+    "nombreItems": 8,
+    "etat": "ok"
+  },
+  {
+    "connecteur": "eurlex-cellar",
+    "libelle": "Actes de l’Union — EUR-Lex / CELLAR",
+    "organisme": "Office des publications de l’Union européenne",
+    "licence": "Réutilisation autorisée — décision 2011/833/UE",
+    "endpoint": "https://publications.europa.eu/webapi/rdf/sparql",
+    "cadence": "Quotidienne",
+    "limitesConnues": [
+      "CELLAR renvoie le titre officiel, jamais une reformulation : l’impact reste à rédiger point par point.",
+      "Aucun lien automatique n’existe entre un acte européen et son effet sur une commune belge : le rattachement est manuel.",
+      "Les rectificatifs sont écartés à l’ingestion ; ils sont nombreux et ne changent rien pour un habitant.",
+      "Les requêtes SPARQL longues dépassent régulièrement le délai d’attente du point d’accès public."
+    ],
+    "derniereCollecteReussie": "2026-08-12T08:09:22.589Z",
+    "derniereTentative": "2026-08-12T08:09:22.589Z",
+    "nombreItems": 40,
+    "etat": "ok"
+  },
+  {
+    "connecteur": "eurostat-cofog",
+    "libelle": "Dépenses publiques par fonction — Eurostat (CFAP)",
+    "organisme": "Eurostat — Commission européenne",
+    "licence": "Réutilisation autorisée — décision 2011/833/UE",
+    "endpoint": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/gov_10a_exp",
+    "cadence": "Annuelle",
+    "limitesConnues": [
+      "Agrégat national : le sous-secteur « administrations locales » couvre les 581 communes belges ensemble, pas Kraainem.",
+      "Les comptes publics sont arrêtés avec un décalage : le dernier exercice disponible a environ dix-huit mois.",
+      "La classification CFAP n’est pas la nomenclature BBC utilisée par les communes flamandes : les deux ne se recouvrent pas ligne à ligne.",
+      "Aucune distinction entre budget voté et budget exécuté : Eurostat publie l’exécuté."
+    ],
+    "derniereCollecteReussie": "2026-08-12T08:09:37.661Z",
+    "derniereTentative": "2026-08-12T08:09:37.661Z",
+    "nombreItems": 4,
+    "etat": "ok"
+  }
+]

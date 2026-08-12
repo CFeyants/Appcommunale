@@ -1,117 +1,141 @@
-# Kraainem — Plateforme citoyenne (maquette)
+# Plateforme citoyenne
 
-Maquette interactive de la plateforme citoyenne du **pilote communal**, déclinaison
-à l'échelle d'une commune des principes du livre *Vivre pour produire*.
+Ce que la commune, la Communauté, la Région, la Belgique et l'Union décident, dépensent,
+promettent et tiennent. Chaque information remonte à son acte d'origine.
 
-> ⚠️ **Démonstration.** Les données de programme (décisions de démonstration,
-> budgets, projets, engagements, activités) sont **fictives**. Les données de
-> cadre (population, superficie, conseil) et **tout l'onglet Sources & données**
-> ainsi que **la liste des commerces** sont **réels et sourcés**.
+Commune pilote : **Kraainem**, code NIS 23099, commune à facilités de la périphérie
+flamande — donc Communauté flamande, Région flamande, Belgique, Union.
 
-## Sections
+---
 
-Pour vous (fil personnalisé, anti-capture) · Le cap · Décisions · **Engagements**
-(le recours) · Budget · Projets & fonds (triple comptabilité) · **Sources & données** ·
-Familles · Jeunes · Culture & sport · **Commerces** · Entraide (identité via itsme) ·
-Tableau de bord (KPI + pilote évaluable).
+## Ce qui nous sépare des applications communales existantes
 
-## Données réelles branchées
+Il existe une catégorie mûre d'applications communales : Neocity équipe plus de cinq cents
+collectivités, iDcity et d'autres occupent le créneau de la participation, Decidim est
+l'infrastructure libre de référence née à Barcelone. Nous leur empruntons beaucoup — la
+granularité des notifications, le mode hors ligne, les services utilitaires, la conformité
+d'accessibilité traitée comme un livrable, et l'inspiration de Decidim pour la modération.
 
-Relevées et vérifiées le **8 août 2026** depuis les API citées.
+Trois choses nous en séparent, et ce sont elles qui empêcheront ce produit de dériver vers
+ce qui existe déjà.
 
-| Source | Ce qu'elle donne | Accès |
+**1. Leur contenu est celui que la collectivité choisit de publier.** Ces applications
+agrègent le site de la commune et sa page Facebook : c'est un canal de communication
+municipale, bien fait. Nous allons chercher les actes à la source officielle, nous
+appliquons un test d'admission, et nous reformulons indépendamment — y compris ce que la
+commune préférerait ne pas mettre en avant.
+
+**2. Elles s'arrêtent à la commune.** L'empilement des cinq niveaux est notre raison
+d'exister et l'essentiel de notre difficulté.
+
+**3. Leur client est la collectivité.** Un fournisseur payé par une commune ne peut
+structurellement pas écrire « cette commune n'a pas adopté son règlement de participation »,
+ni « cette initiative a huit mois de retard », ni publier le délai de réponse réellement
+observé. **Le modèle économique détermine ce qui est dicible** — c'est la raison pour
+laquelle cette plateforme ne doit jamais dépendre financièrement des institutions qu'elle
+mesure.
+
+---
+
+## Ce que la plateforme montre aujourd'hui, réellement
+
+| Écran | Ce qui est réel | Ce qui ne l'est pas |
 |---|---|---|
-| Lokaal Beslist | 1 063 séances du conseil et du collège (2021 → 2026) | `api/lokaalbeslist.js` |
-| Fluvius (open data) | 31,8 GWh d'électricité et 92,0 GWh de gaz consommés sur 12 mois, 2,3 GWh réinjectés, 986 installations photovoltaïques (5 188 kVA) | `api/fluvius.js` |
-| VMM — OGC API Features | 7 points de mesure des eaux de surface situés à Kraainem (22 dans la fenêtre) | relevé, dans `src/data.ts` |
-| IRCELINE | 137 stations en Belgique, **aucune à Kraainem** | relevé |
-| Basisregisters Vlaanderen | NIS 23099 confirmé | relevé |
-| OpenStreetMap (Overpass) | 108 commerces et artisans de la commune | relevé, requête dans `src/data.ts` |
+| **Le fil** | 3 207 points d'agenda de Kraainem sur deux ans, 2 751 actes, 15 reformulés à la main | rien |
+| **Budget** | dépenses publiques belges par fonction et par niveau (Eurostat), énergie communale (Fluvius) | initiatives, questions et propositions : démonstration étiquetée |
+| **Vision** | 4 objectifs européens et fédéraux sourcés, trajectoire réelle des émissions belges 1990-2024 | rien |
+| **Mon impact** | 179 établissements de la commune (OpenStreetMap) | l'écran de paiement enrichi : maquette étiquetée |
+| **Épargne** | coopératives citoyennes réelles, démarches et délais légaux réels | rien |
 
-Deux écarts avec le dossier « Les données » (7 août 2026), corrigés ici :
-les identifiants des jeux Fluvius qui y figurent **n'existent plus** dans le
-catalogue (les bons sont `1-19-totaal-gealloceerd-volume` et
-`1_20-lijst-van-decentrale-productie-installaties-…`), et l'API CKAN de
-data.gov.be n'a pas répondu au chemin standard — le dataset BBC hebdomadaire
-reste donc **à localiser**.
+Le reste est affiché comme absent, avec le nom de l'organisme qui devrait produire la
+donnée. C'est le contenu principal de plusieurs écrans, et c'est voulu.
 
-Chaque source porte sa mention et sa licence dans l'interface : c'est une
-obligation juridique (Modellicentie Gratis Hergebruik, CC BY 4.0, ODbL) autant
-que ce qui rend l'outil crédible.
+---
 
-## Budget & tableau de bord
-
-**Budget** — le total décomposé une seule fois (part-to-whole), puis le voté
-comparé à l'engagé par orientation, puis Kraainem face à ses voisines. Le fait
-que la page doit rendre visible : **5,5 % du budget est rattaché à une
-orientation**, 94,5 % ne le sont pas.
-
-**Tableau de bord** — quatre échelles emboîtées, chacune avec sa trajectoire
-sur huit relevés, et chacune mesurant à la fois l'environnemental **et** le
-social :
-
-1. Objectifs globaux (ce à quoi la commune se rattache)
-2. Objectifs communaux (ce qu'elle pilote, et sur quoi elle peut être tenue)
-3. Objectifs des commerces participants (31 des 108 commerces)
-4. Mes objectifs (privés, non comparatifs, jamais agrégés en une note)
-
-Un indicateur qui se dégrade est affiché comme tel, pas masqué.
-
-### Règles de visualisation tenues
-
-- Palette catégorielle **validée pour la vision des couleurs** — écart minimal
-  9,1 (protanopie) et 22,9 (vision normale) sur la paire adjacente la plus
-  serrée ; revalidée séparément pour le thème sombre (8,4 / 19,8).
-- Les quatre teintes passant sous 3:1 en thème clair, **chaque segment porte une
-  étiquette et chaque graphique a sa vue tableau** — ce n'est pas un agrément,
-  c'est ce qui rend l'encodage licite.
-- Un statut n'est **jamais** porté par la couleur seule : icône + mot.
-- Couleurs de statut choisies pour tenir le contraste texte AA (≥ 4,5:1) dans
-  les deux thèmes.
-- Écart de 2 px de surface entre les remplissages, jamais un contour ; le repère
-  de seuil est doublé d'un anneau de surface pour rester visible sur la partie
-  remplie.
-- Thème sombre **choisi**, pas déduit : chaque teinte reprise un cran plus clair
-  et revalidée sur la surface sombre.
-
-Les sections sont adressables par ancre — `#budget`, `#bord`, `#sources`,
-`#commerces` — pour qu'une décision qu'on veut faire lire puisse s'envoyer par
-un lien.
-
-## Principes tenus
-
-Rendre visible **et** lisible (étiquette de trajectoire) · aucun score agrégé ni
-classement · données brutes exportables · transparence des institutions / protection
-des personnes · accessibilité rendue visible · pilote évaluable avec clause d'arrêt.
-
-## Stack
-
-React 18 · TypeScript · Vite · Tailwind CSS · shadcn/ui · lucide-react.
-
-## Développer
+## Démarrage
 
 ```bash
-npm install      # ou pnpm install
-npm run dev      # http://localhost:5173
-npm run build    # build de production -> dist/
-npm run preview  # prévisualiser le build
+npm install
+npm run ingest          # remplit /data depuis les sources publiques (≈ 1 h la première fois)
+npm run build
+npm run start           # http://localhost:3000
 ```
 
-## Déployer sur Vercel
+Autres commandes :
 
-Le projet est un site Vite standard — Vercel le détecte automatiquement.
+```bash
+npm test                # 28 tests : le test d'admission et les règles non négociables
+npm run typecheck
+npm run ingest lokaalbeslist     # une source à la fois
+npx tsx scripts/captures.mts     # 56 captures d'écran, serveur sur le port 3100
+```
 
-1. Sur [vercel.com](https://vercel.com), **Add New… → Project**.
-2. **Import** le dépôt GitHub `CFeyants/Appcommunale`.
-3. Vercel détecte **Framework Preset : Vite** — laisser les valeurs par défaut :
-   - Build Command : `vite build` (ou `npm run build`)
-   - Output Directory : `dist`
-   - Install Command : `npm install` (ou `pnpm install`)
-4. **Deploy**. À la fin, une URL `https://appcommunale.vercel.app` (ou similaire) est créée.
-5. Chaque `git push` sur `main` redéploie automatiquement ; chaque branche/PR obtient
-   une URL de prévisualisation.
+Node 22 ou plus. Aucune clé d'API n'est nécessaire : toutes les sources branchées sont
+publiques et sans authentification.
 
-### Brancher un nom de domaine
+---
 
-Project → **Settings → Domains** → ajouter le domaine, puis suivre l'instruction DNS
-(un enregistrement `CNAME` vers `cname.vercel-dns.com`, ou les `A` records indiqués).
+## Architecture
+
+```
+apps/web            Next.js (App Router), rendu serveur, i18n FR/NL/EN
+packages/core       types, schémas Zod, test d'admission, pertinence, compétences
+packages/connectors un dossier par source, interface commune
+packages/ui         composants et jetons de design
+data                instantanés versionnés, remplis par l'ingestion
+docs                une fiche par source, le vocabulaire, les propositions à adresser
+captures            56 captures : 7 écrans × 2 langues × 2 thèmes × 2 largeurs
+```
+
+Principes tenus dans le code, pas seulement écrits :
+
+- **Un connecteur ne parle jamais à l'interface.** Il produit des objets validés par Zod ;
+  toute donnée non conforme est rejetée avec un journal explicite.
+- **Ingestion planifiée, jamais à la demande.** Aucun appel à une API tierce n'a lieu
+  pendant le rendu d'une page. Si un portail tombe, la plateforme sert la dernière collecte
+  et le dit.
+- **Aucun compte requis pour lire.** Les préférences vivent dans le navigateur.
+- **Chaque écran expose son JSON** à la même URL suffixée `.json`, et un export CSV.
+
+---
+
+## Les règles, et où elles sont vérifiées
+
+| Règle | Où elle est tenue |
+|---|---|
+| Aucune information sans source | `ItemSchema` refuse un item sans `source` complète |
+| Un ordre du jour n'est jamais une décision adoptée | `ItemSchema` refuse `adoptee` avec une date future |
+| L'impact est rédigé par un humain | `ItemSchema` refuse un item publié sans `reformulation` |
+| Le test d'admission est une validation, pas une consigne | `packages/core/src/admission.ts` + `admission.test.ts` |
+| Deux profils identiques voient le même ordre | `regles.test.ts` |
+| Le numéro de registre national n'est pas stocké | un test parcourt tout le dépôt |
+| Aucune déduction sur les catégories sensibles | `observer()` refuse d'écrire, testé |
+| Aucun graphique sans explication | `CadreGraphique` lève une erreur ; un test parcourt les fichiers |
+| Aucun classement d'entités | un test cherche les tris décroissants dans les composants |
+| Notifications et consentements désactivés par défaut | `regles.test.ts` |
+
+---
+
+## Documents à lire
+
+- [`DECISIONS.md`](DECISIONS.md) — chaque arbitrage pris, la règle qui l'a dicté, et ce
+  qui aurait été fait autrement.
+- [`IMPOSSIBLE.md`](IMPOSSIBLE.md) — les exigences que les sources réelles ne permettent
+  pas de tenir, et ce qui a été livré à la place.
+- [`docs/sources.md`](docs/sources.md) — une fiche par connecteur, avec les résultats réels
+  des appels.
+- [`docs/vocabulaire.md`](docs/vocabulaire.md) — l'alignement OSLO, et les extensions
+  justifiées une par une.
+- [`docs/wallonie-imio.md`](docs/wallonie-imio.md) — la proposition technique à adresser à
+  iMio pour obtenir la Wallonie.
+- `RAPPORT-lot-*.md` — un rapport par lot, avec les critères passés et échoués.
+
+---
+
+## Licence
+
+Code sous **AGPL-3.0-or-later**. Les données restent sous la licence de leur source :
+Modellicentie Gratis Hergebruik pour Lokaal Beslist, ODbL 1.0 pour OpenStreetMap, CC BY 4.0
+pour IRCEL-CELINE, décision 2011/833/UE pour Eurostat et EUR-Lex.
+
+Tuer l'organisation ne doit pas tuer l'outil.

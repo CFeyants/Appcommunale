@@ -1,16 +1,25 @@
-node_modules
-dist
-.parcel-cache
-*.local
+node_modules/
+.next/
+out/
+dist/
+build/
+.turbo/
+*.tsbuildinfo
 .env
-.env.*
+.env.local
+.env*.local
 .DS_Store
+Thumbs.db
 .vercel
 
-# le projet est en pnpm : un lockfile npm rendrait la détection Vercel ambiguë
-package-lock.json
+# Version 1 de la plateforme, remplacée intégralement le 12 août 2026.
+# Conservée sur disque par commodité ; la référence est le commit 1cb2fc9.
+_archive-v1/
 
-# outils d’aperçu (non nécessaires au déploiement)
-bundle.html
-.parcelrc
-shot-*.mjs
+# Instantanés bruts de collecte (les instantanés retenus sont versionnés
+# explicitement sous /data avec un `git add -f` documenté).
+data/raw/
+
+# Aperçus de mise au point produits par scripts/apercu.mts. Les 56 captures
+# livrées, elles, sont versionnées : ce sont un livrable du § 17.
+captures/apercus/

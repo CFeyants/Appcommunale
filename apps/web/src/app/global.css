@@ -1,0 +1,29 @@
+/*
+ * Feuille propre à l'application. Tout ce qui est réutilisable vit dans
+ * @pc/ui/styles.css ; ici ne restent que les règles de mise en page globale.
+ */
+
+.contenu {
+  margin-inline: auto;
+  width: 100%;
+  max-width: 68rem;
+  padding-inline: 1rem;
+}
+
+@media (min-width: 768px) {
+  .contenu {
+    padding-inline: 2rem;
+  }
+}
+
+/* La barre inférieure occupe cinq entrées à 390 px ; elle disparaît au-delà. */
+.barre-basse {
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+/* Réserve la hauteur de la barre inférieure pour que rien ne soit masqué. */
+@media (max-width: 767px) {
+  .fond-page {
+    padding-bottom: 4.75rem;
+  }
+}
