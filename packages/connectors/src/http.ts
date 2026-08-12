@@ -7,8 +7,17 @@
  * pour ne pas redemander ce qui n'a pas bougé.
  */
 
+/**
+ * Notre carte de visite auprès des portails publics.
+ *
+ * L'URL doit mener quelque part de valide : c'est par elle qu'un administrateur
+ * d'Agentschap Binnenlands Bestuur ou d'Eurostat saura qui l'appelle, et
+ * pourra nous écrire plutôt que nous bloquer. GitHub redirige indéfiniment
+ * l'ancien nom vers le nouveau, mais l'inverse n'est pas vrai — d'où l'ordre
+ * imposé : renommer le dépôt, puis déployer cette ligne.
+ */
 export const USER_AGENT =
-  'PlateformeCitoyenne/2.0 (+https://github.com/CFeyants/Appcommunale; contact: cedricfeyants@gmail.com)';
+  'PlateformeCitoyenne/2.0 (+https://github.com/CFeyants/appcitoyenne; contact: cedricfeyants@gmail.com)';
 
 export interface OptionsHttp {
   /** Millisecondes entre deux appels au même hôte. */

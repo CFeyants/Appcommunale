@@ -131,10 +131,38 @@ Les trois motifs d'en-tête d'export sont nécessaires : les en-têtes sont appa
 chemin **demandé**, pas sur la destination de la réécriture. Une seule règle sur `/api/*`
 laisserait `/fr/budget.json` sans en-tête.
 
-## 6. Ce qu'il reste à décider
+## 6. Renommage : `appcommunale` → `appcitoyenne`
 
-- **Le domaine.** `appcommunale.vercel.app` porte le nom de la v1, qui était une maquette
-  communale. La v2 couvre cinq niveaux de pouvoir.
+« Communale » décrivait la v1, qui était une maquette d'une seule commune. La v2 couvre
+cinq niveaux de pouvoir, et l'interface s'appelle « Plateforme citoyenne ».
+
+**L'ordre importe.** GitHub redirige indéfiniment l'ancien nom vers le nouveau, mais
+l'inverse n'est pas vrai. Le `User-Agent` des connecteurs pointe désormais vers
+`github.com/CFeyants/appcitoyenne` : cette URL n'est valide qu'une fois le dépôt renommé,
+et c'est par elle qu'un administrateur d'Agentschap Binnenlands Bestuur ou d'Eurostat
+saura qui l'appelle.
+
+1. **GitHub** — Settings → General → Repository name → `appcitoyenne`. Les anciennes URL
+   restent redirigées, les clones existants continuent de fonctionner.
+2. **Le dépôt local** — `git remote set-url origin https://github.com/CFeyants/appcitoyenne.git`.
+   Facultatif : la redirection suffit, mais autant être explicite.
+3. **Vercel** — Settings → General → Project Name → `appcitoyenne`. Le domaine devient
+   `appcitoyenne.vercel.app`. L'ancien cesse de répondre : à faire avant toute diffusion
+   d'un lien.
+4. **Le dossier local** — purement cosmétique, à faire fenêtres fermées.
+
+### Ce que le renommage ne règle pas
+
+`appcitoyenne` est un mot français. Le brief posait le trilinguisme comme condition
+d'existence, et Kraainem est une commune à facilités où la langue est précisément ce qui
+est chargé. L'application, elle, se garde de choisir : elle affiche systématiquement
+l'intitulé néerlandais d'origine à côté de la reformulation française. Le nom, lui, choisit.
+
+C'est un arbitrage assumé, pas un oubli. Il mérite d'être repris le jour où un vrai nom de
+domaine sera acheté, et surtout avant toute demande de financement flamande.
+
+## 7. Ce qu'il reste à décider
+
 - **Le plan Vercel.** La fenêtre complète de deux ans dépasse la limite d'exécution du plan
   gratuit — sans conséquence, puisque l'ingestion tourne sur GitHub Actions.
 - **La branche déployée.** `plateforme-v2` aujourd'hui. Pointer Vercel sur `main` demande
