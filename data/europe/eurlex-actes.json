@@ -13,7 +13,7 @@
       "Les requêtes SPARQL longues dépassent régulièrement le délai d’attente du point d’accès public."
     ]
   },
-  "collecteLe": "2026-08-14T05:06:39.641Z",
+  "collecteLe": "2026-08-15T03:58:10.587Z",
   "depuis": "2026-01-01",
   "actes": [
     {
@@ -22,6 +22,22 @@
       "titre": "Règlement d’exécution (UE) 2026/1932 de la Commission du 10 août 2026 portant modalités d’application du règlement (CE) no 1224/2009 du Conseil en ce qui concerne la pesée des produits de la pêche, leur contrôle et leur inspection, ainsi que l’adoption de plans de sondage, de plans de contrôle et de programmes de contrôle communs",
       "urlEli": "http://data.europa.eu/eli/reg/2026/1932/oj",
       "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R1932",
+      "nature": "reglement"
+    },
+    {
+      "celex": "32026R1940",
+      "date": "2026-08-07",
+      "titre": "Règlement d’exécution (UE) 2026/1940 du Conseil du 7 août 2026 mettant en œuvre le règlement (UE) n° 269/2014 concernant des mesures restrictives eu égard aux actions compromettant ou menaçant l’intégrité territoriale, la souveraineté et l’indépendance de l’Ukraine",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/1940/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R1940",
+      "nature": "reglement"
+    },
+    {
+      "celex": "32026R1941",
+      "date": "2026-08-07",
+      "titre": "Règlement d’exécution (UE) 2026/1941 de la Commission du 7 août 2026 modifiant le règlement (UE) 2016/44 du Conseil concernant des mesures restrictives en raison de la situation en Libye",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/1941/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R1941",
       "nature": "reglement"
     },
     {
@@ -54,22 +70,6 @@
       "titre": "Règlement d’exécution (UE) 2026/1928 de la Commission du 7 août 2026 instituant un droit compensateur définitif sur les importations de certains tissus en fibres de verre tissées et/ou cousues originaires de la République populaire de Chine et de la République arabe d’Égypte, étendu aux importations acheminées vers des installations offshore, aux importations expédiées du Royaume du Maroc, qu’elles aient ou non été déclarées originaires de ce pays, et aux importations expédiées de Turquie, qu’elles aient ou non été déclarées originaires de ce pays, à l’issue d’un réexamen au titre de l’expiration des mesures effectué conformément à l’article 18 du règlement (UE) 2016/1037 du Parlement européen et du Conseil",
       "urlEli": "http://data.europa.eu/eli/reg/2026/1928/oj",
       "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R1928",
-      "nature": "reglement"
-    },
-    {
-      "celex": "32026R1940",
-      "date": "2026-08-07",
-      "titre": "Règlement d’exécution (UE) 2026/1940 du Conseil du 7 août 2026 mettant en œuvre le règlement (UE) n° 269/2014 concernant des mesures restrictives eu égard aux actions compromettant ou menaçant l’intégrité territoriale, la souveraineté et l’indépendance de l’Ukraine",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/1940/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R1940",
-      "nature": "reglement"
-    },
-    {
-      "celex": "32026R1941",
-      "date": "2026-08-07",
-      "titre": "Règlement d’exécution (UE) 2026/1941 de la Commission du 7 août 2026 modifiant le règlement (UE) 2016/44 du Conseil concernant des mesures restrictives en raison de la situation en Libye",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/1941/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R1941",
       "nature": "reglement"
     },
     {
@@ -257,6 +257,22 @@
       "nature": "reglement"
     },
     {
+      "celex": "32026R1899",
+      "date": "2026-07-28",
+      "titre": "Règlement d’exécution (UE) 2026/1899 de la Commission du 28 juillet 2026 concernant l’enregistrement de l’indication géographique Jabłka krajeńskie (IGP) dans le registre de l’Union des indications géographiques conformément au règlement (UE) 2024/1143 du Parlement européen et du Conseil",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/1899/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R1899",
+      "nature": "reglement"
+    },
+    {
+      "celex": "32026R1901",
+      "date": "2026-07-28",
+      "titre": "Règlement d’exécution (UE) 2026/1901 de la Commission du 28 juillet 2026 concernant l’enregistrement de l’indication géographique Pernil Cerretà (IGP) dans le registre de l’Union des indications géographiques conformément au règlement (UE) 2024/1143 du Parlement européen et du Conseil",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/1901/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R1901",
+      "nature": "reglement"
+    },
+    {
       "celex": "32026R1880",
       "date": "2026-07-28",
       "titre": "Règlement d’exécution (UE) 2026/1880 du Conseil du 28 juillet 2026 mettant en œuvre l’article 9, paragraphe 1, du règlement (CE) n° 1183/2005 concernant des mesures restrictives en raison de la situation en République démocratique du Congo",
@@ -294,22 +310,6 @@
       "titre": "Règlement (UE) 2026/1828 de la Commission du 28 juillet 2026 modifiant le règlement (UE) 2023/915 en ce qui concerne les teneurs maximales en delta-9-tétrahydrocannabinol (Δ9-THC) dans les feuilles de chanvre destinées à l’infusion dans l’eau et les infusions de feuilles de chanvre",
       "urlEli": "http://data.europa.eu/eli/reg/2026/1828/oj",
       "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R1828",
-      "nature": "reglement"
-    },
-    {
-      "celex": "32026R1899",
-      "date": "2026-07-28",
-      "titre": "Règlement d’exécution (UE) 2026/1899 de la Commission du 28 juillet 2026 concernant l’enregistrement de l’indication géographique Jabłka krajeńskie (IGP) dans le registre de l’Union des indications géographiques conformément au règlement (UE) 2024/1143 du Parlement européen et du Conseil",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/1899/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R1899",
-      "nature": "reglement"
-    },
-    {
-      "celex": "32026R1901",
-      "date": "2026-07-28",
-      "titre": "Règlement d’exécution (UE) 2026/1901 de la Commission du 28 juillet 2026 concernant l’enregistrement de l’indication géographique Pernil Cerretà (IGP) dans le registre de l’Union des indications géographiques conformément au règlement (UE) 2024/1143 du Parlement européen et du Conseil",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/1901/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R1901",
       "nature": "reglement"
     },
     {
