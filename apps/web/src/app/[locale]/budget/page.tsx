@@ -83,6 +83,26 @@ export default async function PageBudget({ params }: { params: Promise<{ locale:
         </p>
       </section>
 
+      {/* Sous-écran, pas un sixième onglet. */}
+      <section className="mt-10" aria-labelledby="achats">
+        <h2 id="achats" className="text-[19px] font-semibold tracking-tight">
+          {d.nav.achats}
+        </h2>
+        <p className="mt-1.5 max-w-prose text-[13.5px] text-[var(--pc-encre-douce)]">
+          Le budget dit ce que la commune dépense. Un second écran met à côté du prix payé le coût complet, et range
+          les leviers par ordre de grandeur — parce que sans ce classement, on discute des sacs poubelle pendant que
+          le chauffage tourne.
+        </p>
+        <p className="mt-3 text-[13.5px]">
+          <Link
+            href={`/${l}/budget/achats`}
+            className="inline-flex items-center gap-1.5 rounded-[var(--pc-rayon)] border border-[var(--pc-trait-fort)] px-3.5 py-2 hover:bg-[var(--pc-fond-enfonce)]"
+          >
+            {d.nav.achats}
+          </Link>
+        </p>
+      </section>
+
       <Separator className="mt-10" />
 
       <Initiatives d={d} locale={l} />

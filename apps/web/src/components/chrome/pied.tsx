@@ -11,6 +11,9 @@ export function PiedDePage({ d, locale }: { d: Dictionnaire; locale: Locale }) {
   const liens = [
     { href: '/sources', mot: d.nav.sources },
     { href: '/classement', mot: d.nav.classement },
+    // Sœur de « comment le classement fonctionne » : une règle, ses paramètres
+    // tels qu'ils sont dans le code, et le fichier où on les lit.
+    { href: '/bareme', mot: d.nav.bareme },
     { href: '/admission', mot: d.nav.admission },
     { href: '/moderation', mot: d.nav.moderation },
     { href: '/preferences/deduit', mot: d.nav.croitSavoir },

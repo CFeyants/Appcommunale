@@ -33,9 +33,20 @@ function racine(pathname: string, locale: Locale) {
 }
 
 /** Les cinq écrans, toujours dans le même ordre : c'est la grammaire du produit. */
+/**
+ * L'espace entreprise a sa propre navigation latérale : y laisser la barre
+ * citoyenne à cinq entrées brouillerait le changement de produit. Le retour se
+ * fait par le bouton « Espace habitant » de sa barre supérieure.
+ */
+function dansEspaceEntreprise(pathname: string, locale: Locale) {
+  return pathname.startsWith(`/${locale}/entreprise`);
+}
+
 export function BarreBasse({ d, locale }: { d: Dictionnaire; locale: Locale }) {
   const pathname = usePathname();
   const chemin = racine(pathname, locale);
+
+  if (dansEspaceEntreprise(pathname, locale)) return null;
 
   return (
     <nav
@@ -85,7 +96,7 @@ export function EnTete({ d, locale }: { d: Dictionnaire; locale: Locale }) {
           <span className="text-[15px] font-semibold tracking-tight">{d.meta.titreSite}</span>
         </Link>
 
-        <nav aria-label={d.nav.menu} className="hidden md:block">
+        <nav aria-label={d.nav.menu} className={cn('hidden md:block', dansEspaceEntreprise(pathname, locale) && 'md:hidden')}>
           <ul className="flex items-center gap-0.5">
             {ECRANS.map(({ cle, href }) => {
               const actif = href === '' ? chemin === '/' : chemin.startsWith(href);

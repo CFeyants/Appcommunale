@@ -233,3 +233,132 @@ directives `@source` explicites.
 6 799 points là où il y en a 3 207. Sans déduplication, chaque acte serait apparu deux fois
 dans le fil et toutes les statistiques auraient été fausses. Le connecteur déduplique
 désormais, en gardant l'occurrence liée à la liste des décisions.
+
+---
+
+# Extension « Espace entreprise » — 16 août 2026
+
+Décisions prises pendant l'extension de la plateforme existante. La règle qui
+les gouverne toutes : **on étend, on ne refait pas, on ne renomme pas, on ne
+contredit pas.**
+
+## E1 — Ce qui est repris tel quel de l'application existante
+
+**Retenu.** Les cinq onglets citoyens et leurs noms, la couche de transparence
+du pied de page, la grammaire des rubriques (*ce qu'il montre · ce qu'il ne
+montre pas · ce qui relève de la décision locale · prochaine mesure*, plus
+*organisme qui devrait produire cette donnée*), la grammaire de la carte du
+fil, le principe du registre (rien n'est supprimé, l'écarté reste avec son
+motif), les exports à la même adresse suffixée `.json`, le trilinguisme, et le
+ton — une lacune se déclare, elle ne se contourne pas.
+
+**Ce qui est ajouté.** Deux sous-écrans (`/fr/budget/achats`,
+`/fr/impact/ce-qui-pese`), une page de règle dans la couche de transparence
+(`/fr/bareme`), un espace séparé (`/fr/entreprise`), et un mode de
+démonstration (`/fr/coulisses`). **Aucun onglet n'a été ajouté à la barre
+citoyenne, et aucun écran existant n'a été renommé.**
+
+## E2 — Le forfait ne touche jamais la fiche publique
+
+**Retenu.** `Forfait` n'existe que dans `LigneCalcul`, qui appartient à un
+marché. Aucun type décrivant une entreprise ne peut en porter un.
+**Règle qui l'a dictée.** § 2 du prompt, et la doctrine de `/fr/impact`.
+**Comment c'est tenu.** Un test lit `entreprises.tsx` et échoue si le fichier
+mentionne `forfait`, `impactMonetise`, `FORFAITS` ou `bareme` — la fiche
+publique ne peut pas importer ce qui produirait un chiffre forfaitaire.
+**Autrement.** Afficher le forfait en gris sur la fiche, « à titre indicatif ».
+C'est exactement ce que le prompt interdit, et il a raison : un chiffre gris
+finit cité en noir.
+
+## E3 — Aucune fonction ne renvoie un montant sans sa chaîne
+
+**Retenu.** `impactMonetise` renvoie `{ totalEur, lignes }` où chaque ligne
+porte sa chaîne complète. Il n'existe volontairement aucune surcharge qui
+renverrait le seul nombre.
+**Pourquoi.** Un appelant qui peut obtenir le montant sans la chaîne finira par
+l'afficher sans elle, et le premier écran qui le fera videra le dispositif de
+sa défense.
+
+## E4 — Le classement des leviers passe avant la liste des marchés
+
+**Retenu.** Sur `/fr/budget/achats`, le classement des leviers est affiché
+**avant** les marchés, déplié, avec son résultat écrit en toutes lettres
+au-dessus du graphique.
+**Règle qui l'a dictée.** Le prompt le décrit comme « un second bloc » mais
+ajoute qu'il est « peut-être le plus utile de toute l'application » et « doit
+être visible sans cliquer ». Les deux ne tiennent pas ensemble en bas de page.
+**Autrement.** Respecter l'ordre littéral du prompt. Le classement serait passé
+après quatre cartes de marché détaillées, et personne ne l'aurait vu — ce qui
+est précisément ce que le prompt cherche à éviter.
+
+## E5 — Le classement des leviers est branché sur des données réelles
+
+**Retenu.** Les deux premières lignes — chauffage au gaz et électricité du
+territoire — viennent des relevés Fluvius déjà présents dans `/data`. Les
+autres sont fictives et marquées.
+**Pourquoi.** Le contraste **est** le résultat : le poste que la commune ne
+maîtrise pas directement écrase tous ceux qu'elle maîtrise. Ce constat n'aurait
+aucune force s'il reposait sur des chiffres inventés de bout en bout.
+
+## E6 — L'entreprise de démonstration porte un nom fictif
+
+**Retenu.** `ENTREPRISE DE DÉMONSTRATION — TRAVAUX DE VOIRIE`, numéro BCE dans
+une plage non attribuée, bandeau permanent dans tout l'espace.
+**Pourquoi.** Attacher des chiffres environnementaux inventés à l'un des 179
+établissements réels d'OpenStreetMap serait la faute exacte que l'application
+ne commet jamais — et ici elle serait commise **contre quelqu'un**.
+**Autrement.** Reprendre un vrai commerce pour rendre la démonstration plus
+concrète. Refusé sans hésitation.
+
+## E7 — La barre citoyenne disparaît dans l'espace entreprise
+
+**Retenu.** Les cinq entrées et la barre inférieure ne s'affichent pas sous
+`/fr/entreprise`. Le retour passe par le bouton « Espace habitant ».
+**Règle qui l'a dictée.** « Le lecteur doit sentir qu'il a changé de produit,
+pas de page. » Deux navigations concurrentes disaient l'inverse.
+**Ce que ça ne change pas.** La barre citoyenne reste intacte partout ailleurs,
+et compte toujours cinq entrées.
+
+## E8 — Les valeurs du barème sont des paramètres datés, pas des constantes
+
+**Retenu.** Chaque paramètre porte son organisme, sa référence, sa date de
+relevé, et un booléen `verifieParAppel` qui vaut faux quand aucun appel
+automatisé n'a pu le confirmer — avec la raison écrite.
+**Pourquoi.** Ni la valeur tutélaire du carbone ni le prix du quota ne sont
+publiés en données ouvertes. Les faire passer pour des constantes vérifiées
+aurait été le seul mensonge de tout le dispositif.
+
+## E9 — Le forfait sectoriel est marqué fictif
+
+**Retenu.** Les quatre forfaits portent `fictif: true` dans le code et un
+bandeau à l'écran.
+**Pourquoi.** La règle exige que le forfait vienne d'une source publiée et
+datée. Aucune administration belge n'en publie. Le barème publie donc la
+**règle** ; les valeurs restent des démonstrations tant que la source n'existe
+pas. C'est la seule façon de tenir la règle sans la violer.
+
+## E10 — La contestation reste sur l'appareil, et l'écran le dit
+
+**Retenu.** Sans serveur, les contestations vivent dans le stockage local. Une
+contestation de démonstration **rejetée** est semée pour montrer qu'un rejet
+reste affiché avec son motif.
+**Ce qui est écrit à l'écran.** « Une contestation qui ne part nulle part n'est
+pas encore publique — c'est une limite, pas une fonctionnalité. »
+
+## E11 — « Ce qui pèse » publie, il ne calcule pas
+
+**Retenu.** L'écran publie un contenu de référence ordonné, sourcé, identique
+pour tout le monde, en paliers. Il ne touche à aucune saisie de l'utilisateur.
+**Comment la contradiction se lève.** La doctrine de `/fr/impact` interdit de
+**convertir les saisies** en un total personnel. Elle n'interdit pas de
+publier un contenu de référence — exactement comme `/fr/classement` publie ses
+poids. La distinction est écrite en tête d'écran, pas seulement dans le code.
+
+## E12 — Les libellés de navigation sont traduits, les corps de page non
+
+**Retenu.** Les six nouvelles entrées de navigation existent en français,
+néerlandais et anglais. Les corps des nouveaux écrans sont en français.
+**Pourquoi.** C'est exactement l'état des pages transversales existantes
+(`/fr/classement`, `/fr/admission`, `/fr/moderation`) : l'extension reprend le
+défaut de l'application plutôt que d'en créer un second, différent.
+**Ce que ça coûte.** Une dette de traduction, consignée dans `IMPOSSIBLE.md`.

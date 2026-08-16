@@ -34,6 +34,26 @@ export default async function PageImpact({ params }: { params: Promise<{ locale:
         precision={`Aucune entreprise de Kraainem ne publie ses données environnementales. Ce n’est pas un défaut de collecte : ces chiffres n’existent nulle part. Le point d’accès unique européen aux informations de durabilité ouvre le 10 juillet 2027, par vagues, et ne couvrira pas les entreprises d’une commune de dix mille habitants.`}
       />
 
+      {/* Sous-écran, pas un sixième onglet. */}
+      <section className="mt-9" aria-labelledby="ce-qui-pese">
+        <h2 id="ce-qui-pese" className="text-[19px] font-semibold tracking-tight">
+          {d.nav.cePese}
+        </h2>
+        <p className="mt-1.5 max-w-prose text-[13.5px] text-[var(--pc-encre-douce)]">
+          Cet écran laisse une question entière : par quoi commencer ? Un second écran range les gestes par ordre de
+          grandeur, dit qui peut réellement les faire, et renvoie vers ce qui les empêche. Il ne calcule rien sur
+          vous — il publie ce que disent les études.
+        </p>
+        <p className="mt-3 text-[13.5px]">
+          <Link
+            href={`/${l}/impact/ce-qui-pese`}
+            className="inline-flex items-center gap-1.5 rounded-[var(--pc-rayon)] border border-[var(--pc-trait-fort)] px-3.5 py-2 hover:bg-[var(--pc-fond-enfonce)]"
+          >
+            {d.nav.cePese}
+          </Link>
+        </p>
+      </section>
+
       <MesIndicateurs d={d} locale={l} />
 
       <Separator className="mt-10" />

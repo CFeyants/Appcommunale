@@ -1,0 +1,22 @@
+/*
+ * L'accent chromatique propre à l'espace entreprise.
+ *
+ * Le bleu institutionnel appartient à l'espace habitant. Ici, un vert profond :
+ * assez distinct pour qu'on sente le changement de produit, assez proche en
+ * clarté pour que les contrastes tiennent sans réécrire la palette.
+ *
+ * Vérifié dans les deux thèmes : l'accent porte du texte blanc en clair et du
+ * texte sombre en sombre, aux mêmes rapports de contraste que le bleu.
+ */
+
+.espace-entreprise {
+  --pc-accent: oklch(0.44 0.1 168);
+  --pc-accent-doux: oklch(0.94 0.03 168);
+  --pc-accent-encre: oklch(0.32 0.09 168);
+}
+
+.dark .espace-entreprise {
+  --pc-accent: oklch(0.76 0.11 168);
+  --pc-accent-doux: oklch(0.27 0.05 168);
+  --pc-accent-encre: oklch(0.86 0.08 168);
+}

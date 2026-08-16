@@ -245,3 +245,112 @@ il reste un jour de travail le jour où la donnée s'ouvre.
 | I4, I5 | publication des plans en données ouvertes | demande aux niveaux concernés |
 | I9 | publication des articles de règlement | demande à la commune ; déjà écrit pour iMio |
 | I3, I11 | rien à demander : la donnée n'existe pas encore | attendre 2027, ou la construire |
+
+---
+
+# Extension « Espace entreprise » — 16 août 2026
+
+## I13 — Les montants des marchés communaux ne sont publiés nulle part
+
+**Exigé.** Un écran qui met côte à côte le prix payé et le coût complet des
+marchés de la commune.
+
+**Constaté.** Aucun des six connecteurs ne fournit les montants. Lokaal Beslist
+publie la liste des décisions, rarement leur motivation, presque jamais les
+montants. Sur les décisions d'attribution repérées dans les intitulés
+collectés, aucune ne porte de montant exploitable.
+
+**Livré à la place.** Quatre marchés reconstitués, dont l'objet vient
+d'intitulés réellement collectés et dont les montants sont fictifs et marqués.
+La lacune est déclarée en tête d'écran, avec le compte — *n marchés
+reconstitués sur N décisions d'attribution collectées* — et la ligne
+*organisme qui devrait produire cette donnée*.
+
+**Ce qui reste réel malgré tout.** Le classement des leviers s'appuie, pour ses
+deux premières lignes, sur les relevés Fluvius du territoire. Ce sont elles qui
+portent le résultat de l'écran.
+
+## I14 — Ni la valeur tutélaire du carbone ni le prix du quota ne sont ouverts
+
+**Exigé.** Un barème dont chaque paramètre porte sa source et sa date.
+
+**Constaté.**
+
+| Paramètre | Tentative | Résultat |
+|---|---|---|
+| Valeur tutélaire du carbone | page de la boîte à outils européenne, 16 août 2026 | la valeur est dans un PDF, pas sur la page |
+| Prix du quota EU ETS | Eurostat `env_ac_ets` | **HTTP 404 — jeu inexistant** |
+| Prix du quota EU ETS | catalogue Eurostat complet | aucune entrée sur les quotas |
+| Prix du quota EU ETS | page ETS de la Commission | ne publie ni prix ni lien vers les prix |
+
+**Livré à la place.** Les deux valeurs sont des **paramètres du barème**,
+relevés à la main, datés, et affichés avec leur origine sur `/fr/bareme` — avec
+un booléen `verifieParAppel` à faux et la raison écrite. La page indique la
+cadence de re-relevé. C'est la même solution que pour les poids du tri : une
+page existe pour publier des paramètres, et elle dit d'où ils viennent.
+
+## I15 — Aucun forfait sectoriel n'est publié en Belgique
+
+**Exigé.** « Le forfait est toujours tiré d'une source publiée et datée, jamais
+calculé par la plateforme. »
+
+**Constaté.** Aucune administration belge ne publie de forfait sectoriel par
+poste au quantile haut de la branche. La règle est tenable, sa matière
+n'existe pas.
+
+**Livré à la place.** Le barème publie la **règle** — quantile haut, jamais la
+moyenne, sinon le silence devient une stratégie — et quatre valeurs de
+démonstration portant `fictif: true` dans le code et un bandeau à l'écran.
+
+## I16 — Aucun facteur d'émission n'est diffusé par une interface ouverte
+
+**Constaté.** Les facteurs vivent dans des bases sectorielles ou des documents,
+pas dans des jeux de données appelables.
+
+**Livré à la place.** Les facteurs sont regroupés dans un seul objet, datés, et
+chaque ligne de calcul affiche celui qu'elle a utilisé avec son origine. Le
+bouton « Je conteste ce calcul » existe précisément pour eux.
+
+## I17 — Le coût annualisé d'une déclaration n'est pas chiffré
+
+**Exigé.** Le seuil se calcule : coût annualisé ÷ taux d'impact moyen.
+
+**Constaté.** Le taux d'impact se calcule sur les marchés. Le coût annualisé
+d'une déclaration pour une petite entreprise belge n'est chiffré par personne.
+
+**Livré à la place.** Le calcul est montré en entier sur `/fr/bareme`, ses deux
+entrées sont affichées séparément, et celle qui est une estimation le dit. Le
+seuil reste **calculé et non décidé** — ce qui était le point.
+
+## I18 — Aucune contestation ne peut être rendue publique
+
+**Constaté.** La plateforme n'a pas de serveur d'écriture. Une contestation
+déposée reste sur l'appareil de la personne.
+
+**Livré à la place.** Le formulaire existe, la contestation s'affiche attachée
+au marché, une contestation **rejetée** est semée pour montrer qu'un rejet
+reste visible avec son motif — et l'écran écrit que sans acheminement, ce
+n'est pas encore une contestation publique.
+
+## I19 — Le bonus-malus n'a pas d'échelon communal
+
+**Constaté.** Une commune n'a ni le périmètre, ni la base légale, ni la
+légitimité pour redistribuer entre entreprises.
+
+**Livré à la place.** Une maquette marquée *non branché*, sur le modèle exact
+de l'écran de paiement enrichi : elle montre le calcul, la propriété de somme
+nulle vérifiée par un test, et l'effet sur une entreprise type. Elle n'est
+annoncée nulle part ailleurs dans l'application — seule la navigation latérale
+de l'espace entreprise y mène.
+
+## I20 — Les corps des nouveaux écrans ne sont pas traduits
+
+**Constaté.** Les six libellés de navigation ajoutés existent dans les trois
+langues. Les corps de `/fr/bareme`, `/fr/budget/achats`,
+`/fr/impact/ce-qui-pese`, de l'espace entreprise et des coulisses sont en
+français.
+
+**Pourquoi c'est consigné plutôt que corrigé.** C'est exactement l'état des
+pages transversales existantes. L'extension reprend la dette de l'application
+au lieu d'en créer une seconde, différente — mais c'est une dette, et à
+Kraainem, commune à facilités, elle coûtera.

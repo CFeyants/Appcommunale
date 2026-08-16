@@ -1,7 +1,8 @@
 'use client';
 
 import * as React from 'react';
-import { Building2, Search } from 'lucide-react';
+import Link from 'next/link';
+import { ArrowUpRight, Building2, Search } from 'lucide-react';
 import { cn } from '@pc/ui';
 import type { Dictionnaire, Locale } from '@/i18n';
 import { formaterNombre } from '@/i18n';
@@ -95,7 +96,8 @@ export function ListeEntreprises({
               </div>
             </div>
 
-            {/* Le cœur de l'écran : la case vide, sourcée. */}
+            {/* Le cœur de l'écran : la case vide, sourcée.
+                Aucun montant n'y figure jamais — un test le vérifie. */}
             <p
               className={cn(
                 'mt-3 rounded-[var(--pc-rayon)] border border-dashed px-3 py-2 text-[12px]',
@@ -103,6 +105,18 @@ export function ListeEntreprises({
               )}
             >
               {d.impact.rienDeclare} — aucune déclaration environnementale ni sociale reçue.
+            </p>
+
+            {/* L'entrée dans l'autre espace. Une entreprise arrive toujours
+                par sa fiche publique : le lien entre les deux est ainsi évident. */}
+            <p className="mt-2 text-[12px]">
+              <Link
+                href={`/${locale}/entreprise`}
+                className="inline-flex items-center gap-1 text-[var(--pc-accent)] underline underline-offset-2"
+              >
+                Vous êtes cette entreprise ? Déclarez ici
+                <ArrowUpRight className="h-3 w-3" aria-hidden />
+              </Link>
             </p>
           </li>
         ))}

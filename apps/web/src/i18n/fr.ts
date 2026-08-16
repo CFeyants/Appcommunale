@@ -39,6 +39,12 @@ export const fr = {
     themeClair: 'Clair',
     themeSombre: 'Sombre',
     themeSysteme: 'Système',
+    bareme: 'Le barème du coût complet',
+    achats: 'Ce que la commune achète',
+    cePese: 'Ce qui pèse',
+    espaceEntreprise: 'Espace entreprise',
+    coulisses: 'Les coulisses',
+    retourHabitant: 'Espace habitant',
   },
 
   niveaux: {

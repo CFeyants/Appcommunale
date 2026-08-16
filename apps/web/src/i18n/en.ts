@@ -41,6 +41,12 @@ export const en: Dictionnaire = {
     themeClair: 'Light',
     themeSombre: 'Dark',
     themeSysteme: 'System',
+    bareme: 'The full-cost scale',
+    achats: 'What the municipality buys',
+    cePese: 'What weighs',
+    espaceEntreprise: 'Company space',
+    coulisses: 'Behind the scenes',
+    retourHabitant: 'Resident space',
   },
 
   niveaux: {

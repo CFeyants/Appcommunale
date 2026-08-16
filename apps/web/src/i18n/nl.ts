@@ -41,6 +41,12 @@ export const nl: Dictionnaire = {
     themeClair: 'Licht',
     themeSombre: 'Donker',
     themeSysteme: 'Systeem',
+    bareme: 'De schaal van de volledige kost',
+    achats: 'Wat de gemeente koopt',
+    cePese: 'Wat weegt',
+    espaceEntreprise: 'Ondernemingsruimte',
+    coulisses: 'Achter de schermen',
+    retourHabitant: 'Inwonersruimte',
   },
 
   niveaux: {

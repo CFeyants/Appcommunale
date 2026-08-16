@@ -6,3 +6,4 @@ export * from './pertinence';
 export * from './competences';
 export * from './territoires';
 export * from './identite';
+export * from './bareme';

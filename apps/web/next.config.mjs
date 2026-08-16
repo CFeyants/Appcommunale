@@ -44,6 +44,9 @@ const nextConfig = {
       { source: '/:locale(fr|nl|en).json', destination: '/api/json/:locale/fil' },
       { source: '/:locale(fr|nl|en)/acte/:id.json', destination: '/api/json/:locale/acte-:id' },
       { source: '/:locale(fr|nl|en)/:ecran.json', destination: '/api/json/:locale/:ecran' },
+      // Les sous-écrans de l'extension entreprise.
+      { source: '/:locale(fr|nl|en)/budget/achats.json', destination: '/api/json/:locale/achats' },
+      { source: '/:locale(fr|nl|en)/impact/ce-qui-pese.json', destination: '/api/json/:locale/ce-qui-pese' },
       { source: '/api/:locale(fr|nl|en)/acte/:id.json', destination: '/api/json/:locale/acte-:id' },
     ];
   },

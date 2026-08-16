@@ -282,6 +282,66 @@ test('aucun appel à CadreGraphique ne passe une explication vide', () => {
   }
 });
 
+// --- Règle : aucun filtre ni pondération sur un pays d'origine ------------
+
+test('aucun filtre du code ne porte sur un pays d’origine', () => {
+  /*
+   * Un acheteur public ne peut pas écarter un produit à raison de son pays de
+   * provenance à l'égard des États parties à l'accord sur les marchés publics.
+   * La formulation licite qui produit le même effet est un seuil de performance
+   * chiffré, neutre en origine : un produit à fort contenu carbone ne passe pas
+   * le plafond, sans qu'on ait jamais mentionné d'où il vient.
+   *
+   * Ce test cherche les formes qui trahiraient un filtre par origine.
+   */
+  const interdits = [
+    /\b(pays|paysOrigine|countryOfOrigin|origine)\s*(===|!==|==|!=)\s*['"]/i,
+    /\bfilter\([^)]*\b(pays|country|origine)\b[^)]*\)/i,
+    /\b(paysAutorises|paysExclus|allowedCountries|blockedCountries)\b/i,
+    /\bmadeIn\b/i,
+  ];
+  const fichiers: string[] = [];
+  const parcourir = (dossier: string) => {
+    for (const entree of readdirSync(dossier)) {
+      if (['node_modules', '.next', 'data', 'captures'].includes(entree)) continue;
+      const chemin = join(dossier, entree);
+      if (statSync(chemin).isDirectory()) parcourir(chemin);
+      else if (/\.(ts|tsx)$/.test(entree) && !/\.test\.tsx?$/.test(entree)) fichiers.push(chemin);
+    }
+  };
+  parcourir(join(RACINE, 'packages'));
+  parcourir(join(RACINE, 'apps'));
+
+  for (const f of fichiers) {
+    const contenu = readFileSync(f, 'utf8');
+    for (const motif of interdits) {
+      assert.ok(!motif.test(contenu), `${f} : un filtre semble porter sur un pays d’origine`);
+    }
+  }
+});
+
+// --- Règle : aucun forfait sur la fiche publique d'une entreprise ---------
+
+test('la fiche publique d’une entreprise n’affiche aucun montant forfaitaire', () => {
+  /*
+   * Le forfait porte sur un contrat, jamais sur une personne morale. Sur la
+   * fiche publique, « n'a rien déclaré » reste « n'a rien déclaré » — ni en
+   * gris, ni entre parenthèses, ni en note de bas de page.
+   *
+   * Le composant de la liste publique ne doit donc importer ni le forfait, ni
+   * aucune fonction de calcul d'impact marchand.
+   */
+  const fiche = join(RACINE, 'apps/web/src/components/impact/entreprises.tsx');
+  const contenu = readFileSync(fiche, 'utf8');
+  for (const interdit of ['forfait', 'impactMonetise', 'FORFAITS', 'bareme']) {
+    assert.ok(
+      !contenu.includes(interdit),
+      `entreprises.tsx importe ou mentionne « ${interdit} » : un forfait ne doit jamais atteindre la fiche publique`,
+    );
+  }
+  assert.ok(contenu.includes('rienDeclare'), 'la fiche publique doit continuer de dire « n’a rien déclaré »');
+});
+
 // --- Règle : ne classe rien ni personne -----------------------------------
 
 test('aucune liste d’entités n’est triée par une valeur décroissante', () => {

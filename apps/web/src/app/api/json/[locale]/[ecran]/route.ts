@@ -1,5 +1,39 @@
 import { NextResponse } from 'next/server';
-import { POIDS, PLAFOND_MENSUEL, VERSION_VOCABULAIRE, KRAAINEM } from '@pc/core';
+import {
+  ANCRAGES_CARBONE,
+  bonusMalus,
+  CE_QUE_LE_BAREME_NE_FAIT_PAS,
+  FORFAITS_SECTORIELS,
+  HISTORIQUE_BAREME,
+  impactMonetise,
+  KRAAINEM,
+  ORIGINE_CARBONE,
+  PARAMETRES_SEUIL,
+  PLAFOND_MENSUEL,
+  POIDS,
+  PRIX_QUOTA_ETS,
+  seuilDeclaration,
+  trajectoireCarbone,
+  VERSION_BAREME,
+  VERSION_VOCABULAIRE,
+} from '@pc/core';
+import { LACUNE_MARCHES, LEVIERS, MARCHES } from '@/contenu/achats';
+import {
+  CE_QUE_CET_ECRAN_NE_FAIT_PAS,
+  GESTES,
+  PALIERS,
+  PART_COLLECTIVE,
+  SUR_LE_BAS_DU_CLASSEMENT,
+} from '@/contenu/ce-qui-pese';
+import {
+  ECHEANCES,
+  ENTREPRISE,
+  MARCHES_ENTREPRISE,
+  PIECES,
+  POSITIONS,
+  RUBRIQUES,
+  SECTEUR_DEMONSTRATION,
+} from '@/contenu/entreprise';
 import { estLocale } from '@/i18n';
 import {
   alleger,
@@ -114,6 +148,98 @@ export async function GET(
 
     case 'sources':
       return NextResponse.json({ ...enTete('sources'), couverture: KRAAINEM.couverture, connecteurs: await chargerEtatSources() });
+
+    /* --- Les écrans ajoutés par l'extension entreprise ------------------ */
+
+    case 'bareme': {
+      const annee = new Date().getFullYear();
+      return NextResponse.json({
+        ...enTete('bareme'),
+        version: VERSION_BAREME,
+        module: 'packages/core/src/bareme.ts',
+        ancragesCarbone: ANCRAGES_CARBONE,
+        origineCarbone: ORIGINE_CARBONE,
+        trajectoire: trajectoireCarbone(annee, 3),
+        prixQuotaEts: PRIX_QUOTA_ETS,
+        forfaitsSectoriels: FORFAITS_SECTORIELS,
+        parametresSeuil: PARAMETRES_SEUIL,
+        seuil: seuilDeclaration(PARAMETRES_SEUIL.coutAnnualiseDeclarationEur, PARAMETRES_SEUIL.tauxImpactMoyen),
+        ceQueLeBaremeNeFaitPas: CE_QUE_LE_BAREME_NE_FAIT_PAS,
+        historique: HISTORIQUE_BAREME,
+      });
+    }
+
+    case 'achats': {
+      const annee = new Date().getFullYear();
+      return NextResponse.json({
+        ...enTete('achats'),
+        avertissement:
+          'Les marchés et leurs montants sont fictifs : aucun connecteur ne publie les montants des marchés communaux. Seules les deux premières lignes du classement des leviers viennent de données réelles (Fluvius).',
+        lacune: LACUNE_MARCHES,
+        versionBareme: VERSION_BAREME,
+        marches: MARCHES.map((m) => ({
+          ...m,
+          impact: impactMonetise(m.postes, { annee, usage: m.usage, montantMarcheEur: m.montantAnnuelEur }),
+        })),
+        leviers: LEVIERS.map((levier) => ({
+          ...levier,
+          impact: impactMonetise(
+            [
+              {
+                cle: levier.cle,
+                libelle: levier.libelle,
+                quantite: levier.quantite,
+                unite: levier.unite,
+                facteurEmission: levier.facteurEmission,
+                uniteFacteur: levier.uniteFacteur,
+                origineFacteur: {
+                  organisme: levier.source,
+                  reference: levier.source,
+                  releveLe: '2026-08-16',
+                  verifieParAppel: levier.reel,
+                },
+                couverture: levier.couverture,
+              },
+            ],
+            { annee, usage: 'classer-les-leviers' },
+          ),
+        })),
+      });
+    }
+
+    case 'ce-qui-pese':
+      return NextResponse.json({
+        ...enTete('ce-qui-pese'),
+        avertissement:
+          'Ce fichier ne calcule rien sur personne. Il publie un contenu de référence ordonné, identique pour tout le monde.',
+        paliers: PALIERS,
+        partCollective: PART_COLLECTIVE,
+        gestes: GESTES,
+        surLeBasDuClassement: SUR_LE_BAS_DU_CLASSEMENT,
+        ceQueCetEcranNeFaitPas: CE_QUE_CET_ECRAN_NE_FAIT_PAS,
+      });
+
+    case 'entreprise': {
+      const secteur = bonusMalus([...SECTEUR_DEMONSTRATION], 250);
+      return NextResponse.json({
+        ...enTete('entreprise'),
+        avertissement:
+          'Espace de démonstration. L’entreprise, ses marchés et ses déclarations sont fictifs : aucune donnée réelle n’est attachée à un établissement de la commune.',
+        entreprise: ENTREPRISE,
+        referentiel: 'Module de base de la norme volontaire européenne pour PME non cotées, rubriques B1 à B11',
+        rubriques: RUBRIQUES,
+        marches: MARCHES_ENTREPRISE,
+        pieces: PIECES,
+        positions: POSITIONS,
+        echeances: ECHEANCES,
+        bonusMalus: {
+          nonBranche: true,
+          pourquoi:
+            'Une commune n’a ni le périmètre, ni la base légale, ni la légitimité pour redistribuer entre entreprises. L’échelon est le secteur.',
+          ...secteur,
+        },
+      });
+    }
 
     default: {
       // Un acte précis : /api/json/fr/acte-<id>
