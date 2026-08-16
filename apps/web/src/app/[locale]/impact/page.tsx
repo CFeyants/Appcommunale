@@ -1,5 +1,6 @@
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
+import { ArrowUpRight } from 'lucide-react';
 import { BandeauMaquette, NombreHeroique, Separator } from '@pc/ui';
 import { dictionnaire, estLocale, formaterNombre, type Locale } from '@/i18n';
 import { chargerEtablissements } from '@/lib/donnees';
@@ -87,6 +88,40 @@ export default async function PageImpact({ params }: { params: Promise<{ locale:
             d’OpenStreetMap, contributive et donc incomplète — {formaterNombre(etabs?.completude.avecAdresse ?? 0, l)}{' '}
             fiches sur {formaterNombre(total, l)} portent une adresse complète.
           </p>
+        </div>
+
+        {/* L'entrée dans l'autre espace.
+            Elle était sur chaque fiche, et seulement là : après le nombre
+            héroïque, deux paragraphes de doctrine et 179 cartes, personne ne
+            la trouvait. Elle est donc aussi ici, avant la liste — sans pour
+            autant devenir un sixième onglet de la barre citoyenne. */}
+        <div
+          className="mt-5 flex flex-wrap items-center justify-between gap-4 rounded-[var(--pc-rayon)] border px-5 py-4"
+          style={{ borderColor: 'var(--pc-accent)', background: 'var(--pc-accent-doux)' }}
+        >
+          <div className="min-w-0">
+            <p className="text-[15px] font-semibold">Vous êtes une entreprise de la commune ?</p>
+            <p className="mt-1 max-w-prose text-[13px] text-[var(--pc-encre-douce)]">
+              Cet écran dit de chacune des {formaterNombre(total, l)} entreprises qu’elle n’a rien déclaré. Voici
+              l’endroit où elle déclare — et ce que le silence lui coûte sur les marchés publics.
+            </p>
+          </div>
+          <div className="flex shrink-0 flex-wrap gap-2">
+            <Link
+              href={`/${l}/entreprise`}
+              className="inline-flex items-center gap-1.5 rounded-[var(--pc-rayon)] px-3.5 py-2 text-[13.5px] font-medium text-white"
+              style={{ background: 'var(--pc-accent)' }}
+            >
+              {d.nav.espaceEntreprise}
+              <ArrowUpRight className="h-3.5 w-3.5" aria-hidden />
+            </Link>
+            <Link
+              href={`/${l}/coulisses`}
+              className="inline-flex items-center gap-1.5 rounded-[var(--pc-rayon)] border border-[var(--pc-trait-fort)] bg-[var(--pc-fond-eleve)] px-3.5 py-2 text-[13.5px]"
+            >
+              {d.nav.coulisses}
+            </Link>
+          </div>
         </div>
 
         {etabs ? (
