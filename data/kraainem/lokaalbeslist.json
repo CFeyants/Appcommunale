@@ -8,21 +8,21 @@
   "codeNis": "23099",
   "fenetre": {
     "depuis": "2024-09-24",
-    "jusqua": "2026-08-23"
+    "jusqua": "2026-08-24"
   },
   "derniereFenetreCollectee": {
-    "depuis": "2026-06-24",
-    "le": "2026-08-23T04:04:37.334Z"
+    "depuis": "2026-06-25",
+    "le": "2026-08-24T04:09:03.961Z"
   },
-  "totalSeancesSource": 1077,
-  "collecteLe": "2026-08-23T04:04:37.334Z",
+  "totalSeancesSource": 1080,
+  "collecteLe": "2026-08-24T04:09:03.961Z",
   "statistiques": {
-    "seances": 408,
-    "points": 3281,
-    "besluitenResolus": 2821,
-    "avecTexteDistinct": 2235,
+    "seances": 411,
+    "points": 3302,
+    "besluitenResolus": 2838,
+    "avecTexteDistinct": 2249,
     "avecArticles": 0,
-    "appelsHttp": 666
+    "appelsHttp": 720
   },
   "seances": [
     {
@@ -2880,6 +2880,27 @@
       "debutPrevu": "2026-06-23T19:00:00+02:00",
       "fin": "2026-06-23T22:00:00+02:00",
       "uri": "https://kraainem.meetingburger.net/gr/18dda79e-2ac0-4768-9281-7272fda81d76/besluitenlijst#zitting18dda79e-2ac0-4768-9281-7272fda81d76"
+    },
+    {
+      "id": "87aa6855-ec1b-58f4-b257-7efa5d5fb57a",
+      "debut": "2026-08-27T09:00:00+02:00",
+      "debutPrevu": "2026-08-27T09:00:00+02:00",
+      "fin": "2026-08-27T11:00:00+02:00",
+      "uri": "https://kraainem.meetingburger.net/vabu/b1db3c72-e6c8-40d0-b5fb-073ec40ce324/agenda#zittingb1db3c72-e6c8-40d0-b5fb-073ec40ce324"
+    },
+    {
+      "id": "ca2446ac-35f5-5282-9da4-290ceacef3a1",
+      "debut": "2026-08-25T09:00:00+02:00",
+      "debutPrevu": "2026-08-25T09:00:00+02:00",
+      "fin": "2026-08-25T12:00:00+02:00",
+      "uri": "https://kraainem.meetingburger.net/cbs/0d344c7f-7b7c-4dd3-bb0a-bd6f048d8e77/agenda#zitting0d344c7f-7b7c-4dd3-bb0a-bd6f048d8e77"
+    },
+    {
+      "id": "2f9100f3-08de-5580-9a78-484178c03766",
+      "debut": "2026-08-11T08:30:00+02:00",
+      "debutPrevu": "2026-08-11T08:30:00+02:00",
+      "fin": "2026-08-11T11:30:00+02:00",
+      "uri": "https://kraainem.meetingburger.net/cbs/6670b02f-205a-4122-b1b4-1438f86fb698/besluitenlijst#zitting6670b02f-205a-4122-b1b4-1438f86fb698"
     }
   ],
   "points": [
@@ -2889,13 +2910,13 @@
       "titre": "Milieu – Luchthaven - Balanced Approach 2026",
       "description": "Milieu – Luchthaven - Balanced Approach 2026",
       "planifiePublic": true,
-      "lienPublic": "https://kraainem.meetingburger.net/cbs/6670b02f-205a-4122-b1b4-1438f86fb698/agenda",
+      "lienPublic": "https://kraainem.meetingburger.net/cbs/6670b02f-205a-4122-b1b4-1438f86fb698/besluitenlijst",
       "uri": "https://kraainem.meetingburger.net/cbs/6670b02f-205a-4122-b1b4-1438f86fb698/kraainem.meetingburger.net/cbs/6670b02f-205a-4122-b1b4-1438f86fb698#ef259169-2deb-4812-97f1-99218023ab22",
       "resolution": {
         "id": "d9c2492d-f639-5448-8ab4-0b42c9fd9710",
         "titre": "Besluit",
-        "valeur": "Milieu – Luchthaven - Balanced Approach 2026",
-        "datePublication": "2026-08-07",
+        "valeur": "Enig artikel:Het college van burgemeester en schepenen beslist om het punt - Luchthaven - Balanced Approach 2026, samen met de doelstellingennota/motie, vervat als bijlage en integraal deel uitmakend van deze beslissing, voor te leggen aan de gemeenteraad van 25 augustus 2026.",
+        "datePublication": "2026-08-21",
         "langue": "http://publications.europa.eu/resource/authority/language/NLD",
         "uri": "https://kraainem.meetingburger.net/cbs/6670b02f-205a-4122-b1b4-1438f86fb698/kraainem.meetingburger.net/cbs/6670b02f-205a-4122-b1b4-1438f86fb698#puntbesluitef259169-2deb-4812-97f1-99218023ab22",
         "nombreArticles": 0
@@ -2907,7 +2928,7 @@
       "titre": "Goedkeuring notulen van 4 augustus 2026",
       "description": "Goedkeuring notulen van 4 augustus 2026",
       "planifiePublic": true,
-      "lienPublic": "https://kraainem.meetingburger.net/cbs/6670b02f-205a-4122-b1b4-1438f86fb698/agenda",
+      "lienPublic": "https://kraainem.meetingburger.net/cbs/6670b02f-205a-4122-b1b4-1438f86fb698/besluitenlijst",
       "uri": "https://kraainem.meetingburger.net/cbs/6670b02f-205a-4122-b1b4-1438f86fb698/kraainem.meetingburger.net/cbs/6670b02f-205a-4122-b1b4-1438f86fb698#9541b409-0d2a-4948-83bb-d1a789856423",
       "resolution": null
     },
@@ -2917,7 +2938,7 @@
       "titre": "OO - BZ - Spec. vreemdelingen en burgerlijke stand",
       "description": "OO - BZ - Spec. vreemdelingen en burgerlijke stand",
       "planifiePublic": true,
-      "lienPublic": "https://kraainem.meetingburger.net/cbs/6670b02f-205a-4122-b1b4-1438f86fb698/agenda",
+      "lienPublic": "https://kraainem.meetingburger.net/cbs/6670b02f-205a-4122-b1b4-1438f86fb698/besluitenlijst",
       "uri": "https://kraainem.meetingburger.net/cbs/6670b02f-205a-4122-b1b4-1438f86fb698/kraainem.meetingburger.net/cbs/6670b02f-205a-4122-b1b4-1438f86fb698#0e8f0629-10c6-4f34-ade2-5188db2d082b",
       "resolution": {
         "id": "57c2f817-3c43-5b24-94de-e0cd2d668de1",
@@ -2935,13 +2956,13 @@
       "titre": "Samenwerkingsovereenkomst buitenschoolse opvang",
       "description": "Samenwerkingsovereenkomst buitenschoolse opvang",
       "planifiePublic": true,
-      "lienPublic": "https://kraainem.meetingburger.net/cbs/6670b02f-205a-4122-b1b4-1438f86fb698/agenda",
+      "lienPublic": "https://kraainem.meetingburger.net/cbs/6670b02f-205a-4122-b1b4-1438f86fb698/besluitenlijst",
       "uri": "https://kraainem.meetingburger.net/cbs/6670b02f-205a-4122-b1b4-1438f86fb698/kraainem.meetingburger.net/cbs/6670b02f-205a-4122-b1b4-1438f86fb698#058560cf-dd1f-4cce-a8c4-58a0b0dadecd",
       "resolution": {
         "id": "4930ae66-ed97-5b1c-ba41-2b6e0fb63987",
         "titre": "Besluit",
         "valeur": "Samenwerkingsovereenkomst buitenschoolse opvang - Infano vzw",
-        "datePublication": "2026-08-07",
+        "datePublication": "2026-08-21",
         "langue": "http://publications.europa.eu/resource/authority/language/NLD",
         "uri": "https://kraainem.meetingburger.net/cbs/6670b02f-205a-4122-b1b4-1438f86fb698/kraainem.meetingburger.net/cbs/6670b02f-205a-4122-b1b4-1438f86fb698#puntbesluit058560cf-dd1f-4cce-a8c4-58a0b0dadecd",
         "nombreArticles": 0
@@ -2953,13 +2974,13 @@
       "titre": "Antwoord brief Crevits fusiepotentieel",
       "description": "Antwoord brief Crevits fusiepotentieel",
       "planifiePublic": true,
-      "lienPublic": "https://kraainem.meetingburger.net/cbs/6670b02f-205a-4122-b1b4-1438f86fb698/agenda",
+      "lienPublic": "https://kraainem.meetingburger.net/cbs/6670b02f-205a-4122-b1b4-1438f86fb698/besluitenlijst",
       "uri": "https://kraainem.meetingburger.net/cbs/6670b02f-205a-4122-b1b4-1438f86fb698/kraainem.meetingburger.net/cbs/6670b02f-205a-4122-b1b4-1438f86fb698#f9478bca-2adb-4883-b2e7-4a8b16ac71f2",
       "resolution": {
         "id": "e562534d-089b-5bd3-8623-f10f4e601789",
         "titre": "Besluit",
         "valeur": "Antwoord brief minister Crevits van 3 juli 2026, betreffende het fusiepotentieel van de faciliteitengemeenten",
-        "datePublication": "2026-08-07",
+        "datePublication": "2026-08-21",
         "langue": "http://publications.europa.eu/resource/authority/language/NLD",
         "uri": "https://kraainem.meetingburger.net/cbs/6670b02f-205a-4122-b1b4-1438f86fb698/kraainem.meetingburger.net/cbs/6670b02f-205a-4122-b1b4-1438f86fb698#puntbesluitf9478bca-2adb-4883-b2e7-4a8b16ac71f2",
         "nombreArticles": 0
@@ -2971,13 +2992,13 @@
       "titre": "Solidariteitsactie voor Chernihiv",
       "description": "Solidariteitsactie voor Chernihiv",
       "planifiePublic": true,
-      "lienPublic": "https://kraainem.meetingburger.net/cbs/6670b02f-205a-4122-b1b4-1438f86fb698/agenda",
+      "lienPublic": "https://kraainem.meetingburger.net/cbs/6670b02f-205a-4122-b1b4-1438f86fb698/besluitenlijst",
       "uri": "https://kraainem.meetingburger.net/cbs/6670b02f-205a-4122-b1b4-1438f86fb698/kraainem.meetingburger.net/cbs/6670b02f-205a-4122-b1b4-1438f86fb698#f9819591-b26a-49cd-b793-33534f27f2d1",
       "resolution": {
         "id": "f40a3ab2-6d2f-504d-bc39-517315bffe31",
         "titre": "Besluit",
-        "valeur": "Solidariteitsactie voor Chernihiv",
-        "datePublication": "2026-08-07",
+        "valeur": "Volgend ontwerp van agendapunt wordt bij gebrek aan consensus ter beslissing voorgelegd aan de gemeenteraad: Artikel 1:Het college van burgemeester en schepenen beslist om, in het kader van de solidariteitsactie van Pater Karel, op korte termijn een inzamelactie te organiseren van niet-vervallen koffie, droge voeding, blikvoeding, pasta en andere energievoeding in de garage van het gemeentehuis. De praktische organisatie van deze actie wordt opgenomen door vrijwilligers. Artikel 2:Het college van burgemeester en schepenen beslist om na de zomer van 2026 een evaluatie van de situatie uit te voeren en, indien nodig, het recyclagepark in te zetten voor de inzameling van grotere goederen, batterijen en generatoren. Artikel 3:Het college van burgemeester en schepenen beslist om deze actie te communiceren via de gemeentelijke communicatiekanalen.",
+        "datePublication": "2026-08-21",
         "langue": "http://publications.europa.eu/resource/authority/language/NLD",
         "uri": "https://kraainem.meetingburger.net/cbs/6670b02f-205a-4122-b1b4-1438f86fb698/kraainem.meetingburger.net/cbs/6670b02f-205a-4122-b1b4-1438f86fb698#puntbesluitf9819591-b26a-49cd-b793-33534f27f2d1",
         "nombreArticles": 0
@@ -2989,7 +3010,7 @@
       "titre": "Vastlegging dagorde gemeenteraad 2026.08.25",
       "description": "Vastlegging dagorde gemeenteraad 2026.08.25",
       "planifiePublic": true,
-      "lienPublic": "https://kraainem.meetingburger.net/cbs/6670b02f-205a-4122-b1b4-1438f86fb698/agenda",
+      "lienPublic": "https://kraainem.meetingburger.net/cbs/6670b02f-205a-4122-b1b4-1438f86fb698/besluitenlijst",
       "uri": "https://kraainem.meetingburger.net/cbs/6670b02f-205a-4122-b1b4-1438f86fb698/kraainem.meetingburger.net/cbs/6670b02f-205a-4122-b1b4-1438f86fb698#e7c2c602-fda5-4f2c-a1c7-378e3c16cacb",
       "resolution": null
     },
@@ -57054,8 +57075,8 @@
       "resolution": {
         "id": "4912d707-d1b6-5d1e-bad6-688ba4ebb83c",
         "titre": "Besluit",
-        "valeur": "",
-        "datePublication": "2026-08-11",
+        "valeur": "Brief infomarkt - Heraanleg De Markt",
+        "datePublication": "2026-07-31",
         "langue": "http://publications.europa.eu/resource/authority/language/NLD",
         "uri": "https://kraainem.meetingburger.net/cbs/0df95388-85e7-483f-9841-d79703130ca0/kraainem.meetingburger.net/cbs/0df95388-85e7-483f-9841-d79703130ca0#puntbesluitfa50491c-bd2a-4c58-a429-f2676cde6b1c",
         "nombreArticles": 0
@@ -58258,6 +58279,352 @@
         "datePublication": "2026-08-14",
         "langue": "http://publications.europa.eu/resource/authority/language/NLD",
         "uri": "https://kraainem.meetingburger.net/gr/18dda79e-2ac0-4768-9281-7272fda81d76/kraainem.meetingburger.net/gr/18dda79e-2ac0-4768-9281-7272fda81d76#puntbesluitea23f3ab-f4ed-4900-aa3e-881287e40f9d",
+        "nombreArticles": 0
+      }
+    },
+    {
+      "id": "95bf0dec-33cd-5a28-9aba-08b4d32138aa",
+      "seanceId": "87aa6855-ec1b-58f4-b257-7efa5d5fb57a",
+      "titre": "Goedkeuring notulen 13 augustus 2026",
+      "description": "Goedkeuring notulen 13 augustus 2026",
+      "planifiePublic": true,
+      "lienPublic": "https://kraainem.meetingburger.net/vabu/b1db3c72-e6c8-40d0-b5fb-073ec40ce324/agenda",
+      "uri": "https://kraainem.meetingburger.net/vabu/b1db3c72-e6c8-40d0-b5fb-073ec40ce324/kraainem.meetingburger.net/vabu/b1db3c72-e6c8-40d0-b5fb-073ec40ce324#5661dab4-cb22-4580-bb92-946d9376a3a9",
+      "resolution": null
+    },
+    {
+      "id": "d6444bf0-6317-57d6-be7c-5d56b448511f",
+      "seanceId": "ca2446ac-35f5-5282-9da4-290ceacef3a1",
+      "titre": "Verkoop eten en drank - HCK",
+      "description": "Verkoop eten en drank - HCK",
+      "planifiePublic": true,
+      "lienPublic": "https://kraainem.meetingburger.net/cbs/0d344c7f-7b7c-4dd3-bb0a-bd6f048d8e77/agenda",
+      "uri": "https://kraainem.meetingburger.net/cbs/0d344c7f-7b7c-4dd3-bb0a-bd6f048d8e77/kraainem.meetingburger.net/cbs/0d344c7f-7b7c-4dd3-bb0a-bd6f048d8e77#4ad4cde1-0ba2-4a79-9098-bac02af5456d",
+      "resolution": {
+        "id": "3788d0ad-ecf7-54cd-a556-3e82a3b25ee4",
+        "titre": "Besluit",
+        "valeur": "Verkoop eten en drank - HCK - 29 en 30 augustus 2026, 5 september 2026",
+        "datePublication": "2026-08-21",
+        "langue": "http://publications.europa.eu/resource/authority/language/NLD",
+        "uri": "https://kraainem.meetingburger.net/cbs/0d344c7f-7b7c-4dd3-bb0a-bd6f048d8e77/kraainem.meetingburger.net/cbs/0d344c7f-7b7c-4dd3-bb0a-bd6f048d8e77#puntbesluit4ad4cde1-0ba2-4a79-9098-bac02af5456d",
+        "nombreArticles": 0
+      }
+    },
+    {
+      "id": "c06a2089-cb07-57ca-8b88-8c1184b36f42",
+      "seanceId": "ca2446ac-35f5-5282-9da4-290ceacef3a1",
+      "titre": "IBP vergunning - nieuw voertuig - vergunning 3060",
+      "description": "IBP vergunning - nieuw voertuig - vergunning 3060",
+      "planifiePublic": true,
+      "lienPublic": "https://kraainem.meetingburger.net/cbs/0d344c7f-7b7c-4dd3-bb0a-bd6f048d8e77/agenda",
+      "uri": "https://kraainem.meetingburger.net/cbs/0d344c7f-7b7c-4dd3-bb0a-bd6f048d8e77/kraainem.meetingburger.net/cbs/0d344c7f-7b7c-4dd3-bb0a-bd6f048d8e77#fe0a27c5-85bd-47a9-946a-d0e662e038aa",
+      "resolution": {
+        "id": "405aeb63-0ba1-5fea-b538-fa34952172ad",
+        "titre": "Besluit",
+        "valeur": "IBP vergunning - nieuw voertuig - vergunning 3060",
+        "datePublication": "2026-08-21",
+        "langue": "http://publications.europa.eu/resource/authority/language/NLD",
+        "uri": "https://kraainem.meetingburger.net/cbs/0d344c7f-7b7c-4dd3-bb0a-bd6f048d8e77/kraainem.meetingburger.net/cbs/0d344c7f-7b7c-4dd3-bb0a-bd6f048d8e77#puntbesluitfe0a27c5-85bd-47a9-946a-d0e662e038aa",
+        "nombreArticles": 0
+      }
+    },
+    {
+      "id": "51127194-19d6-5d98-afff-3ff381236c1f",
+      "seanceId": "ca2446ac-35f5-5282-9da4-290ceacef3a1",
+      "titre": "Softwarepakket Subsidietool",
+      "description": "Softwarepakket Subsidietool",
+      "planifiePublic": true,
+      "lienPublic": "https://kraainem.meetingburger.net/cbs/0d344c7f-7b7c-4dd3-bb0a-bd6f048d8e77/agenda",
+      "uri": "https://kraainem.meetingburger.net/cbs/0d344c7f-7b7c-4dd3-bb0a-bd6f048d8e77/kraainem.meetingburger.net/cbs/0d344c7f-7b7c-4dd3-bb0a-bd6f048d8e77#adb7c65e-e44a-463c-86e2-42051b722f62",
+      "resolution": {
+        "id": "d9496f4a-b7dc-565d-a630-aeff6f7c9d7c",
+        "titre": "Besluit",
+        "valeur": "Levering, implementatie, configuratie, ondersteuning en onderhoud van een softwarepakket voor het digitaal proces van subsidieaanvraag - Goedkeuring lastvoorwaarden, gunningswijze en uit te nodigen firma's",
+        "datePublication": "2026-08-21",
+        "langue": "http://publications.europa.eu/resource/authority/language/NLD",
+        "uri": "https://kraainem.meetingburger.net/cbs/0d344c7f-7b7c-4dd3-bb0a-bd6f048d8e77/kraainem.meetingburger.net/cbs/0d344c7f-7b7c-4dd3-bb0a-bd6f048d8e77#puntbesluitadb7c65e-e44a-463c-86e2-42051b722f62",
+        "nombreArticles": 0
+      }
+    },
+    {
+      "id": "0b73ae8c-7b1a-521c-934c-643472143fcf",
+      "seanceId": "ca2446ac-35f5-5282-9da4-290ceacef3a1",
+      "titre": "Mobiliteit - Signalisatievergunning",
+      "description": "Mobiliteit - Signalisatievergunning",
+      "planifiePublic": true,
+      "lienPublic": "https://kraainem.meetingburger.net/cbs/0d344c7f-7b7c-4dd3-bb0a-bd6f048d8e77/agenda",
+      "uri": "https://kraainem.meetingburger.net/cbs/0d344c7f-7b7c-4dd3-bb0a-bd6f048d8e77/kraainem.meetingburger.net/cbs/0d344c7f-7b7c-4dd3-bb0a-bd6f048d8e77#519f3e70-e5f9-4979-9c13-24ae255b6d1a",
+      "resolution": null
+    },
+    {
+      "id": "08d2741a-86da-52dd-b36f-6cdc24ba74e3",
+      "seanceId": "ca2446ac-35f5-5282-9da4-290ceacef3a1",
+      "titre": "Milieu - Verwijderen boom",
+      "description": "Milieu - Verwijderen boom",
+      "planifiePublic": true,
+      "lienPublic": "https://kraainem.meetingburger.net/cbs/0d344c7f-7b7c-4dd3-bb0a-bd6f048d8e77/agenda",
+      "uri": "https://kraainem.meetingburger.net/cbs/0d344c7f-7b7c-4dd3-bb0a-bd6f048d8e77/kraainem.meetingburger.net/cbs/0d344c7f-7b7c-4dd3-bb0a-bd6f048d8e77#82f41763-23ce-48ed-8ca4-f94b61fa38b3",
+      "resolution": {
+        "id": "df69ac4d-9387-5a5b-9f73-ca0494bd4641",
+        "titre": "Besluit",
+        "valeur": "Milieu - Verwijderen boom - Oscar de Burburelaan",
+        "datePublication": "2026-08-21",
+        "langue": "http://publications.europa.eu/resource/authority/language/NLD",
+        "uri": "https://kraainem.meetingburger.net/cbs/0d344c7f-7b7c-4dd3-bb0a-bd6f048d8e77/kraainem.meetingburger.net/cbs/0d344c7f-7b7c-4dd3-bb0a-bd6f048d8e77#puntbesluit82f41763-23ce-48ed-8ca4-f94b61fa38b3",
+        "nombreArticles": 0
+      }
+    },
+    {
+      "id": "25403fa1-995f-5224-87b9-c6ed625f00d9",
+      "seanceId": "ca2446ac-35f5-5282-9da4-290ceacef3a1",
+      "titre": "Dienstverlening burgerzaken",
+      "description": "Dienstverlening burgerzaken",
+      "planifiePublic": true,
+      "lienPublic": "https://kraainem.meetingburger.net/cbs/0d344c7f-7b7c-4dd3-bb0a-bd6f048d8e77/agenda",
+      "uri": "https://kraainem.meetingburger.net/cbs/0d344c7f-7b7c-4dd3-bb0a-bd6f048d8e77/kraainem.meetingburger.net/cbs/0d344c7f-7b7c-4dd3-bb0a-bd6f048d8e77#b070d6db-6f94-4c13-8cac-fba1d5754875",
+      "resolution": {
+        "id": "85cb23f3-8c97-5dab-a082-dbe3121579f0",
+        "titre": "Besluit",
+        "valeur": "Dienstverlening burgerzaken - Afschaffing van de vrije inloopuren op dinsdagavond en woensdagnamiddag",
+        "datePublication": "2026-08-21",
+        "langue": "http://publications.europa.eu/resource/authority/language/NLD",
+        "uri": "https://kraainem.meetingburger.net/cbs/0d344c7f-7b7c-4dd3-bb0a-bd6f048d8e77/kraainem.meetingburger.net/cbs/0d344c7f-7b7c-4dd3-bb0a-bd6f048d8e77#puntbesluitb070d6db-6f94-4c13-8cac-fba1d5754875",
+        "nombreArticles": 0
+      }
+    },
+    {
+      "id": "cda4d280-1a7c-507e-9c1c-739e7bd047b8",
+      "seanceId": "ca2446ac-35f5-5282-9da4-290ceacef3a1",
+      "titre": "Principebeslissing hondenwasstation",
+      "description": "Principebeslissing hondenwasstation",
+      "planifiePublic": true,
+      "lienPublic": "https://kraainem.meetingburger.net/cbs/0d344c7f-7b7c-4dd3-bb0a-bd6f048d8e77/agenda",
+      "uri": "https://kraainem.meetingburger.net/cbs/0d344c7f-7b7c-4dd3-bb0a-bd6f048d8e77/kraainem.meetingburger.net/cbs/0d344c7f-7b7c-4dd3-bb0a-bd6f048d8e77#ef2611da-dc91-48d6-8191-17c46502f0fb",
+      "resolution": {
+        "id": "8553df10-15a2-53a9-af9a-0bfd8e55d8bc",
+        "titre": "Besluit",
+        "valeur": "Principebeslissing hondenwasstation",
+        "datePublication": "2026-08-21",
+        "langue": "http://publications.europa.eu/resource/authority/language/NLD",
+        "uri": "https://kraainem.meetingburger.net/cbs/0d344c7f-7b7c-4dd3-bb0a-bd6f048d8e77/kraainem.meetingburger.net/cbs/0d344c7f-7b7c-4dd3-bb0a-bd6f048d8e77#puntbesluitef2611da-dc91-48d6-8191-17c46502f0fb",
+        "nombreArticles": 0
+      }
+    },
+    {
+      "id": "b625820e-8fe1-5de4-84e6-01dbf0f13454",
+      "seanceId": "ca2446ac-35f5-5282-9da4-290ceacef3a1",
+      "titre": "Patrimonium - Diabolo",
+      "description": "Patrimonium - Diabolo",
+      "planifiePublic": true,
+      "lienPublic": "https://kraainem.meetingburger.net/cbs/0d344c7f-7b7c-4dd3-bb0a-bd6f048d8e77/agenda",
+      "uri": "https://kraainem.meetingburger.net/cbs/0d344c7f-7b7c-4dd3-bb0a-bd6f048d8e77/kraainem.meetingburger.net/cbs/0d344c7f-7b7c-4dd3-bb0a-bd6f048d8e77#2f47e064-6871-415d-b374-4412a4ace468",
+      "resolution": {
+        "id": "e7172fc2-ddae-5265-9555-dd44c4f208e4",
+        "titre": "Besluit",
+        "valeur": "Patrimonium - Franstalige gemeentelijke basisschool Diabolo - Goedkeuring gunningswijze en lastvoorwaarden - Aanstelling van een ontwerpbureau voor de uitbreiding van de Diabolo school",
+        "datePublication": "2026-08-21",
+        "langue": "http://publications.europa.eu/resource/authority/language/NLD",
+        "uri": "https://kraainem.meetingburger.net/cbs/0d344c7f-7b7c-4dd3-bb0a-bd6f048d8e77/kraainem.meetingburger.net/cbs/0d344c7f-7b7c-4dd3-bb0a-bd6f048d8e77#puntbesluit2f47e064-6871-415d-b374-4412a4ace468",
+        "nombreArticles": 0
+      }
+    },
+    {
+      "id": "650970de-2da0-5427-957e-c0eb76c7972d",
+      "seanceId": "ca2446ac-35f5-5282-9da4-290ceacef3a1",
+      "titre": "Goedkeuring notulen van 18 augustus 2026",
+      "description": "Goedkeuring notulen van 18 augustus 2026",
+      "planifiePublic": true,
+      "lienPublic": "https://kraainem.meetingburger.net/cbs/0d344c7f-7b7c-4dd3-bb0a-bd6f048d8e77/agenda",
+      "uri": "https://kraainem.meetingburger.net/cbs/0d344c7f-7b7c-4dd3-bb0a-bd6f048d8e77/kraainem.meetingburger.net/cbs/0d344c7f-7b7c-4dd3-bb0a-bd6f048d8e77#db703b53-7b5c-4f24-af18-f0247aa7c641",
+      "resolution": null
+    },
+    {
+      "id": "6fd4dbf9-37f9-561a-baba-d42b5eb5502a",
+      "seanceId": "ca2446ac-35f5-5282-9da4-290ceacef3a1",
+      "titre": "Agora - Aanvraag afwijking openingsuren",
+      "description": "Agora - Aanvraag afwijking openingsuren",
+      "planifiePublic": true,
+      "lienPublic": "https://kraainem.meetingburger.net/cbs/0d344c7f-7b7c-4dd3-bb0a-bd6f048d8e77/agenda",
+      "uri": "https://kraainem.meetingburger.net/cbs/0d344c7f-7b7c-4dd3-bb0a-bd6f048d8e77/kraainem.meetingburger.net/cbs/0d344c7f-7b7c-4dd3-bb0a-bd6f048d8e77#6628fdf3-fa93-4e13-b083-94688f60adb1",
+      "resolution": {
+        "id": "7fcc0fac-c2d7-5a48-9280-a0560b0ee482",
+        "titre": "Besluit",
+        "valeur": "Agora - SilverCatWolf - Aanvraag afwijking openingsuren",
+        "datePublication": "2026-08-21",
+        "langue": "http://publications.europa.eu/resource/authority/language/NLD",
+        "uri": "https://kraainem.meetingburger.net/cbs/0d344c7f-7b7c-4dd3-bb0a-bd6f048d8e77/kraainem.meetingburger.net/cbs/0d344c7f-7b7c-4dd3-bb0a-bd6f048d8e77#puntbesluit6628fdf3-fa93-4e13-b083-94688f60adb1",
+        "nombreArticles": 0
+      }
+    },
+    {
+      "id": "24012892-3f9e-5353-ba28-8b6c300367e9",
+      "seanceId": "ca2446ac-35f5-5282-9da4-290ceacef3a1",
+      "titre": "OMV/2026/046 - Kapellelaan",
+      "description": "OMV/2026/046 - Kapellelaan",
+      "planifiePublic": true,
+      "lienPublic": "https://kraainem.meetingburger.net/cbs/0d344c7f-7b7c-4dd3-bb0a-bd6f048d8e77/agenda",
+      "uri": "https://kraainem.meetingburger.net/cbs/0d344c7f-7b7c-4dd3-bb0a-bd6f048d8e77/kraainem.meetingburger.net/cbs/0d344c7f-7b7c-4dd3-bb0a-bd6f048d8e77#c0b87741-4470-4ed6-9b1b-08fde6daa35e",
+      "resolution": {
+        "id": "adece11e-8e8d-5121-a681-c735839df11a",
+        "titre": "Besluit",
+        "valeur": "OMV/2026/046 - Kapellelaan - bouwen van een nieuwe uitbreiding aan de voorkant van de woning",
+        "datePublication": "2026-08-21",
+        "langue": "http://publications.europa.eu/resource/authority/language/NLD",
+        "uri": "https://kraainem.meetingburger.net/cbs/0d344c7f-7b7c-4dd3-bb0a-bd6f048d8e77/kraainem.meetingburger.net/cbs/0d344c7f-7b7c-4dd3-bb0a-bd6f048d8e77#puntbesluitc0b87741-4470-4ed6-9b1b-08fde6daa35e",
+        "nombreArticles": 0
+      }
+    },
+    {
+      "id": "17de3ad0-48d2-540d-b094-99f872d47880",
+      "seanceId": "ca2446ac-35f5-5282-9da4-290ceacef3a1",
+      "titre": "Mobiliteit - Signalisatievergunning",
+      "description": "Mobiliteit - Signalisatievergunning",
+      "planifiePublic": true,
+      "lienPublic": "https://kraainem.meetingburger.net/cbs/0d344c7f-7b7c-4dd3-bb0a-bd6f048d8e77/agenda",
+      "uri": "https://kraainem.meetingburger.net/cbs/0d344c7f-7b7c-4dd3-bb0a-bd6f048d8e77/kraainem.meetingburger.net/cbs/0d344c7f-7b7c-4dd3-bb0a-bd6f048d8e77#57c38f72-7da6-4ead-a171-1d0beb8d24bb",
+      "resolution": null
+    },
+    {
+      "id": "bd1de5e4-1077-54a8-8425-b1ae9ffb249c",
+      "seanceId": "ca2446ac-35f5-5282-9da4-290ceacef3a1",
+      "titre": "Evenement - Opendeurdag Zwaluwenboerderij",
+      "description": "Evenement - Opendeurdag Zwaluwenboerderij",
+      "planifiePublic": true,
+      "lienPublic": "https://kraainem.meetingburger.net/cbs/0d344c7f-7b7c-4dd3-bb0a-bd6f048d8e77/agenda",
+      "uri": "https://kraainem.meetingburger.net/cbs/0d344c7f-7b7c-4dd3-bb0a-bd6f048d8e77/kraainem.meetingburger.net/cbs/0d344c7f-7b7c-4dd3-bb0a-bd6f048d8e77#874570b6-50b4-4a33-a36f-eba33d9233a8",
+      "resolution": {
+        "id": "eef7f0b6-249b-57db-8a90-b48ce26adcc1",
+        "titre": "Besluit",
+        "valeur": "Evenement - Opendeurdag Zwaluwenboerderij",
+        "datePublication": "2026-08-21",
+        "langue": "http://publications.europa.eu/resource/authority/language/NLD",
+        "uri": "https://kraainem.meetingburger.net/cbs/0d344c7f-7b7c-4dd3-bb0a-bd6f048d8e77/kraainem.meetingburger.net/cbs/0d344c7f-7b7c-4dd3-bb0a-bd6f048d8e77#puntbesluit874570b6-50b4-4a33-a36f-eba33d9233a8",
+        "nombreArticles": 0
+      }
+    },
+    {
+      "id": "f29fa8cf-0228-522b-9cb2-2ad3c4aeef45",
+      "seanceId": "ca2446ac-35f5-5282-9da4-290ceacef3a1",
+      "titre": "Digitalisering archiefdossiers omgevingsvergunning",
+      "description": "Digitalisering archiefdossiers omgevingsvergunning",
+      "planifiePublic": true,
+      "lienPublic": "https://kraainem.meetingburger.net/cbs/0d344c7f-7b7c-4dd3-bb0a-bd6f048d8e77/agenda",
+      "uri": "https://kraainem.meetingburger.net/cbs/0d344c7f-7b7c-4dd3-bb0a-bd6f048d8e77/kraainem.meetingburger.net/cbs/0d344c7f-7b7c-4dd3-bb0a-bd6f048d8e77#277cb6b1-240c-4687-b79d-0337f0bd1352",
+      "resolution": {
+        "id": "d6fb6872-b53d-559f-809f-fcb40bd20c86",
+        "titre": "Besluit",
+        "valeur": "Gunningsovereenkomst met dienstverlener voor digitalisering van de archiefdossiers van omgevingsvergunningen",
+        "datePublication": "2026-08-21",
+        "langue": "http://publications.europa.eu/resource/authority/language/NLD",
+        "uri": "https://kraainem.meetingburger.net/cbs/0d344c7f-7b7c-4dd3-bb0a-bd6f048d8e77/kraainem.meetingburger.net/cbs/0d344c7f-7b7c-4dd3-bb0a-bd6f048d8e77#puntbesluit277cb6b1-240c-4687-b79d-0337f0bd1352",
+        "nombreArticles": 0
+      }
+    },
+    {
+      "id": "c39e1dfd-55fb-555e-aec7-9d144bbb7343",
+      "seanceId": "ca2446ac-35f5-5282-9da4-290ceacef3a1",
+      "titre": "OMV/2026/048 - Korenbloemenstraat",
+      "description": "OMV/2026/048 - Korenbloemenstraat",
+      "planifiePublic": true,
+      "lienPublic": "https://kraainem.meetingburger.net/cbs/0d344c7f-7b7c-4dd3-bb0a-bd6f048d8e77/agenda",
+      "uri": "https://kraainem.meetingburger.net/cbs/0d344c7f-7b7c-4dd3-bb0a-bd6f048d8e77/kraainem.meetingburger.net/cbs/0d344c7f-7b7c-4dd3-bb0a-bd6f048d8e77#bfb93557-cab0-460b-84f1-9d5b7a87b9c8",
+      "resolution": {
+        "id": "f15be7af-6fd0-5285-939e-97c81af28fff",
+        "titre": "Besluit",
+        "valeur": "OMV/2026/048 - Korenbloemenstraat - regularisatie van een verbouwing en uitbreiding van een gesloten eengezinswoning",
+        "datePublication": "2026-08-21",
+        "langue": "http://publications.europa.eu/resource/authority/language/NLD",
+        "uri": "https://kraainem.meetingburger.net/cbs/0d344c7f-7b7c-4dd3-bb0a-bd6f048d8e77/kraainem.meetingburger.net/cbs/0d344c7f-7b7c-4dd3-bb0a-bd6f048d8e77#puntbesluitbfb93557-cab0-460b-84f1-9d5b7a87b9c8",
+        "nombreArticles": 0
+      }
+    },
+    {
+      "id": "123fe0c4-af92-5431-b044-3acfc448be2c",
+      "seanceId": "ca2446ac-35f5-5282-9da4-290ceacef3a1",
+      "titre": "OMV/2026/060 - Sint Antoniuslaan",
+      "description": "OMV/2026/060 - Sint Antoniuslaan",
+      "planifiePublic": true,
+      "lienPublic": "https://kraainem.meetingburger.net/cbs/0d344c7f-7b7c-4dd3-bb0a-bd6f048d8e77/agenda",
+      "uri": "https://kraainem.meetingburger.net/cbs/0d344c7f-7b7c-4dd3-bb0a-bd6f048d8e77/kraainem.meetingburger.net/cbs/0d344c7f-7b7c-4dd3-bb0a-bd6f048d8e77#9f0a9017-823e-4e4b-9d5d-aa04348b5d51",
+      "resolution": {
+        "id": "849ddbff-a78d-5ff6-8c61-617c8f1e97d5",
+        "titre": "Besluit",
+        "valeur": "OMV/2026/060 - Sint Antoniuslaan - renoveren van een woning met de inrichting van een dokterspraktijk in de kelder",
+        "datePublication": "2026-08-21",
+        "langue": "http://publications.europa.eu/resource/authority/language/NLD",
+        "uri": "https://kraainem.meetingburger.net/cbs/0d344c7f-7b7c-4dd3-bb0a-bd6f048d8e77/kraainem.meetingburger.net/cbs/0d344c7f-7b7c-4dd3-bb0a-bd6f048d8e77#puntbesluit9f0a9017-823e-4e4b-9d5d-aa04348b5d51",
+        "nombreArticles": 0
+      }
+    },
+    {
+      "id": "df55a248-461a-58d4-928f-941a8e2ef003",
+      "seanceId": "ca2446ac-35f5-5282-9da4-290ceacef3a1",
+      "titre": "Betalingsbevelen",
+      "description": "Betalingsbevelen",
+      "planifiePublic": true,
+      "lienPublic": "https://kraainem.meetingburger.net/cbs/0d344c7f-7b7c-4dd3-bb0a-bd6f048d8e77/agenda",
+      "uri": "https://kraainem.meetingburger.net/cbs/0d344c7f-7b7c-4dd3-bb0a-bd6f048d8e77/kraainem.meetingburger.net/cbs/0d344c7f-7b7c-4dd3-bb0a-bd6f048d8e77#4a0d12fe-6a93-4fcc-8c01-32853e966732",
+      "resolution": {
+        "id": "fdbe1a1a-1c54-5e53-93ec-6d26959f9cdf",
+        "titre": "Besluit",
+        "valeur": "Betalingsbevelen",
+        "datePublication": "2026-08-21",
+        "langue": "http://publications.europa.eu/resource/authority/language/NLD",
+        "uri": "https://kraainem.meetingburger.net/cbs/0d344c7f-7b7c-4dd3-bb0a-bd6f048d8e77/kraainem.meetingburger.net/cbs/0d344c7f-7b7c-4dd3-bb0a-bd6f048d8e77#puntbesluit4a0d12fe-6a93-4fcc-8c01-32853e966732",
+        "nombreArticles": 0
+      }
+    },
+    {
+      "id": "7a1a1efa-4916-50a4-8035-ad2eaa048305",
+      "seanceId": "ca2446ac-35f5-5282-9da4-290ceacef3a1",
+      "titre": "Toestemming voor filmopnames door Senec",
+      "description": "Toestemming voor filmopnames door Senec",
+      "planifiePublic": true,
+      "lienPublic": "https://kraainem.meetingburger.net/cbs/0d344c7f-7b7c-4dd3-bb0a-bd6f048d8e77/agenda",
+      "uri": "https://kraainem.meetingburger.net/cbs/0d344c7f-7b7c-4dd3-bb0a-bd6f048d8e77/kraainem.meetingburger.net/cbs/0d344c7f-7b7c-4dd3-bb0a-bd6f048d8e77#94392569-3245-4b20-99e9-0081acfef601",
+      "resolution": {
+        "id": "f59f80f8-e5ac-515e-9c8e-a257209e44c0",
+        "titre": "Besluit",
+        "valeur": "Toestemming voor filmopnames door Senec",
+        "datePublication": "2026-08-21",
+        "langue": "http://publications.europa.eu/resource/authority/language/NLD",
+        "uri": "https://kraainem.meetingburger.net/cbs/0d344c7f-7b7c-4dd3-bb0a-bd6f048d8e77/kraainem.meetingburger.net/cbs/0d344c7f-7b7c-4dd3-bb0a-bd6f048d8e77#puntbesluit94392569-3245-4b20-99e9-0081acfef601",
+        "nombreArticles": 0
+      }
+    },
+    {
+      "id": "31d931a3-8510-5bac-b977-6186029fc5c6",
+      "seanceId": "ca2446ac-35f5-5282-9da4-290ceacef3a1",
+      "titre": "Milieu - Verwijderen boom",
+      "description": "Milieu - Verwijderen boom",
+      "planifiePublic": true,
+      "lienPublic": "https://kraainem.meetingburger.net/cbs/0d344c7f-7b7c-4dd3-bb0a-bd6f048d8e77/agenda",
+      "uri": "https://kraainem.meetingburger.net/cbs/0d344c7f-7b7c-4dd3-bb0a-bd6f048d8e77/kraainem.meetingburger.net/cbs/0d344c7f-7b7c-4dd3-bb0a-bd6f048d8e77#1ee7cc88-26dd-4189-8387-8dc525117cb3",
+      "resolution": {
+        "id": "3c1672b7-7788-557e-a7d8-8a3251af0256",
+        "titre": "Besluit",
+        "valeur": "Milieu - Verwijderen boom – Bosduivenlaan",
+        "datePublication": "2026-08-21",
+        "langue": "http://publications.europa.eu/resource/authority/language/NLD",
+        "uri": "https://kraainem.meetingburger.net/cbs/0d344c7f-7b7c-4dd3-bb0a-bd6f048d8e77/kraainem.meetingburger.net/cbs/0d344c7f-7b7c-4dd3-bb0a-bd6f048d8e77#puntbesluit1ee7cc88-26dd-4189-8387-8dc525117cb3",
+        "nombreArticles": 0
+      }
+    },
+    {
+      "id": "8e68d20b-a24c-5789-865a-1bed1a71c6f4",
+      "seanceId": "ca2446ac-35f5-5282-9da4-290ceacef3a1",
+      "titre": "Terugbetaling waarborg OMV_2019_045",
+      "description": "Terugbetaling waarborg OMV_2019_045",
+      "planifiePublic": true,
+      "lienPublic": "https://kraainem.meetingburger.net/cbs/0d344c7f-7b7c-4dd3-bb0a-bd6f048d8e77/agenda",
+      "uri": "https://kraainem.meetingburger.net/cbs/0d344c7f-7b7c-4dd3-bb0a-bd6f048d8e77/kraainem.meetingburger.net/cbs/0d344c7f-7b7c-4dd3-bb0a-bd6f048d8e77#74bc27e8-e104-4388-ab3f-5ab8cd3bc59a",
+      "resolution": {
+        "id": "c7030a0b-e851-5a32-af0f-6d65d8a1b69f",
+        "titre": "Besluit",
+        "valeur": "Terugbetaling waarborg OMV_2019_045 - Hebronlaan",
+        "datePublication": "2026-08-21",
+        "langue": "http://publications.europa.eu/resource/authority/language/NLD",
+        "uri": "https://kraainem.meetingburger.net/cbs/0d344c7f-7b7c-4dd3-bb0a-bd6f048d8e77/kraainem.meetingburger.net/cbs/0d344c7f-7b7c-4dd3-bb0a-bd6f048d8e77#puntbesluit74bc27e8-e104-4388-ab3f-5ab8cd3bc59a",
         "nombreArticles": 0
       }
     }

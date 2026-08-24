@@ -13,7 +13,7 @@
       "Rien ne garantit qu’un établissement fermé ait été retiré de la base."
     ]
   },
-  "collecteLe": "2026-08-23T04:04:52.447Z",
+  "collecteLe": "2026-08-24T04:09:15.497Z",
   "codeNis": "23099",
   "etablissements": [
     {
@@ -1693,8 +1693,8 @@
       "telephone": null,
       "site": null,
       "horaires": null,
-      "latitude": 50.8218388,
-      "longitude": 4.4692489
+      "latitude": 50.8218498,
+      "longitude": 4.4692754
     },
     {
       "id": "node/4068907671",
