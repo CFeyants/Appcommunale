@@ -13,9 +13,17 @@
       "Les requêtes SPARQL longues dépassent régulièrement le délai d’attente du point d’accès public."
     ]
   },
-  "collecteLe": "2026-08-25T04:03:48.385Z",
+  "collecteLe": "2026-08-26T04:06:46.242Z",
   "depuis": "2026-01-01",
   "actes": [
+    {
+      "celex": "32026R1961",
+      "date": "2026-08-24",
+      "titre": "Règlement d’exécution (UE) 2026/1961 de la Commission du 24 août 2026 modifiant les annexes I et II du règlement d’exécution (UE) 2023/594 établissant des mesures spéciales de lutte contre la peste porcine africaine et abrogeant la décision d’exécution (UE) 2026/1937 concernant certaines mesures d’urgence provisoires contre la peste porcine africaine en Finlande",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/1961/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R1961",
+      "nature": "reglement"
+    },
     {
       "celex": "32026R1959",
       "date": "2026-08-21",
@@ -326,14 +334,6 @@
       "titre": "Règlement d’exécution (UE) 2026/1901 de la Commission du 28 juillet 2026 concernant l’enregistrement de l’indication géographique Pernil Cerretà (IGP) dans le registre de l’Union des indications géographiques conformément au règlement (UE) 2024/1143 du Parlement européen et du Conseil",
       "urlEli": "http://data.europa.eu/eli/reg/2026/1901/oj",
       "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R1901",
-      "nature": "reglement"
-    },
-    {
-      "celex": "32026R1821",
-      "date": "2026-07-27",
-      "titre": "Règlement d’exécution (UE) 2026/1821 de la Commission du 27 juillet 2026 modifiant le règlement d’exécution (UE) 2015/1018 établissant une liste classant les événements dans l’aviation civile devant être obligatoirement notifiés, en ce qui concerne les systèmes d’aéronefs sans équipage à bord (UAS), les événements dans l’U-space et les événements relevant de la partie IS, et supprimant certains événements liés à la sûreté de l’aviation des exigences en matière de comptes rendus obligatoires",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/1821/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R1821",
       "nature": "reglement"
     }
   ]
