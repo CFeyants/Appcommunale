@@ -13,9 +13,17 @@
       "Les requêtes SPARQL longues dépassent régulièrement le délai d’attente du point d’accès public."
     ]
   },
-  "collecteLe": "2026-08-30T09:18:17.550Z",
+  "collecteLe": "2026-08-31T09:49:16.897Z",
   "depuis": "2026-01-01",
   "actes": [
+    {
+      "celex": "32026R1963",
+      "date": "2026-08-28",
+      "titre": "Règlement d’exécution (UE) 2026/1963 de la Commission du 28 août 2026 portant détermination du type d’éléments de preuve devant être fournis par les importateurs en vue d’établir le pays de fusion et de coulée",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/1963/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R1963",
+      "nature": "reglement"
+    },
     {
       "celex": "32026R1965",
       "date": "2026-08-26",
@@ -129,6 +137,22 @@
       "nature": "reglement"
     },
     {
+      "celex": "32026R1920",
+      "date": "2026-07-31",
+      "titre": "Règlement d’exécution (UE) 2026/1920 de la Commission du 31 juillet 2026 relatif à l’approbation d’une modification, à l’échelle de l’Union, du cahier des charges de l’appellation d’origine protégée Romagna conformément au règlement (UE) 2024/1143 du Parlement européen et du Conseil",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/1920/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R1920",
+      "nature": "reglement"
+    },
+    {
+      "celex": "32026R1927",
+      "date": "2026-07-31",
+      "titre": "Règlement d’exécution (UE) 2026/1927 de la Commission du 31 juillet 2026 concernant l’enregistrement de l’indication géographique Kiełbasa pradziada z Dukli (IGP) dans le registre de l’Union des indications géographiques conformément au règlement (UE) 2024/1143 du Parlement européen et du Conseil",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/1927/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R1927",
+      "nature": "reglement"
+    },
+    {
       "celex": "32026R1913",
       "date": "2026-07-31",
       "titre": "Règlement délégué (UE) 2026/1913 de la Commission du 31 juillet 2026 relatif à une mesure temporaire exceptionnelle de distillation de crise destinée à remédier aux perturbations du marché dans le secteur du vin allemand au cours de la campagne de commercialisation 2026/2027",
@@ -158,22 +182,6 @@
       "titre": "Règlement d’exécution (UE) 2026/1906 de la Commission du 31 juillet 2026 modifiant le règlement d’exécution (UE) 2022/128 en ce qui concerne des règles plus flexibles relatives au versement d’avances en réponse à la hausse des prix des engrais due à la crise au Moyen-Orient",
       "urlEli": "http://data.europa.eu/eli/reg/2026/1906/oj",
       "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R1906",
-      "nature": "reglement"
-    },
-    {
-      "celex": "32026R1927",
-      "date": "2026-07-31",
-      "titre": "Règlement d’exécution (UE) 2026/1927 de la Commission du 31 juillet 2026 concernant l’enregistrement de l’indication géographique Kiełbasa pradziada z Dukli (IGP) dans le registre de l’Union des indications géographiques conformément au règlement (UE) 2024/1143 du Parlement européen et du Conseil",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/1927/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R1927",
-      "nature": "reglement"
-    },
-    {
-      "celex": "32026R1920",
-      "date": "2026-07-31",
-      "titre": "Règlement d’exécution (UE) 2026/1920 de la Commission du 31 juillet 2026 relatif à l’approbation d’une modification, à l’échelle de l’Union, du cahier des charges de l’appellation d’origine protégée Romagna conformément au règlement (UE) 2024/1143 du Parlement européen et du Conseil",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/1920/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R1920",
       "nature": "reglement"
     },
     {
@@ -233,6 +241,14 @@
       "nature": "reglement"
     },
     {
+      "celex": "32026R1872",
+      "date": "2026-07-29",
+      "titre": "Règlement d’exécution (UE) 2026/1872 de la Commission du 29 juillet 2026 modifiant les normes techniques d’exécution définies dans le règlement d’exécution (UE) 2016/2070 en ce qui concerne les portefeuilles de référence et les modèles et instructions à respecter dans l’Union pour la communication d’informations visée à l’article 78, paragraphe 2, de la directive 2013/36/UE du Parlement européen et du Conseil",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/1872/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R1872",
+      "nature": "reglement"
+    },
+    {
       "celex": "32026R1860",
       "date": "2026-07-29",
       "titre": "Règlement d’exécution (UE) 2026/1860 de la Commission du 29 juillet 2026 concernant l’autorisation d’une préparation de narasin (Monteban G100) en tant qu’additif pour l’alimentation des poulets d’engraissement (titulaire de l’autorisation: Elanco GmbH) et abrogeant le règlement (CE) no 1464/2004",
@@ -281,30 +297,6 @@
       "nature": "reglement"
     },
     {
-      "celex": "32026R1872",
-      "date": "2026-07-29",
-      "titre": "Règlement d’exécution (UE) 2026/1872 de la Commission du 29 juillet 2026 modifiant les normes techniques d’exécution définies dans le règlement d’exécution (UE) 2016/2070 en ce qui concerne les portefeuilles de référence et les modèles et instructions à respecter dans l’Union pour la communication d’informations visée à l’article 78, paragraphe 2, de la directive 2013/36/UE du Parlement européen et du Conseil",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/1872/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R1872",
-      "nature": "reglement"
-    },
-    {
-      "celex": "32026R1899",
-      "date": "2026-07-28",
-      "titre": "Règlement d’exécution (UE) 2026/1899 de la Commission du 28 juillet 2026 concernant l’enregistrement de l’indication géographique Jabłka krajeńskie (IGP) dans le registre de l’Union des indications géographiques conformément au règlement (UE) 2024/1143 du Parlement européen et du Conseil",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/1899/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R1899",
-      "nature": "reglement"
-    },
-    {
-      "celex": "32026R1901",
-      "date": "2026-07-28",
-      "titre": "Règlement d’exécution (UE) 2026/1901 de la Commission du 28 juillet 2026 concernant l’enregistrement de l’indication géographique Pernil Cerretà (IGP) dans le registre de l’Union des indications géographiques conformément au règlement (UE) 2024/1143 du Parlement européen et du Conseil",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/1901/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R1901",
-      "nature": "reglement"
-    },
-    {
       "celex": "32026R1880",
       "date": "2026-07-28",
       "titre": "Règlement d’exécution (UE) 2026/1880 du Conseil du 28 juillet 2026 mettant en œuvre l’article 9, paragraphe 1, du règlement (CE) n° 1183/2005 concernant des mesures restrictives en raison de la situation en République démocratique du Congo",
@@ -334,6 +326,14 @@
       "titre": "Règlement d’exécution (UE) 2026/1832 de la Commission du 28 juillet 2026 concernant le renouvellement de l’autorisation de l’acide benzoïque en tant qu’additif pour l’alimentation des porcelets sevrés, des porcs d’engraissement, des truies, des espèces porcines mineures destinées à l’engraissement et des truies et verrats d’espèces porcines mineures (titulaire de l’autorisation: DSM Nutritional Products Ltd, représenté par DSM Nutritional Products Sp. z.o.o.), et abrogeant les règlements d’exécution (UE) 2016/900, (UE) 2018/983, (UE) 2018/1550 et (UE) 2020/1031",
       "urlEli": "http://data.europa.eu/eli/reg/2026/1832/oj",
       "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R1832",
+      "nature": "reglement"
+    },
+    {
+      "celex": "32026R1828",
+      "date": "2026-07-28",
+      "titre": "Règlement (UE) 2026/1828 de la Commission du 28 juillet 2026 modifiant le règlement (UE) 2023/915 en ce qui concerne les teneurs maximales en delta-9-tétrahydrocannabinol (Δ9-THC) dans les feuilles de chanvre destinées à l’infusion dans l’eau et les infusions de feuilles de chanvre",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/1828/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R1828",
       "nature": "reglement"
     }
   ]
