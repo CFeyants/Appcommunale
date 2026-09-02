@@ -13,7 +13,7 @@
       "Les requêtes SPARQL longues dépassent régulièrement le délai d’attente du point d’accès public."
     ]
   },
-  "collecteLe": "2026-09-01T08:43:34.656Z",
+  "collecteLe": "2026-09-02T07:58:47.750Z",
   "depuis": "2026-01-01",
   "actes": [
     {
@@ -297,6 +297,22 @@
       "nature": "reglement"
     },
     {
+      "celex": "32026R1899",
+      "date": "2026-07-28",
+      "titre": "Règlement d’exécution (UE) 2026/1899 de la Commission du 28 juillet 2026 concernant l’enregistrement de l’indication géographique Jabłka krajeńskie (IGP) dans le registre de l’Union des indications géographiques conformément au règlement (UE) 2024/1143 du Parlement européen et du Conseil",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/1899/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R1899",
+      "nature": "reglement"
+    },
+    {
+      "celex": "32026R1901",
+      "date": "2026-07-28",
+      "titre": "Règlement d’exécution (UE) 2026/1901 de la Commission du 28 juillet 2026 concernant l’enregistrement de l’indication géographique Pernil Cerretà (IGP) dans le registre de l’Union des indications géographiques conformément au règlement (UE) 2024/1143 du Parlement européen et du Conseil",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/1901/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R1901",
+      "nature": "reglement"
+    },
+    {
       "celex": "32026R1880",
       "date": "2026-07-28",
       "titre": "Règlement d’exécution (UE) 2026/1880 du Conseil du 28 juillet 2026 mettant en œuvre l’article 9, paragraphe 1, du règlement (CE) n° 1183/2005 concernant des mesures restrictives en raison de la situation en République démocratique du Congo",
@@ -318,22 +334,6 @@
       "titre": "Règlement d’exécution (UE) 2026/1826 de la Commission du 28 juillet 2026 modifiant le règlement d’exécution (UE) no 540/2011 en ce qui concerne la prolongation de la période d’approbation des substances actives aclonifène, amisulbrom, Bacillus amyloliquefaciens souche MBI 600, beflubutamid, clomazone, cyantraniliprole, cyprodinil, daminozide, dichlorprop-P, diméthachlore, fludioxonyl, formétanate, fosétyl, isofétamide, métalaxyl, métazachlore, penconazole, phenmedipham, pirimicarbe, pyraclostrobine et acide S-abscissique",
       "urlEli": "http://data.europa.eu/eli/reg/2026/1826/oj",
       "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R1826",
-      "nature": "reglement"
-    },
-    {
-      "celex": "32026R1832",
-      "date": "2026-07-28",
-      "titre": "Règlement d’exécution (UE) 2026/1832 de la Commission du 28 juillet 2026 concernant le renouvellement de l’autorisation de l’acide benzoïque en tant qu’additif pour l’alimentation des porcelets sevrés, des porcs d’engraissement, des truies, des espèces porcines mineures destinées à l’engraissement et des truies et verrats d’espèces porcines mineures (titulaire de l’autorisation: DSM Nutritional Products Ltd, représenté par DSM Nutritional Products Sp. z.o.o.), et abrogeant les règlements d’exécution (UE) 2016/900, (UE) 2018/983, (UE) 2018/1550 et (UE) 2020/1031",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/1832/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R1832",
-      "nature": "reglement"
-    },
-    {
-      "celex": "32026R1828",
-      "date": "2026-07-28",
-      "titre": "Règlement (UE) 2026/1828 de la Commission du 28 juillet 2026 modifiant le règlement (UE) 2023/915 en ce qui concerne les teneurs maximales en delta-9-tétrahydrocannabinol (Δ9-THC) dans les feuilles de chanvre destinées à l’infusion dans l’eau et les infusions de feuilles de chanvre",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/1828/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R1828",
       "nature": "reglement"
     }
   ]

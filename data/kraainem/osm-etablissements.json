@@ -13,7 +13,7 @@
       "Rien ne garantit qu’un établissement fermé ait été retiré de la base."
     ]
   },
-  "collecteLe": "2026-09-01T08:43:23.451Z",
+  "collecteLe": "2026-09-02T07:58:40.554Z",
   "codeNis": "23099",
   "etablissements": [
     {
@@ -1493,18 +1493,6 @@
       "longitude": 4.4659447
     },
     {
-      "id": "way/96197079",
-      "nom": "Origin'O",
-      "categorie": "commerce",
-      "typeOsm": "supermarket",
-      "adresse": "87 Oudstrijderslaan - Avenue des Anciens Combattants",
-      "telephone": "+32 2 725 05 55",
-      "site": "https://www.origino.be/",
-      "horaires": "Mo 13:00-19:30; Tu-Fr 08:30-19:30; Sa 09:00-18:00; Su 09:00-13:00",
-      "latitude": 50.8649472,
-      "longitude": 4.4567956
-    },
-    {
       "id": "node/430402076",
       "nom": "P. & S. van Mulders",
       "categorie": "sante",
@@ -2166,9 +2154,9 @@
     }
   ],
   "completude": {
-    "total": 179,
-    "avecAdresse": 60,
-    "avecHoraires": 52,
-    "avecTelephone": 45
+    "total": 178,
+    "avecAdresse": 59,
+    "avecHoraires": 51,
+    "avecTelephone": 44
   }
 }
