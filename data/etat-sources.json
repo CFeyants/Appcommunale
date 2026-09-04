@@ -13,10 +13,11 @@
       "Les intitulés sont en néerlandais, y compris pour une commune à facilités.",
       "Aucun vote nominatif n’est publié pour Kraainem sur la période observée."
     ],
-    "derniereCollecteReussie": "2026-09-03T08:06:58.647Z",
-    "derniereTentative": "2026-09-03T08:06:58.647Z",
+    "derniereCollecteReussie": null,
+    "derniereTentative": "2026-09-04T08:03:56.680Z",
     "nombreItems": 3302,
-    "etat": "ok"
+    "etat": "panne",
+    "raison": "amont 500"
   },
   {
     "connecteur": "osm-overpass",
@@ -31,8 +32,8 @@
       "Une minorité de fiches porte une adresse complète ; le reste n’a que des coordonnées géographiques.",
       "Rien ne garantit qu’un établissement fermé ait été retiré de la base."
     ],
-    "derniereCollecteReussie": "2026-09-03T08:07:33.462Z",
-    "derniereTentative": "2026-09-03T08:07:33.462Z",
+    "derniereCollecteReussie": "2026-09-04T08:04:06.870Z",
+    "derniereTentative": "2026-09-04T08:04:06.870Z",
     "nombreItems": 178,
     "etat": "ok"
   },
@@ -49,8 +50,8 @@
       "Les identifiants de jeux de données Fluvius changent sans préavis : deux identifiants cités dans la version 1 du projet avaient déjà disparu.",
       "Aucune ventilation par ménage : la donnée est agrégée à la commune."
     ],
-    "derniereCollecteReussie": "2026-09-03T08:07:35.103Z",
-    "derniereTentative": "2026-09-03T08:07:35.103Z",
+    "derniereCollecteReussie": "2026-09-04T08:04:08.878Z",
+    "derniereTentative": "2026-09-04T08:04:08.878Z",
     "nombreItems": 380,
     "etat": "ok"
   },
@@ -66,8 +67,8 @@
       "La station la plus proche est une station trafic : sa valeur décrit un carrefour, pas une commune résidentielle.",
       "Les grilles modélisées à 4 × 4 km existent mais ne sont pas exposées en API : elles ne sont disponibles que par FTP."
     ],
-    "derniereCollecteReussie": "2026-09-03T08:07:36.402Z",
-    "derniereTentative": "2026-09-03T08:07:36.402Z",
+    "derniereCollecteReussie": "2026-09-04T08:04:09.671Z",
+    "derniereTentative": "2026-09-04T08:04:09.671Z",
     "nombreItems": 8,
     "etat": "ok"
   },
@@ -84,8 +85,8 @@
       "Les rectificatifs sont écartés à l’ingestion ; ils sont nombreux et ne changent rien pour un habitant.",
       "Les requêtes SPARQL longues dépassent régulièrement le délai d’attente du point d’accès public."
     ],
-    "derniereCollecteReussie": "2026-09-03T08:07:41.155Z",
-    "derniereTentative": "2026-09-03T08:07:41.155Z",
+    "derniereCollecteReussie": "2026-09-04T08:04:13.969Z",
+    "derniereTentative": "2026-09-04T08:04:13.969Z",
     "nombreItems": 40,
     "etat": "ok"
   },
@@ -102,8 +103,8 @@
       "La classification CFAP n’est pas la nomenclature BBC utilisée par les communes flamandes : les deux ne se recouvrent pas ligne à ligne.",
       "Aucune distinction entre budget voté et budget exécuté : Eurostat publie l’exécuté."
     ],
-    "derniereCollecteReussie": "2026-09-03T08:07:05.199Z",
-    "derniereTentative": "2026-09-03T08:07:05.199Z",
+    "derniereCollecteReussie": "2026-09-04T08:04:03.255Z",
+    "derniereTentative": "2026-09-04T08:04:03.255Z",
     "nombreItems": 4,
     "etat": "ok"
   }
