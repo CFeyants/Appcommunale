@@ -13,7 +13,7 @@
       "Les requêtes SPARQL longues dépassent régulièrement le délai d’attente du point d’accès public."
     ]
   },
-  "collecteLe": "2026-09-04T08:04:13.968Z",
+  "collecteLe": "2026-09-05T07:43:47.718Z",
   "depuis": "2026-01-01",
   "actes": [
     {
@@ -65,22 +65,6 @@
       "nature": "reglement"
     },
     {
-      "celex": "32026R1940",
-      "date": "2026-08-07",
-      "titre": "Règlement d’exécution (UE) 2026/1940 du Conseil du 7 août 2026 mettant en œuvre le règlement (UE) n° 269/2014 concernant des mesures restrictives eu égard aux actions compromettant ou menaçant l’intégrité territoriale, la souveraineté et l’indépendance de l’Ukraine",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/1940/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R1940",
-      "nature": "reglement"
-    },
-    {
-      "celex": "32026R1941",
-      "date": "2026-08-07",
-      "titre": "Règlement d’exécution (UE) 2026/1941 de la Commission du 7 août 2026 modifiant le règlement (UE) 2016/44 du Conseil concernant des mesures restrictives en raison de la situation en Libye",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/1941/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R1941",
-      "nature": "reglement"
-    },
-    {
       "celex": "32026R1904",
       "date": "2026-08-07",
       "titre": "Règlement d’exécution (UE) 2026/1904 de la Commission du 7 août 2026 instituant un droit antidumping définitif et portant perception définitive du droit provisoire institué sur les importations d’acide téréphtalique originaire de la République de Corée et des États-Unis mexicains",
@@ -113,6 +97,22 @@
       "nature": "reglement"
     },
     {
+      "celex": "32026R1940",
+      "date": "2026-08-07",
+      "titre": "Règlement d’exécution (UE) 2026/1940 du Conseil du 7 août 2026 mettant en œuvre le règlement (UE) n° 269/2014 concernant des mesures restrictives eu égard aux actions compromettant ou menaçant l’intégrité territoriale, la souveraineté et l’indépendance de l’Ukraine",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/1940/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R1940",
+      "nature": "reglement"
+    },
+    {
+      "celex": "32026R1941",
+      "date": "2026-08-07",
+      "titre": "Règlement d’exécution (UE) 2026/1941 de la Commission du 7 août 2026 modifiant le règlement (UE) 2016/44 du Conseil concernant des mesures restrictives en raison de la situation en Libye",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/1941/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R1941",
+      "nature": "reglement"
+    },
+    {
       "celex": "32026R1925",
       "date": "2026-08-06",
       "titre": "Règlement d’exécution (UE) 2026/1925 de la Commission du 6 août 2026 portant ouverture d’une enquête sur le contournement éventuel des mesures antidumping instituées par le règlement d’exécution (UE) 2024/357 sur les importations de certains tissus de fibre de verre à maille ouverte originaires de la République populaire de Chine par des importations de certains tissus de fibre de verre à maille ouverte expédiés du Kosovo, de Moldavie, de Macédoine du Nord et de Serbie, qu’ils aient ou non été déclarés originaires de ces pays, et soumettant ces importations à enregistrement",
@@ -134,6 +134,22 @@
       "titre": "Règlement d’exécution (UE) 2026/1930 de la Commission du 4 août 2026 relatif à la mise en œuvre de mesures de sauvegarde bilatérales à l’encontre des importations de produits sidérurgiques relevant du règlement (UE) 2026/1384 du Parlement européen et du Conseil et originaires de certains pays avec lesquels l’Union a conclu des accords de libre-échange",
       "urlEli": "http://data.europa.eu/eli/reg/2026/1930/oj",
       "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R1930",
+      "nature": "reglement"
+    },
+    {
+      "celex": "32026R1920",
+      "date": "2026-07-31",
+      "titre": "Règlement d’exécution (UE) 2026/1920 de la Commission du 31 juillet 2026 relatif à l’approbation d’une modification, à l’échelle de l’Union, du cahier des charges de l’appellation d’origine protégée Romagna conformément au règlement (UE) 2024/1143 du Parlement européen et du Conseil",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/1920/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R1920",
+      "nature": "reglement"
+    },
+    {
+      "celex": "32026R1927",
+      "date": "2026-07-31",
+      "titre": "Règlement d’exécution (UE) 2026/1927 de la Commission du 31 juillet 2026 concernant l’enregistrement de l’indication géographique Kiełbasa pradziada z Dukli (IGP) dans le registre de l’Union des indications géographiques conformément au règlement (UE) 2024/1143 du Parlement européen et du Conseil",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/1927/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R1927",
       "nature": "reglement"
     },
     {
@@ -169,19 +185,27 @@
       "nature": "reglement"
     },
     {
-      "celex": "32026R1920",
-      "date": "2026-07-31",
-      "titre": "Règlement d’exécution (UE) 2026/1920 de la Commission du 31 juillet 2026 relatif à l’approbation d’une modification, à l’échelle de l’Union, du cahier des charges de l’appellation d’origine protégée Romagna conformément au règlement (UE) 2024/1143 du Parlement européen et du Conseil",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/1920/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R1920",
+      "celex": "32026R1883",
+      "date": "2026-07-30",
+      "titre": "Règlement d’exécution (UE) 2026/1883 du Conseil du 30 juillet 2026 mettant en œuvre le règlement (UE) n° 267/2012 concernant l’adoption de mesures restrictives à l’encontre de l’Iran",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/1883/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R1883",
       "nature": "reglement"
     },
     {
-      "celex": "32026R1927",
-      "date": "2026-07-31",
-      "titre": "Règlement d’exécution (UE) 2026/1927 de la Commission du 31 juillet 2026 concernant l’enregistrement de l’indication géographique Kiełbasa pradziada z Dukli (IGP) dans le registre de l’Union des indications géographiques conformément au règlement (UE) 2024/1143 du Parlement européen et du Conseil",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/1927/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R1927",
+      "celex": "32026R1878",
+      "date": "2026-07-30",
+      "titre": "Règlement d’exécution (UE) 2026/1878 du Conseil du 30 juillet 2026 mettant en œuvre l’article 7 du règlement (CE) n° 2580/2001 concernant l’adoption de mesures restrictives spécifiques à l’encontre de certaines personnes et entités dans le cadre de la lutte contre le terrorisme",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/1878/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R1878",
+      "nature": "reglement"
+    },
+    {
+      "celex": "32026R1895",
+      "date": "2026-07-30",
+      "titre": "Règlement d’exécution (UE) 2026/1895 du Conseil du 30 juillet 2026 mettant en œuvre le règlement (UE) 2020/1998 concernant des mesures restrictives en réaction aux graves violations des droits de l’homme et aux graves atteintes à ces droits",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/1895/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R1895",
       "nature": "reglement"
     },
     {
@@ -217,27 +241,11 @@
       "nature": "reglement"
     },
     {
-      "celex": "32026R1883",
-      "date": "2026-07-30",
-      "titre": "Règlement d’exécution (UE) 2026/1883 du Conseil du 30 juillet 2026 mettant en œuvre le règlement (UE) n° 267/2012 concernant l’adoption de mesures restrictives à l’encontre de l’Iran",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/1883/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R1883",
-      "nature": "reglement"
-    },
-    {
-      "celex": "32026R1878",
-      "date": "2026-07-30",
-      "titre": "Règlement d’exécution (UE) 2026/1878 du Conseil du 30 juillet 2026 mettant en œuvre l’article 7 du règlement (CE) n° 2580/2001 concernant l’adoption de mesures restrictives spécifiques à l’encontre de certaines personnes et entités dans le cadre de la lutte contre le terrorisme",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/1878/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R1878",
-      "nature": "reglement"
-    },
-    {
-      "celex": "32026R1895",
-      "date": "2026-07-30",
-      "titre": "Règlement d’exécution (UE) 2026/1895 du Conseil du 30 juillet 2026 mettant en œuvre le règlement (UE) 2020/1998 concernant des mesures restrictives en réaction aux graves violations des droits de l’homme et aux graves atteintes à ces droits",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/1895/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R1895",
+      "celex": "32026R1872",
+      "date": "2026-07-29",
+      "titre": "Règlement d’exécution (UE) 2026/1872 de la Commission du 29 juillet 2026 modifiant les normes techniques d’exécution définies dans le règlement d’exécution (UE) 2016/2070 en ce qui concerne les portefeuilles de référence et les modèles et instructions à respecter dans l’Union pour la communication d’informations visée à l’article 78, paragraphe 2, de la directive 2013/36/UE du Parlement européen et du Conseil",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/1872/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R1872",
       "nature": "reglement"
     },
     {
@@ -289,30 +297,6 @@
       "nature": "reglement"
     },
     {
-      "celex": "32026R1872",
-      "date": "2026-07-29",
-      "titre": "Règlement d’exécution (UE) 2026/1872 de la Commission du 29 juillet 2026 modifiant les normes techniques d’exécution définies dans le règlement d’exécution (UE) 2016/2070 en ce qui concerne les portefeuilles de référence et les modèles et instructions à respecter dans l’Union pour la communication d’informations visée à l’article 78, paragraphe 2, de la directive 2013/36/UE du Parlement européen et du Conseil",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/1872/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R1872",
-      "nature": "reglement"
-    },
-    {
-      "celex": "32026R1899",
-      "date": "2026-07-28",
-      "titre": "Règlement d’exécution (UE) 2026/1899 de la Commission du 28 juillet 2026 concernant l’enregistrement de l’indication géographique Jabłka krajeńskie (IGP) dans le registre de l’Union des indications géographiques conformément au règlement (UE) 2024/1143 du Parlement européen et du Conseil",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/1899/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R1899",
-      "nature": "reglement"
-    },
-    {
-      "celex": "32026R1901",
-      "date": "2026-07-28",
-      "titre": "Règlement d’exécution (UE) 2026/1901 de la Commission du 28 juillet 2026 concernant l’enregistrement de l’indication géographique Pernil Cerretà (IGP) dans le registre de l’Union des indications géographiques conformément au règlement (UE) 2024/1143 du Parlement européen et du Conseil",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/1901/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R1901",
-      "nature": "reglement"
-    },
-    {
       "celex": "32026R1880",
       "date": "2026-07-28",
       "titre": "Règlement d’exécution (UE) 2026/1880 du Conseil du 28 juillet 2026 mettant en œuvre l’article 9, paragraphe 1, du règlement (CE) n° 1183/2005 concernant des mesures restrictives en raison de la situation en République démocratique du Congo",
@@ -334,6 +318,22 @@
       "titre": "Règlement d’exécution (UE) 2026/1826 de la Commission du 28 juillet 2026 modifiant le règlement d’exécution (UE) no 540/2011 en ce qui concerne la prolongation de la période d’approbation des substances actives aclonifène, amisulbrom, Bacillus amyloliquefaciens souche MBI 600, beflubutamid, clomazone, cyantraniliprole, cyprodinil, daminozide, dichlorprop-P, diméthachlore, fludioxonyl, formétanate, fosétyl, isofétamide, métalaxyl, métazachlore, penconazole, phenmedipham, pirimicarbe, pyraclostrobine et acide S-abscissique",
       "urlEli": "http://data.europa.eu/eli/reg/2026/1826/oj",
       "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R1826",
+      "nature": "reglement"
+    },
+    {
+      "celex": "32026R1832",
+      "date": "2026-07-28",
+      "titre": "Règlement d’exécution (UE) 2026/1832 de la Commission du 28 juillet 2026 concernant le renouvellement de l’autorisation de l’acide benzoïque en tant qu’additif pour l’alimentation des porcelets sevrés, des porcs d’engraissement, des truies, des espèces porcines mineures destinées à l’engraissement et des truies et verrats d’espèces porcines mineures (titulaire de l’autorisation: DSM Nutritional Products Ltd, représenté par DSM Nutritional Products Sp. z.o.o.), et abrogeant les règlements d’exécution (UE) 2016/900, (UE) 2018/983, (UE) 2018/1550 et (UE) 2020/1031",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/1832/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R1832",
+      "nature": "reglement"
+    },
+    {
+      "celex": "32026R1828",
+      "date": "2026-07-28",
+      "titre": "Règlement (UE) 2026/1828 de la Commission du 28 juillet 2026 modifiant le règlement (UE) 2023/915 en ce qui concerne les teneurs maximales en delta-9-tétrahydrocannabinol (Δ9-THC) dans les feuilles de chanvre destinées à l’infusion dans l’eau et les infusions de feuilles de chanvre",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/1828/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R1828",
       "nature": "reglement"
     }
   ]
