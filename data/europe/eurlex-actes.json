@@ -13,9 +13,65 @@
       "Les requêtes SPARQL longues dépassent régulièrement le délai d’attente du point d’accès public."
     ]
   },
-  "collecteLe": "2026-09-10T08:12:42.106Z",
+  "collecteLe": "2026-09-11T08:07:22.126Z",
   "depuis": "2026-01-01",
   "actes": [
+    {
+      "celex": "32026R2027",
+      "date": "2026-09-10",
+      "titre": "Règlement d’exécution (UE) 2026/2027 de la Commission du 10 septembre 2026 concernant l’autorisation du molybdène chélaté à l’EDTA en tant qu’additif pour l’alimentation des abeilles mellifères (titulaire de l’autorisation: Oligofeed SAS)",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/2027/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2027",
+      "nature": "reglement"
+    },
+    {
+      "celex": "32026R2028",
+      "date": "2026-09-10",
+      "titre": "Règlement d’exécution (UE) 2026/2028 de la Commission du 10 septembre 2026 accordant une autorisation de l’Union pour le produit biocide unique dénommé ELOCLEAR conformément au règlement (UE) no 528/2012 du Parlement européen et du Conseil",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/2028/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2028",
+      "nature": "reglement"
+    },
+    {
+      "celex": "32026R2022",
+      "date": "2026-09-10",
+      "titre": "Règlement d’exécution (UE) 2026/2022 de la Commission du 10 septembre 2026 soumettant à enregistrement les importations de treillis soudés en acier originaires de la République populaire de Chine et de Turquie en vue de permettre la perception de droits antidumping sur les importations soumises à enregistrement",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/2022/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2022",
+      "nature": "reglement"
+    },
+    {
+      "celex": "32026R2024",
+      "date": "2026-09-10",
+      "titre": "Règlement d’exécution (UE) 2026/2024 de la Commission du 10 septembre 2026 modifiant le règlement d’exécution (UE) 2024/2750 en vue d’apporter des modifications administratives et des modifications mineures à l’autorisation de l’Union pour la famille de produits biocides dénommée LANXESS CMIT/MIT biocidal product family",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/2024/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2024",
+      "nature": "reglement"
+    },
+    {
+      "celex": "32026R2026",
+      "date": "2026-09-10",
+      "titre": "Règlement d’exécution (UE) 2026/2026 de la Commission du 10 septembre 2026 modifiant le règlement d’exécution (UE) 2025/524 en vue d’apporter des modifications administratives à l’autorisation de l’Union pour la famille de produits biocides dénommée Sodium hypochlorite Liquid disinfectant biocidal product family",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/2026/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2026",
+      "nature": "reglement"
+    },
+    {
+      "celex": "32026R2023",
+      "date": "2026-09-10",
+      "titre": "Règlement d’exécution (UE) 2026/2023 de la Commission du 10 septembre 2026 soumettant à enregistrement les importations de rayonnages en acier boulonnés et sans boulons originaires de la République populaire de Chine en vue de permettre la perception de droits antidumping sur les importations soumises à enregistrement",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/2023/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2023",
+      "nature": "reglement"
+    },
+    {
+      "celex": "32026R2025",
+      "date": "2026-09-10",
+      "titre": "Règlement d’exécution (UE) 2026/2025 de la Commission du 10 septembre 2026 renouvelant l’approbation de la substance active mécoprop-P en tant que substance dont on envisage la substitution conformément au règlement (CE) no 1107/2009 du Parlement européen et du Conseil et modifiant le règlement d’exécution (UE) no 540/2011 de la Commission",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/2025/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2025",
+      "nature": "reglement"
+    },
     {
       "celex": "32026R1976",
       "date": "2026-09-08",
@@ -201,22 +257,6 @@
       "nature": "reglement"
     },
     {
-      "celex": "32026R1920",
-      "date": "2026-07-31",
-      "titre": "Règlement d’exécution (UE) 2026/1920 de la Commission du 31 juillet 2026 relatif à l’approbation d’une modification, à l’échelle de l’Union, du cahier des charges de l’appellation d’origine protégée Romagna conformément au règlement (UE) 2024/1143 du Parlement européen et du Conseil",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/1920/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R1920",
-      "nature": "reglement"
-    },
-    {
-      "celex": "32026R1927",
-      "date": "2026-07-31",
-      "titre": "Règlement d’exécution (UE) 2026/1927 de la Commission du 31 juillet 2026 concernant l’enregistrement de l’indication géographique Kiełbasa pradziada z Dukli (IGP) dans le registre de l’Union des indications géographiques conformément au règlement (UE) 2024/1143 du Parlement européen et du Conseil",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/1927/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R1927",
-      "nature": "reglement"
-    },
-    {
       "celex": "32026R1913",
       "date": "2026-07-31",
       "titre": "Règlement délégué (UE) 2026/1913 de la Commission du 31 juillet 2026 relatif à une mesure temporaire exceptionnelle de distillation de crise destinée à remédier aux perturbations du marché dans le secteur du vin allemand au cours de la campagne de commercialisation 2026/2027",
@@ -249,6 +289,22 @@
       "nature": "reglement"
     },
     {
+      "celex": "32026R1920",
+      "date": "2026-07-31",
+      "titre": "Règlement d’exécution (UE) 2026/1920 de la Commission du 31 juillet 2026 relatif à l’approbation d’une modification, à l’échelle de l’Union, du cahier des charges de l’appellation d’origine protégée Romagna conformément au règlement (UE) 2024/1143 du Parlement européen et du Conseil",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/1920/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R1920",
+      "nature": "reglement"
+    },
+    {
+      "celex": "32026R1927",
+      "date": "2026-07-31",
+      "titre": "Règlement d’exécution (UE) 2026/1927 de la Commission du 31 juillet 2026 concernant l’enregistrement de l’indication géographique Kiełbasa pradziada z Dukli (IGP) dans le registre de l’Union des indications géographiques conformément au règlement (UE) 2024/1143 du Parlement européen et du Conseil",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/1927/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R1927",
+      "nature": "reglement"
+    },
+    {
       "celex": "32026R1883",
       "date": "2026-07-30",
       "titre": "Règlement d’exécution (UE) 2026/1883 du Conseil du 30 juillet 2026 mettant en œuvre le règlement (UE) n° 267/2012 concernant l’adoption de mesures restrictives à l’encontre de l’Iran",
@@ -278,62 +334,6 @@
       "titre": "Règlement d’exécution (UE) 2026/1908 de la Commission du 30 juillet 2026 modifiant l’annexe I du règlement d’exécution (UE) 2023/594 établissant des mesures spéciales de lutte contre la peste porcine africaine",
       "urlEli": "http://data.europa.eu/eli/reg/2026/1908/oj",
       "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R1908",
-      "nature": "reglement"
-    },
-    {
-      "celex": "32026R1893",
-      "date": "2026-07-30",
-      "titre": "Règlement d’exécution (UE) 2026/1893 de la Commission du 30 juillet 2026 suspendant les mesures de rééquilibrage commercial visant certains produits originaires des États-Unis d’Amérique ainsi que certains produits exportés de l’Union vers les États-Unis d’Amérique, instituées par le règlement d’exécution (UE) 2025/1564",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/1893/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R1893",
-      "nature": "reglement"
-    },
-    {
-      "celex": "32026R1891",
-      "date": "2026-07-30",
-      "titre": "Règlement (UE) 2026/1891 du Conseil du 30 juillet 2026 modifiant le règlement (UE) 2023/1529 concernant des mesures restrictives en raison du soutien militaire de l’Iran à la guerre d’agression menée par la Russie contre l’Ukraine et à des groupes armés et des entités au Moyen-Orient et dans la région de la mer Rouge, ainsi que des actions imputables à l’Iran qui compromettent la liberté de navigation au Moyen-Orient",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/1891/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R1891",
-      "nature": "reglement"
-    },
-    {
-      "celex": "32026R1867",
-      "date": "2026-07-30",
-      "titre": "Règlement (UE) 2026/1867 du Conseil du 30 juillet 2026 modifiant le règlement (UE) n° 267/2012 concernant des mesures restrictives à l’encontre de l’Iran et abrogeant le règlement (UE) n° 961/2010",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/1867/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R1867",
-      "nature": "reglement"
-    },
-    {
-      "celex": "32026R1872",
-      "date": "2026-07-29",
-      "titre": "Règlement d’exécution (UE) 2026/1872 de la Commission du 29 juillet 2026 modifiant les normes techniques d’exécution définies dans le règlement d’exécution (UE) 2016/2070 en ce qui concerne les portefeuilles de référence et les modèles et instructions à respecter dans l’Union pour la communication d’informations visée à l’article 78, paragraphe 2, de la directive 2013/36/UE du Parlement européen et du Conseil",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/1872/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R1872",
-      "nature": "reglement"
-    },
-    {
-      "celex": "32026R1860",
-      "date": "2026-07-29",
-      "titre": "Règlement d’exécution (UE) 2026/1860 de la Commission du 29 juillet 2026 concernant l’autorisation d’une préparation de narasin (Monteban G100) en tant qu’additif pour l’alimentation des poulets d’engraissement (titulaire de l’autorisation: Elanco GmbH) et abrogeant le règlement (CE) no 1464/2004",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/1860/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R1860",
-      "nature": "reglement"
-    },
-    {
-      "celex": "32026R1890",
-      "date": "2026-07-29",
-      "titre": "Règlement (UE) 2026/1890 de la Commission du 29 juillet 2026 modifiant le règlement (UE) 2023/915 en ce qui concerne les teneurs maximales pour la somme du furane, du 2-méthylfurane et du 3-méthylfurane dans les préparations à base de céréales destinées aux nourrissons et enfants en bas âge et dans les aliments pour bébés",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/1890/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R1890",
-      "nature": "reglement"
-    },
-    {
-      "celex": "32026R1825",
-      "date": "2026-07-29",
-      "titre": "Règlement (UE) 2026/1825 de la Commission du 29 juillet 2026 modifiant le règlement (UE) 2023/915 en ce qui concerne les teneurs maximales en 3-monochloropropanediol (3-MCPD), en esters d’acides gras de 3-MCPD et en esters d’acides gras de glycidol dans certaines denrées alimentaires",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/1825/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R1825",
       "nature": "reglement"
     }
   ]
