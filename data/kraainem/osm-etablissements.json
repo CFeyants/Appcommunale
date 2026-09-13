@@ -13,7 +13,7 @@
       "Rien ne garantit qu’un établissement fermé ait été retiré de la base."
     ]
   },
-  "collecteLe": "2026-09-12T07:58:41.506Z",
+  "collecteLe": "2026-09-13T08:22:47.003Z",
   "codeNis": "23099",
   "etablissements": [
     {
@@ -1122,13 +1122,13 @@
     },
     {
       "id": "node/3623970547",
-      "nom": "Kew-Lox",
+      "nom": "Kewlox",
       "categorie": "commerce",
       "typeOsm": "furniture",
-      "adresse": "325 Koningin Astridlaan - Avenue Reine Astrid",
-      "telephone": null,
+      "adresse": null,
+      "telephone": "+32 2 767 76 14",
       "site": null,
-      "horaires": null,
+      "horaires": "Tu-Sa 10:00-12:30, 13:00-18:00",
       "latitude": 50.8443297,
       "longitude": 4.4673273
     },
@@ -2155,8 +2155,8 @@
   ],
   "completude": {
     "total": 178,
-    "avecAdresse": 59,
-    "avecHoraires": 51,
-    "avecTelephone": 44
+    "avecAdresse": 58,
+    "avecHoraires": 52,
+    "avecTelephone": 45
   }
 }
