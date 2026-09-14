@@ -13,9 +13,73 @@
       "Les requêtes SPARQL longues dépassent régulièrement le délai d’attente du point d’accès public."
     ]
   },
-  "collecteLe": "2026-09-13T08:22:58.929Z",
+  "collecteLe": "2026-09-14T09:00:59.479Z",
   "depuis": "2026-01-01",
   "actes": [
+    {
+      "celex": "32026R2053",
+      "date": "2029-09-10",
+      "titre": "Règlement d’exécution (UE) 2026/2053 de la Commission du 10 septembre 2026 accordant une autorisation de l’Union pour la famille de produits biocides dénommée Glutaraldehyde formulations conformément au règlement (UE) no 528/2012 du Parlement européen et du Conseil",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/2053/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2053",
+      "nature": "reglement"
+    },
+    {
+      "celex": "32026R2044",
+      "date": "2026-09-11",
+      "titre": "Règlement d’exécution (UE) 2026/2044 de la Commission du 11 septembre 2026 modifiant le règlement d’exécution (UE) 2024/1767 en vue d’apporter des modifications administratives à l’autorisation de l’Union pour la famille de produits biocides dénommée Sure Lactic Family",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/2044/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2044",
+      "nature": "reglement"
+    },
+    {
+      "celex": "32026R2051",
+      "date": "2026-09-11",
+      "titre": "Règlement d’exécution (UE) 2026/2051 de la Commission du 11 septembre 2026 octroyant une autorisation de l’Union pour la famille de produits biocides dénommée Hydrogen peroxide product family_P & G conformément au règlement (UE) no 528/2012 du Parlement européen et du Conseil",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/2051/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2051",
+      "nature": "reglement"
+    },
+    {
+      "celex": "32026R2042",
+      "date": "2026-09-11",
+      "titre": "Règlement d’exécution (UE) 2026/2042 de la Commission du 11 septembre 2026 octroyant une autorisation de l’Union pour le produit biocide dénommé OXTERIL® 350 VHP conformément au règlement (UE) no 528/2012 du Parlement européen et du Conseil",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/2042/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2042",
+      "nature": "reglement"
+    },
+    {
+      "celex": "32026R2031",
+      "date": "2026-09-11",
+      "titre": "Règlement d’exécution (UE) 2026/2031 de la Commission du 11 septembre 2026 modifiant le règlement d’exécution (UE) 2017/373 en ce qui concerne les exigences applicables aux activités sous-traitées par des prestataires de services",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/2031/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2031",
+      "nature": "reglement"
+    },
+    {
+      "celex": "32026R2041",
+      "date": "2026-09-11",
+      "titre": "Règlement d’exécution (UE) 2026/2041 de la Commission du 11 septembre 2026 portant modalités d’application de la directive 2009/138/CE du Parlement européen et du Conseil en ce qui concerne les informations techniques devant servir au calcul des provisions techniques et des fonds propres de base aux fins des déclarations ayant une date de référence comprise entre le 30 juin 2026 et le 29 septembre 2026",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/2041/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2041",
+      "nature": "reglement"
+    },
+    {
+      "celex": "32026R2050",
+      "date": "2026-09-11",
+      "titre": "Règlement d’exécution (UE) 2026/2050 de la Commission du 11 septembre 2026 accordant une autorisation de l’Union pour la famille de produits biocides dénommée Hydrogen peroxide biocidal product family conformément au règlement (UE) no 528/2012 du Parlement européen et du Conseil",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/2050/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2050",
+      "nature": "reglement"
+    },
+    {
+      "celex": "32026R2054",
+      "date": "2026-09-11",
+      "titre": "Règlement d’exécution (UE) 2026/2054 de la Commission du 11 septembre 2026 octroyant une autorisation de l’Union pour la famille de produits biocides dénommée Hydrogen peroxides biocides family conformément au règlement (UE) no 528/2012 du Parlement européen et du Conseil",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/2054/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2054",
+      "nature": "reglement"
+    },
     {
       "celex": "32026R2027",
       "date": "2026-09-10",
@@ -270,70 +334,6 @@
       "titre": "Règlement d’exécution (UE) 2026/1927 de la Commission du 31 juillet 2026 concernant l’enregistrement de l’indication géographique Kiełbasa pradziada z Dukli (IGP) dans le registre de l’Union des indications géographiques conformément au règlement (UE) 2024/1143 du Parlement européen et du Conseil",
       "urlEli": "http://data.europa.eu/eli/reg/2026/1927/oj",
       "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R1927",
-      "nature": "reglement"
-    },
-    {
-      "celex": "32026R1913",
-      "date": "2026-07-31",
-      "titre": "Règlement délégué (UE) 2026/1913 de la Commission du 31 juillet 2026 relatif à une mesure temporaire exceptionnelle de distillation de crise destinée à remédier aux perturbations du marché dans le secteur du vin allemand au cours de la campagne de commercialisation 2026/2027",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/1913/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R1913",
-      "nature": "reglement"
-    },
-    {
-      "celex": "32026R1905",
-      "date": "2026-07-31",
-      "titre": "Règlement d’exécution (UE) 2026/1905 de la Commission du 31 juillet 2026 modifiant le règlement d’exécution (UE) 2022/1173 en ce qui concerne la modification et le retrait des demandes d’aide",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/1905/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R1905",
-      "nature": "reglement"
-    },
-    {
-      "celex": "32026R1897",
-      "date": "2026-07-31",
-      "titre": "Règlement d’exécution (UE) 2026/1897 de la Commission du 31 juillet 2026 modifiant le règlement d’exécution (UE) 2021/2289 en ce qui concerne le contenu des plans stratégiques relevant de la PAC afin d’introduire un nouveau type d’intervention en réponse à la hausse des prix des engrais due à la crise au Moyen-Orient",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/1897/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R1897",
-      "nature": "reglement"
-    },
-    {
-      "celex": "32026R1906",
-      "date": "2026-07-31",
-      "titre": "Règlement d’exécution (UE) 2026/1906 de la Commission du 31 juillet 2026 modifiant le règlement d’exécution (UE) 2022/128 en ce qui concerne des règles plus flexibles relatives au versement d’avances en réponse à la hausse des prix des engrais due à la crise au Moyen-Orient",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/1906/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R1906",
-      "nature": "reglement"
-    },
-    {
-      "celex": "32026R1883",
-      "date": "2026-07-30",
-      "titre": "Règlement d’exécution (UE) 2026/1883 du Conseil du 30 juillet 2026 mettant en œuvre le règlement (UE) n° 267/2012 concernant l’adoption de mesures restrictives à l’encontre de l’Iran",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/1883/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R1883",
-      "nature": "reglement"
-    },
-    {
-      "celex": "32026R1878",
-      "date": "2026-07-30",
-      "titre": "Règlement d’exécution (UE) 2026/1878 du Conseil du 30 juillet 2026 mettant en œuvre l’article 7 du règlement (CE) n° 2580/2001 concernant l’adoption de mesures restrictives spécifiques à l’encontre de certaines personnes et entités dans le cadre de la lutte contre le terrorisme",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/1878/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R1878",
-      "nature": "reglement"
-    },
-    {
-      "celex": "32026R1895",
-      "date": "2026-07-30",
-      "titre": "Règlement d’exécution (UE) 2026/1895 du Conseil du 30 juillet 2026 mettant en œuvre le règlement (UE) 2020/1998 concernant des mesures restrictives en réaction aux graves violations des droits de l’homme et aux graves atteintes à ces droits",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/1895/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R1895",
-      "nature": "reglement"
-    },
-    {
-      "celex": "32026R1908",
-      "date": "2026-07-30",
-      "titre": "Règlement d’exécution (UE) 2026/1908 de la Commission du 30 juillet 2026 modifiant l’annexe I du règlement d’exécution (UE) 2023/594 établissant des mesures spéciales de lutte contre la peste porcine africaine",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/1908/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R1908",
       "nature": "reglement"
     }
   ]
