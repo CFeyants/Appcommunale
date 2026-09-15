@@ -13,7 +13,7 @@
       "Les requêtes SPARQL longues dépassent régulièrement le délai d’attente du point d’accès public."
     ]
   },
-  "collecteLe": "2026-09-14T09:00:59.479Z",
+  "collecteLe": "2026-09-15T08:45:25.125Z",
   "depuis": "2026-01-01",
   "actes": [
     {
@@ -22,6 +22,30 @@
       "titre": "Règlement d’exécution (UE) 2026/2053 de la Commission du 10 septembre 2026 accordant une autorisation de l’Union pour la famille de produits biocides dénommée Glutaraldehyde formulations conformément au règlement (UE) no 528/2012 du Parlement européen et du Conseil",
       "urlEli": "http://data.europa.eu/eli/reg/2026/2053/oj",
       "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2053",
+      "nature": "reglement"
+    },
+    {
+      "celex": "32026R2049",
+      "date": "2026-09-14",
+      "titre": "Règlement d’exécution (UE) 2026/2049 de la Commission du 14 septembre 2026 soumettant à enregistrement les importations de piles et batteries de piles au dioxyde de manganèse alcalin originaires de la République populaire de Chine en vue de permettre la perception de droits antidumping sur les importations soumises à enregistrement",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/2049/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2049",
+      "nature": "reglement"
+    },
+    {
+      "celex": "32026R2047",
+      "date": "2026-09-14",
+      "titre": "Règlement d’exécution (UE) 2026/2047 de la Commission du 14 septembre 2026 prorogeant la surveillance a posteriori de l’Union sur les importations d’éthanol renouvelable pour carburants",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/2047/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2047",
+      "nature": "reglement"
+    },
+    {
+      "celex": "32026R2045",
+      "date": "2026-09-14",
+      "titre": "Règlement d’exécution (UE) 2026/2045 de la Commission du 14 septembre 2026 modifiant le règlement (UE) no 468/2010 établissant la liste de l’UE des bateaux engagés dans des activités de pêche illicite, non déclarée et non réglementée",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/2045/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2045",
       "nature": "reglement"
     },
     {
@@ -78,6 +102,14 @@
       "titre": "Règlement d’exécution (UE) 2026/2054 de la Commission du 11 septembre 2026 octroyant une autorisation de l’Union pour la famille de produits biocides dénommée Hydrogen peroxides biocides family conformément au règlement (UE) no 528/2012 du Parlement européen et du Conseil",
       "urlEli": "http://data.europa.eu/eli/reg/2026/2054/oj",
       "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2054",
+      "nature": "reglement"
+    },
+    {
+      "celex": "32026R2094",
+      "date": "2026-09-11",
+      "titre": "Règlement d’exécution (UE) 2026/2094 de la Commission du 11 septembre 2026 modifiant les annexes I et II du règlement d’exécution (UE) 2023/594 établissant des mesures spéciales de lutte contre la peste porcine africaine",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/2094/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2094",
       "nature": "reglement"
     },
     {
@@ -249,22 +281,6 @@
       "nature": "reglement"
     },
     {
-      "celex": "32026R1940",
-      "date": "2026-08-07",
-      "titre": "Règlement d’exécution (UE) 2026/1940 du Conseil du 7 août 2026 mettant en œuvre le règlement (UE) n° 269/2014 concernant des mesures restrictives eu égard aux actions compromettant ou menaçant l’intégrité territoriale, la souveraineté et l’indépendance de l’Ukraine",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/1940/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R1940",
-      "nature": "reglement"
-    },
-    {
-      "celex": "32026R1941",
-      "date": "2026-08-07",
-      "titre": "Règlement d’exécution (UE) 2026/1941 de la Commission du 7 août 2026 modifiant le règlement (UE) 2016/44 du Conseil concernant des mesures restrictives en raison de la situation en Libye",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/1941/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R1941",
-      "nature": "reglement"
-    },
-    {
       "celex": "32026R1904",
       "date": "2026-08-07",
       "titre": "Règlement d’exécution (UE) 2026/1904 de la Commission du 7 août 2026 instituant un droit antidumping définitif et portant perception définitive du droit provisoire institué sur les importations d’acide téréphtalique originaire de la République de Corée et des États-Unis mexicains",
@@ -297,43 +313,27 @@
       "nature": "reglement"
     },
     {
+      "celex": "32026R1940",
+      "date": "2026-08-07",
+      "titre": "Règlement d’exécution (UE) 2026/1940 du Conseil du 7 août 2026 mettant en œuvre le règlement (UE) n° 269/2014 concernant des mesures restrictives eu égard aux actions compromettant ou menaçant l’intégrité territoriale, la souveraineté et l’indépendance de l’Ukraine",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/1940/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R1940",
+      "nature": "reglement"
+    },
+    {
+      "celex": "32026R1941",
+      "date": "2026-08-07",
+      "titre": "Règlement d’exécution (UE) 2026/1941 de la Commission du 7 août 2026 modifiant le règlement (UE) 2016/44 du Conseil concernant des mesures restrictives en raison de la situation en Libye",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/1941/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R1941",
+      "nature": "reglement"
+    },
+    {
       "celex": "32026R1925",
       "date": "2026-08-06",
       "titre": "Règlement d’exécution (UE) 2026/1925 de la Commission du 6 août 2026 portant ouverture d’une enquête sur le contournement éventuel des mesures antidumping instituées par le règlement d’exécution (UE) 2024/357 sur les importations de certains tissus de fibre de verre à maille ouverte originaires de la République populaire de Chine par des importations de certains tissus de fibre de verre à maille ouverte expédiés du Kosovo, de Moldavie, de Macédoine du Nord et de Serbie, qu’ils aient ou non été déclarés originaires de ces pays, et soumettant ces importations à enregistrement",
       "urlEli": "http://data.europa.eu/eli/reg/2026/1925/oj",
       "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R1925",
-      "nature": "reglement"
-    },
-    {
-      "celex": "32026R1914",
-      "date": "2026-08-05",
-      "titre": "Règlement d’exécution (UE) 2026/1914 de la Commission du 5 août 2026 instituant un droit compensateur provisoire sur les importations de certains papiers thermosensibles légers originaires de la République populaire de Chine",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/1914/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R1914",
-      "nature": "reglement"
-    },
-    {
-      "celex": "32026R1930",
-      "date": "2026-08-04",
-      "titre": "Règlement d’exécution (UE) 2026/1930 de la Commission du 4 août 2026 relatif à la mise en œuvre de mesures de sauvegarde bilatérales à l’encontre des importations de produits sidérurgiques relevant du règlement (UE) 2026/1384 du Parlement européen et du Conseil et originaires de certains pays avec lesquels l’Union a conclu des accords de libre-échange",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/1930/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R1930",
-      "nature": "reglement"
-    },
-    {
-      "celex": "32026R1920",
-      "date": "2026-07-31",
-      "titre": "Règlement d’exécution (UE) 2026/1920 de la Commission du 31 juillet 2026 relatif à l’approbation d’une modification, à l’échelle de l’Union, du cahier des charges de l’appellation d’origine protégée Romagna conformément au règlement (UE) 2024/1143 du Parlement européen et du Conseil",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/1920/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R1920",
-      "nature": "reglement"
-    },
-    {
-      "celex": "32026R1927",
-      "date": "2026-07-31",
-      "titre": "Règlement d’exécution (UE) 2026/1927 de la Commission du 31 juillet 2026 concernant l’enregistrement de l’indication géographique Kiełbasa pradziada z Dukli (IGP) dans le registre de l’Union des indications géographiques conformément au règlement (UE) 2024/1143 du Parlement européen et du Conseil",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/1927/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R1927",
       "nature": "reglement"
     }
   ]
