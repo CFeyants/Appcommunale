@@ -13,7 +13,7 @@
       "Les requêtes SPARQL longues dépassent régulièrement le délai d’attente du point d’accès public."
     ]
   },
-  "collecteLe": "2026-09-18T08:19:17.473Z",
+  "collecteLe": "2026-09-19T08:07:27.261Z",
   "depuis": "2026-01-01",
   "actes": [
     {
@@ -25,11 +25,99 @@
       "nature": "reglement"
     },
     {
-      "celex": "32026R2046",
-      "date": "2026-09-14",
-      "titre": "Règlement d’exécution (UE) 2026/2046 de la Commission du 14 septembre 2026 modifiant le règlement d’exécution (UE) 2022/964 en vue d’apporter des modifications administratives et une modification mineure à l’autorisation de l’Union pour la famille de produits biocides dénommée SOPUROXID",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/2046/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2046",
+      "celex": "32026R2133",
+      "date": "2026-09-18",
+      "titre": "Règlement d’exécution (UE) 2026/2133 de la Commission du 18 septembre 2026 instituant des mesures de sauvegarde provisoires concernant les importations de certains produits laminés plats en aciers au silicium dits magnétiques à grains orientés",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/2133/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2133",
+      "nature": "reglement"
+    },
+    {
+      "celex": "32026R2104",
+      "date": "2026-09-17",
+      "titre": "Règlement d’exécution (UE) 2026/2104 de la Commission du 17 septembre 2026 modifiant les annexes V et XIV du règlement d’exécution (UE) 2021/404 en ce qui concerne les mentions relatives aux États-Unis dans les listes de pays tiers, de territoires ou de zones de pays tiers ou territoires en provenance desquels l’entrée dans l’Union d’envois de volailles et de produits germinaux de volailles ainsi que de viandes fraîches de volailles et de gibier à plumes est autorisée",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/2104/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2104",
+      "nature": "reglement"
+    },
+    {
+      "celex": "32026R2070",
+      "date": "2026-09-17",
+      "titre": "Règlement d’exécution (UE) 2026/2070 de la Commission du 17 septembre 2026 rectifiant le règlement d’exécution (UE) 2026/164 en ce qui concerne le 2-chloroéthanol",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/2070/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2070",
+      "nature": "reglement"
+    },
+    {
+      "celex": "32026R2077",
+      "date": "2026-09-17",
+      "titre": "Règlement d’exécution (UE) 2026/2077 de la Commission du 17 septembre 2026 concernant le renouvellement de l’autorisation d’une préparation d’acide benzoïque, de thymol, d’eugénol et de pipérine en tant qu’additif pour l’alimentation des poulets d’engraissement, des poulettes élevées pour la ponte, des espèces aviaires mineures destinées à l’engraissement et des espèces aviaires mineures élevées pour la ponte, concernant l’autorisation de cette préparation en tant qu’additif pour l’alimentation des dindes d’engraissement et des volailles élevées pour la reproduction (titulaire de l’autorisation: DSM Nutritional Products Ltd, société représentée par DSM Nutritional Products Sp. z.o.o.), et abrogeant le règlement d’exécution (UE) 2015/1426",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/2077/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2077",
+      "nature": "reglement"
+    },
+    {
+      "celex": "32026R2076",
+      "date": "2026-09-17",
+      "titre": "Règlement d’exécution (UE) 2026/2076 de la Commission du 17 septembre 2026 concernant l’autorisation de l’huile essentielle de noix muscade tirée de Myristica fragrans Houtt. en tant qu’additif pour l’alimentation de toutes les espèces animales",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/2076/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2076",
+      "nature": "reglement"
+    },
+    {
+      "celex": "32026R2074",
+      "date": "2026-09-17",
+      "titre": "Règlement d’exécution (UE) 2026/2074 de la Commission du 17 septembre 2026 concernant l’autorisation d’une préparation de Bacillus subtilis DSM 33862 et de Lentilactobacillus buchneri DSM 12856 en tant qu’additif pour l’alimentation de toutes les espèces animales",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/2074/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2074",
+      "nature": "reglement"
+    },
+    {
+      "celex": "32026R2064",
+      "date": "2026-09-17",
+      "titre": "Règlement d’exécution (UE) 2026/2064 de la Commission du 17 septembre 2026 modifiant le règlement d’exécution (UE) 2025/4 instituant un droit antidumping définitif et portant perception définitive du droit provisoire institué sur les importations de dioxyde de titane originaire de la République populaire de Chine",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/2064/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2064",
+      "nature": "reglement"
+    },
+    {
+      "celex": "32026R2057",
+      "date": "2026-09-17",
+      "titre": "Règlement d’exécution (UE) 2026/2057 de la Commission du 17 septembre 2026 majorant les quotas de pêche pour 2026 de certaines quantités retenues en 2025 conformément à l’article 4, paragraphe 2, du règlement (CE) no 847/96 du Conseil",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/2057/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2057",
+      "nature": "reglement"
+    },
+    {
+      "celex": "32026R2072",
+      "date": "2026-09-17",
+      "titre": "Règlement d’exécution (UE) 2026/2072 de la Commission du 17 septembre 2026 concernant l’autorisation de la perlite en tant qu’additif pour l’alimentation des volailles d’engraissement, des volailles élevées pour la ponte ou la reproduction, des oiseaux d’ornement, des porcelets et des porcs d’engraissement",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/2072/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2072",
+      "nature": "reglement"
+    },
+    {
+      "celex": "32026R2061",
+      "date": "2026-09-17",
+      "titre": "Règlement d’exécution (UE) 2026/2061 de la Commission du 17 septembre 2026 concernant l’autorisation d’une préparation de narasine et de diclazuril (Interban) en tant qu’additif pour l’alimentation des poulets d’engraissement et des poulettes élevées pour la ponte (titulaire de l’autorisation: Elanco GmbH)",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/2061/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2061",
+      "nature": "reglement"
+    },
+    {
+      "celex": "32026R2079",
+      "date": "2026-09-17",
+      "titre": "Règlement d’exécution (UE) 2026/2079 de la Commission du 17 septembre 2026 concernant l’autorisation d’une préparation d’alpha-galactosidase produite à l’aide d’Aspergillus tubingensis ATCC SD 6740 et d’endo-1,4-bêta-xylanase produite à l’aide de Trichoderma orientale CBS 139997 en tant qu’additif pour l’alimentation des porcelets sevrés (titulaire de l’autorisation: Industrial Técnica Pecuaria, SA)",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/2079/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2079",
+      "nature": "reglement"
+    },
+    {
+      "celex": "32026R2108",
+      "date": "2026-09-16",
+      "titre": "Règlement (UE) 2026/2108 du Parlement européen et du Conseil du 16 septembre 2026 établissant le code des douanes de l’Union et l’Autorité douanière de l’Union européenne, et abrogeant le règlement (UE) n° 952/2013 (Texte présentant de l'intérêt pour l'EEE)",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/2108/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2108",
       "nature": "reglement"
     },
     {
@@ -54,6 +142,22 @@
       "titre": "Règlement d’exécution (UE) 2026/2045 de la Commission du 14 septembre 2026 modifiant le règlement (UE) no 468/2010 établissant la liste de l’UE des bateaux engagés dans des activités de pêche illicite, non déclarée et non réglementée",
       "urlEli": "http://data.europa.eu/eli/reg/2026/2045/oj",
       "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2045",
+      "nature": "reglement"
+    },
+    {
+      "celex": "32026R2046",
+      "date": "2026-09-14",
+      "titre": "Règlement d’exécution (UE) 2026/2046 de la Commission du 14 septembre 2026 modifiant le règlement d’exécution (UE) 2022/964 en vue d’apporter des modifications administratives et une modification mineure à l’autorisation de l’Union pour la famille de produits biocides dénommée SOPUROXID",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/2046/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2046",
+      "nature": "reglement"
+    },
+    {
+      "celex": "32026R2106",
+      "date": "2026-09-14",
+      "titre": "Règlement d’exécution (UE) 2026/2106 de la Commission du 14 septembre 2026 relatif à l’approbation d’une modification, à l’échelle de l’Union, du cahier des charges de l’appellation d’origine protégée Segarcea conformément au règlement (UE) 2024/1143 du Parlement européen et du Conseil",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/2106/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2106",
       "nature": "reglement"
     },
     {
@@ -230,110 +334,6 @@
       "titre": "Règlement d’exécution (UE) 2026/2029 de la Commission du 3 septembre 2026 fixant les droits à l'importation pour certains riz décortiqués, applicables à partir du 7 septembre 2026",
       "urlEli": "http://data.europa.eu/eli/reg/2026/2029/oj",
       "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2029",
-      "nature": "reglement"
-    },
-    {
-      "celex": "32026R2016",
-      "date": "2026-09-02",
-      "titre": "Règlement d’exécution (UE) 2026/2016 de la Commission du 2 septembre 2026 relatif à l’approbation d’une modification, à l’échelle de l’Union, du cahier des charges de l’appellation d’origine protégée Vin de Savoie/Savoie conformément au règlement (UE) 2024/1143 du Parlement européen et du Conseil",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/2016/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2016",
-      "nature": "reglement"
-    },
-    {
-      "celex": "32026R2017",
-      "date": "2026-09-02",
-      "titre": "Règlement d’exécution (UE) 2026/2017 de la Commission du 2 septembre 2026 concernant l’enregistrement de l’indication géographique Brânză frământată de Teaca (IGP) dans le registre de l’Union des indications géographiques conformément au règlement (UE) 2024/1143 du Parlement européen et du Conseil",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/2017/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2017",
-      "nature": "reglement"
-    },
-    {
-      "celex": "32026R1963",
-      "date": "2026-08-28",
-      "titre": "Règlement d’exécution (UE) 2026/1963 de la Commission du 28 août 2026 portant détermination du type d’éléments de preuve devant être fournis par les importateurs en vue d’établir le pays de fusion et de coulée",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/1963/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R1963",
-      "nature": "reglement"
-    },
-    {
-      "celex": "32026R1965",
-      "date": "2026-08-26",
-      "titre": "Règlement d’exécution (UE) 2026/1965 de la Commission du 26 août 2026 modifiant pour la 360e fois le règlement (CE) no 881/2002 du Conseil instituant certaines mesures restrictives spécifiques à l’encontre de certaines personnes et entités liées aux organisations EIIL (Daech) et Al-Qaida",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/1965/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R1965",
-      "nature": "reglement"
-    },
-    {
-      "celex": "32026R1961",
-      "date": "2026-08-24",
-      "titre": "Règlement d’exécution (UE) 2026/1961 de la Commission du 24 août 2026 modifiant les annexes I et II du règlement d’exécution (UE) 2023/594 établissant des mesures spéciales de lutte contre la peste porcine africaine et abrogeant la décision d’exécution (UE) 2026/1937 concernant certaines mesures d’urgence provisoires contre la peste porcine africaine en Finlande",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/1961/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R1961",
-      "nature": "reglement"
-    },
-    {
-      "celex": "32026R1959",
-      "date": "2026-08-21",
-      "titre": "Règlement d’exécution (UE) 2026/1959 de la Commission du 21 août 2026 modifiant les annexes V et XIV du règlement d’exécution (UE) 2021/404 en ce qui concerne les mentions relatives au Canada et aux États-Unis dans les listes de pays tiers, de territoires ou de parties de territoires en provenance desquels l’entrée dans l’Union d’envois de volailles et de produits germinaux de volailles, ainsi que de viandes fraîches de volailles et de gibier à plumes est autorisée, et rectifiant ces annexes en ce qui concerne certaines mentions pour les États-Unis",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/1959/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R1959",
-      "nature": "reglement"
-    },
-    {
-      "celex": "32026R1960",
-      "date": "2026-08-20",
-      "titre": "Règlement d’exécution (UE) 2026/1960 de la Commission du 20 août 2026 modifiant pour la 359e fois le règlement (CE) no 881/2002 du Conseil instituant certaines mesures restrictives spécifiques à l’encontre de certaines personnes et entités liées aux organisations EIIL (Daech) et Al-Qaida",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/1960/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R1960",
-      "nature": "reglement"
-    },
-    {
-      "celex": "32026R1932",
-      "date": "2026-08-10",
-      "titre": "Règlement d’exécution (UE) 2026/1932 de la Commission du 10 août 2026 portant modalités d’application du règlement (CE) no 1224/2009 du Conseil en ce qui concerne la pesée des produits de la pêche, leur contrôle et leur inspection, ainsi que l’adoption de plans de sondage, de plans de contrôle et de programmes de contrôle communs",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/1932/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R1932",
-      "nature": "reglement"
-    },
-    {
-      "celex": "32026R1940",
-      "date": "2026-08-07",
-      "titre": "Règlement d’exécution (UE) 2026/1940 du Conseil du 7 août 2026 mettant en œuvre le règlement (UE) n° 269/2014 concernant des mesures restrictives eu égard aux actions compromettant ou menaçant l’intégrité territoriale, la souveraineté et l’indépendance de l’Ukraine",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/1940/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R1940",
-      "nature": "reglement"
-    },
-    {
-      "celex": "32026R1941",
-      "date": "2026-08-07",
-      "titre": "Règlement d’exécution (UE) 2026/1941 de la Commission du 7 août 2026 modifiant le règlement (UE) 2016/44 du Conseil concernant des mesures restrictives en raison de la situation en Libye",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/1941/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R1941",
-      "nature": "reglement"
-    },
-    {
-      "celex": "32026R1904",
-      "date": "2026-08-07",
-      "titre": "Règlement d’exécution (UE) 2026/1904 de la Commission du 7 août 2026 instituant un droit antidumping définitif et portant perception définitive du droit provisoire institué sur les importations d’acide téréphtalique originaire de la République de Corée et des États-Unis mexicains",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/1904/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R1904",
-      "nature": "reglement"
-    },
-    {
-      "celex": "32026R1929",
-      "date": "2026-08-07",
-      "titre": "Règlement d’exécution (UE) 2026/1929 de la Commission du 7 août 2026 instituant un droit antidumping provisoire sur les importations de certains fils en aciers silicomanganeux originaires de la République populaire de Chine",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/1929/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R1929",
-      "nature": "reglement"
-    },
-    {
-      "celex": "32026R1926",
-      "date": "2026-08-07",
-      "titre": "Règlement d’exécution (UE) 2026/1926 de la Commission du 7 août 2026 modifiant le règlement d’exécution (UE) 2022/191 instituant un droit antidumping définitif sur les importations de certains éléments de fixation en fer ou en acier originaires de la République populaire de Chine à la suite de l’acceptation d’une demande de statut de nouveau producteur-exportateur",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/1926/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R1926",
       "nature": "reglement"
     }
   ]
