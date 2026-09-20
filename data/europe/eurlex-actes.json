@@ -13,7 +13,7 @@
       "Les requêtes SPARQL longues dépassent régulièrement le délai d’attente du point d’accès public."
     ]
   },
-  "collecteLe": "2026-09-19T08:07:27.261Z",
+  "collecteLe": "2026-09-20T08:39:28.789Z",
   "depuis": "2026-01-01",
   "actes": [
     {
@@ -121,6 +121,22 @@
       "nature": "reglement"
     },
     {
+      "celex": "32026R2106",
+      "date": "2026-09-14",
+      "titre": "Règlement d’exécution (UE) 2026/2106 de la Commission du 14 septembre 2026 relatif à l’approbation d’une modification, à l’échelle de l’Union, du cahier des charges de l’appellation d’origine protégée Segarcea conformément au règlement (UE) 2024/1143 du Parlement européen et du Conseil",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/2106/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2106",
+      "nature": "reglement"
+    },
+    {
+      "celex": "32026R2046",
+      "date": "2026-09-14",
+      "titre": "Règlement d’exécution (UE) 2026/2046 de la Commission du 14 septembre 2026 modifiant le règlement d’exécution (UE) 2022/964 en vue d’apporter des modifications administratives et une modification mineure à l’autorisation de l’Union pour la famille de produits biocides dénommée SOPUROXID",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/2046/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2046",
+      "nature": "reglement"
+    },
+    {
       "celex": "32026R2049",
       "date": "2026-09-14",
       "titre": "Règlement d’exécution (UE) 2026/2049 de la Commission du 14 septembre 2026 soumettant à enregistrement les importations de piles et batteries de piles au dioxyde de manganèse alcalin originaires de la République populaire de Chine en vue de permettre la perception de droits antidumping sur les importations soumises à enregistrement",
@@ -142,22 +158,6 @@
       "titre": "Règlement d’exécution (UE) 2026/2045 de la Commission du 14 septembre 2026 modifiant le règlement (UE) no 468/2010 établissant la liste de l’UE des bateaux engagés dans des activités de pêche illicite, non déclarée et non réglementée",
       "urlEli": "http://data.europa.eu/eli/reg/2026/2045/oj",
       "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2045",
-      "nature": "reglement"
-    },
-    {
-      "celex": "32026R2046",
-      "date": "2026-09-14",
-      "titre": "Règlement d’exécution (UE) 2026/2046 de la Commission du 14 septembre 2026 modifiant le règlement d’exécution (UE) 2022/964 en vue d’apporter des modifications administratives et une modification mineure à l’autorisation de l’Union pour la famille de produits biocides dénommée SOPUROXID",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/2046/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2046",
-      "nature": "reglement"
-    },
-    {
-      "celex": "32026R2106",
-      "date": "2026-09-14",
-      "titre": "Règlement d’exécution (UE) 2026/2106 de la Commission du 14 septembre 2026 relatif à l’approbation d’une modification, à l’échelle de l’Union, du cahier des charges de l’appellation d’origine protégée Segarcea conformément au règlement (UE) 2024/1143 du Parlement européen et du Conseil",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/2106/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2106",
       "nature": "reglement"
     },
     {
