@@ -13,7 +13,7 @@
       "Les requêtes SPARQL longues dépassent régulièrement le délai d’attente du point d’accès public."
     ]
   },
-  "collecteLe": "2026-09-20T08:39:28.789Z",
+  "collecteLe": "2026-09-21T09:01:32.114Z",
   "depuis": "2026-01-01",
   "actes": [
     {
@@ -22,6 +22,134 @@
       "titre": "Règlement d’exécution (UE) 2026/2053 de la Commission du 10 septembre 2026 accordant une autorisation de l’Union pour la famille de produits biocides dénommée Glutaraldehyde formulations conformément au règlement (UE) no 528/2012 du Parlement européen et du Conseil",
       "urlEli": "http://data.europa.eu/eli/reg/2026/2053/oj",
       "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2053",
+      "nature": "reglement"
+    },
+    {
+      "celex": "32026R2083",
+      "date": "2026-09-18",
+      "titre": "Règlement d’exécution (UE) 2026/2083 de la Commission du 18 septembre 2026 sur MaSanté@UE",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/2083/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2083",
+      "nature": "reglement"
+    },
+    {
+      "celex": "32026R2090",
+      "date": "2026-09-18",
+      "titre": "Règlement d’exécution (UE) 2026/2090 de la Commission du 18 septembre 2026 concernant l’autorisation de l’huile essentielle d’anis étoilé tirée d’Illicium verum Hook.f. en tant qu’additif pour l’alimentation de toutes les espèces animales",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/2090/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2090",
+      "nature": "reglement"
+    },
+    {
+      "celex": "32026R2098",
+      "date": "2026-09-18",
+      "titre": "Règlement d’exécution (UE) 2026/2098 de la Commission du 18 septembre 2026 fixant les éléments minimaux de métadonnées et leurs caractéristiques que doivent fournir les détenteurs de données de santé pour les descriptions des ensembles de données aux fins de l’utilisation secondaire des données de santé électroniques, tel que prévu par l’article 77, paragraphe 4, du règlement (UE) 2025/327 établissant l’espace européen des données de santé",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/2098/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2098",
+      "nature": "reglement"
+    },
+    {
+      "celex": "32026R2087",
+      "date": "2026-09-18",
+      "titre": "Règlement d’exécution (UE) 2026/2087 de la Commission du 18 septembre 2026 concernant l’autorisation de la L-isoleucine produite par Corynebacterium glutamicum CCTCC M 2022764 en tant qu’additif pour l’alimentation de toutes les espèces animales",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/2087/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2087",
+      "nature": "reglement"
+    },
+    {
+      "celex": "32026R2085",
+      "date": "2026-09-18",
+      "titre": "Règlement d’exécution (UE) 2026/2085 de la Commission du 18 septembre 2026 portant prolongation de la dérogation au règlement (CE) no 1967/2006 du Conseil en ce qui concerne la distance de la côte et la profondeur minimales pour les sennes de bateau pêchant le lançon (Gymnammodytes cicerelus et G. semisquamatus) et les gobies (Aphia minuta et Crystallogobius linearis) dans certaines eaux territoriales de l’Espagne (Catalogne)",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/2085/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2085",
+      "nature": "reglement"
+    },
+    {
+      "celex": "32026R2091",
+      "date": "2026-09-18",
+      "titre": "Règlement d’exécution (UE) 2026/2091 de la Commission du 18 septembre 2026 concernant l’autorisation de la clinoptilolite d’origine volcanique en tant qu’additif pour l’alimentation des volailles d’engraissement, des volailles élevées pour la ponte ou la reproduction, des oiseaux d’ornement, des porcelets et des porcs d’engraissement",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/2091/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2091",
+      "nature": "reglement"
+    },
+    {
+      "celex": "32026R2128",
+      "date": "2026-09-18",
+      "titre": "Règlement d’exécution (UE) 2026/2128 de la Commission du 18 septembre 2026 concernant l’autorisation de l’huile essentielle de citronnelle tirée de Cymbopogon nardus (L.) Rendle en tant qu’additif pour l’alimentation de toutes les espèces animales",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/2128/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2128",
+      "nature": "reglement"
+    },
+    {
+      "celex": "32026R2130",
+      "date": "2026-09-18",
+      "titre": "Règlement d’exécution (UE) 2026/2130 de la Commission du 18 septembre 2026 concernant le renouvellement de l’autorisation d’une préparation d’endo-1,4-bêta-xylanase produite par Bacillus subtilis LMG S-15136 en tant qu’additif pour l’alimentation de toutes les espèces de volailles, des porcelets non sevrés et sevrés, des porcs à l’engrais, des truies allaitantes, des truies gestantes et des porcins de toutes les espèces mineures autres que les animaux reproducteurs, l’extension de l’autorisation d’une préparation d’endo-1,4-bêta-xylanase produite par Bacillus subtilis LMG S-15136 en tant qu’additif pour l’alimentation de toutes les espèces porcines (titulaire de l’autorisation: Puratos NV) et abrogeant les règlements d’exécution (UE) 2017/211, (UE) 2020/1377, (UE) 2021/1413 et (UE) 2026/356",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/2130/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2130",
+      "nature": "reglement"
+    },
+    {
+      "celex": "32026R2143",
+      "date": "2026-09-18",
+      "titre": "Règlement d’exécution (UE) 2026/2143 de la Commission du 18 septembre 2026 modifiant pour la 361e fois le règlement (CE) no 881/2002 du Conseil instituant certaines mesures restrictives spécifiques à l’encontre de certaines personnes et entités liées aux organisations EIIL (Daech) et Al-Qaida",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/2143/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2143",
+      "nature": "reglement"
+    },
+    {
+      "celex": "32026R2097",
+      "date": "2026-09-18",
+      "titre": "Règlement d’exécution (UE) 2026/2097 de la Commission du 18 septembre 2026 relatif aux maladies transmissibles et aux problèmes sanitaires particuliers connexes faisant l’objet d’une surveillance épidémiologique et aux définitions de cas correspondantes, et abrogeant la décision d’exécution (UE) 2018/945",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/2097/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2097",
+      "nature": "reglement"
+    },
+    {
+      "celex": "32026R2089",
+      "date": "2026-09-18",
+      "titre": "Règlement d’exécution (UE) 2026/2089 de la Commission du 18 septembre 2026 modifiant le règlement d’exécution (UE) 2022/191 instituant un droit antidumping définitif sur les importations de certains éléments de fixation en fer ou en acier originaires de la République populaire de Chine à la suite de l’acceptation d’une demande de statut de nouveau producteur-exportateur",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/2089/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2089",
+      "nature": "reglement"
+    },
+    {
+      "celex": "32026R2088",
+      "date": "2026-09-18",
+      "titre": "Règlement d’exécution (UE) 2026/2088 de la Commission du 18 septembre 2026 instituant un droit antidumping définitif et portant perception définitive du droit provisoire institué sur les importations de certains acides phosphoniques alkyls et de leurs sels de sodium originaires de la République populaire de Chine",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/2088/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2088",
+      "nature": "reglement"
+    },
+    {
+      "celex": "32026R2135",
+      "date": "2026-09-18",
+      "titre": "Règlement d’exécution (UE) 2026/2135 de la Commission du 18 septembre 2026 modifiant les annexes I et II du règlement d’exécution (UE) 2023/594 établissant des mesures spéciales de lutte contre la peste porcine africaine et abrogeant la décision d’exécution (UE) 2026/1973 concernant certaines mesures d’urgence provisoires contre la peste porcine africaine en Italie",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/2135/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2135",
+      "nature": "reglement"
+    },
+    {
+      "celex": "32026R2084",
+      "date": "2026-09-18",
+      "titre": "Règlement d’exécution (UE) 2026/2084 de la Commission du 18 septembre 2026 concernant le renouvellement de l’autorisation d’extraits de tocophérols tirés d’huiles végétales, d’extraits riches en tocophérols tirés d’huiles végétales (riches en delta-tocophérols) et de l’alpha-tocophérol en tant qu’additifs pour l’alimentation de toutes les espèces animales et abrogeant le règlement d’exécution (UE) 2015/1152",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/2084/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2084",
+      "nature": "reglement"
+    },
+    {
+      "celex": "32026R2086",
+      "date": "2026-09-18",
+      "titre": "Règlement d’exécution (UE) 2026/2086 de la Commission du 18 septembre 2026 concernant le renouvellement de l’autorisation d’une préparation de diclazuril (Clinacox 0,5 %) en tant qu’additif pour l’alimentation des poulets d’engraissement et des poulettes destinées à la ponte (titulaire de l’autorisation: Elanco GmbH), et abrogeant le règlement (UE) no 1118/2010 et le règlement d’exécution (UE) no 667/2013",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/2086/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2086",
+      "nature": "reglement"
+    },
+    {
+      "celex": "32026R2096",
+      "date": "2026-09-18",
+      "titre": "Règlement d’exécution (UE) 2026/2096 de la Commission du 18 septembre 2026 établissant des procédures applicables au fonctionnement du réseau de surveillance épidémiologique",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/2096/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2096",
       "nature": "reglement"
     },
     {
@@ -121,19 +249,19 @@
       "nature": "reglement"
     },
     {
-      "celex": "32026R2106",
-      "date": "2026-09-14",
-      "titre": "Règlement d’exécution (UE) 2026/2106 de la Commission du 14 septembre 2026 relatif à l’approbation d’une modification, à l’échelle de l’Union, du cahier des charges de l’appellation d’origine protégée Segarcea conformément au règlement (UE) 2024/1143 du Parlement européen et du Conseil",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/2106/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2106",
-      "nature": "reglement"
-    },
-    {
       "celex": "32026R2046",
       "date": "2026-09-14",
       "titre": "Règlement d’exécution (UE) 2026/2046 de la Commission du 14 septembre 2026 modifiant le règlement d’exécution (UE) 2022/964 en vue d’apporter des modifications administratives et une modification mineure à l’autorisation de l’Union pour la famille de produits biocides dénommée SOPUROXID",
       "urlEli": "http://data.europa.eu/eli/reg/2026/2046/oj",
       "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2046",
+      "nature": "reglement"
+    },
+    {
+      "celex": "32026R2105",
+      "date": "2026-09-14",
+      "titre": "Règlement d’exécution (UE) 2026/2105 de la Commission du 14 septembre 2026 concernant l’enregistrement de l’indication géographique Nivegy-völgy/Nivegy-völgyi (AOP) dans le registre de l’Union des indications géographiques conformément au règlement (UE) 2024/1143 du Parlement européen et du Conseil",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/2105/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2105",
       "nature": "reglement"
     },
     {
@@ -158,6 +286,14 @@
       "titre": "Règlement d’exécution (UE) 2026/2045 de la Commission du 14 septembre 2026 modifiant le règlement (UE) no 468/2010 établissant la liste de l’UE des bateaux engagés dans des activités de pêche illicite, non déclarée et non réglementée",
       "urlEli": "http://data.europa.eu/eli/reg/2026/2045/oj",
       "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2045",
+      "nature": "reglement"
+    },
+    {
+      "celex": "32026R2106",
+      "date": "2026-09-14",
+      "titre": "Règlement d’exécution (UE) 2026/2106 de la Commission du 14 septembre 2026 relatif à l’approbation d’une modification, à l’échelle de l’Union, du cahier des charges de l’appellation d’origine protégée Segarcea conformément au règlement (UE) 2024/1143 du Parlement européen et du Conseil",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/2106/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2106",
       "nature": "reglement"
     },
     {
@@ -198,142 +334,6 @@
       "titre": "Règlement d’exécution (UE) 2026/2041 de la Commission du 11 septembre 2026 portant modalités d’application de la directive 2009/138/CE du Parlement européen et du Conseil en ce qui concerne les informations techniques devant servir au calcul des provisions techniques et des fonds propres de base aux fins des déclarations ayant une date de référence comprise entre le 30 juin 2026 et le 29 septembre 2026",
       "urlEli": "http://data.europa.eu/eli/reg/2026/2041/oj",
       "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2041",
-      "nature": "reglement"
-    },
-    {
-      "celex": "32026R2050",
-      "date": "2026-09-11",
-      "titre": "Règlement d’exécution (UE) 2026/2050 de la Commission du 11 septembre 2026 accordant une autorisation de l’Union pour la famille de produits biocides dénommée Hydrogen peroxide biocidal product family conformément au règlement (UE) no 528/2012 du Parlement européen et du Conseil",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/2050/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2050",
-      "nature": "reglement"
-    },
-    {
-      "celex": "32026R2054",
-      "date": "2026-09-11",
-      "titre": "Règlement d’exécution (UE) 2026/2054 de la Commission du 11 septembre 2026 octroyant une autorisation de l’Union pour la famille de produits biocides dénommée Hydrogen peroxides biocides family conformément au règlement (UE) no 528/2012 du Parlement européen et du Conseil",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/2054/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2054",
-      "nature": "reglement"
-    },
-    {
-      "celex": "32026R2094",
-      "date": "2026-09-11",
-      "titre": "Règlement d’exécution (UE) 2026/2094 de la Commission du 11 septembre 2026 modifiant les annexes I et II du règlement d’exécution (UE) 2023/594 établissant des mesures spéciales de lutte contre la peste porcine africaine",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/2094/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2094",
-      "nature": "reglement"
-    },
-    {
-      "celex": "32026R2027",
-      "date": "2026-09-10",
-      "titre": "Règlement d’exécution (UE) 2026/2027 de la Commission du 10 septembre 2026 concernant l’autorisation du molybdène chélaté à l’EDTA en tant qu’additif pour l’alimentation des abeilles mellifères (titulaire de l’autorisation: Oligofeed SAS)",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/2027/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2027",
-      "nature": "reglement"
-    },
-    {
-      "celex": "32026R2028",
-      "date": "2026-09-10",
-      "titre": "Règlement d’exécution (UE) 2026/2028 de la Commission du 10 septembre 2026 accordant une autorisation de l’Union pour le produit biocide unique dénommé ELOCLEAR conformément au règlement (UE) no 528/2012 du Parlement européen et du Conseil",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/2028/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2028",
-      "nature": "reglement"
-    },
-    {
-      "celex": "32026R2022",
-      "date": "2026-09-10",
-      "titre": "Règlement d’exécution (UE) 2026/2022 de la Commission du 10 septembre 2026 soumettant à enregistrement les importations de treillis soudés en acier originaires de la République populaire de Chine et de Turquie en vue de permettre la perception de droits antidumping sur les importations soumises à enregistrement",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/2022/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2022",
-      "nature": "reglement"
-    },
-    {
-      "celex": "32026R2024",
-      "date": "2026-09-10",
-      "titre": "Règlement d’exécution (UE) 2026/2024 de la Commission du 10 septembre 2026 modifiant le règlement d’exécution (UE) 2024/2750 en vue d’apporter des modifications administratives et des modifications mineures à l’autorisation de l’Union pour la famille de produits biocides dénommée LANXESS CMIT/MIT biocidal product family",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/2024/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2024",
-      "nature": "reglement"
-    },
-    {
-      "celex": "32026R2026",
-      "date": "2026-09-10",
-      "titre": "Règlement d’exécution (UE) 2026/2026 de la Commission du 10 septembre 2026 modifiant le règlement d’exécution (UE) 2025/524 en vue d’apporter des modifications administratives à l’autorisation de l’Union pour la famille de produits biocides dénommée Sodium hypochlorite Liquid disinfectant biocidal product family",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/2026/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2026",
-      "nature": "reglement"
-    },
-    {
-      "celex": "32026R2023",
-      "date": "2026-09-10",
-      "titre": "Règlement d’exécution (UE) 2026/2023 de la Commission du 10 septembre 2026 soumettant à enregistrement les importations de rayonnages en acier boulonnés et sans boulons originaires de la République populaire de Chine en vue de permettre la perception de droits antidumping sur les importations soumises à enregistrement",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/2023/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2023",
-      "nature": "reglement"
-    },
-    {
-      "celex": "32026R2025",
-      "date": "2026-09-10",
-      "titre": "Règlement d’exécution (UE) 2026/2025 de la Commission du 10 septembre 2026 renouvelant l’approbation de la substance active mécoprop-P en tant que substance dont on envisage la substitution conformément au règlement (CE) no 1107/2009 du Parlement européen et du Conseil et modifiant le règlement d’exécution (UE) no 540/2011 de la Commission",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/2025/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2025",
-      "nature": "reglement"
-    },
-    {
-      "celex": "32026R2078",
-      "date": "2026-09-09",
-      "titre": "Règlement d’exécution (UE) 2026/2078 de la Commission du 9 septembre 2026 concernant l’enregistrement de l’indication géographique Olio dei Colli di Bologna (IGP) dans le registre de l’Union des indications géographiques conformément au règlement (UE) 2024/1143 du Parlement européen et du Conseil",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/2078/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2078",
-      "nature": "reglement"
-    },
-    {
-      "celex": "32026R1976",
-      "date": "2026-09-08",
-      "titre": "Règlement d’exécution (UE) 2026/1976 de la Commission du 8 septembre 2026 renouvelant l’approbation de la substance active pyraclostrobine conformément au règlement (CE) no 1107/2009 du Parlement européen et du Conseil et modifiant le règlement d’exécution (UE) no 540/2011 de la Commission",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/1976/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R1976",
-      "nature": "reglement"
-    },
-    {
-      "celex": "32026R1974",
-      "date": "2026-09-08",
-      "titre": "Règlement d’exécution (UE) 2026/1974 de la Commission du 8 septembre 2026 accordant une autorisation de l’Union pour le produit biocide unique dénommé ERO MN conformément au règlement (UE) no 528/2012 du Parlement européen et du Conseil",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/1974/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R1974",
-      "nature": "reglement"
-    },
-    {
-      "celex": "32026R1975",
-      "date": "2026-09-08",
-      "titre": "Règlement d’exécution (UE) 2026/1975 de la Commission du 8 septembre 2026 autorisant une exemption conformément au règlement (UE) 2024/573 du Parlement européen et du Conseil en ce qui concerne l’utilisation de gaz à effet de serre fluorés dans certains équipements destinés à sécher l’air comprimé",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/1975/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R1975",
-      "nature": "reglement"
-    },
-    {
-      "celex": "32026R1968",
-      "date": "2026-09-07",
-      "titre": "Règlement d’exécution (UE) 2026/1968 de la Commission du 7 septembre 2026 renouvelant l’approbation de la substance active phosphine conformément au règlement (CE) no 1107/2009 du Parlement européen et du Conseil et modifiant le règlement d’exécution (UE) no 540/2011 de la Commission",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/1968/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R1968",
-      "nature": "reglement"
-    },
-    {
-      "celex": "32026R2020",
-      "date": "2026-09-04",
-      "titre": "Règlement d’exécution (UE) 2026/2020 de la Commission du 4 septembre 2026 modifiant les annexes V et XIV du règlement d’exécution (UE) 2021/404 en ce qui concerne les mentions relatives aux États-Unis dans les listes de pays tiers, de territoires ou de zones de pays tiers ou territoires en provenance desquels l’entrée dans l’Union d’envois de volailles et de produits germinaux de volailles ainsi que de viandes fraîches de volailles et de gibier à plumes est autorisée",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/2020/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2020",
-      "nature": "reglement"
-    },
-    {
-      "celex": "32026R2029",
-      "date": "2026-09-03",
-      "titre": "Règlement d’exécution (UE) 2026/2029 de la Commission du 3 septembre 2026 fixant les droits à l'importation pour certains riz décortiqués, applicables à partir du 7 septembre 2026",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/2029/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2029",
       "nature": "reglement"
     }
   ]
