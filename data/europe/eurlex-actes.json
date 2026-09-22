@@ -13,7 +13,7 @@
       "Les requêtes SPARQL longues dépassent régulièrement le délai d’attente du point d’accès public."
     ]
   },
-  "collecteLe": "2026-09-21T09:01:32.114Z",
+  "collecteLe": "2026-09-22T08:37:17.215Z",
   "depuis": "2026-01-01",
   "actes": [
     {
@@ -22,6 +22,22 @@
       "titre": "Règlement d’exécution (UE) 2026/2053 de la Commission du 10 septembre 2026 accordant une autorisation de l’Union pour la famille de produits biocides dénommée Glutaraldehyde formulations conformément au règlement (UE) no 528/2012 du Parlement européen et du Conseil",
       "urlEli": "http://data.europa.eu/eli/reg/2026/2053/oj",
       "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2053",
+      "nature": "reglement"
+    },
+    {
+      "celex": "32026R2099",
+      "date": "2026-09-21",
+      "titre": "Règlement d’exécution (UE) 2026/2099 de la Commission du 21 septembre 2026 relatif à un mécanisme interopérable et transfrontière d’identification et d’authentification des personnes physiques, des professionnels de la santé et des prestataires de soins de santé aux fins de l’échange transfrontière de données de santé électroniques à caractère personnel",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/2099/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2099",
+      "nature": "reglement"
+    },
+    {
+      "celex": "32026R2149",
+      "date": "2026-09-21",
+      "titre": "Règlement d’exécution (UE) 2026/2149 de la Commission du 21 septembre 2026 modifiant les annexes V et XIV du règlement d’exécution (UE) 2021/404 en ce qui concerne les mentions relatives aux États-Unis dans les listes de pays tiers, de territoires ou de zones de pays tiers ou territoires en provenance desquels l’entrée dans l’Union d’envois de volailles et de produits germinaux de volailles ainsi que de viandes fraîches de volailles et de gibier à plumes est autorisée",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/2149/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2149",
       "nature": "reglement"
     },
     {
@@ -318,22 +334,6 @@
       "titre": "Règlement d’exécution (UE) 2026/2042 de la Commission du 11 septembre 2026 octroyant une autorisation de l’Union pour le produit biocide dénommé OXTERIL® 350 VHP conformément au règlement (UE) no 528/2012 du Parlement européen et du Conseil",
       "urlEli": "http://data.europa.eu/eli/reg/2026/2042/oj",
       "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2042",
-      "nature": "reglement"
-    },
-    {
-      "celex": "32026R2031",
-      "date": "2026-09-11",
-      "titre": "Règlement d’exécution (UE) 2026/2031 de la Commission du 11 septembre 2026 modifiant le règlement d’exécution (UE) 2017/373 en ce qui concerne les exigences applicables aux activités sous-traitées par des prestataires de services",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/2031/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2031",
-      "nature": "reglement"
-    },
-    {
-      "celex": "32026R2041",
-      "date": "2026-09-11",
-      "titre": "Règlement d’exécution (UE) 2026/2041 de la Commission du 11 septembre 2026 portant modalités d’application de la directive 2009/138/CE du Parlement européen et du Conseil en ce qui concerne les informations techniques devant servir au calcul des provisions techniques et des fonds propres de base aux fins des déclarations ayant une date de référence comprise entre le 30 juin 2026 et le 29 septembre 2026",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/2041/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2041",
       "nature": "reglement"
     }
   ]
