@@ -13,15 +13,31 @@
       "Les requêtes SPARQL longues dépassent régulièrement le délai d’attente du point d’accès public."
     ]
   },
-  "collecteLe": "2026-09-22T08:37:17.215Z",
+  "collecteLe": "2026-09-23T08:39:19.367Z",
   "depuis": "2026-01-01",
   "actes": [
     {
-      "celex": "32026R2053",
-      "date": "2029-09-10",
-      "titre": "Règlement d’exécution (UE) 2026/2053 de la Commission du 10 septembre 2026 accordant une autorisation de l’Union pour la famille de produits biocides dénommée Glutaraldehyde formulations conformément au règlement (UE) no 528/2012 du Parlement européen et du Conseil",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/2053/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2053",
+      "celex": "32026R2160",
+      "date": "2026-09-22",
+      "titre": "Règlement d’exécution (UE) 2026/2160 du Conseil du 22 septembre 2026 mettant en œuvre le règlement (UE) n° 269/2014 concernant des mesures restrictives eu égard aux actions compromettant ou menaçant l’intégrité territoriale, la souveraineté et l’indépendance de l’Ukraine",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/2160/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2160",
+      "nature": "reglement"
+    },
+    {
+      "celex": "32026R2138",
+      "date": "2026-09-22",
+      "titre": "Règlement d’exécution (UE) 2026/2138 du Conseil du 22 septembre 2026 mettant en œuvre l’article 11, paragraphe 4, du règlement (UE) n° 753/2011 concernant des mesures restrictives instituées à l’encontre de certains groupes et de certaines personnes, entreprises ou entités au regard de la situation en Afghanistan",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/2138/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2138",
+      "nature": "reglement"
+    },
+    {
+      "celex": "32026R2107",
+      "date": "2026-09-22",
+      "titre": "Règlement d’exécution (UE) 2026/2107 de la Commission du 22 septembre 2026 instituant un droit compensateur définitif sur les importations de produits de fibre de verre à filament continu originaires d’Égypte, à la suite d’un réexamen au titre de l’expiration des mesures, conformément à l’article 18 du règlement (UE) 2016/1037 du Parlement européen et du Conseil",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/2107/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2107",
       "nature": "reglement"
     },
     {
@@ -38,6 +54,14 @@
       "titre": "Règlement d’exécution (UE) 2026/2149 de la Commission du 21 septembre 2026 modifiant les annexes V et XIV du règlement d’exécution (UE) 2021/404 en ce qui concerne les mentions relatives aux États-Unis dans les listes de pays tiers, de territoires ou de zones de pays tiers ou territoires en provenance desquels l’entrée dans l’Union d’envois de volailles et de produits germinaux de volailles ainsi que de viandes fraîches de volailles et de gibier à plumes est autorisée",
       "urlEli": "http://data.europa.eu/eli/reg/2026/2149/oj",
       "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2149",
+      "nature": "reglement"
+    },
+    {
+      "celex": "32026R2133",
+      "date": "2026-09-18",
+      "titre": "Règlement d’exécution (UE) 2026/2133 de la Commission du 18 septembre 2026 instituant des mesures de sauvegarde provisoires concernant les importations de certains produits laminés plats en aciers au silicium dits magnétiques à grains orientés",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/2133/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2133",
       "nature": "reglement"
     },
     {
@@ -169,14 +193,6 @@
       "nature": "reglement"
     },
     {
-      "celex": "32026R2133",
-      "date": "2026-09-18",
-      "titre": "Règlement d’exécution (UE) 2026/2133 de la Commission du 18 septembre 2026 instituant des mesures de sauvegarde provisoires concernant les importations de certains produits laminés plats en aciers au silicium dits magnétiques à grains orientés",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/2133/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2133",
-      "nature": "reglement"
-    },
-    {
       "celex": "32026R2104",
       "date": "2026-09-17",
       "titre": "Règlement d’exécution (UE) 2026/2104 de la Commission du 17 septembre 2026 modifiant les annexes V et XIV du règlement d’exécution (UE) 2021/404 en ce qui concerne les mentions relatives aux États-Unis dans les listes de pays tiers, de territoires ou de zones de pays tiers ou territoires en provenance desquels l’entrée dans l’Union d’envois de volailles et de produits germinaux de volailles ainsi que de viandes fraîches de volailles et de gibier à plumes est autorisée",
@@ -265,11 +281,11 @@
       "nature": "reglement"
     },
     {
-      "celex": "32026R2046",
+      "celex": "32026R2106",
       "date": "2026-09-14",
-      "titre": "Règlement d’exécution (UE) 2026/2046 de la Commission du 14 septembre 2026 modifiant le règlement d’exécution (UE) 2022/964 en vue d’apporter des modifications administratives et une modification mineure à l’autorisation de l’Union pour la famille de produits biocides dénommée SOPUROXID",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/2046/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2046",
+      "titre": "Règlement d’exécution (UE) 2026/2106 de la Commission du 14 septembre 2026 relatif à l’approbation d’une modification, à l’échelle de l’Union, du cahier des charges de l’appellation d’origine protégée Segarcea conformément au règlement (UE) 2024/1143 du Parlement européen et du Conseil",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/2106/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2106",
       "nature": "reglement"
     },
     {
@@ -278,6 +294,14 @@
       "titre": "Règlement d’exécution (UE) 2026/2105 de la Commission du 14 septembre 2026 concernant l’enregistrement de l’indication géographique Nivegy-völgy/Nivegy-völgyi (AOP) dans le registre de l’Union des indications géographiques conformément au règlement (UE) 2024/1143 du Parlement européen et du Conseil",
       "urlEli": "http://data.europa.eu/eli/reg/2026/2105/oj",
       "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2105",
+      "nature": "reglement"
+    },
+    {
+      "celex": "32026R2046",
+      "date": "2026-09-14",
+      "titre": "Règlement d’exécution (UE) 2026/2046 de la Commission du 14 septembre 2026 modifiant le règlement d’exécution (UE) 2022/964 en vue d’apporter des modifications administratives et une modification mineure à l’autorisation de l’Union pour la famille de produits biocides dénommée SOPUROXID",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/2046/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2046",
       "nature": "reglement"
     },
     {
@@ -305,35 +329,11 @@
       "nature": "reglement"
     },
     {
-      "celex": "32026R2106",
-      "date": "2026-09-14",
-      "titre": "Règlement d’exécution (UE) 2026/2106 de la Commission du 14 septembre 2026 relatif à l’approbation d’une modification, à l’échelle de l’Union, du cahier des charges de l’appellation d’origine protégée Segarcea conformément au règlement (UE) 2024/1143 du Parlement européen et du Conseil",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/2106/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2106",
-      "nature": "reglement"
-    },
-    {
       "celex": "32026R2044",
       "date": "2026-09-11",
       "titre": "Règlement d’exécution (UE) 2026/2044 de la Commission du 11 septembre 2026 modifiant le règlement d’exécution (UE) 2024/1767 en vue d’apporter des modifications administratives à l’autorisation de l’Union pour la famille de produits biocides dénommée Sure Lactic Family",
       "urlEli": "http://data.europa.eu/eli/reg/2026/2044/oj",
       "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2044",
-      "nature": "reglement"
-    },
-    {
-      "celex": "32026R2051",
-      "date": "2026-09-11",
-      "titre": "Règlement d’exécution (UE) 2026/2051 de la Commission du 11 septembre 2026 octroyant une autorisation de l’Union pour la famille de produits biocides dénommée Hydrogen peroxide product family_P & G conformément au règlement (UE) no 528/2012 du Parlement européen et du Conseil",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/2051/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2051",
-      "nature": "reglement"
-    },
-    {
-      "celex": "32026R2042",
-      "date": "2026-09-11",
-      "titre": "Règlement d’exécution (UE) 2026/2042 de la Commission du 11 septembre 2026 octroyant une autorisation de l’Union pour le produit biocide dénommé OXTERIL® 350 VHP conformément au règlement (UE) no 528/2012 du Parlement européen et du Conseil",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/2042/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2042",
       "nature": "reglement"
     }
   ]
