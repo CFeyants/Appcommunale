@@ -13,9 +13,41 @@
       "Les requêtes SPARQL longues dépassent régulièrement le délai d’attente du point d’accès public."
     ]
   },
-  "collecteLe": "2026-09-23T08:39:19.367Z",
+  "collecteLe": "2026-09-24T08:32:43.781Z",
   "depuis": "2026-01-01",
   "actes": [
+    {
+      "celex": "32026R2110",
+      "date": "2026-09-23",
+      "titre": "Règlement d’exécution (UE) 2026/2110 de la Commission du 23 septembre 2026 concernant l’autorisation de l’huile essentielle de marjolaine tirée d’Origanum majorana L. en tant qu’additif pour l’alimentation de toutes les espèces animales",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/2110/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2110",
+      "nature": "reglement"
+    },
+    {
+      "celex": "32026R2115",
+      "date": "2026-09-23",
+      "titre": "Règlement d’exécution (UE) 2026/2115 de la Commission du 23 septembre 2026 concernant le renouvellement de l’autorisation du bisulfite sodique de ménadione (vitamine K3) et du ménadionebisulfitonicotinamide (vitamine K3) en tant qu’additifs pour l’alimentation de toutes les espèces animales et abrogeant le règlement d’exécution (UE) 2015/2307",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/2115/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2115",
+      "nature": "reglement"
+    },
+    {
+      "celex": "32026R2111",
+      "date": "2026-09-23",
+      "titre": "Règlement d’exécution (UE) 2026/2111 de la Commission du 23 septembre 2026 rectifiant le règlement d’exécution (UE) 2025/2143 en ce qui concerne la date d’application de certaines dispositions",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/2111/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2111",
+      "nature": "reglement"
+    },
+    {
+      "celex": "32026R2113",
+      "date": "2026-09-23",
+      "titre": "Règlement d’exécution (UE) 2026/2113 de la Commission du 23 septembre 2026 concernant l’autorisation de l’huile essentielle de romarin tirée de Salvia rosmarinus Spenn. en tant qu’additif pour l’alimentation de toutes les espèces animales",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/2113/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2113",
+      "nature": "reglement"
+    },
     {
       "celex": "32026R2160",
       "date": "2026-09-22",
@@ -54,14 +86,6 @@
       "titre": "Règlement d’exécution (UE) 2026/2149 de la Commission du 21 septembre 2026 modifiant les annexes V et XIV du règlement d’exécution (UE) 2021/404 en ce qui concerne les mentions relatives aux États-Unis dans les listes de pays tiers, de territoires ou de zones de pays tiers ou territoires en provenance desquels l’entrée dans l’Union d’envois de volailles et de produits germinaux de volailles ainsi que de viandes fraîches de volailles et de gibier à plumes est autorisée",
       "urlEli": "http://data.europa.eu/eli/reg/2026/2149/oj",
       "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2149",
-      "nature": "reglement"
-    },
-    {
-      "celex": "32026R2133",
-      "date": "2026-09-18",
-      "titre": "Règlement d’exécution (UE) 2026/2133 de la Commission du 18 septembre 2026 instituant des mesures de sauvegarde provisoires concernant les importations de certains produits laminés plats en aciers au silicium dits magnétiques à grains orientés",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/2133/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2133",
       "nature": "reglement"
     },
     {
@@ -193,6 +217,14 @@
       "nature": "reglement"
     },
     {
+      "celex": "32026R2133",
+      "date": "2026-09-18",
+      "titre": "Règlement d’exécution (UE) 2026/2133 de la Commission du 18 septembre 2026 instituant des mesures de sauvegarde provisoires concernant les importations de certains produits laminés plats en aciers au silicium dits magnétiques à grains orientés",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/2133/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2133",
+      "nature": "reglement"
+    },
+    {
       "celex": "32026R2104",
       "date": "2026-09-17",
       "titre": "Règlement d’exécution (UE) 2026/2104 de la Commission du 17 septembre 2026 modifiant les annexes V et XIV du règlement d’exécution (UE) 2021/404 en ce qui concerne les mentions relatives aux États-Unis dans les listes de pays tiers, de territoires ou de zones de pays tiers ou territoires en provenance desquels l’entrée dans l’Union d’envois de volailles et de produits germinaux de volailles ainsi que de viandes fraîches de volailles et de gibier à plumes est autorisée",
@@ -281,30 +313,6 @@
       "nature": "reglement"
     },
     {
-      "celex": "32026R2106",
-      "date": "2026-09-14",
-      "titre": "Règlement d’exécution (UE) 2026/2106 de la Commission du 14 septembre 2026 relatif à l’approbation d’une modification, à l’échelle de l’Union, du cahier des charges de l’appellation d’origine protégée Segarcea conformément au règlement (UE) 2024/1143 du Parlement européen et du Conseil",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/2106/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2106",
-      "nature": "reglement"
-    },
-    {
-      "celex": "32026R2105",
-      "date": "2026-09-14",
-      "titre": "Règlement d’exécution (UE) 2026/2105 de la Commission du 14 septembre 2026 concernant l’enregistrement de l’indication géographique Nivegy-völgy/Nivegy-völgyi (AOP) dans le registre de l’Union des indications géographiques conformément au règlement (UE) 2024/1143 du Parlement européen et du Conseil",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/2105/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2105",
-      "nature": "reglement"
-    },
-    {
-      "celex": "32026R2046",
-      "date": "2026-09-14",
-      "titre": "Règlement d’exécution (UE) 2026/2046 de la Commission du 14 septembre 2026 modifiant le règlement d’exécution (UE) 2022/964 en vue d’apporter des modifications administratives et une modification mineure à l’autorisation de l’Union pour la famille de produits biocides dénommée SOPUROXID",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/2046/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2046",
-      "nature": "reglement"
-    },
-    {
       "celex": "32026R2049",
       "date": "2026-09-14",
       "titre": "Règlement d’exécution (UE) 2026/2049 de la Commission du 14 septembre 2026 soumettant à enregistrement les importations de piles et batteries de piles au dioxyde de manganèse alcalin originaires de la République populaire de Chine en vue de permettre la perception de droits antidumping sur les importations soumises à enregistrement",
@@ -326,14 +334,6 @@
       "titre": "Règlement d’exécution (UE) 2026/2045 de la Commission du 14 septembre 2026 modifiant le règlement (UE) no 468/2010 établissant la liste de l’UE des bateaux engagés dans des activités de pêche illicite, non déclarée et non réglementée",
       "urlEli": "http://data.europa.eu/eli/reg/2026/2045/oj",
       "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2045",
-      "nature": "reglement"
-    },
-    {
-      "celex": "32026R2044",
-      "date": "2026-09-11",
-      "titre": "Règlement d’exécution (UE) 2026/2044 de la Commission du 11 septembre 2026 modifiant le règlement d’exécution (UE) 2024/1767 en vue d’apporter des modifications administratives à l’autorisation de l’Union pour la famille de produits biocides dénommée Sure Lactic Family",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/2044/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2044",
       "nature": "reglement"
     }
   ]
