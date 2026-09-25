@@ -13,9 +13,49 @@
       "Les requêtes SPARQL longues dépassent régulièrement le délai d’attente du point d’accès public."
     ]
   },
-  "collecteLe": "2026-09-24T08:32:43.781Z",
+  "collecteLe": "2026-09-25T08:54:22.710Z",
   "depuis": "2026-01-01",
   "actes": [
+    {
+      "celex": "32026R2165",
+      "date": "2026-09-24",
+      "titre": "Règlement d’exécution (UE) 2026/2165 du Conseil du 24 septembre 2026 mettant en œuvre le règlement (UE) 2024/2642 concernant des mesures restrictives eu égard aux activités déstabilisatrices menées par la Russie",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/2165/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2165",
+      "nature": "reglement"
+    },
+    {
+      "celex": "32026R2120",
+      "date": "2026-09-24",
+      "titre": "Règlement d’exécution (UE) 2026/2120 de la Commission du 24 septembre 2026 concernant l’autorisation de la teinture de lavande tirée de Lavandula angustifolia Mill. en tant qu’additif pour l’alimentation de toutes les espèces animales et le retrait de la teinture de lavande tirée de Lavandula angustifolia × L. latifolia en tant qu’additif pour l’alimentation de toutes les espèces animales",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/2120/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2120",
+      "nature": "reglement"
+    },
+    {
+      "celex": "32026R2129",
+      "date": "2026-09-24",
+      "titre": "Règlement d’exécution (UE) 2026/2129 de la Commission du 24 septembre 2026 relatif au renouvellement de l’autorisation du chlorhydrate de L-cystéine monohydraté en tant qu’additif pour l’alimentation des chiens et des chats et abrogeant le règlement d’exécution (UE) 2015/2306",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/2129/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2129",
+      "nature": "reglement"
+    },
+    {
+      "celex": "32026R2101",
+      "date": "2026-09-24",
+      "titre": "Règlement d’exécution (UE) 2026/2101 de la Commission du 24 septembre 2026 instituant un droit antidumping définitif et portant perception définitive du droit provisoire institué sur les importations de protéine de pois originaire de la République populaire de Chine",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/2101/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2101",
+      "nature": "reglement"
+    },
+    {
+      "celex": "32026R2118",
+      "date": "2026-09-24",
+      "titre": "Règlement d’exécution (UE) 2026/2118 de la Commission du 24 septembre 2026 soumettant à enregistrement les importations de canards de Pékin originaires de la République populaire de Chine en vue de permettre la perception de droits antidumping sur les importations soumises à enregistrement",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/2118/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2118",
+      "nature": "reglement"
+    },
     {
       "celex": "32026R2110",
       "date": "2026-09-23",
@@ -294,46 +334,6 @@
       "titre": "Règlement d’exécution (UE) 2026/2061 de la Commission du 17 septembre 2026 concernant l’autorisation d’une préparation de narasine et de diclazuril (Interban) en tant qu’additif pour l’alimentation des poulets d’engraissement et des poulettes élevées pour la ponte (titulaire de l’autorisation: Elanco GmbH)",
       "urlEli": "http://data.europa.eu/eli/reg/2026/2061/oj",
       "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2061",
-      "nature": "reglement"
-    },
-    {
-      "celex": "32026R2079",
-      "date": "2026-09-17",
-      "titre": "Règlement d’exécution (UE) 2026/2079 de la Commission du 17 septembre 2026 concernant l’autorisation d’une préparation d’alpha-galactosidase produite à l’aide d’Aspergillus tubingensis ATCC SD 6740 et d’endo-1,4-bêta-xylanase produite à l’aide de Trichoderma orientale CBS 139997 en tant qu’additif pour l’alimentation des porcelets sevrés (titulaire de l’autorisation: Industrial Técnica Pecuaria, SA)",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/2079/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2079",
-      "nature": "reglement"
-    },
-    {
-      "celex": "32026R2108",
-      "date": "2026-09-16",
-      "titre": "Règlement (UE) 2026/2108 du Parlement européen et du Conseil du 16 septembre 2026 établissant le code des douanes de l’Union et l’Autorité douanière de l’Union européenne, et abrogeant le règlement (UE) n° 952/2013 (Texte présentant de l'intérêt pour l'EEE)",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/2108/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2108",
-      "nature": "reglement"
-    },
-    {
-      "celex": "32026R2049",
-      "date": "2026-09-14",
-      "titre": "Règlement d’exécution (UE) 2026/2049 de la Commission du 14 septembre 2026 soumettant à enregistrement les importations de piles et batteries de piles au dioxyde de manganèse alcalin originaires de la République populaire de Chine en vue de permettre la perception de droits antidumping sur les importations soumises à enregistrement",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/2049/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2049",
-      "nature": "reglement"
-    },
-    {
-      "celex": "32026R2047",
-      "date": "2026-09-14",
-      "titre": "Règlement d’exécution (UE) 2026/2047 de la Commission du 14 septembre 2026 prorogeant la surveillance a posteriori de l’Union sur les importations d’éthanol renouvelable pour carburants",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/2047/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2047",
-      "nature": "reglement"
-    },
-    {
-      "celex": "32026R2045",
-      "date": "2026-09-14",
-      "titre": "Règlement d’exécution (UE) 2026/2045 de la Commission du 14 septembre 2026 modifiant le règlement (UE) no 468/2010 établissant la liste de l’UE des bateaux engagés dans des activités de pêche illicite, non déclarée et non réglementée",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/2045/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2045",
       "nature": "reglement"
     }
   ]
