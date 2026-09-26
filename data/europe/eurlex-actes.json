@@ -13,17 +13,9 @@
       "Les requêtes SPARQL longues dépassent régulièrement le délai d’attente du point d’accès public."
     ]
   },
-  "collecteLe": "2026-09-25T08:54:22.710Z",
+  "collecteLe": "2026-09-26T08:40:10.201Z",
   "depuis": "2026-01-01",
   "actes": [
-    {
-      "celex": "32026R2165",
-      "date": "2026-09-24",
-      "titre": "Règlement d’exécution (UE) 2026/2165 du Conseil du 24 septembre 2026 mettant en œuvre le règlement (UE) 2024/2642 concernant des mesures restrictives eu égard aux activités déstabilisatrices menées par la Russie",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/2165/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2165",
-      "nature": "reglement"
-    },
     {
       "celex": "32026R2120",
       "date": "2026-09-24",
@@ -54,6 +46,14 @@
       "titre": "Règlement d’exécution (UE) 2026/2118 de la Commission du 24 septembre 2026 soumettant à enregistrement les importations de canards de Pékin originaires de la République populaire de Chine en vue de permettre la perception de droits antidumping sur les importations soumises à enregistrement",
       "urlEli": "http://data.europa.eu/eli/reg/2026/2118/oj",
       "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2118",
+      "nature": "reglement"
+    },
+    {
+      "celex": "32026R2165",
+      "date": "2026-09-24",
+      "titre": "Règlement d’exécution (UE) 2026/2165 du Conseil du 24 septembre 2026 mettant en œuvre le règlement (UE) 2024/2642 concernant des mesures restrictives eu égard aux activités déstabilisatrices menées par la Russie",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/2165/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2165",
       "nature": "reglement"
     },
     {
@@ -126,6 +126,14 @@
       "titre": "Règlement d’exécution (UE) 2026/2149 de la Commission du 21 septembre 2026 modifiant les annexes V et XIV du règlement d’exécution (UE) 2021/404 en ce qui concerne les mentions relatives aux États-Unis dans les listes de pays tiers, de territoires ou de zones de pays tiers ou territoires en provenance desquels l’entrée dans l’Union d’envois de volailles et de produits germinaux de volailles ainsi que de viandes fraîches de volailles et de gibier à plumes est autorisée",
       "urlEli": "http://data.europa.eu/eli/reg/2026/2149/oj",
       "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2149",
+      "nature": "reglement"
+    },
+    {
+      "celex": "32026R2133",
+      "date": "2026-09-18",
+      "titre": "Règlement d’exécution (UE) 2026/2133 de la Commission du 18 septembre 2026 instituant des mesures de sauvegarde provisoires concernant les importations de certains produits laminés plats en aciers au silicium dits magnétiques à grains orientés",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/2133/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2133",
       "nature": "reglement"
     },
     {
@@ -254,14 +262,6 @@
       "titre": "Règlement d’exécution (UE) 2026/2096 de la Commission du 18 septembre 2026 établissant des procédures applicables au fonctionnement du réseau de surveillance épidémiologique",
       "urlEli": "http://data.europa.eu/eli/reg/2026/2096/oj",
       "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2096",
-      "nature": "reglement"
-    },
-    {
-      "celex": "32026R2133",
-      "date": "2026-09-18",
-      "titre": "Règlement d’exécution (UE) 2026/2133 de la Commission du 18 septembre 2026 instituant des mesures de sauvegarde provisoires concernant les importations de certains produits laminés plats en aciers au silicium dits magnétiques à grains orientés",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/2133/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2133",
       "nature": "reglement"
     },
     {
