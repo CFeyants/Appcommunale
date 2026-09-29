@@ -13,9 +13,57 @@
       "Les requêtes SPARQL longues dépassent régulièrement le délai d’attente du point d’accès public."
     ]
   },
-  "collecteLe": "2026-09-28T09:52:31.092Z",
+  "collecteLe": "2026-09-29T09:54:56.023Z",
   "depuis": "2026-01-01",
   "actes": [
+    {
+      "celex": "32026R2155",
+      "date": "2026-09-28",
+      "titre": "Règlement d’exécution (UE) 2026/2155 de la Commission du 28 septembre 2026 approuvant l’inscription du port de Køge sur la liste des ports conformément au chapitre II du règlement d’exécution (UE) 2024/1474 et modifiant le règlement d’exécution (UE) 2025/897 en conséquence",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/2155/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2155",
+      "nature": "reglement"
+    },
+    {
+      "celex": "32026R2191",
+      "date": "2026-09-28",
+      "titre": "Règlement d’exécution (UE) 2026/2191 du Conseil du 28 septembre 2026 mettant en œuvre le règlement (CE) n° 1183/2005 concernant des mesures restrictives en raison de la situation en République démocratique du Congo",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/2191/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2191",
+      "nature": "reglement"
+    },
+    {
+      "celex": "32026R2158",
+      "date": "2026-09-28",
+      "titre": "Règlement d’exécution (UE) 2026/2158 de la Commission du 28 septembre 2026 concernant l’autorisation de l’huile essentielle de clou de girofle, de l’huile essentielle de feuilles de giroflier et de la fraction riche en bêta-caryophyllène de l’huile essentielle de feuilles de giroflier tirées de Syzygium aromaticum (L.) Merr. & L.M. Perry en tant qu’additifs pour l’alimentation de toutes les espèces animales",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/2158/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2158",
+      "nature": "reglement"
+    },
+    {
+      "celex": "32026R2193",
+      "date": "2026-09-28",
+      "titre": "Règlement d'exécution (UE) 2026/2193 du Conseil du 28 septembre 2026 mettant en œuvre le règlement (UE) 2024/1485 concernant des mesures restrictives en raison de la situation en Russie",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/2193/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2193",
+      "nature": "reglement"
+    },
+    {
+      "celex": "32026R2184",
+      "date": "2026-09-28",
+      "titre": "Règlement d’exécution (UE) 2026/2184 du Conseil du 28 septembre 2026 mettant en œuvre le règlement (UE) n° 269/2014 concernant des mesures restrictives eu égard aux actions compromettant ou menaçant l’intégrité territoriale, la souveraineté et l’indépendance de l’Ukraine",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/2184/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2184",
+      "nature": "reglement"
+    },
+    {
+      "celex": "32026R2165",
+      "date": "2026-09-24",
+      "titre": "Règlement d’exécution (UE) 2026/2165 du Conseil du 24 septembre 2026 mettant en œuvre le règlement (UE) 2024/2642 concernant des mesures restrictives eu égard aux activités déstabilisatrices menées par la Russie",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/2165/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2165",
+      "nature": "reglement"
+    },
     {
       "celex": "32026R2120",
       "date": "2026-09-24",
@@ -49,14 +97,6 @@
       "nature": "reglement"
     },
     {
-      "celex": "32026R2165",
-      "date": "2026-09-24",
-      "titre": "Règlement d’exécution (UE) 2026/2165 du Conseil du 24 septembre 2026 mettant en œuvre le règlement (UE) 2024/2642 concernant des mesures restrictives eu égard aux activités déstabilisatrices menées par la Russie",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/2165/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2165",
-      "nature": "reglement"
-    },
-    {
       "celex": "32026R2110",
       "date": "2026-09-23",
       "titre": "Règlement d’exécution (UE) 2026/2110 de la Commission du 23 septembre 2026 concernant l’autorisation de l’huile essentielle de marjolaine tirée d’Origanum majorana L. en tant qu’additif pour l’alimentation de toutes les espèces animales",
@@ -86,6 +126,14 @@
       "titre": "Règlement d’exécution (UE) 2026/2113 de la Commission du 23 septembre 2026 concernant l’autorisation de l’huile essentielle de romarin tirée de Salvia rosmarinus Spenn. en tant qu’additif pour l’alimentation de toutes les espèces animales",
       "urlEli": "http://data.europa.eu/eli/reg/2026/2113/oj",
       "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2113",
+      "nature": "reglement"
+    },
+    {
+      "celex": "32026R2167",
+      "date": "2026-09-22",
+      "titre": "Règlement d’exécution (UE) 2026/2167 de la Commission du 22 septembre 2026 concernant l’enregistrement de l’indication géographique Aceite Valle del Tiétar (AOP) dans le registre de l’Union des indications géographiques conformément au règlement (UE) 2024/1143 du Parlement européen et du Conseil",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/2167/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2167",
       "nature": "reglement"
     },
     {
@@ -126,14 +174,6 @@
       "titre": "Règlement d’exécution (UE) 2026/2149 de la Commission du 21 septembre 2026 modifiant les annexes V et XIV du règlement d’exécution (UE) 2021/404 en ce qui concerne les mentions relatives aux États-Unis dans les listes de pays tiers, de territoires ou de zones de pays tiers ou territoires en provenance desquels l’entrée dans l’Union d’envois de volailles et de produits germinaux de volailles ainsi que de viandes fraîches de volailles et de gibier à plumes est autorisée",
       "urlEli": "http://data.europa.eu/eli/reg/2026/2149/oj",
       "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2149",
-      "nature": "reglement"
-    },
-    {
-      "celex": "32026R2133",
-      "date": "2026-09-18",
-      "titre": "Règlement d’exécution (UE) 2026/2133 de la Commission du 18 septembre 2026 instituant des mesures de sauvegarde provisoires concernant les importations de certains produits laminés plats en aciers au silicium dits magnétiques à grains orientés",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/2133/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2133",
       "nature": "reglement"
     },
     {
@@ -265,6 +305,14 @@
       "nature": "reglement"
     },
     {
+      "celex": "32026R2133",
+      "date": "2026-09-18",
+      "titre": "Règlement d’exécution (UE) 2026/2133 de la Commission du 18 septembre 2026 instituant des mesures de sauvegarde provisoires concernant les importations de certains produits laminés plats en aciers au silicium dits magnétiques à grains orientés",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/2133/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2133",
+      "nature": "reglement"
+    },
+    {
       "celex": "32026R2104",
       "date": "2026-09-17",
       "titre": "Règlement d’exécution (UE) 2026/2104 de la Commission du 17 septembre 2026 modifiant les annexes V et XIV du règlement d’exécution (UE) 2021/404 en ce qui concerne les mentions relatives aux États-Unis dans les listes de pays tiers, de territoires ou de zones de pays tiers ou territoires en provenance desquels l’entrée dans l’Union d’envois de volailles et de produits germinaux de volailles ainsi que de viandes fraîches de volailles et de gibier à plumes est autorisée",
@@ -286,54 +334,6 @@
       "titre": "Règlement d’exécution (UE) 2026/2077 de la Commission du 17 septembre 2026 concernant le renouvellement de l’autorisation d’une préparation d’acide benzoïque, de thymol, d’eugénol et de pipérine en tant qu’additif pour l’alimentation des poulets d’engraissement, des poulettes élevées pour la ponte, des espèces aviaires mineures destinées à l’engraissement et des espèces aviaires mineures élevées pour la ponte, concernant l’autorisation de cette préparation en tant qu’additif pour l’alimentation des dindes d’engraissement et des volailles élevées pour la reproduction (titulaire de l’autorisation: DSM Nutritional Products Ltd, société représentée par DSM Nutritional Products Sp. z.o.o.), et abrogeant le règlement d’exécution (UE) 2015/1426",
       "urlEli": "http://data.europa.eu/eli/reg/2026/2077/oj",
       "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2077",
-      "nature": "reglement"
-    },
-    {
-      "celex": "32026R2076",
-      "date": "2026-09-17",
-      "titre": "Règlement d’exécution (UE) 2026/2076 de la Commission du 17 septembre 2026 concernant l’autorisation de l’huile essentielle de noix muscade tirée de Myristica fragrans Houtt. en tant qu’additif pour l’alimentation de toutes les espèces animales",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/2076/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2076",
-      "nature": "reglement"
-    },
-    {
-      "celex": "32026R2074",
-      "date": "2026-09-17",
-      "titre": "Règlement d’exécution (UE) 2026/2074 de la Commission du 17 septembre 2026 concernant l’autorisation d’une préparation de Bacillus subtilis DSM 33862 et de Lentilactobacillus buchneri DSM 12856 en tant qu’additif pour l’alimentation de toutes les espèces animales",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/2074/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2074",
-      "nature": "reglement"
-    },
-    {
-      "celex": "32026R2064",
-      "date": "2026-09-17",
-      "titre": "Règlement d’exécution (UE) 2026/2064 de la Commission du 17 septembre 2026 modifiant le règlement d’exécution (UE) 2025/4 instituant un droit antidumping définitif et portant perception définitive du droit provisoire institué sur les importations de dioxyde de titane originaire de la République populaire de Chine",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/2064/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2064",
-      "nature": "reglement"
-    },
-    {
-      "celex": "32026R2057",
-      "date": "2026-09-17",
-      "titre": "Règlement d’exécution (UE) 2026/2057 de la Commission du 17 septembre 2026 majorant les quotas de pêche pour 2026 de certaines quantités retenues en 2025 conformément à l’article 4, paragraphe 2, du règlement (CE) no 847/96 du Conseil",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/2057/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2057",
-      "nature": "reglement"
-    },
-    {
-      "celex": "32026R2072",
-      "date": "2026-09-17",
-      "titre": "Règlement d’exécution (UE) 2026/2072 de la Commission du 17 septembre 2026 concernant l’autorisation de la perlite en tant qu’additif pour l’alimentation des volailles d’engraissement, des volailles élevées pour la ponte ou la reproduction, des oiseaux d’ornement, des porcelets et des porcs d’engraissement",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/2072/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2072",
-      "nature": "reglement"
-    },
-    {
-      "celex": "32026R2061",
-      "date": "2026-09-17",
-      "titre": "Règlement d’exécution (UE) 2026/2061 de la Commission du 17 septembre 2026 concernant l’autorisation d’une préparation de narasine et de diclazuril (Interban) en tant qu’additif pour l’alimentation des poulets d’engraissement et des poulettes élevées pour la ponte (titulaire de l’autorisation: Elanco GmbH)",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/2061/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2061",
       "nature": "reglement"
     }
   ]
