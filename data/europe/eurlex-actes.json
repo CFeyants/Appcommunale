@@ -13,7 +13,7 @@
       "Les requêtes SPARQL longues dépassent régulièrement le délai d’attente du point d’accès public."
     ]
   },
-  "collecteLe": "2026-10-02T09:51:23.378Z",
+  "collecteLe": "2026-10-03T09:13:34.730Z",
   "depuis": "2026-01-01",
   "actes": [
     {
@@ -97,6 +97,14 @@
       "nature": "reglement"
     },
     {
+      "celex": "32026R2165",
+      "date": "2026-09-24",
+      "titre": "Règlement d’exécution (UE) 2026/2165 du Conseil du 24 septembre 2026 mettant en œuvre le règlement (UE) 2024/2642 concernant des mesures restrictives eu égard aux activités déstabilisatrices menées par la Russie",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/2165/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2165",
+      "nature": "reglement"
+    },
+    {
       "celex": "32026R2120",
       "date": "2026-09-24",
       "titre": "Règlement d’exécution (UE) 2026/2120 de la Commission du 24 septembre 2026 concernant l’autorisation de la teinture de lavande tirée de Lavandula angustifolia Mill. en tant qu’additif pour l’alimentation de toutes les espèces animales et le retrait de la teinture de lavande tirée de Lavandula angustifolia × L. latifolia en tant qu’additif pour l’alimentation de toutes les espèces animales",
@@ -126,14 +134,6 @@
       "titre": "Règlement d’exécution (UE) 2026/2118 de la Commission du 24 septembre 2026 soumettant à enregistrement les importations de canards de Pékin originaires de la République populaire de Chine en vue de permettre la perception de droits antidumping sur les importations soumises à enregistrement",
       "urlEli": "http://data.europa.eu/eli/reg/2026/2118/oj",
       "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2118",
-      "nature": "reglement"
-    },
-    {
-      "celex": "32026R2165",
-      "date": "2026-09-24",
-      "titre": "Règlement d’exécution (UE) 2026/2165 du Conseil du 24 septembre 2026 mettant en œuvre le règlement (UE) 2024/2642 concernant des mesures restrictives eu égard aux activités déstabilisatrices menées par la Russie",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/2165/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2165",
       "nature": "reglement"
     },
     {
@@ -169,22 +169,6 @@
       "nature": "reglement"
     },
     {
-      "celex": "32026R2167",
-      "date": "2026-09-22",
-      "titre": "Règlement d’exécution (UE) 2026/2167 de la Commission du 22 septembre 2026 concernant l’enregistrement de l’indication géographique Aceite Valle del Tiétar (AOP) dans le registre de l’Union des indications géographiques conformément au règlement (UE) 2024/1143 du Parlement européen et du Conseil",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/2167/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2167",
-      "nature": "reglement"
-    },
-    {
-      "celex": "32026R2168",
-      "date": "2026-09-22",
-      "titre": "Règlement d’exécution (UE) 2026/2168 de la Commission du 22 septembre 2026 concernant l’enregistrement de l’indication géographique Vlaams roodbruin bier/Flanders Red Ale (IGP) dans le registre de l’Union des indications géographiques conformément au règlement (UE) 2024/1143 du Parlement européen et du Conseil",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/2168/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2168",
-      "nature": "reglement"
-    },
-    {
       "celex": "32026R2160",
       "date": "2026-09-22",
       "titre": "Règlement d’exécution (UE) 2026/2160 du Conseil du 22 septembre 2026 mettant en œuvre le règlement (UE) n° 269/2014 concernant des mesures restrictives eu égard aux actions compromettant ou menaçant l’intégrité territoriale, la souveraineté et l’indépendance de l’Ukraine",
@@ -209,6 +193,22 @@
       "nature": "reglement"
     },
     {
+      "celex": "32026R2167",
+      "date": "2026-09-22",
+      "titre": "Règlement d’exécution (UE) 2026/2167 de la Commission du 22 septembre 2026 concernant l’enregistrement de l’indication géographique Aceite Valle del Tiétar (AOP) dans le registre de l’Union des indications géographiques conformément au règlement (UE) 2024/1143 du Parlement européen et du Conseil",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/2167/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2167",
+      "nature": "reglement"
+    },
+    {
+      "celex": "32026R2168",
+      "date": "2026-09-22",
+      "titre": "Règlement d’exécution (UE) 2026/2168 de la Commission du 22 septembre 2026 concernant l’enregistrement de l’indication géographique Vlaams roodbruin bier/Flanders Red Ale (IGP) dans le registre de l’Union des indications géographiques conformément au règlement (UE) 2024/1143 du Parlement européen et du Conseil",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/2168/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2168",
+      "nature": "reglement"
+    },
+    {
       "celex": "32026R2099",
       "date": "2026-09-21",
       "titre": "Règlement d’exécution (UE) 2026/2099 de la Commission du 21 septembre 2026 relatif à un mécanisme interopérable et transfrontière d’identification et d’authentification des personnes physiques, des professionnels de la santé et des prestataires de soins de santé aux fins de l’échange transfrontière de données de santé électroniques à caractère personnel",
@@ -222,14 +222,6 @@
       "titre": "Règlement d’exécution (UE) 2026/2149 de la Commission du 21 septembre 2026 modifiant les annexes V et XIV du règlement d’exécution (UE) 2021/404 en ce qui concerne les mentions relatives aux États-Unis dans les listes de pays tiers, de territoires ou de zones de pays tiers ou territoires en provenance desquels l’entrée dans l’Union d’envois de volailles et de produits germinaux de volailles ainsi que de viandes fraîches de volailles et de gibier à plumes est autorisée",
       "urlEli": "http://data.europa.eu/eli/reg/2026/2149/oj",
       "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2149",
-      "nature": "reglement"
-    },
-    {
-      "celex": "32026R2133",
-      "date": "2026-09-18",
-      "titre": "Règlement d’exécution (UE) 2026/2133 de la Commission du 18 septembre 2026 instituant des mesures de sauvegarde provisoires concernant les importations de certains produits laminés plats en aciers au silicium dits magnétiques à grains orientés",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/2133/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2133",
       "nature": "reglement"
     },
     {
@@ -334,6 +326,14 @@
       "titre": "Règlement d’exécution (UE) 2026/2135 de la Commission du 18 septembre 2026 modifiant les annexes I et II du règlement d’exécution (UE) 2023/594 établissant des mesures spéciales de lutte contre la peste porcine africaine et abrogeant la décision d’exécution (UE) 2026/1973 concernant certaines mesures d’urgence provisoires contre la peste porcine africaine en Italie",
       "urlEli": "http://data.europa.eu/eli/reg/2026/2135/oj",
       "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2135",
+      "nature": "reglement"
+    },
+    {
+      "celex": "32026R2084",
+      "date": "2026-09-18",
+      "titre": "Règlement d’exécution (UE) 2026/2084 de la Commission du 18 septembre 2026 concernant le renouvellement de l’autorisation d’extraits de tocophérols tirés d’huiles végétales, d’extraits riches en tocophérols tirés d’huiles végétales (riches en delta-tocophérols) et de l’alpha-tocophérol en tant qu’additifs pour l’alimentation de toutes les espèces animales et abrogeant le règlement d’exécution (UE) 2015/1152",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/2084/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2084",
       "nature": "reglement"
     }
   ]
