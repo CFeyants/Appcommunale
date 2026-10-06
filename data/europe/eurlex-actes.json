@@ -13,9 +13,41 @@
       "Les requêtes SPARQL longues dépassent régulièrement le délai d’attente du point d’accès public."
     ]
   },
-  "collecteLe": "2026-10-05T10:32:16.197Z",
+  "collecteLe": "2026-10-06T10:24:01.498Z",
   "depuis": "2026-01-01",
   "actes": [
+    {
+      "celex": "32026R2214",
+      "date": "2026-10-05",
+      "titre": "Règlement d’exécution (UE) 2026/2214 de la Commission du 5 octobre 2026 rectifiant certaines versions linguistiques du règlement d’exécution (UE) 2024/2215 établissant, conformément au règlement (UE) 2024/573 du Parlement européen et du Conseil, des prescriptions minimales pour la délivrance de certificats aux personnes physiques et morales et les conditions applicables à la reconnaissance mutuelle de ces certificats, en ce qui concerne les équipements fixes de réfrigération, de climatisation et de pompes à chaleur, les cycles organiques de Rankine et les unités de réfrigération des camions frigorifiques, des remorques frigorifiques, des véhicules utilitaires légers frigorifiques, des conteneurs intermodaux et des wagons frigorifiques contenant des gaz à effet de serre fluorés ou leurs solutions de substitution",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/2214/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2214",
+      "nature": "reglement"
+    },
+    {
+      "celex": "32026R2210",
+      "date": "2026-10-05",
+      "titre": "Règlement d’exécution (UE) 2026/2210 de la Commission du 5 octobre 2026 modifiant le règlement d’exécution (UE) no 79/2012 en ce qui concerne les données statistiques que les États membres doivent communiquer à la Commission",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/2210/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2210",
+      "nature": "reglement"
+    },
+    {
+      "celex": "32026R2208",
+      "date": "2026-10-05",
+      "titre": "Règlement d’exécution (UE) 2026/2208 de la Commission du 5 octobre 2026 sur des mesures exceptionnelles de soutien du marché pour le secteur de la viande porcine en Italie",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/2208/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2208",
+      "nature": "reglement"
+    },
+    {
+      "celex": "32026R2205",
+      "date": "2026-10-05",
+      "titre": "Règlement d’exécution (UE) 2026/2205 de la Commission du 5 octobre 2026 relatif à des mesures exceptionnelles de soutien du marché pour les secteurs des œufs et de la viande de volaille en Italie",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/2205/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2205",
+      "nature": "reglement"
+    },
     {
       "celex": "32026R2203",
       "date": "2026-10-02",
@@ -89,6 +121,14 @@
       "nature": "reglement"
     },
     {
+      "celex": "32026R2226",
+      "date": "2026-09-29",
+      "titre": "Règlement d’exécution (UE) 2026/2226 de la Commission du 29 septembre 2026 portant approbation d’une modification à l’échelle de l’Union du cahier des charges de l’indication géographique protégée Collines Rhodaniennes conformément au règlement (UE) 2024/1143 du Parlement européen et du Conseil",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/2226/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2226",
+      "nature": "reglement"
+    },
+    {
       "celex": "32026R2193",
       "date": "2026-09-28",
       "titre": "Règlement d'exécution (UE) 2026/2193 du Conseil du 28 septembre 2026 mettant en œuvre le règlement (UE) 2024/1485 concernant des mesures restrictives en raison de la situation en Russie",
@@ -137,14 +177,6 @@
       "nature": "reglement"
     },
     {
-      "celex": "32026R2165",
-      "date": "2026-09-24",
-      "titre": "Règlement d’exécution (UE) 2026/2165 du Conseil du 24 septembre 2026 mettant en œuvre le règlement (UE) 2024/2642 concernant des mesures restrictives eu égard aux activités déstabilisatrices menées par la Russie",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/2165/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2165",
-      "nature": "reglement"
-    },
-    {
       "celex": "32026R2120",
       "date": "2026-09-24",
       "titre": "Règlement d’exécution (UE) 2026/2120 de la Commission du 24 septembre 2026 concernant l’autorisation de la teinture de lavande tirée de Lavandula angustifolia Mill. en tant qu’additif pour l’alimentation de toutes les espèces animales et le retrait de la teinture de lavande tirée de Lavandula angustifolia × L. latifolia en tant qu’additif pour l’alimentation de toutes les espèces animales",
@@ -174,6 +206,14 @@
       "titre": "Règlement d’exécution (UE) 2026/2118 de la Commission du 24 septembre 2026 soumettant à enregistrement les importations de canards de Pékin originaires de la République populaire de Chine en vue de permettre la perception de droits antidumping sur les importations soumises à enregistrement",
       "urlEli": "http://data.europa.eu/eli/reg/2026/2118/oj",
       "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2118",
+      "nature": "reglement"
+    },
+    {
+      "celex": "32026R2165",
+      "date": "2026-09-24",
+      "titre": "Règlement d’exécution (UE) 2026/2165 du Conseil du 24 septembre 2026 mettant en œuvre le règlement (UE) 2024/2642 concernant des mesures restrictives eu égard aux activités déstabilisatrices menées par la Russie",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/2165/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2165",
       "nature": "reglement"
     },
     {
@@ -209,6 +249,22 @@
       "nature": "reglement"
     },
     {
+      "celex": "32026R2167",
+      "date": "2026-09-22",
+      "titre": "Règlement d’exécution (UE) 2026/2167 de la Commission du 22 septembre 2026 concernant l’enregistrement de l’indication géographique Aceite Valle del Tiétar (AOP) dans le registre de l’Union des indications géographiques conformément au règlement (UE) 2024/1143 du Parlement européen et du Conseil",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/2167/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2167",
+      "nature": "reglement"
+    },
+    {
+      "celex": "32026R2168",
+      "date": "2026-09-22",
+      "titre": "Règlement d’exécution (UE) 2026/2168 de la Commission du 22 septembre 2026 concernant l’enregistrement de l’indication géographique Vlaams roodbruin bier/Flanders Red Ale (IGP) dans le registre de l’Union des indications géographiques conformément au règlement (UE) 2024/1143 du Parlement européen et du Conseil",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/2168/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2168",
+      "nature": "reglement"
+    },
+    {
       "celex": "32026R2160",
       "date": "2026-09-22",
       "titre": "Règlement d’exécution (UE) 2026/2160 du Conseil du 22 septembre 2026 mettant en œuvre le règlement (UE) n° 269/2014 concernant des mesures restrictives eu égard aux actions compromettant ou menaçant l’intégrité territoriale, la souveraineté et l’indépendance de l’Ukraine",
@@ -233,22 +289,6 @@
       "nature": "reglement"
     },
     {
-      "celex": "32026R2167",
-      "date": "2026-09-22",
-      "titre": "Règlement d’exécution (UE) 2026/2167 de la Commission du 22 septembre 2026 concernant l’enregistrement de l’indication géographique Aceite Valle del Tiétar (AOP) dans le registre de l’Union des indications géographiques conformément au règlement (UE) 2024/1143 du Parlement européen et du Conseil",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/2167/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2167",
-      "nature": "reglement"
-    },
-    {
-      "celex": "32026R2168",
-      "date": "2026-09-22",
-      "titre": "Règlement d’exécution (UE) 2026/2168 de la Commission du 22 septembre 2026 concernant l’enregistrement de l’indication géographique Vlaams roodbruin bier/Flanders Red Ale (IGP) dans le registre de l’Union des indications géographiques conformément au règlement (UE) 2024/1143 du Parlement européen et du Conseil",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/2168/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2168",
-      "nature": "reglement"
-    },
-    {
       "celex": "32026R2099",
       "date": "2026-09-21",
       "titre": "Règlement d’exécution (UE) 2026/2099 de la Commission du 21 septembre 2026 relatif à un mécanisme interopérable et transfrontière d’identification et d’authentification des personnes physiques, des professionnels de la santé et des prestataires de soins de santé aux fins de l’échange transfrontière de données de santé électroniques à caractère personnel",
@@ -262,6 +302,14 @@
       "titre": "Règlement d’exécution (UE) 2026/2149 de la Commission du 21 septembre 2026 modifiant les annexes V et XIV du règlement d’exécution (UE) 2021/404 en ce qui concerne les mentions relatives aux États-Unis dans les listes de pays tiers, de territoires ou de zones de pays tiers ou territoires en provenance desquels l’entrée dans l’Union d’envois de volailles et de produits germinaux de volailles ainsi que de viandes fraîches de volailles et de gibier à plumes est autorisée",
       "urlEli": "http://data.europa.eu/eli/reg/2026/2149/oj",
       "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2149",
+      "nature": "reglement"
+    },
+    {
+      "celex": "32026R2133",
+      "date": "2026-09-18",
+      "titre": "Règlement d’exécution (UE) 2026/2133 de la Commission du 18 septembre 2026 instituant des mesures de sauvegarde provisoires concernant les importations de certains produits laminés plats en aciers au silicium dits magnétiques à grains orientés",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/2133/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2133",
       "nature": "reglement"
     },
     {
@@ -286,54 +334,6 @@
       "titre": "Règlement d’exécution (UE) 2026/2098 de la Commission du 18 septembre 2026 fixant les éléments minimaux de métadonnées et leurs caractéristiques que doivent fournir les détenteurs de données de santé pour les descriptions des ensembles de données aux fins de l’utilisation secondaire des données de santé électroniques, tel que prévu par l’article 77, paragraphe 4, du règlement (UE) 2025/327 établissant l’espace européen des données de santé",
       "urlEli": "http://data.europa.eu/eli/reg/2026/2098/oj",
       "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2098",
-      "nature": "reglement"
-    },
-    {
-      "celex": "32026R2087",
-      "date": "2026-09-18",
-      "titre": "Règlement d’exécution (UE) 2026/2087 de la Commission du 18 septembre 2026 concernant l’autorisation de la L-isoleucine produite par Corynebacterium glutamicum CCTCC M 2022764 en tant qu’additif pour l’alimentation de toutes les espèces animales",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/2087/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2087",
-      "nature": "reglement"
-    },
-    {
-      "celex": "32026R2085",
-      "date": "2026-09-18",
-      "titre": "Règlement d’exécution (UE) 2026/2085 de la Commission du 18 septembre 2026 portant prolongation de la dérogation au règlement (CE) no 1967/2006 du Conseil en ce qui concerne la distance de la côte et la profondeur minimales pour les sennes de bateau pêchant le lançon (Gymnammodytes cicerelus et G. semisquamatus) et les gobies (Aphia minuta et Crystallogobius linearis) dans certaines eaux territoriales de l’Espagne (Catalogne)",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/2085/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2085",
-      "nature": "reglement"
-    },
-    {
-      "celex": "32026R2091",
-      "date": "2026-09-18",
-      "titre": "Règlement d’exécution (UE) 2026/2091 de la Commission du 18 septembre 2026 concernant l’autorisation de la clinoptilolite d’origine volcanique en tant qu’additif pour l’alimentation des volailles d’engraissement, des volailles élevées pour la ponte ou la reproduction, des oiseaux d’ornement, des porcelets et des porcs d’engraissement",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/2091/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2091",
-      "nature": "reglement"
-    },
-    {
-      "celex": "32026R2128",
-      "date": "2026-09-18",
-      "titre": "Règlement d’exécution (UE) 2026/2128 de la Commission du 18 septembre 2026 concernant l’autorisation de l’huile essentielle de citronnelle tirée de Cymbopogon nardus (L.) Rendle en tant qu’additif pour l’alimentation de toutes les espèces animales",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/2128/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2128",
-      "nature": "reglement"
-    },
-    {
-      "celex": "32026R2130",
-      "date": "2026-09-18",
-      "titre": "Règlement d’exécution (UE) 2026/2130 de la Commission du 18 septembre 2026 concernant le renouvellement de l’autorisation d’une préparation d’endo-1,4-bêta-xylanase produite par Bacillus subtilis LMG S-15136 en tant qu’additif pour l’alimentation de toutes les espèces de volailles, des porcelets non sevrés et sevrés, des porcs à l’engrais, des truies allaitantes, des truies gestantes et des porcins de toutes les espèces mineures autres que les animaux reproducteurs, l’extension de l’autorisation d’une préparation d’endo-1,4-bêta-xylanase produite par Bacillus subtilis LMG S-15136 en tant qu’additif pour l’alimentation de toutes les espèces porcines (titulaire de l’autorisation: Puratos NV) et abrogeant les règlements d’exécution (UE) 2017/211, (UE) 2020/1377, (UE) 2021/1413 et (UE) 2026/356",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/2130/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2130",
-      "nature": "reglement"
-    },
-    {
-      "celex": "32026R2143",
-      "date": "2026-09-18",
-      "titre": "Règlement d’exécution (UE) 2026/2143 de la Commission du 18 septembre 2026 modifiant pour la 361e fois le règlement (CE) no 881/2002 du Conseil instituant certaines mesures restrictives spécifiques à l’encontre de certaines personnes et entités liées aux organisations EIIL (Daech) et Al-Qaida",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/2143/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2143",
       "nature": "reglement"
     }
   ]
