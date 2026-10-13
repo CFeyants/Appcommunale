@@ -8,21 +8,21 @@
   "codeNis": "23099",
   "fenetre": {
     "depuis": "2024-09-24",
-    "jusqua": "2026-10-12"
+    "jusqua": "2026-10-13"
   },
   "derniereFenetreCollectee": {
-    "depuis": "2026-08-13",
-    "le": "2026-10-12T10:56:12.877Z"
+    "depuis": "2026-08-14",
+    "le": "2026-10-13T10:41:10.748Z"
   },
   "totalSeancesSource": 1091,
-  "collecteLe": "2026-10-12T10:56:12.877Z",
+  "collecteLe": "2026-10-13T10:41:10.748Z",
   "statistiques": {
     "seances": 420,
     "points": 3413,
     "besluitenResolus": 2931,
     "avecTexteDistinct": 2328,
     "avecArticles": 0,
-    "appelsHttp": 550
+    "appelsHttp": 536
   },
   "seances": [
     {
