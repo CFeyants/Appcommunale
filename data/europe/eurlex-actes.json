@@ -13,9 +13,17 @@
       "Les requêtes SPARQL longues dépassent régulièrement le délai d’attente du point d’accès public."
     ]
   },
-  "collecteLe": "2026-10-13T10:41:32.772Z",
+  "collecteLe": "2026-10-14T08:47:56.619Z",
   "depuis": "2026-01-01",
   "actes": [
+    {
+      "celex": "32026R2266",
+      "date": "2026-10-13",
+      "titre": "Règlement d’exécution (UE) 2026/2266 de la Commission du 13 octobre 2026 établissant des dispositions détaillées pour l’application de la directive (UE) 2025/2205 du Parlement européen et du Conseil en ce qui concerne les permis de conduire mobiles",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/2266/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2266",
+      "nature": "reglement"
+    },
     {
       "celex": "32026R2292",
       "date": "2026-10-12",
@@ -105,6 +113,22 @@
       "nature": "reglement"
     },
     {
+      "celex": "32026R2263",
+      "date": "2026-10-08",
+      "titre": "Règlement d’exécution (UE) 2026/2263 du Conseil du 8 octobre 2026 mettant en œuvre le règlement (UE) n° 269/2014 concernant des mesures restrictives eu égard aux actions compromettant ou menaçant l'intégrité territoriale, la souveraineté et l'indépendance de l'Ukraine",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/2263/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2263",
+      "nature": "reglement"
+    },
+    {
+      "celex": "32026R2257",
+      "date": "2026-10-08",
+      "titre": "Règlement d’exécution (UE) 2026/2257 du Conseil du 8 octobre 2026 mettant en œuvre le règlement (UE) 2024/2642 concernant des mesures restrictives eu égard aux activités déstabilisatrices menées par la Russie",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/2257/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2257",
+      "nature": "reglement"
+    },
+    {
       "celex": "32026R2245",
       "date": "2026-10-08",
       "titre": "Règlement d’exécution (UE) 2026/2245 de la Commission du 8 octobre 2026 soumettant à enregistrement les importations de certains alcools polyvinyliques originaires de la République populaire de Chine en vue de permettre la perception de droits antidumping sur les importations soumises à enregistrement",
@@ -126,22 +150,6 @@
       "titre": "Règlement d’exécution (UE) 2026/2287 de la Commission du 8 octobre 2026 modifiant pour la 362e fois le règlement (CE) no 881/2002 du Conseil instituant certaines mesures restrictives spécifiques à l’encontre de certaines personnes et entités liées aux organisations EIIL (Daech) et Al-Qaida",
       "urlEli": "http://data.europa.eu/eli/reg/2026/2287/oj",
       "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2287",
-      "nature": "reglement"
-    },
-    {
-      "celex": "32026R2263",
-      "date": "2026-10-08",
-      "titre": "Règlement d’exécution (UE) 2026/2263 du Conseil du 8 octobre 2026 mettant en œuvre le règlement (UE) n° 269/2014 concernant des mesures restrictives eu égard aux actions compromettant ou menaçant l'intégrité territoriale, la souveraineté et l'indépendance de l'Ukraine",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/2263/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2263",
-      "nature": "reglement"
-    },
-    {
-      "celex": "32026R2257",
-      "date": "2026-10-08",
-      "titre": "Règlement d’exécution (UE) 2026/2257 du Conseil du 8 octobre 2026 mettant en œuvre le règlement (UE) 2024/2642 concernant des mesures restrictives eu égard aux activités déstabilisatrices menées par la Russie",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/2257/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2257",
       "nature": "reglement"
     },
     {
@@ -326,14 +334,6 @@
       "titre": "Règlement d’exécution (UE) 2026/2212 de la Commission du 25 septembre 2026 fixant les prix représentatifs, les droits à l’importation et les droits additionnels à l’importation des mélasses dans le secteur du sucre applicables à partir du 1er octobre 2026",
       "urlEli": "http://data.europa.eu/eli/reg/2026/2212/oj",
       "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2212",
-      "nature": "reglement"
-    },
-    {
-      "celex": "32026R2165",
-      "date": "2026-09-24",
-      "titre": "Règlement d’exécution (UE) 2026/2165 du Conseil du 24 septembre 2026 mettant en œuvre le règlement (UE) 2024/2642 concernant des mesures restrictives eu égard aux activités déstabilisatrices menées par la Russie",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/2165/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2165",
       "nature": "reglement"
     }
   ]

@@ -13,7 +13,7 @@
       "Aucune ventilation par ménage : la donnée est agrégée à la commune."
     ]
   },
-  "collecteLe": "2026-10-13T10:41:24.668Z",
+  "collecteLe": "2026-10-14T08:47:49.147Z",
   "commune": "KRAAINEM",
   "fenetre": {
     "du": "2025-08",
@@ -59,14 +59,14 @@
     {
       "mois": "2023-01",
       "secteur": "Elektriciteit",
-      "prelevementKwh": 28797.6,
-      "injectionKwh": null
+      "prelevementKwh": 1564369.13,
+      "injectionKwh": 7905.31
     },
     {
       "mois": "2023-01",
       "secteur": "Elektriciteit",
-      "prelevementKwh": 1564369.13,
-      "injectionKwh": 7905.31
+      "prelevementKwh": 28797.6,
+      "injectionKwh": null
     },
     {
       "mois": "2023-01",
@@ -79,6 +79,30 @@
       "secteur": "Elektriciteit",
       "prelevementKwh": 31947.09,
       "injectionKwh": null
+    },
+    {
+      "mois": "2023-02",
+      "secteur": "Elektriciteit",
+      "prelevementKwh": 103719.65,
+      "injectionKwh": 493.31
+    },
+    {
+      "mois": "2023-02",
+      "secteur": "Elektriciteit",
+      "prelevementKwh": 50596.09,
+      "injectionKwh": null
+    },
+    {
+      "mois": "2023-02",
+      "secteur": "Gas",
+      "prelevementKwh": 8940253.15,
+      "injectionKwh": null
+    },
+    {
+      "mois": "2023-02",
+      "secteur": "Elektriciteit",
+      "prelevementKwh": 449645.04,
+      "injectionKwh": 126.65
     },
     {
       "mois": "2023-02",
@@ -95,30 +119,6 @@
     {
       "mois": "2023-02",
       "secteur": "Elektriciteit",
-      "prelevementKwh": 103719.65,
-      "injectionKwh": 493.31
-    },
-    {
-      "mois": "2023-02",
-      "secteur": "Elektriciteit",
-      "prelevementKwh": 449645.04,
-      "injectionKwh": 126.65
-    },
-    {
-      "mois": "2023-02",
-      "secteur": "Gas",
-      "prelevementKwh": 8940253.15,
-      "injectionKwh": null
-    },
-    {
-      "mois": "2023-02",
-      "secteur": "Elektriciteit",
-      "prelevementKwh": 50596.09,
-      "injectionKwh": null
-    },
-    {
-      "mois": "2023-02",
-      "secteur": "Elektriciteit",
       "prelevementKwh": 480752,
       "injectionKwh": null
     },
@@ -127,6 +127,18 @@
       "secteur": "Elektriciteit",
       "prelevementKwh": 1319009.12,
       "injectionKwh": 20933.64
+    },
+    {
+      "mois": "2023-03",
+      "secteur": "Gas",
+      "prelevementKwh": 4195223.8,
+      "injectionKwh": null
+    },
+    {
+      "mois": "2023-03",
+      "secteur": "Elektriciteit",
+      "prelevementKwh": 54140.63,
+      "injectionKwh": null
     },
     {
       "mois": "2023-03",
@@ -143,19 +155,7 @@
     {
       "mois": "2023-03",
       "secteur": "Gas",
-      "prelevementKwh": 4195223.8,
-      "injectionKwh": null
-    },
-    {
-      "mois": "2023-03",
-      "secteur": "Gas",
       "prelevementKwh": 611382.8,
-      "injectionKwh": null
-    },
-    {
-      "mois": "2023-03",
-      "secteur": "Elektriciteit",
-      "prelevementKwh": 54140.63,
       "injectionKwh": null
     },
     {
@@ -185,14 +185,20 @@
     {
       "mois": "2023-04",
       "secteur": "Elektriciteit",
-      "prelevementKwh": 1210902.76,
-      "injectionKwh": 66541.22
+      "prelevementKwh": 419700.37,
+      "injectionKwh": 443.05
     },
     {
       "mois": "2023-04",
       "secteur": "Elektriciteit",
-      "prelevementKwh": 419700.37,
-      "injectionKwh": 443.05
+      "prelevementKwh": 31072.26,
+      "injectionKwh": null
+    },
+    {
+      "mois": "2023-04",
+      "secteur": "Elektriciteit",
+      "prelevementKwh": 1210902.76,
+      "injectionKwh": 66541.22
     },
     {
       "mois": "2023-04",
@@ -204,12 +210,6 @@
       "mois": "2023-04",
       "secteur": "Gas",
       "prelevementKwh": 2831635.57,
-      "injectionKwh": null
-    },
-    {
-      "mois": "2023-04",
-      "secteur": "Elektriciteit",
-      "prelevementKwh": 31072.26,
       "injectionKwh": null
     },
     {
@@ -238,12 +238,6 @@
     },
     {
       "mois": "2023-05",
-      "secteur": "Elektriciteit",
-      "prelevementKwh": 85871.27,
-      "injectionKwh": 2991.76
-    },
-    {
-      "mois": "2023-05",
       "secteur": "Gas",
       "prelevementKwh": 182087.05,
       "injectionKwh": null
@@ -257,13 +251,13 @@
     {
       "mois": "2023-05",
       "secteur": "Elektriciteit",
-      "prelevementKwh": 43154.52,
-      "injectionKwh": null
+      "prelevementKwh": 85871.27,
+      "injectionKwh": 2991.76
     },
     {
       "mois": "2023-05",
       "secteur": "Elektriciteit",
-      "prelevementKwh": 30382.38,
+      "prelevementKwh": 43154.52,
       "injectionKwh": null
     },
     {
@@ -277,6 +271,12 @@
       "secteur": "Elektriciteit",
       "prelevementKwh": 350807.85,
       "injectionKwh": 565.54
+    },
+    {
+      "mois": "2023-05",
+      "secteur": "Elektriciteit",
+      "prelevementKwh": 30382.38,
+      "injectionKwh": null
     },
     {
       "mois": "2023-05",
@@ -305,12 +305,6 @@
     {
       "mois": "2023-06",
       "secteur": "Elektriciteit",
-      "prelevementKwh": 58820.9,
-      "injectionKwh": null
-    },
-    {
-      "mois": "2023-06",
-      "secteur": "Elektriciteit",
       "prelevementKwh": 29398.71,
       "injectionKwh": null
     },
@@ -323,8 +317,8 @@
     {
       "mois": "2023-06",
       "secteur": "Elektriciteit",
-      "prelevementKwh": 609464.18,
-      "injectionKwh": 4294.95
+      "prelevementKwh": 58820.9,
+      "injectionKwh": null
     },
     {
       "mois": "2023-06",
@@ -340,8 +334,26 @@
     },
     {
       "mois": "2023-06",
+      "secteur": "Elektriciteit",
+      "prelevementKwh": 609464.18,
+      "injectionKwh": 4294.95
+    },
+    {
+      "mois": "2023-06",
       "secteur": "Gas",
       "prelevementKwh": 88026.77,
+      "injectionKwh": null
+    },
+    {
+      "mois": "2023-07",
+      "secteur": "Elektriciteit",
+      "prelevementKwh": 1093010.47,
+      "injectionKwh": 120098.29
+    },
+    {
+      "mois": "2023-07",
+      "secteur": "Gas",
+      "prelevementKwh": 424745.4,
       "injectionKwh": null
     },
     {
@@ -360,18 +372,6 @@
       "mois": "2023-07",
       "secteur": "Gas",
       "prelevementKwh": 77945.1,
-      "injectionKwh": null
-    },
-    {
-      "mois": "2023-07",
-      "secteur": "Elektriciteit",
-      "prelevementKwh": 1093010.47,
-      "injectionKwh": 120098.29
-    },
-    {
-      "mois": "2023-07",
-      "secteur": "Gas",
-      "prelevementKwh": 424745.4,
       "injectionKwh": null
     },
     {
@@ -413,12 +413,6 @@
     {
       "mois": "2023-08",
       "secteur": "Elektriciteit",
-      "prelevementKwh": 527123.38,
-      "injectionKwh": 2365.23
-    },
-    {
-      "mois": "2023-08",
-      "secteur": "Elektriciteit",
       "prelevementKwh": 296572.47,
       "injectionKwh": 593.94
     },
@@ -430,9 +424,21 @@
     },
     {
       "mois": "2023-08",
+      "secteur": "Elektriciteit",
+      "prelevementKwh": 527123.38,
+      "injectionKwh": 2365.23
+    },
+    {
+      "mois": "2023-08",
       "secteur": "Gas",
       "prelevementKwh": 82678.94,
       "injectionKwh": null
+    },
+    {
+      "mois": "2023-08",
+      "secteur": "Elektriciteit",
+      "prelevementKwh": 112684.51,
+      "injectionKwh": 2453.13
     },
     {
       "mois": "2023-08",
@@ -445,12 +451,6 @@
       "secteur": "Elektriciteit",
       "prelevementKwh": 58129.65,
       "injectionKwh": null
-    },
-    {
-      "mois": "2023-08",
-      "secteur": "Elektriciteit",
-      "prelevementKwh": 112684.51,
-      "injectionKwh": 2453.13
     },
     {
       "mois": "2023-09",
@@ -479,13 +479,13 @@
     {
       "mois": "2023-09",
       "secteur": "Gas",
-      "prelevementKwh": 71550.96,
+      "prelevementKwh": 1138627.09,
       "injectionKwh": null
     },
     {
       "mois": "2023-09",
       "secteur": "Gas",
-      "prelevementKwh": 1138627.09,
+      "prelevementKwh": 71550.96,
       "injectionKwh": null
     },
     {
@@ -527,12 +527,6 @@
     {
       "mois": "2023-10",
       "secteur": "Elektriciteit",
-      "prelevementKwh": 361210.76,
-      "injectionKwh": 461.56
-    },
-    {
-      "mois": "2023-10",
-      "secteur": "Elektriciteit",
       "prelevementKwh": 136337.1,
       "injectionKwh": 689.6
     },
@@ -541,6 +535,12 @@
       "secteur": "Gas",
       "prelevementKwh": 1536020.96,
       "injectionKwh": null
+    },
+    {
+      "mois": "2023-10",
+      "secteur": "Elektriciteit",
+      "prelevementKwh": 361210.76,
+      "injectionKwh": 461.56
     },
     {
       "mois": "2023-10",
@@ -568,12 +568,6 @@
     },
     {
       "mois": "2023-11",
-      "secteur": "Gas",
-      "prelevementKwh": 3706558.72,
-      "injectionKwh": null
-    },
-    {
-      "mois": "2023-11",
       "secteur": "Elektriciteit",
       "prelevementKwh": 29189.54,
       "injectionKwh": null
@@ -587,7 +581,7 @@
     {
       "mois": "2023-11",
       "secteur": "Gas",
-      "prelevementKwh": 574083.7,
+      "prelevementKwh": 3706558.72,
       "injectionKwh": null
     },
     {
@@ -610,20 +604,26 @@
     },
     {
       "mois": "2023-11",
+      "secteur": "Gas",
+      "prelevementKwh": 574083.7,
+      "injectionKwh": null
+    },
+    {
+      "mois": "2023-11",
       "secteur": "Elektriciteit",
       "prelevementKwh": 441740.56,
       "injectionKwh": 186.34
     },
     {
       "mois": "2023-12",
-      "secteur": "Gas",
-      "prelevementKwh": 753771.66,
+      "secteur": "Elektriciteit",
+      "prelevementKwh": 30119.26,
       "injectionKwh": null
     },
     {
       "mois": "2023-12",
-      "secteur": "Elektriciteit",
-      "prelevementKwh": 30119.26,
+      "secteur": "Gas",
+      "prelevementKwh": 753771.66,
       "injectionKwh": null
     },
     {
@@ -785,8 +785,14 @@
     {
       "mois": "2024-03",
       "secteur": "Elektriciteit",
-      "prelevementKwh": 133684.87,
-      "injectionKwh": 1198.16
+      "prelevementKwh": 28445.95,
+      "injectionKwh": null
+    },
+    {
+      "mois": "2024-03",
+      "secteur": "Elektriciteit",
+      "prelevementKwh": 489661.53,
+      "injectionKwh": 480.25
     },
     {
       "mois": "2024-03",
@@ -796,8 +802,8 @@
     },
     {
       "mois": "2024-03",
-      "secteur": "Elektriciteit",
-      "prelevementKwh": 28445.95,
+      "secteur": "Gas",
+      "prelevementKwh": 3196476.2,
       "injectionKwh": null
     },
     {
@@ -809,13 +815,13 @@
     {
       "mois": "2024-03",
       "secteur": "Elektriciteit",
-      "prelevementKwh": 489661.53,
-      "injectionKwh": 480.25
+      "prelevementKwh": 133684.87,
+      "injectionKwh": 1198.16
     },
     {
       "mois": "2024-03",
       "secteur": "Gas",
-      "prelevementKwh": 3196476.2,
+      "prelevementKwh": 6874242.25,
       "injectionKwh": null
     },
     {
@@ -823,12 +829,6 @@
       "secteur": "Elektriciteit",
       "prelevementKwh": 389811.43,
       "injectionKwh": 410.21
-    },
-    {
-      "mois": "2024-03",
-      "secteur": "Gas",
-      "prelevementKwh": 6874242.25,
-      "injectionKwh": null
     },
     {
       "mois": "2024-04",
@@ -887,12 +887,6 @@
     {
       "mois": "2024-05",
       "secteur": "Elektriciteit",
-      "prelevementKwh": 116930.74,
-      "injectionKwh": 3177.2
-    },
-    {
-      "mois": "2024-05",
-      "secteur": "Elektriciteit",
       "prelevementKwh": 52278.68,
       "injectionKwh": null
     },
@@ -901,6 +895,12 @@
       "secteur": "Gas",
       "prelevementKwh": 2102592.52,
       "injectionKwh": null
+    },
+    {
+      "mois": "2024-05",
+      "secteur": "Elektriciteit",
+      "prelevementKwh": 116930.74,
+      "injectionKwh": 3177.2
     },
     {
       "mois": "2024-05",
@@ -917,14 +917,20 @@
     {
       "mois": "2024-05",
       "secteur": "Elektriciteit",
+      "prelevementKwh": 282779.92,
+      "injectionKwh": 973.34
+    },
+    {
+      "mois": "2024-05",
+      "secteur": "Elektriciteit",
       "prelevementKwh": 27570.77,
       "injectionKwh": null
     },
     {
       "mois": "2024-05",
       "secteur": "Elektriciteit",
-      "prelevementKwh": 282779.92,
-      "injectionKwh": 973.34
+      "prelevementKwh": 1299499.77,
+      "injectionKwh": 143280.24
     },
     {
       "mois": "2024-05",
@@ -933,10 +939,10 @@
       "injectionKwh": 2746.2
     },
     {
-      "mois": "2024-05",
+      "mois": "2024-06",
       "secteur": "Elektriciteit",
-      "prelevementKwh": 1299499.77,
-      "injectionKwh": 143280.24
+      "prelevementKwh": 49360.35,
+      "injectionKwh": null
     },
     {
       "mois": "2024-06",
@@ -947,14 +953,8 @@
     {
       "mois": "2024-06",
       "secteur": "Elektriciteit",
-      "prelevementKwh": 49360.35,
-      "injectionKwh": null
-    },
-    {
-      "mois": "2024-06",
-      "secteur": "Elektriciteit",
-      "prelevementKwh": 1269144.96,
-      "injectionKwh": 181605.11
+      "prelevementKwh": 513470.48,
+      "injectionKwh": 3617.11
     },
     {
       "mois": "2024-06",
@@ -965,14 +965,14 @@
     {
       "mois": "2024-06",
       "secteur": "Elektriciteit",
-      "prelevementKwh": 513470.48,
-      "injectionKwh": 3617.11
+      "prelevementKwh": 27608.88,
+      "injectionKwh": null
     },
     {
       "mois": "2024-06",
       "secteur": "Elektriciteit",
-      "prelevementKwh": 27608.88,
-      "injectionKwh": null
+      "prelevementKwh": 1269144.96,
+      "injectionKwh": 181605.11
     },
     {
       "mois": "2024-06",
@@ -997,12 +997,6 @@
       "secteur": "Gas",
       "prelevementKwh": 448238.93,
       "injectionKwh": null
-    },
-    {
-      "mois": "2024-07",
-      "secteur": "Elektriciteit",
-      "prelevementKwh": 555258.99,
-      "injectionKwh": 3242.02
     },
     {
       "mois": "2024-07",
@@ -1037,6 +1031,12 @@
     {
       "mois": "2024-07",
       "secteur": "Elektriciteit",
+      "prelevementKwh": 555258.99,
+      "injectionKwh": 3242.02
+    },
+    {
+      "mois": "2024-07",
+      "secteur": "Elektriciteit",
       "prelevementKwh": 230271.09,
       "injectionKwh": 1156.89
     },
@@ -1048,15 +1048,15 @@
     },
     {
       "mois": "2024-08",
-      "secteur": "Gas",
-      "prelevementKwh": 931501.67,
-      "injectionKwh": null
-    },
-    {
-      "mois": "2024-08",
       "secteur": "Elektriciteit",
       "prelevementKwh": 1176975.22,
       "injectionKwh": 214459.68
+    },
+    {
+      "mois": "2024-08",
+      "secteur": "Gas",
+      "prelevementKwh": 931501.67,
+      "injectionKwh": null
     },
     {
       "mois": "2024-08",
@@ -1102,15 +1102,15 @@
     },
     {
       "mois": "2024-09",
-      "secteur": "Gas",
-      "prelevementKwh": 110288.01,
-      "injectionKwh": null
-    },
-    {
-      "mois": "2024-09",
       "secteur": "Elektriciteit",
       "prelevementKwh": 122450.87,
       "injectionKwh": 1775.21
+    },
+    {
+      "mois": "2024-09",
+      "secteur": "Gas",
+      "prelevementKwh": 110288.01,
+      "injectionKwh": null
     },
     {
       "mois": "2024-09",
@@ -1126,15 +1126,15 @@
     },
     {
       "mois": "2024-09",
-      "secteur": "Gas",
-      "prelevementKwh": 2082099.59,
-      "injectionKwh": null
-    },
-    {
-      "mois": "2024-09",
       "secteur": "Elektriciteit",
       "prelevementKwh": 1372138.9,
       "injectionKwh": 105366.32
+    },
+    {
+      "mois": "2024-09",
+      "secteur": "Gas",
+      "prelevementKwh": 2082099.59,
+      "injectionKwh": null
     },
     {
       "mois": "2024-09",
@@ -1159,12 +1159,6 @@
       "secteur": "Elektriciteit",
       "prelevementKwh": 485780.74,
       "injectionKwh": 169.67
-    },
-    {
-      "mois": "2024-10",
-      "secteur": "Gas",
-      "prelevementKwh": 4352103.88,
-      "injectionKwh": null
     },
     {
       "mois": "2024-10",
@@ -1195,6 +1189,12 @@
       "secteur": "Elektriciteit",
       "prelevementKwh": 256140.47,
       "injectionKwh": 546.13
+    },
+    {
+      "mois": "2024-10",
+      "secteur": "Gas",
+      "prelevementKwh": 4352103.88,
+      "injectionKwh": null
     },
     {
       "mois": "2024-10",
@@ -1229,12 +1229,6 @@
     {
       "mois": "2024-11",
       "secteur": "Elektriciteit",
-      "prelevementKwh": 31657.21,
-      "injectionKwh": null
-    },
-    {
-      "mois": "2024-11",
-      "secteur": "Elektriciteit",
       "prelevementKwh": 57635.46,
       "injectionKwh": null
     },
@@ -1243,6 +1237,12 @@
       "secteur": "Elektriciteit",
       "prelevementKwh": 1771345,
       "injectionKwh": 15325.23
+    },
+    {
+      "mois": "2024-11",
+      "secteur": "Elektriciteit",
+      "prelevementKwh": 31657.21,
+      "injectionKwh": null
     },
     {
       "mois": "2024-11",
@@ -1276,18 +1276,6 @@
     },
     {
       "mois": "2024-12",
-      "secteur": "Gas",
-      "prelevementKwh": 3887837.09,
-      "injectionKwh": null
-    },
-    {
-      "mois": "2024-12",
-      "secteur": "Elektriciteit",
-      "prelevementKwh": 35479.51,
-      "injectionKwh": null
-    },
-    {
-      "mois": "2024-12",
       "secteur": "Elektriciteit",
       "prelevementKwh": 314865.57,
       "injectionKwh": 195.04
@@ -1296,6 +1284,18 @@
       "mois": "2024-12",
       "secteur": "Gas",
       "prelevementKwh": 716323.86,
+      "injectionKwh": null
+    },
+    {
+      "mois": "2024-12",
+      "secteur": "Gas",
+      "prelevementKwh": 3887837.09,
+      "injectionKwh": null
+    },
+    {
+      "mois": "2024-12",
+      "secteur": "Elektriciteit",
+      "prelevementKwh": 35479.51,
       "injectionKwh": null
     },
     {
@@ -1318,6 +1318,12 @@
     },
     {
       "mois": "2025-01",
+      "secteur": "Gas",
+      "prelevementKwh": 871760.24,
+      "injectionKwh": null
+    },
+    {
+      "mois": "2025-01",
       "secteur": "Elektriciteit",
       "prelevementKwh": 37893.87,
       "injectionKwh": null
@@ -1330,9 +1336,9 @@
     },
     {
       "mois": "2025-01",
-      "secteur": "Gas",
-      "prelevementKwh": 871760.24,
-      "injectionKwh": null
+      "secteur": "Elektriciteit",
+      "prelevementKwh": 546990.72,
+      "injectionKwh": 0.05
     },
     {
       "mois": "2025-01",
@@ -1345,12 +1351,6 @@
       "secteur": "Elektriciteit",
       "prelevementKwh": 405934.46,
       "injectionKwh": 381.93
-    },
-    {
-      "mois": "2025-01",
-      "secteur": "Elektriciteit",
-      "prelevementKwh": 546990.72,
-      "injectionKwh": 0.05
     },
     {
       "mois": "2025-01",
@@ -1372,18 +1372,6 @@
     },
     {
       "mois": "2025-02",
-      "secteur": "Elektriciteit",
-      "prelevementKwh": 58890.35,
-      "injectionKwh": 84.71
-    },
-    {
-      "mois": "2025-02",
-      "secteur": "Gas",
-      "prelevementKwh": 3613010.58,
-      "injectionKwh": null
-    },
-    {
-      "mois": "2025-02",
       "secteur": "Gas",
       "prelevementKwh": 11271301.06,
       "injectionKwh": null
@@ -1397,8 +1385,14 @@
     {
       "mois": "2025-02",
       "secteur": "Elektriciteit",
-      "prelevementKwh": 131100.43,
-      "injectionKwh": 402.91
+      "prelevementKwh": 58890.35,
+      "injectionKwh": 84.71
+    },
+    {
+      "mois": "2025-02",
+      "secteur": "Gas",
+      "prelevementKwh": 3613010.58,
+      "injectionKwh": null
     },
     {
       "mois": "2025-02",
@@ -1411,6 +1405,12 @@
       "secteur": "Elektriciteit",
       "prelevementKwh": 1736108.68,
       "injectionKwh": 60329.52
+    },
+    {
+      "mois": "2025-02",
+      "secteur": "Elektriciteit",
+      "prelevementKwh": 131100.43,
+      "injectionKwh": 402.91
     },
     {
       "mois": "2025-02",
@@ -1432,6 +1432,12 @@
     },
     {
       "mois": "2025-03",
+      "secteur": "Elektriciteit",
+      "prelevementKwh": 269028.14,
+      "injectionKwh": 2027.39
+    },
+    {
+      "mois": "2025-03",
       "secteur": "Gas",
       "prelevementKwh": 2461531.2,
       "injectionKwh": null
@@ -1441,12 +1447,6 @@
       "secteur": "Elektriciteit",
       "prelevementKwh": 55290.44,
       "injectionKwh": 153.05
-    },
-    {
-      "mois": "2025-03",
-      "secteur": "Elektriciteit",
-      "prelevementKwh": 269028.14,
-      "injectionKwh": 2027.39
     },
     {
       "mois": "2025-03",
@@ -1486,12 +1486,6 @@
     },
     {
       "mois": "2025-04",
-      "secteur": "Elektriciteit",
-      "prelevementKwh": 32487.46,
-      "injectionKwh": null
-    },
-    {
-      "mois": "2025-04",
       "secteur": "Gas",
       "prelevementKwh": 195039.43,
       "injectionKwh": null
@@ -1516,6 +1510,12 @@
     },
     {
       "mois": "2025-04",
+      "secteur": "Elektriciteit",
+      "prelevementKwh": 32487.46,
+      "injectionKwh": null
+    },
+    {
+      "mois": "2025-04",
       "secteur": "Gas",
       "prelevementKwh": 1171153.8,
       "injectionKwh": null
@@ -1535,14 +1535,14 @@
     {
       "mois": "2025-05",
       "secteur": "Elektriciteit",
-      "prelevementKwh": 106852.39,
-      "injectionKwh": 4543.57
+      "prelevementKwh": 1438572.62,
+      "injectionKwh": 307495.2
     },
     {
       "mois": "2025-05",
-      "secteur": "Elektriciteit",
-      "prelevementKwh": 1438572.62,
-      "injectionKwh": 307495.2
+      "secteur": "Gas",
+      "prelevementKwh": 131179.52,
+      "injectionKwh": null
     },
     {
       "mois": "2025-05",
@@ -1558,15 +1558,9 @@
     },
     {
       "mois": "2025-05",
-      "secteur": "Gas",
-      "prelevementKwh": 131179.52,
-      "injectionKwh": null
-    },
-    {
-      "mois": "2025-05",
       "secteur": "Elektriciteit",
-      "prelevementKwh": 31586.02,
-      "injectionKwh": null
+      "prelevementKwh": 106852.39,
+      "injectionKwh": 4543.57
     },
     {
       "mois": "2025-05",
@@ -1587,6 +1581,18 @@
       "injectionKwh": 3410.53
     },
     {
+      "mois": "2025-05",
+      "secteur": "Elektriciteit",
+      "prelevementKwh": 31586.02,
+      "injectionKwh": null
+    },
+    {
+      "mois": "2025-06",
+      "secteur": "Elektriciteit",
+      "prelevementKwh": 603278.94,
+      "injectionKwh": 3197.21
+    },
+    {
       "mois": "2025-06",
       "secteur": "Gas",
       "prelevementKwh": 76601.72,
@@ -1597,12 +1603,6 @@
       "secteur": "Elektriciteit",
       "prelevementKwh": 1375856.61,
       "injectionKwh": 320874.31
-    },
-    {
-      "mois": "2025-06",
-      "secteur": "Elektriciteit",
-      "prelevementKwh": 603278.94,
-      "injectionKwh": 3197.21
     },
     {
       "mois": "2025-06",
@@ -1642,9 +1642,15 @@
     },
     {
       "mois": "2025-07",
-      "secteur": "Elektriciteit",
-      "prelevementKwh": 30244.59,
+      "secteur": "Gas",
+      "prelevementKwh": 254032.55,
       "injectionKwh": null
+    },
+    {
+      "mois": "2025-07",
+      "secteur": "Elektriciteit",
+      "prelevementKwh": 1278514.33,
+      "injectionKwh": 331698.51
     },
     {
       "mois": "2025-07",
@@ -1655,20 +1661,14 @@
     {
       "mois": "2025-07",
       "secteur": "Gas",
-      "prelevementKwh": 254032.55,
-      "injectionKwh": null
-    },
-    {
-      "mois": "2025-07",
-      "secteur": "Gas",
       "prelevementKwh": 69490.47,
       "injectionKwh": null
     },
     {
       "mois": "2025-07",
       "secteur": "Elektriciteit",
-      "prelevementKwh": 1278514.33,
-      "injectionKwh": 331698.51
+      "prelevementKwh": 30244.59,
+      "injectionKwh": null
     },
     {
       "mois": "2025-07",
@@ -1720,12 +1720,6 @@
     },
     {
       "mois": "2025-08",
-      "secteur": "Gas",
-      "prelevementKwh": 257062.81,
-      "injectionKwh": null
-    },
-    {
-      "mois": "2025-08",
       "secteur": "Elektriciteit",
       "prelevementKwh": 646008.98,
       "injectionKwh": 2567.07
@@ -1739,7 +1733,7 @@
     {
       "mois": "2025-08",
       "secteur": "Gas",
-      "prelevementKwh": 1041899.91,
+      "prelevementKwh": 257062.81,
       "injectionKwh": null
     },
     {
@@ -1749,16 +1743,16 @@
       "injectionKwh": 319450.9
     },
     {
-      "mois": "2025-09",
-      "secteur": "Elektriciteit",
-      "prelevementKwh": 1439563.36,
-      "injectionKwh": 180998.78
+      "mois": "2025-08",
+      "secteur": "Gas",
+      "prelevementKwh": 1041899.91,
+      "injectionKwh": null
     },
     {
       "mois": "2025-09",
       "secteur": "Elektriciteit",
-      "prelevementKwh": 531079.25,
-      "injectionKwh": 1066.81
+      "prelevementKwh": 1439563.36,
+      "injectionKwh": 180998.78
     },
     {
       "mois": "2025-09",
@@ -1774,15 +1768,15 @@
     },
     {
       "mois": "2025-09",
-      "secteur": "Gas",
-      "prelevementKwh": 115085.18,
-      "injectionKwh": null
+      "secteur": "Elektriciteit",
+      "prelevementKwh": 531079.25,
+      "injectionKwh": 1066.81
     },
     {
       "mois": "2025-09",
-      "secteur": "Elektriciteit",
-      "prelevementKwh": 57038.84,
-      "injectionKwh": 202.03
+      "secteur": "Gas",
+      "prelevementKwh": 115085.18,
+      "injectionKwh": null
     },
     {
       "mois": "2025-09",
@@ -1795,6 +1789,12 @@
       "secteur": "Elektriciteit",
       "prelevementKwh": 120902.17,
       "injectionKwh": 1894.89
+    },
+    {
+      "mois": "2025-09",
+      "secteur": "Elektriciteit",
+      "prelevementKwh": 57038.84,
+      "injectionKwh": 202.03
     },
     {
       "mois": "2025-09",
@@ -1846,15 +1846,15 @@
     },
     {
       "mois": "2025-10",
-      "secteur": "Elektriciteit",
-      "prelevementKwh": 528169.29,
-      "injectionKwh": 108.41
-    },
-    {
-      "mois": "2025-10",
       "secteur": "Gas",
       "prelevementKwh": 1331638.6,
       "injectionKwh": null
+    },
+    {
+      "mois": "2025-10",
+      "secteur": "Elektriciteit",
+      "prelevementKwh": 528169.29,
+      "injectionKwh": 108.41
     },
     {
       "mois": "2025-11",
@@ -1870,12 +1870,6 @@
     },
     {
       "mois": "2025-11",
-      "secteur": "Elektriciteit",
-      "prelevementKwh": 1845466.68,
-      "injectionKwh": 40054.97
-    },
-    {
-      "mois": "2025-11",
       "secteur": "Gas",
       "prelevementKwh": 2364901.03,
       "injectionKwh": null
@@ -1885,6 +1879,12 @@
       "secteur": "Elektriciteit",
       "prelevementKwh": 557806.47,
       "injectionKwh": 8.31
+    },
+    {
+      "mois": "2025-11",
+      "secteur": "Elektriciteit",
+      "prelevementKwh": 1845466.68,
+      "injectionKwh": 40054.97
     },
     {
       "mois": "2025-11",
@@ -1913,14 +1913,14 @@
     {
       "mois": "2025-12",
       "secteur": "Elektriciteit",
-      "prelevementKwh": 322401.08,
-      "injectionKwh": 911.37
+      "prelevementKwh": 63695.55,
+      "injectionKwh": 31.11
     },
     {
       "mois": "2025-12",
       "secteur": "Elektriciteit",
-      "prelevementKwh": 63695.55,
-      "injectionKwh": 31.11
+      "prelevementKwh": 322401.08,
+      "injectionKwh": 911.37
     },
     {
       "mois": "2025-12",
@@ -1936,15 +1936,15 @@
     },
     {
       "mois": "2025-12",
-      "secteur": "Gas",
-      "prelevementKwh": 11210025.27,
-      "injectionKwh": null
-    },
-    {
-      "mois": "2025-12",
       "secteur": "Elektriciteit",
       "prelevementKwh": 608117.91,
       "injectionKwh": 0.05
+    },
+    {
+      "mois": "2025-12",
+      "secteur": "Gas",
+      "prelevementKwh": 11210025.27,
+      "injectionKwh": null
     },
     {
       "mois": "2025-12",
@@ -2020,12 +2020,6 @@
     },
     {
       "mois": "2026-02",
-      "secteur": "Elektriciteit",
-      "prelevementKwh": 33210.97,
-      "injectionKwh": null
-    },
-    {
-      "mois": "2026-02",
       "secteur": "Gas",
       "prelevementKwh": 2623375.34,
       "injectionKwh": null
@@ -2033,8 +2027,8 @@
     {
       "mois": "2026-02",
       "secteur": "Elektriciteit",
-      "prelevementKwh": 527132.31,
-      "injectionKwh": 118.17
+      "prelevementKwh": 33210.97,
+      "injectionKwh": null
     },
     {
       "mois": "2026-02",
@@ -2047,6 +2041,12 @@
       "secteur": "Elektriciteit",
       "prelevementKwh": 273511.15,
       "injectionKwh": 1044.65
+    },
+    {
+      "mois": "2026-02",
+      "secteur": "Elektriciteit",
+      "prelevementKwh": 527132.31,
+      "injectionKwh": 118.17
     },
     {
       "mois": "2026-02",
@@ -2080,15 +2080,15 @@
     },
     {
       "mois": "2026-03",
-      "secteur": "Gas",
-      "prelevementKwh": 2084117.97,
-      "injectionKwh": null
-    },
-    {
-      "mois": "2026-03",
       "secteur": "Elektriciteit",
       "prelevementKwh": 61095.54,
       "injectionKwh": 228.98
+    },
+    {
+      "mois": "2026-03",
+      "secteur": "Gas",
+      "prelevementKwh": 2084117.97,
+      "injectionKwh": null
     },
     {
       "mois": "2026-03",
@@ -2153,12 +2153,6 @@
     {
       "mois": "2026-04",
       "secteur": "Elektriciteit",
-      "prelevementKwh": 30973.97,
-      "injectionKwh": null
-    },
-    {
-      "mois": "2026-04",
-      "secteur": "Elektriciteit",
       "prelevementKwh": 513041.59,
       "injectionKwh": 12608.13
     },
@@ -2176,6 +2170,12 @@
     },
     {
       "mois": "2026-04",
+      "secteur": "Elektriciteit",
+      "prelevementKwh": 30973.97,
+      "injectionKwh": null
+    },
+    {
+      "mois": "2026-04",
       "secteur": "Gas",
       "prelevementKwh": 227944.42,
       "injectionKwh": null
@@ -2183,14 +2183,14 @@
     {
       "mois": "2026-05",
       "secteur": "Elektriciteit",
-      "prelevementKwh": 115597.34,
-      "injectionKwh": 2945.99
+      "prelevementKwh": 63865.65,
+      "injectionKwh": 548.24
     },
     {
       "mois": "2026-05",
       "secteur": "Elektriciteit",
-      "prelevementKwh": 63865.65,
-      "injectionKwh": 548.24
+      "prelevementKwh": 115597.34,
+      "injectionKwh": 2945.99
     },
     {
       "mois": "2026-05",
@@ -2236,12 +2236,6 @@
     },
     {
       "mois": "2026-06",
-      "secteur": "Elektriciteit",
-      "prelevementKwh": 716887.38,
-      "injectionKwh": 8329.65
-    },
-    {
-      "mois": "2026-06",
       "secteur": "Gas",
       "prelevementKwh": 1400008.54,
       "injectionKwh": null
@@ -2249,8 +2243,8 @@
     {
       "mois": "2026-06",
       "secteur": "Elektriciteit",
-      "prelevementKwh": 1507920.25,
-      "injectionKwh": 346091.27
+      "prelevementKwh": 716887.38,
+      "injectionKwh": 8329.65
     },
     {
       "mois": "2026-06",
@@ -2269,6 +2263,12 @@
       "secteur": "Gas",
       "prelevementKwh": 354211.1,
       "injectionKwh": null
+    },
+    {
+      "mois": "2026-06",
+      "secteur": "Elektriciteit",
+      "prelevementKwh": 1507920.25,
+      "injectionKwh": 346091.27
     },
     {
       "mois": "2026-06",
