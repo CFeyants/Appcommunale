@@ -13,15 +13,39 @@
       "Les requêtes SPARQL longues dépassent régulièrement le délai d’attente du point d’accès public."
     ]
   },
-  "collecteLe": "2026-10-14T08:47:56.619Z",
+  "collecteLe": "2026-10-15T08:22:53.394Z",
   "depuis": "2026-01-01",
   "actes": [
+    {
+      "celex": "32026R2228",
+      "date": "2026-10-14",
+      "titre": "Règlement d’exécution (UE) 2026/2228 de la Commission du 14 octobre 2026 modifiant le règlement d’exécution (UE) 2021/405 en ce qui concerne les listes des pays tiers ou régions de pays tiers en provenance desquels l’entrée dans l’Union d’envois de certains animaux et biens destinés à la consommation humaine est autorisée conformément au règlement (UE) 2017/625 du Parlement européen et du Conseil",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/2228/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2228",
+      "nature": "reglement"
+    },
     {
       "celex": "32026R2266",
       "date": "2026-10-13",
       "titre": "Règlement d’exécution (UE) 2026/2266 de la Commission du 13 octobre 2026 établissant des dispositions détaillées pour l’application de la directive (UE) 2025/2205 du Parlement européen et du Conseil en ce qui concerne les permis de conduire mobiles",
       "urlEli": "http://data.europa.eu/eli/reg/2026/2266/oj",
       "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2266",
+      "nature": "reglement"
+    },
+    {
+      "celex": "32026R2313",
+      "date": "2026-10-13",
+      "titre": "Règlement d’exécution (UE) 2026/2313 du Conseil du 13 octobre 2026 mettant en œuvre le règlement (CE) n° 765/2006 concernant des mesures restrictives en raison de la situation en Biélorussie et de l’implication de la Biélorussie dans l’agression russe contre l’Ukraine",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/2313/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2313",
+      "nature": "reglement"
+    },
+    {
+      "celex": "32026R2318",
+      "date": "2026-10-13",
+      "titre": "Règlement d’exécution (UE) 2026/2318 du Conseil du 13 octobre 2026 mettant en œuvre le règlement (UE) n° 1284/2009 concernant des mesures restrictives en raison de la situation en Guinée",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/2318/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2318",
       "nature": "reglement"
     },
     {
@@ -113,22 +137,6 @@
       "nature": "reglement"
     },
     {
-      "celex": "32026R2263",
-      "date": "2026-10-08",
-      "titre": "Règlement d’exécution (UE) 2026/2263 du Conseil du 8 octobre 2026 mettant en œuvre le règlement (UE) n° 269/2014 concernant des mesures restrictives eu égard aux actions compromettant ou menaçant l'intégrité territoriale, la souveraineté et l'indépendance de l'Ukraine",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/2263/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2263",
-      "nature": "reglement"
-    },
-    {
-      "celex": "32026R2257",
-      "date": "2026-10-08",
-      "titre": "Règlement d’exécution (UE) 2026/2257 du Conseil du 8 octobre 2026 mettant en œuvre le règlement (UE) 2024/2642 concernant des mesures restrictives eu égard aux activités déstabilisatrices menées par la Russie",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/2257/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2257",
-      "nature": "reglement"
-    },
-    {
       "celex": "32026R2245",
       "date": "2026-10-08",
       "titre": "Règlement d’exécution (UE) 2026/2245 de la Commission du 8 octobre 2026 soumettant à enregistrement les importations de certains alcools polyvinyliques originaires de la République populaire de Chine en vue de permettre la perception de droits antidumping sur les importations soumises à enregistrement",
@@ -153,6 +161,62 @@
       "nature": "reglement"
     },
     {
+      "celex": "32026R2301",
+      "date": "2026-10-08",
+      "titre": "Règlement d’exécution (UE) 2026/2301 de la Commission du 8 octobre 2026 concernant l’enregistrement de l’indication géographique Café Antigua (IGP) dans le registre de l’Union des indications géographiques conformément au règlement (UE) 2024/1143 du Parlement européen et du Conseil",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/2301/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2301",
+      "nature": "reglement"
+    },
+    {
+      "celex": "32026R2302",
+      "date": "2026-10-08",
+      "titre": "Règlement d’exécution (UE) 2026/2302 de la Commission du 8 octobre 2026 concernant l’enregistrement de l’indication géographique Miel des Landes (IGP) dans le registre de l’Union des indications géographiques conformément au règlement (UE) 2024/1143 du Parlement européen et du Conseil",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/2302/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2302",
+      "nature": "reglement"
+    },
+    {
+      "celex": "32026R2293",
+      "date": "2026-10-08",
+      "titre": "Règlement d’exécution (UE) 2026/2293 de la Commission du 8 octobre 2026 enregistrant l’indication géographique Capocollo di Martina Franca (IGP) dans le registre des indications géographiques de l’Union conformément au règlement (UE) 2024/1143 du Parlement européen et du Conseil",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/2293/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2293",
+      "nature": "reglement"
+    },
+    {
+      "celex": "32026R2307",
+      "date": "2026-10-08",
+      "titre": "Règlement d’exécution (UE) 2026/2307 de la Commission du 8 octobre 2026 concernant l’enregistrement de l’indication géographique Čepinski kupus (AOP) dans le registre de l’Union des indications géographiques conformément au règlement (UE) 2024/1143 du Parlement européen et du Conseil",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/2307/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2307",
+      "nature": "reglement"
+    },
+    {
+      "celex": "32026R2290",
+      "date": "2026-10-08",
+      "titre": "Règlement d’exécution (UE) 2026/2290 de la Commission du 8 octobre 2026 concernant l’enregistrement de l’indication géographique Banski kestenov med (AOP) dans le registre de l’Union des indications géographiques conformément au règlement (UE) 2024/1143 du Parlement européen et du Conseil",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/2290/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2290",
+      "nature": "reglement"
+    },
+    {
+      "celex": "32026R2263",
+      "date": "2026-10-08",
+      "titre": "Règlement d’exécution (UE) 2026/2263 du Conseil du 8 octobre 2026 mettant en œuvre le règlement (UE) n° 269/2014 concernant des mesures restrictives eu égard aux actions compromettant ou menaçant l'intégrité territoriale, la souveraineté et l'indépendance de l'Ukraine",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/2263/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2263",
+      "nature": "reglement"
+    },
+    {
+      "celex": "32026R2257",
+      "date": "2026-10-08",
+      "titre": "Règlement d’exécution (UE) 2026/2257 du Conseil du 8 octobre 2026 mettant en œuvre le règlement (UE) 2024/2642 concernant des mesures restrictives eu égard aux activités déstabilisatrices menées par la Russie",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/2257/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2257",
+      "nature": "reglement"
+    },
+    {
       "celex": "32026R2268",
       "date": "2026-10-07",
       "titre": "Règlement d’exécution (UE) 2026/2268 de la Commission du 7 octobre 2026 modifiant les annexes V et XIV du règlement d’exécution (UE) 2021/404 en ce qui concerne les mentions relatives au Canada, au Royaume-Uni et aux États-Unis dans les listes des pays tiers, territoires et zones de pays tiers et territoires en provenance desquels l’entrée dans l’Union d’envois de volailles, de produits germinaux de volailles et de viandes fraîches de volailles et de gibier à plumes est autorisée",
@@ -166,6 +230,14 @@
       "titre": "Règlement (UE) 2026/2269 du Parlement européen et du Conseil du 7 octobre 2026 relatif aux mesures de libéralisation temporaire des échanges applicables à certains produits originaires de la République d’Arménie",
       "urlEli": "http://data.europa.eu/eli/reg/2026/2269/oj",
       "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2269",
+      "nature": "reglement"
+    },
+    {
+      "celex": "32026R2280",
+      "date": "2026-10-07",
+      "titre": "Règlement (UE) 2026/2280 du Parlement européen et du Conseil du 7 octobre 2026 établissant un système commun en matière de retour des ressortissants de pays tiers en séjour irrégulier dans l’Union, et abrogeant la directive 2008/115/CE du Parlement européen et du Conseil, la directive 2001/40/CE du Conseil et la décision 2004/191/CE du Conseil",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/2280/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2280",
       "nature": "reglement"
     },
     {
@@ -262,78 +334,6 @@
       "titre": "Règlement d’exécution (UE) 2026/2188 de la Commission du 1er octobre 2026 modifiant les annexes II et IV du règlement d’exécution (UE) 2021/404 en ce qui concerne les mentions relatives à l’Égypte, au Royaume-Uni et à l’Uruguay dans les listes des pays tiers et territoires ou des zones de pays tiers ou territoire en provenance desquels l’entrée dans l’Union d’envois de certains ongulés et de certaines catégories d’équidés est autorisée",
       "urlEli": "http://data.europa.eu/eli/reg/2026/2188/oj",
       "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2188",
-      "nature": "reglement"
-    },
-    {
-      "celex": "32026R2162",
-      "date": "2026-09-29",
-      "titre": "Règlement d’exécution (UE) 2026/2162 de la Commission du 29 septembre 2026 soumettant à enregistrement les importations de microsphères de verre solides (connues sous l’appellation commerciale de perles de verre) originaires de la République populaire de Chine en vue de permettre la perception de droits antidumping sur les importations soumises à enregistrement",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/2162/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2162",
-      "nature": "reglement"
-    },
-    {
-      "celex": "32026R2224",
-      "date": "2026-09-29",
-      "titre": "Règlement d’exécution (UE) 2026/2224 de la Commission du 29 septembre 2026 relatif à l’approbation d’une modification, à l’échelle de l’Union, du cahier des charges de l’indication géographique protégée Coteaux de l’Auxois conformément au règlement (UE) 2024/1143 du Parlement européen et du Conseil",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/2224/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2224",
-      "nature": "reglement"
-    },
-    {
-      "celex": "32026R2226",
-      "date": "2026-09-29",
-      "titre": "Règlement d’exécution (UE) 2026/2226 de la Commission du 29 septembre 2026 portant approbation d’une modification à l’échelle de l’Union du cahier des charges de l’indication géographique protégée Collines Rhodaniennes conformément au règlement (UE) 2024/1143 du Parlement européen et du Conseil",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/2226/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2226",
-      "nature": "reglement"
-    },
-    {
-      "celex": "32026R2193",
-      "date": "2026-09-28",
-      "titre": "Règlement d'exécution (UE) 2026/2193 du Conseil du 28 septembre 2026 mettant en œuvre le règlement (UE) 2024/1485 concernant des mesures restrictives en raison de la situation en Russie",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/2193/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2193",
-      "nature": "reglement"
-    },
-    {
-      "celex": "32026R2184",
-      "date": "2026-09-28",
-      "titre": "Règlement d’exécution (UE) 2026/2184 du Conseil du 28 septembre 2026 mettant en œuvre le règlement (UE) n° 269/2014 concernant des mesures restrictives eu égard aux actions compromettant ou menaçant l’intégrité territoriale, la souveraineté et l’indépendance de l’Ukraine",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/2184/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2184",
-      "nature": "reglement"
-    },
-    {
-      "celex": "32026R2155",
-      "date": "2026-09-28",
-      "titre": "Règlement d’exécution (UE) 2026/2155 de la Commission du 28 septembre 2026 approuvant l’inscription du port de Køge sur la liste des ports conformément au chapitre II du règlement d’exécution (UE) 2024/1474 et modifiant le règlement d’exécution (UE) 2025/897 en conséquence",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/2155/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2155",
-      "nature": "reglement"
-    },
-    {
-      "celex": "32026R2191",
-      "date": "2026-09-28",
-      "titre": "Règlement d’exécution (UE) 2026/2191 du Conseil du 28 septembre 2026 mettant en œuvre le règlement (CE) n° 1183/2005 concernant des mesures restrictives en raison de la situation en République démocratique du Congo",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/2191/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2191",
-      "nature": "reglement"
-    },
-    {
-      "celex": "32026R2158",
-      "date": "2026-09-28",
-      "titre": "Règlement d’exécution (UE) 2026/2158 de la Commission du 28 septembre 2026 concernant l’autorisation de l’huile essentielle de clou de girofle, de l’huile essentielle de feuilles de giroflier et de la fraction riche en bêta-caryophyllène de l’huile essentielle de feuilles de giroflier tirées de Syzygium aromaticum (L.) Merr. & L.M. Perry en tant qu’additifs pour l’alimentation de toutes les espèces animales",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/2158/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2158",
-      "nature": "reglement"
-    },
-    {
-      "celex": "32026R2212",
-      "date": "2026-09-25",
-      "titre": "Règlement d’exécution (UE) 2026/2212 de la Commission du 25 septembre 2026 fixant les prix représentatifs, les droits à l’importation et les droits additionnels à l’importation des mélasses dans le secteur du sucre applicables à partir du 1er octobre 2026",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/2212/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2212",
       "nature": "reglement"
     }
   ]
