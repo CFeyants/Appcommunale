@@ -13,24 +13,28 @@
       "Les intitulés sont en néerlandais, y compris pour une commune à facilités.",
       "Aucun vote nominatif n’est publié pour Kraainem sur la période observée."
     ],
-    "derniereCollecteReussie": "2026-10-15T08:22:31.900Z",
-    "derniereTentative": "2026-10-15T08:22:31.900Z",
+    "derniereCollecteReussie": "2026-10-16T08:15:03.451Z",
+    "derniereTentative": "2026-10-16T08:15:03.451Z",
     "nombreItems": 3413,
     "etat": "ok"
   },
   {
     "connecteur": "osm-overpass",
-    "libelle": "Établissements — OpenStreetMap",
-    "organisme": "OpenStreetMap",
-    "licence": "ODbL 1.0",
+    "libelle": "Établissements ouverts au public — OpenStreetMap",
+    "organisme": "OpenStreetMap — contributeurs",
+    "licence": "ODbL 1.0 (attribution obligatoire)",
     "endpoint": "https://overpass-api.de/api/interpreter",
     "cadence": "Hebdomadaire",
-    "limitesConnues": [],
-    "derniereCollecteReussie": null,
-    "derniereTentative": "2026-10-15T08:22:42.642Z",
-    "nombreItems": 0,
-    "etat": "panne",
-    "raison": "ErreurAmont: amont 502"
+    "limitesConnues": [
+      "Base contributive : la couverture est incomplète et inégale selon les quartiers.",
+      "Aucune source publique n’existe pour la liste des commerçants d’une commune belge : ni registre communal ouvert, ni filtre « ouvert au public » dans la Banque-Carrefour des Entreprises.",
+      "Une minorité de fiches porte une adresse complète ; le reste n’a que des coordonnées géographiques.",
+      "Rien ne garantit qu’un établissement fermé ait été retiré de la base."
+    ],
+    "derniereCollecteReussie": "2026-10-16T08:15:54.926Z",
+    "derniereTentative": "2026-10-16T08:15:54.926Z",
+    "nombreItems": 178,
+    "etat": "ok"
   },
   {
     "connecteur": "fluvius",
@@ -45,8 +49,8 @@
       "Les identifiants de jeux de données Fluvius changent sans préavis : deux identifiants cités dans la version 1 du projet avaient déjà disparu.",
       "Aucune ventilation par ménage : la donnée est agrégée à la commune."
     ],
-    "derniereCollecteReussie": "2026-10-15T08:22:44.484Z",
-    "derniereTentative": "2026-10-15T08:22:44.484Z",
+    "derniereCollecteReussie": "2026-10-16T08:15:57.054Z",
+    "derniereTentative": "2026-10-16T08:15:57.054Z",
     "nombreItems": 387,
     "etat": "ok"
   },
@@ -62,8 +66,8 @@
       "La station la plus proche est une station trafic : sa valeur décrit un carrefour, pas une commune résidentielle.",
       "Les grilles modélisées à 4 × 4 km existent mais ne sont pas exposées en API : elles ne sont disponibles que par FTP."
     ],
-    "derniereCollecteReussie": "2026-10-15T08:22:45.363Z",
-    "derniereTentative": "2026-10-15T08:22:45.363Z",
+    "derniereCollecteReussie": "2026-10-16T08:15:57.956Z",
+    "derniereTentative": "2026-10-16T08:15:57.956Z",
     "nombreItems": 8,
     "etat": "ok"
   },
@@ -80,8 +84,8 @@
       "Les rectificatifs sont écartés à l’ingestion ; ils sont nombreux et ne changent rien pour un habitant.",
       "Les requêtes SPARQL longues dépassent régulièrement le délai d’attente du point d’accès public."
     ],
-    "derniereCollecteReussie": "2026-10-15T08:22:53.395Z",
-    "derniereTentative": "2026-10-15T08:22:53.395Z",
+    "derniereCollecteReussie": "2026-10-16T08:16:02.663Z",
+    "derniereTentative": "2026-10-16T08:16:02.663Z",
     "nombreItems": 40,
     "etat": "ok"
   },
@@ -98,8 +102,8 @@
       "La classification CFAP n’est pas la nomenclature BBC utilisée par les communes flamandes : les deux ne se recouvrent pas ligne à ligne.",
       "Aucune distinction entre budget voté et budget exécuté : Eurostat publie l’exécuté."
     ],
-    "derniereCollecteReussie": "2026-10-15T08:22:38.453Z",
-    "derniereTentative": "2026-10-15T08:22:38.453Z",
+    "derniereCollecteReussie": "2026-10-16T08:15:10.002Z",
+    "derniereTentative": "2026-10-16T08:15:10.002Z",
     "nombreItems": 4,
     "etat": "ok"
   }

@@ -13,9 +13,41 @@
       "Les requêtes SPARQL longues dépassent régulièrement le délai d’attente du point d’accès public."
     ]
   },
-  "collecteLe": "2026-10-15T08:22:53.394Z",
+  "collecteLe": "2026-10-16T08:16:02.663Z",
   "depuis": "2026-01-01",
   "actes": [
+    {
+      "celex": "32026R2333",
+      "date": "2026-10-15",
+      "titre": "Règlement d’exécution (UE) 2026/2333 du Conseil du 15 octobre 2026 mettant en œuvre le règlement (UE) n° 269/2014 concernant des mesures restrictives eu égard aux actions compromettant ou menaçant l’intégrité territoriale, la souveraineté et l’indépendance de l’Ukraine",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/2333/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2333",
+      "nature": "reglement"
+    },
+    {
+      "celex": "32026R2299",
+      "date": "2026-10-15",
+      "titre": "Règlement (UE) 2026/2299 de la Commission du 15 octobre 2026 modifiant les annexes II et III du règlement (CE) no 396/2005 du Parlement européen et du Conseil en ce qui concerne les limites maximales applicables aux résidus de difénoconazole présents dans ou sur certains produits",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/2299/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2299",
+      "nature": "reglement"
+    },
+    {
+      "celex": "32026R2289",
+      "date": "2026-10-15",
+      "titre": "Règlement (UE) 2026/2289 de la Commission du 15 octobre 2026 modifiant l’annexe II du règlement (CE) no 396/2005 du Parlement européen et du Conseil en ce qui concerne les limites maximales applicables aux résidus d’acéquinocyl, de deltaméthrine, de dodine, d’hydrazide maléique, de pinoxadène et de prothioconazole présents dans ou sur certains produits",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/2289/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2289",
+      "nature": "reglement"
+    },
+    {
+      "celex": "32026R2270",
+      "date": "2026-10-15",
+      "titre": "Règlement d’exécution (UE) 2026/2270 de la Commission du 15 octobre 2026 modifiant le règlement d’exécution (UE) 2025/2351 instituant une mesure de sauvegarde définitive à l’égard des importations de certains éléments de ferro-alliages",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/2270/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2270",
+      "nature": "reglement"
+    },
     {
       "celex": "32026R2228",
       "date": "2026-10-14",
@@ -302,38 +334,6 @@
       "titre": "Règlement d’exécution (UE) 2026/2199 de la Commission du 2 octobre 2026 annulant l’autorisation de l’Union pour le produit biocide unique Nordkalk QL 0-2 conformément au règlement (UE) no 528/2012 du Parlement européen et du Conseil et abrogeant le règlement d’exécution (UE) 2024/1481",
       "urlEli": "http://data.europa.eu/eli/reg/2026/2199/oj",
       "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2199",
-      "nature": "reglement"
-    },
-    {
-      "celex": "32026R2238",
-      "date": "2026-10-02",
-      "titre": "Règlement d’exécution (UE) 2026/2238 de la Commission du 2 octobre 2026 modifiant les annexes XIII et XV du règlement d’exécution (UE) 2021/404 en ce qui concerne les inscriptions de la Namibie sur les listes des pays tiers et territoires, ou des zones de pays tiers ou territoire, en provenance desquels l’entrée dans l’Union d’envois de viandes fraîches et de produits à base de viande de certains ongulés est autorisée",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/2238/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2238",
-      "nature": "reglement"
-    },
-    {
-      "celex": "32026R2227",
-      "date": "2026-10-01",
-      "titre": "Règlement d’exécution (UE) 2026/2227 de la Commission du 1er octobre 2026 modifiant les annexes V et XIV du règlement d’exécution (UE) 2021/404 en ce qui concerne les mentions relatives au Canada et aux États-Unis dans les listes de pays tiers, de territoires ou de zones de pays tiers ou territoires en provenance desquels l’entrée dans l’Union d’envois de volailles et de produits germinaux de volailles ainsi que de viandes fraîches de volailles et de gibier à plumes est autorisée",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/2227/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2227",
-      "nature": "reglement"
-    },
-    {
-      "celex": "32026R2220",
-      "date": "2026-10-01",
-      "titre": "Règlement d’exécution (UE) 2026/2220 de la Commission du 1er octobre 2026 modifiant l’annexe I du règlement d’exécution (UE) 2023/594 établissant des mesures spéciales de lutte contre la peste porcine africaine",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/2220/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2220",
-      "nature": "reglement"
-    },
-    {
-      "celex": "32026R2188",
-      "date": "2026-10-01",
-      "titre": "Règlement d’exécution (UE) 2026/2188 de la Commission du 1er octobre 2026 modifiant les annexes II et IV du règlement d’exécution (UE) 2021/404 en ce qui concerne les mentions relatives à l’Égypte, au Royaume-Uni et à l’Uruguay dans les listes des pays tiers et territoires ou des zones de pays tiers ou territoire en provenance desquels l’entrée dans l’Union d’envois de certains ongulés et de certaines catégories d’équidés est autorisée",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/2188/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2188",
       "nature": "reglement"
     }
   ]
