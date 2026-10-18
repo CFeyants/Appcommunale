@@ -13,7 +13,7 @@
       "Les requêtes SPARQL longues dépassent régulièrement le délai d’attente du point d’accès public."
     ]
   },
-  "collecteLe": "2026-10-17T07:52:41.012Z",
+  "collecteLe": "2026-10-18T08:06:20.696Z",
   "depuis": "2026-01-01",
   "actes": [
     {
@@ -209,6 +209,22 @@
       "nature": "reglement"
     },
     {
+      "celex": "32026R2263",
+      "date": "2026-10-08",
+      "titre": "Règlement d’exécution (UE) 2026/2263 du Conseil du 8 octobre 2026 mettant en œuvre le règlement (UE) n° 269/2014 concernant des mesures restrictives eu égard aux actions compromettant ou menaçant l'intégrité territoriale, la souveraineté et l'indépendance de l'Ukraine",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/2263/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2263",
+      "nature": "reglement"
+    },
+    {
+      "celex": "32026R2257",
+      "date": "2026-10-08",
+      "titre": "Règlement d’exécution (UE) 2026/2257 du Conseil du 8 octobre 2026 mettant en œuvre le règlement (UE) 2024/2642 concernant des mesures restrictives eu égard aux activités déstabilisatrices menées par la Russie",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/2257/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2257",
+      "nature": "reglement"
+    },
+    {
       "celex": "32026R2245",
       "date": "2026-10-08",
       "titre": "Règlement d’exécution (UE) 2026/2245 de la Commission du 8 octobre 2026 soumettant à enregistrement les importations de certains alcools polyvinyliques originaires de la République populaire de Chine en vue de permettre la perception de droits antidumping sur les importations soumises à enregistrement",
@@ -233,19 +249,11 @@
       "nature": "reglement"
     },
     {
-      "celex": "32026R2263",
-      "date": "2026-10-08",
-      "titre": "Règlement d’exécution (UE) 2026/2263 du Conseil du 8 octobre 2026 mettant en œuvre le règlement (UE) n° 269/2014 concernant des mesures restrictives eu égard aux actions compromettant ou menaçant l'intégrité territoriale, la souveraineté et l'indépendance de l'Ukraine",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/2263/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2263",
-      "nature": "reglement"
-    },
-    {
-      "celex": "32026R2257",
-      "date": "2026-10-08",
-      "titre": "Règlement d’exécution (UE) 2026/2257 du Conseil du 8 octobre 2026 mettant en œuvre le règlement (UE) 2024/2642 concernant des mesures restrictives eu égard aux activités déstabilisatrices menées par la Russie",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/2257/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2257",
+      "celex": "32026R2280",
+      "date": "2026-10-07",
+      "titre": "Règlement (UE) 2026/2280 du Parlement européen et du Conseil du 7 octobre 2026 établissant un système commun en matière de retour des ressortissants de pays tiers en séjour irrégulier dans l’Union, et abrogeant la directive 2008/115/CE du Parlement européen et du Conseil, la directive 2001/40/CE du Conseil et la décision 2004/191/CE du Conseil",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/2280/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2280",
       "nature": "reglement"
     },
     {
@@ -254,14 +262,6 @@
       "titre": "Règlement d’exécution (UE) 2026/2268 de la Commission du 7 octobre 2026 modifiant les annexes V et XIV du règlement d’exécution (UE) 2021/404 en ce qui concerne les mentions relatives au Canada, au Royaume-Uni et aux États-Unis dans les listes des pays tiers, territoires et zones de pays tiers et territoires en provenance desquels l’entrée dans l’Union d’envois de volailles, de produits germinaux de volailles et de viandes fraîches de volailles et de gibier à plumes est autorisée",
       "urlEli": "http://data.europa.eu/eli/reg/2026/2268/oj",
       "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2268",
-      "nature": "reglement"
-    },
-    {
-      "celex": "32026R2280",
-      "date": "2026-10-07",
-      "titre": "Règlement (UE) 2026/2280 du Parlement européen et du Conseil du 7 octobre 2026 établissant un système commun en matière de retour des ressortissants de pays tiers en séjour irrégulier dans l’Union, et abrogeant la directive 2008/115/CE du Parlement européen et du Conseil, la directive 2001/40/CE du Conseil et la décision 2004/191/CE du Conseil",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/2280/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2280",
       "nature": "reglement"
     },
     {
