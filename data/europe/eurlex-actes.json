@@ -13,9 +13,25 @@
       "Les requêtes SPARQL longues dépassent régulièrement le délai d’attente du point d’accès public."
     ]
   },
-  "collecteLe": "2026-10-18T08:06:20.696Z",
+  "collecteLe": "2026-10-19T08:58:33.086Z",
   "depuis": "2026-01-01",
   "actes": [
+    {
+      "celex": "32026R2298",
+      "date": "2026-10-16",
+      "titre": "Règlement (UE) 2026/2298 de la Commission du 16 octobre 2026 modifiant l’annexe II du règlement (CE) no 1333/2008 du Parlement européen et du Conseil et l’annexe du règlement (UE) no 231/2012 de la Commission en ce qui concerne l’utilisation du curdlane",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/2298/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2298",
+      "nature": "reglement"
+    },
+    {
+      "celex": "32026R2309",
+      "date": "2026-10-16",
+      "titre": "Règlement (UE) 2026/2309 de la Commission du 16 octobre 2026 modifiant l’annexe du règlement (UE) no 231/2012 établissant les spécifications des additifs alimentaires énumérés aux annexes II et III du règlement (CE) no 1333/2008 du Parlement européen et du Conseil en ce qui concerne les spécifications des glycosides de stéviol produits par voie enzymatique de façon à inclure le rébaudioside M produit par conversion enzymatique de rébaudioside A issu d’extraits hautement purifiés de feuilles de Stevia [E 960c (ii)] à l’aide de la levure génétiquement modifiée K. phafﬁi CGMCC 7539",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/2309/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2309",
+      "nature": "reglement"
+    },
     {
       "celex": "32026R2333",
       "date": "2026-10-15",
@@ -54,6 +70,22 @@
       "titre": "Règlement d’exécution (UE) 2026/2228 de la Commission du 14 octobre 2026 modifiant le règlement d’exécution (UE) 2021/405 en ce qui concerne les listes des pays tiers ou régions de pays tiers en provenance desquels l’entrée dans l’Union d’envois de certains animaux et biens destinés à la consommation humaine est autorisée conformément au règlement (UE) 2017/625 du Parlement européen et du Conseil",
       "urlEli": "http://data.europa.eu/eli/reg/2026/2228/oj",
       "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2228",
+      "nature": "reglement"
+    },
+    {
+      "celex": "32026R2337",
+      "date": "2026-10-14",
+      "titre": "Règlement d’exécution (UE) 2026/2337 de la Commission du 14 octobre 2026 portant approbation d’une modification à l’échelle de l’Union du cahier des charges de l’indication géographique protégée Coteaux des Baronnies conformément au règlement (UE) 2024/1143 du Parlement européen et du Conseil",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/2337/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2337",
+      "nature": "reglement"
+    },
+    {
+      "celex": "32026R2328",
+      "date": "2026-10-14",
+      "titre": "Règlement d’exécution (UE) 2026/2328 de la Commission du 14 octobre 2026 modifiant les annexes V et XIV du règlement d’exécution (UE) 2021/404 en ce qui concerne les mentions relatives au Canada et aux États-Unis dans les listes de pays tiers, de territoires ou de zones de pays tiers ou territoires en provenance desquels l’entrée dans l’Union d’envois de volailles et de produits germinaux de volailles ainsi que de viandes fraîches de volailles et de gibier à plumes est autorisée",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/2328/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2328",
       "nature": "reglement"
     },
     {
@@ -302,38 +334,6 @@
       "titre": "Règlement d’exécution (UE) 2026/2208 de la Commission du 5 octobre 2026 sur des mesures exceptionnelles de soutien du marché pour le secteur de la viande porcine en Italie",
       "urlEli": "http://data.europa.eu/eli/reg/2026/2208/oj",
       "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2208",
-      "nature": "reglement"
-    },
-    {
-      "celex": "32026R2205",
-      "date": "2026-10-05",
-      "titre": "Règlement d’exécution (UE) 2026/2205 de la Commission du 5 octobre 2026 relatif à des mesures exceptionnelles de soutien du marché pour les secteurs des œufs et de la viande de volaille en Italie",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/2205/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2205",
-      "nature": "reglement"
-    },
-    {
-      "celex": "32026R2203",
-      "date": "2026-10-02",
-      "titre": "Règlement d’exécution (UE) 2026/2203 de la Commission du 2 octobre 2026 modifiant le règlement d’exécution (UE) 2024/2175 en ce qui concerne des modifications mineures à apporter à l’autorisation de l’Union pour la famille de produits biocides dénommée Contec Calcium Hypochlorite Product Family",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/2203/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2203",
-      "nature": "reglement"
-    },
-    {
-      "celex": "32026R2201",
-      "date": "2026-10-02",
-      "titre": "Règlement d’exécution (UE) 2026/2201 de la Commission du 2 octobre 2026 modifiant le règlement d’exécution (UE) 2023/1763 en ce qui concerne une modification administrative de l’autorisation de l’Union pour la famille de produits biocides dénommée Lactic acid Family — Quatchem",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/2201/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2201",
-      "nature": "reglement"
-    },
-    {
-      "celex": "32026R2199",
-      "date": "2026-10-02",
-      "titre": "Règlement d’exécution (UE) 2026/2199 de la Commission du 2 octobre 2026 annulant l’autorisation de l’Union pour le produit biocide unique Nordkalk QL 0-2 conformément au règlement (UE) no 528/2012 du Parlement européen et du Conseil et abrogeant le règlement d’exécution (UE) 2024/1481",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/2199/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2199",
       "nature": "reglement"
     }
   ]
