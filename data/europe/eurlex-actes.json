@@ -13,9 +13,25 @@
       "Les requêtes SPARQL longues dépassent régulièrement le délai d’attente du point d’accès public."
     ]
   },
-  "collecteLe": "2026-10-19T08:58:33.086Z",
+  "collecteLe": "2026-10-20T08:37:56.336Z",
   "depuis": "2026-01-01",
   "actes": [
+    {
+      "celex": "32026R2311",
+      "date": "2026-10-19",
+      "titre": "Règlement d’exécution (UE) 2026/2311 de la Commission du 19 octobre 2026 instituant un droit antidumping définitif sur les importations de certains papiers thermosensibles lourds originaires de la République de Corée à l’issue d’un réexamen au titre de l’expiration des mesures conformément à l’article 11, paragraphe 2, du règlement (UE) 2016/1036 du Parlement européen et du Conseil",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/2311/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2311",
+      "nature": "reglement"
+    },
+    {
+      "celex": "32026R2319",
+      "date": "2026-10-19",
+      "titre": "Règlement d’exécution (UE) 2026/2319 de la Commission du 19 octobre 2026 modifiant le règlement d’exécution (UE) 2023/265 instituant un droit antidumping définitif sur les importations de carreaux en céramique originaires de l’Inde et de Turquie",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/2319/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2319",
+      "nature": "reglement"
+    },
     {
       "celex": "32026R2298",
       "date": "2026-10-16",
@@ -318,22 +334,6 @@
       "titre": "Règlement d’exécution (UE) 2026/2214 de la Commission du 5 octobre 2026 rectifiant certaines versions linguistiques du règlement d’exécution (UE) 2024/2215 établissant, conformément au règlement (UE) 2024/573 du Parlement européen et du Conseil, des prescriptions minimales pour la délivrance de certificats aux personnes physiques et morales et les conditions applicables à la reconnaissance mutuelle de ces certificats, en ce qui concerne les équipements fixes de réfrigération, de climatisation et de pompes à chaleur, les cycles organiques de Rankine et les unités de réfrigération des camions frigorifiques, des remorques frigorifiques, des véhicules utilitaires légers frigorifiques, des conteneurs intermodaux et des wagons frigorifiques contenant des gaz à effet de serre fluorés ou leurs solutions de substitution",
       "urlEli": "http://data.europa.eu/eli/reg/2026/2214/oj",
       "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2214",
-      "nature": "reglement"
-    },
-    {
-      "celex": "32026R2210",
-      "date": "2026-10-05",
-      "titre": "Règlement d’exécution (UE) 2026/2210 de la Commission du 5 octobre 2026 modifiant le règlement d’exécution (UE) no 79/2012 en ce qui concerne les données statistiques que les États membres doivent communiquer à la Commission",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/2210/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2210",
-      "nature": "reglement"
-    },
-    {
-      "celex": "32026R2208",
-      "date": "2026-10-05",
-      "titre": "Règlement d’exécution (UE) 2026/2208 de la Commission du 5 octobre 2026 sur des mesures exceptionnelles de soutien du marché pour le secteur de la viande porcine en Italie",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/2208/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2208",
       "nature": "reglement"
     }
   ]
