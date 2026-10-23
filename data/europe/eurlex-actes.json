@@ -13,9 +13,41 @@
       "Les requêtes SPARQL longues dépassent régulièrement le délai d’attente du point d’accès public."
     ]
   },
-  "collecteLe": "2026-10-22T08:42:02.888Z",
+  "collecteLe": "2026-10-23T08:37:41.688Z",
   "depuis": "2026-01-01",
   "actes": [
+    {
+      "celex": "32026R2342",
+      "date": "2026-10-22",
+      "titre": "Règlement d’exécution (UE) 2026/2342 de la Commission du 22 octobre 2026 modifiant le règlement d’exécution (UE) 2022/2105 en ce qui concerne les contrôles de conformité de certaines huiles d’olive vierges extra monovariétales",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/2342/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2342",
+      "nature": "reglement"
+    },
+    {
+      "celex": "32026R2338",
+      "date": "2026-10-22",
+      "titre": "Règlement d’exécution (UE) 2026/2338 de la Commission du 22 octobre 2026 rectifiant la version suédoise du règlement d’exécution (UE) 2015/1998 fixant des mesures détaillées pour la mise en œuvre des normes de base communes dans le domaine de la sûreté de l’aviation civile",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/2338/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2338",
+      "nature": "reglement"
+    },
+    {
+      "celex": "32026R2340",
+      "date": "2026-10-22",
+      "titre": "Règlement d’exécution (UE) 2026/2340 de la Commission du 22 octobre 2026 relative à la non-approbation de l’extension de l’utilisation de la substance de base Urtica spp. conformément au règlement (CE) no 1107/2009 du Parlement européen et du Conseil concernant la mise sur le marché des produits phytopharmaceutiques",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/2340/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2340",
+      "nature": "reglement"
+    },
+    {
+      "celex": "32026R2371",
+      "date": "2026-10-22",
+      "titre": "Règlement d’exécution (UE) 2026/2371 de la Commission du 22 octobre 2026 modifiant l’annexe I du règlement d’exécution (UE) 2023/594 établissant des mesures spéciales de lutte contre la peste porcine africaine",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/2371/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2371",
+      "nature": "reglement"
+    },
     {
       "celex": "32026R2327",
       "date": "2026-10-21",
@@ -30,6 +62,14 @@
       "titre": "Règlement d’exécution (UE) 2026/2384 de la Commission du 21 octobre 2026 modifiant pour la 363e fois le règlement (CE) no 881/2002 du Conseil instituant certaines mesures restrictives spécifiques à l’encontre de certaines personnes et entités liées aux organisations EIIL (Daech) et Al-Qaida",
       "urlEli": "http://data.europa.eu/eli/reg/2026/2384/oj",
       "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2384",
+      "nature": "reglement"
+    },
+    {
+      "celex": "32026R2388",
+      "date": "2026-10-21",
+      "titre": "Règlement d’exécution (UE) 2026/2388 de la Commission du 21 octobre 2026 modifiant le règlement (CE) no 1210/2003 du Conseil concernant certaines restrictions spécifiques applicables aux relations économiques et financières avec l’Iraq",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/2388/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2388",
       "nature": "reglement"
     },
     {
@@ -121,22 +161,6 @@
       "nature": "reglement"
     },
     {
-      "celex": "32026R2339",
-      "date": "2026-10-14",
-      "titre": "Règlement d’exécution (UE) 2026/2339 de la Commission du 14 octobre 2026 concernant l’enregistrement de l’indication géographique Kopi Arabika Flores Manggarai (IGP) dans le registre de l’Union des indications géographiques conformément au règlement (UE) 2024/1143 du Parlement européen et du Conseil",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/2339/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2339",
-      "nature": "reglement"
-    },
-    {
-      "celex": "32026R2336",
-      "date": "2026-10-14",
-      "titre": "Règlement d’exécution (UE) 2026/2336 de la Commission du 14 octobre 2026 concernant l’enregistrement de l’indication géographique Flores Bajawa (IGP) dans le registre de l’Union des indications géographiques conformément au règlement (UE) 2024/1143 du Parlement européen et du Conseil",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/2336/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2336",
-      "nature": "reglement"
-    },
-    {
       "celex": "32026R2228",
       "date": "2026-10-14",
       "titre": "Règlement d’exécution (UE) 2026/2228 de la Commission du 14 octobre 2026 modifiant le règlement d’exécution (UE) 2021/405 en ce qui concerne les listes des pays tiers ou régions de pays tiers en provenance desquels l’entrée dans l’Union d’envois de certains animaux et biens destinés à la consommation humaine est autorisée conformément au règlement (UE) 2017/625 du Parlement européen et du Conseil",
@@ -166,6 +190,22 @@
       "titre": "Règlement d’exécution (UE) 2026/2328 de la Commission du 14 octobre 2026 modifiant les annexes V et XIV du règlement d’exécution (UE) 2021/404 en ce qui concerne les mentions relatives au Canada et aux États-Unis dans les listes de pays tiers, de territoires ou de zones de pays tiers ou territoires en provenance desquels l’entrée dans l’Union d’envois de volailles et de produits germinaux de volailles ainsi que de viandes fraîches de volailles et de gibier à plumes est autorisée",
       "urlEli": "http://data.europa.eu/eli/reg/2026/2328/oj",
       "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2328",
+      "nature": "reglement"
+    },
+    {
+      "celex": "32026R2339",
+      "date": "2026-10-14",
+      "titre": "Règlement d’exécution (UE) 2026/2339 de la Commission du 14 octobre 2026 concernant l’enregistrement de l’indication géographique Kopi Arabika Flores Manggarai (IGP) dans le registre de l’Union des indications géographiques conformément au règlement (UE) 2024/1143 du Parlement européen et du Conseil",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/2339/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2339",
+      "nature": "reglement"
+    },
+    {
+      "celex": "32026R2336",
+      "date": "2026-10-14",
+      "titre": "Règlement d’exécution (UE) 2026/2336 de la Commission du 14 octobre 2026 concernant l’enregistrement de l’indication géographique Flores Bajawa (IGP) dans le registre de l’Union des indications géographiques conformément au règlement (UE) 2024/1143 du Parlement européen et du Conseil",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/2336/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2336",
       "nature": "reglement"
     },
     {
@@ -294,46 +334,6 @@
       "titre": "Règlement d’exécution (UE) 2026/2302 de la Commission du 8 octobre 2026 concernant l’enregistrement de l’indication géographique Miel des Landes (IGP) dans le registre de l’Union des indications géographiques conformément au règlement (UE) 2024/1143 du Parlement européen et du Conseil",
       "urlEli": "http://data.europa.eu/eli/reg/2026/2302/oj",
       "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2302",
-      "nature": "reglement"
-    },
-    {
-      "celex": "32026R2293",
-      "date": "2026-10-08",
-      "titre": "Règlement d’exécution (UE) 2026/2293 de la Commission du 8 octobre 2026 enregistrant l’indication géographique Capocollo di Martina Franca (IGP) dans le registre des indications géographiques de l’Union conformément au règlement (UE) 2024/1143 du Parlement européen et du Conseil",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/2293/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2293",
-      "nature": "reglement"
-    },
-    {
-      "celex": "32026R2307",
-      "date": "2026-10-08",
-      "titre": "Règlement d’exécution (UE) 2026/2307 de la Commission du 8 octobre 2026 concernant l’enregistrement de l’indication géographique Čepinski kupus (AOP) dans le registre de l’Union des indications géographiques conformément au règlement (UE) 2024/1143 du Parlement européen et du Conseil",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/2307/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2307",
-      "nature": "reglement"
-    },
-    {
-      "celex": "32026R2290",
-      "date": "2026-10-08",
-      "titre": "Règlement d’exécution (UE) 2026/2290 de la Commission du 8 octobre 2026 concernant l’enregistrement de l’indication géographique Banski kestenov med (AOP) dans le registre de l’Union des indications géographiques conformément au règlement (UE) 2024/1143 du Parlement européen et du Conseil",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/2290/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2290",
-      "nature": "reglement"
-    },
-    {
-      "celex": "32026R2263",
-      "date": "2026-10-08",
-      "titre": "Règlement d’exécution (UE) 2026/2263 du Conseil du 8 octobre 2026 mettant en œuvre le règlement (UE) n° 269/2014 concernant des mesures restrictives eu égard aux actions compromettant ou menaçant l'intégrité territoriale, la souveraineté et l'indépendance de l'Ukraine",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/2263/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2263",
-      "nature": "reglement"
-    },
-    {
-      "celex": "32026R2257",
-      "date": "2026-10-08",
-      "titre": "Règlement d’exécution (UE) 2026/2257 du Conseil du 8 octobre 2026 mettant en œuvre le règlement (UE) 2024/2642 concernant des mesures restrictives eu égard aux activités déstabilisatrices menées par la Russie",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/2257/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2257",
       "nature": "reglement"
     }
   ]
