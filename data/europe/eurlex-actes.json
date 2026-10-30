@@ -13,9 +13,33 @@
       "Les requêtes SPARQL longues dépassent régulièrement le délai d’attente du point d’accès public."
     ]
   },
-  "collecteLe": "2026-10-29T10:04:27.053Z",
+  "collecteLe": "2026-10-30T10:08:02.835Z",
   "depuis": "2026-01-01",
   "actes": [
+    {
+      "celex": "32026R2393",
+      "date": "2026-10-29",
+      "titre": "Règlement d’exécution (UE) 2026/2393 de la Commission du 29 octobre 2026 instituant un droit antidumping définitif et portant perception définitive du droit provisoire institué sur les importations de filé-lié de PET originaire de la République populaire de Chine",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/2393/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2393",
+      "nature": "reglement"
+    },
+    {
+      "celex": "32026R2391",
+      "date": "2026-10-29",
+      "titre": "Règlement d’exécution (UE) 2026/2391 de la Commission du 29 octobre 2026 soumettant à enregistrement les importations de certains éthers de cellulose originaires de la République populaire de Chine et de la République de Corée en vue de permettre la perception de droits antidumping sur les importations soumises à enregistrement",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/2391/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2391",
+      "nature": "reglement"
+    },
+    {
+      "celex": "32026R2396",
+      "date": "2026-10-29",
+      "titre": "Règlement d’exécution (UE) 2026/2396 de la Commission du 29 octobre 2026 soumettant à enregistrement les importations de certains câbles en acier originaires de la République de l’Inde, du Royaume de Thaïlande et de la République de Turquie en vue de permettre la perception de droits antidumping sur les importations soumises à enregistrement",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/2396/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2396",
+      "nature": "reglement"
+    },
     {
       "celex": "32026R2470",
       "date": "2026-10-28",
@@ -185,6 +209,14 @@
       "nature": "reglement"
     },
     {
+      "celex": "32026L2450",
+      "date": "2026-10-21",
+      "titre": "Directive (UE) 2026/2450 du Parlement européen et du Conseil du 21 octobre 2026 modifiant la directive 2004/37/CE concernant la protection des travailleurs contre les risques liés à l’exposition à des agents cancérigènes ou mutagènes ou à des substances reprotoxiques au travail (Texte présentant de l'intérêt pour l'EEE)",
+      "urlEli": "http://data.europa.eu/eli/dir/2026/2450/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026L2450",
+      "nature": "directive"
+    },
+    {
       "celex": "32026R2310",
       "date": "2026-10-19",
       "titre": "Règlement d’exécution (UE) 2026/2310 de la Commission du 19 octobre 2026 portant abrogation du droit compensateur définitif sur les importations de vitrage solaire originaire de la République populaire de Chine à l’issue d’un réexamen au titre de l’expiration des mesures effectué en vertu de l’article 18 du règlement (UE) 2016/1037 du Parlement européen et du Conseil",
@@ -302,38 +334,6 @@
       "titre": "Règlement d’exécution (UE) 2026/2341 de la Commission du 14 octobre 2026 concernant l’enregistrement de l’indication géographique Oliva Alta Daunia (AOP) dans le registre de l’Union des indications géographiques conformément au règlement (UE) 2024/1143 du Parlement européen et du Conseil",
       "urlEli": "http://data.europa.eu/eli/reg/2026/2341/oj",
       "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2341",
-      "nature": "reglement"
-    },
-    {
-      "celex": "32026R2228",
-      "date": "2026-10-14",
-      "titre": "Règlement d’exécution (UE) 2026/2228 de la Commission du 14 octobre 2026 modifiant le règlement d’exécution (UE) 2021/405 en ce qui concerne les listes des pays tiers ou régions de pays tiers en provenance desquels l’entrée dans l’Union d’envois de certains animaux et biens destinés à la consommation humaine est autorisée conformément au règlement (UE) 2017/625 du Parlement européen et du Conseil",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/2228/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2228",
-      "nature": "reglement"
-    },
-    {
-      "celex": "32026R2337",
-      "date": "2026-10-14",
-      "titre": "Règlement d’exécution (UE) 2026/2337 de la Commission du 14 octobre 2026 portant approbation d’une modification à l’échelle de l’Union du cahier des charges de l’indication géographique protégée Coteaux des Baronnies conformément au règlement (UE) 2024/1143 du Parlement européen et du Conseil",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/2337/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2337",
-      "nature": "reglement"
-    },
-    {
-      "celex": "32026R2328",
-      "date": "2026-10-14",
-      "titre": "Règlement d’exécution (UE) 2026/2328 de la Commission du 14 octobre 2026 modifiant les annexes V et XIV du règlement d’exécution (UE) 2021/404 en ce qui concerne les mentions relatives au Canada et aux États-Unis dans les listes de pays tiers, de territoires ou de zones de pays tiers ou territoires en provenance desquels l’entrée dans l’Union d’envois de volailles et de produits germinaux de volailles ainsi que de viandes fraîches de volailles et de gibier à plumes est autorisée",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/2328/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2328",
-      "nature": "reglement"
-    },
-    {
-      "celex": "32026R2266",
-      "date": "2026-10-13",
-      "titre": "Règlement d’exécution (UE) 2026/2266 de la Commission du 13 octobre 2026 établissant des dispositions détaillées pour l’application de la directive (UE) 2025/2205 du Parlement européen et du Conseil en ce qui concerne les permis de conduire mobiles",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/2266/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2266",
       "nature": "reglement"
     }
   ]
