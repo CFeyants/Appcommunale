@@ -13,7 +13,7 @@
       "Les requêtes SPARQL longues dépassent régulièrement le délai d’attente du point d’accès public."
     ]
   },
-  "collecteLe": "2026-10-30T10:08:02.835Z",
+  "collecteLe": "2026-10-31T09:43:38.948Z",
   "depuis": "2026-01-01",
   "actes": [
     {
@@ -217,22 +217,6 @@
       "nature": "directive"
     },
     {
-      "celex": "32026R2310",
-      "date": "2026-10-19",
-      "titre": "Règlement d’exécution (UE) 2026/2310 de la Commission du 19 octobre 2026 portant abrogation du droit compensateur définitif sur les importations de vitrage solaire originaire de la République populaire de Chine à l’issue d’un réexamen au titre de l’expiration des mesures effectué en vertu de l’article 18 du règlement (UE) 2016/1037 du Parlement européen et du Conseil",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/2310/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2310",
-      "nature": "reglement"
-    },
-    {
-      "celex": "32026R2314",
-      "date": "2026-10-19",
-      "titre": "Règlement d’exécution (UE) 2026/2314 de la Commission du 19 octobre 2026 portant abrogation d’un droit antidumping définitif sur les importations de vitrage solaire originaire de la République populaire de Chine à l’issue d’un réexamen au titre de l’expiration des mesures effectué en vertu de l’article 11, paragraphe 2, du règlement (UE) 2016/1036 du Parlement européen et du Conseil",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/2314/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2314",
-      "nature": "reglement"
-    },
-    {
       "celex": "32026R2311",
       "date": "2026-10-19",
       "titre": "Règlement d’exécution (UE) 2026/2311 de la Commission du 19 octobre 2026 instituant un droit antidumping définitif sur les importations de certains papiers thermosensibles lourds originaires de la République de Corée à l’issue d’un réexamen au titre de l’expiration des mesures conformément à l’article 11, paragraphe 2, du règlement (UE) 2016/1036 du Parlement européen et du Conseil",
@@ -246,6 +230,22 @@
       "titre": "Règlement d’exécution (UE) 2026/2319 de la Commission du 19 octobre 2026 modifiant le règlement d’exécution (UE) 2023/265 instituant un droit antidumping définitif sur les importations de carreaux en céramique originaires de l’Inde et de Turquie",
       "urlEli": "http://data.europa.eu/eli/reg/2026/2319/oj",
       "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2319",
+      "nature": "reglement"
+    },
+    {
+      "celex": "32026R2310",
+      "date": "2026-10-19",
+      "titre": "Règlement d’exécution (UE) 2026/2310 de la Commission du 19 octobre 2026 portant abrogation du droit compensateur définitif sur les importations de vitrage solaire originaire de la République populaire de Chine à l’issue d’un réexamen au titre de l’expiration des mesures effectué en vertu de l’article 18 du règlement (UE) 2016/1037 du Parlement européen et du Conseil",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/2310/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2310",
+      "nature": "reglement"
+    },
+    {
+      "celex": "32026R2314",
+      "date": "2026-10-19",
+      "titre": "Règlement d’exécution (UE) 2026/2314 de la Commission du 19 octobre 2026 portant abrogation d’un droit antidumping définitif sur les importations de vitrage solaire originaire de la République populaire de Chine à l’issue d’un réexamen au titre de l’expiration des mesures effectué en vertu de l’article 11, paragraphe 2, du règlement (UE) 2016/1036 du Parlement européen et du Conseil",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/2314/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2314",
       "nature": "reglement"
     },
     {
@@ -270,6 +270,14 @@
       "titre": "Règlement (UE) 2026/2309 de la Commission du 16 octobre 2026 modifiant l’annexe du règlement (UE) no 231/2012 établissant les spécifications des additifs alimentaires énumérés aux annexes II et III du règlement (CE) no 1333/2008 du Parlement européen et du Conseil en ce qui concerne les spécifications des glycosides de stéviol produits par voie enzymatique de façon à inclure le rébaudioside M produit par conversion enzymatique de rébaudioside A issu d’extraits hautement purifiés de feuilles de Stevia [E 960c (ii)] à l’aide de la levure génétiquement modifiée K. phafﬁi CGMCC 7539",
       "urlEli": "http://data.europa.eu/eli/reg/2026/2309/oj",
       "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2309",
+      "nature": "reglement"
+    },
+    {
+      "celex": "32026R2300",
+      "date": "2026-10-15",
+      "titre": "Règlement d’exécution (UE) 2026/2300 de la Commission du 15 octobre 2026 octroyant une autorisation de l’Union pour la famille de produits biocides dénommée Active chlorine based products BPF — CID LINES NV conformément au règlement (UE) no 528/2012 du Parlement européen et du Conseil",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/2300/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2300",
       "nature": "reglement"
     },
     {
@@ -305,14 +313,6 @@
       "nature": "reglement"
     },
     {
-      "celex": "32026R2300",
-      "date": "2026-10-15",
-      "titre": "Règlement d’exécution (UE) 2026/2300 de la Commission du 15 octobre 2026 octroyant une autorisation de l’Union pour la famille de produits biocides dénommée Active chlorine based products BPF — CID LINES NV conformément au règlement (UE) no 528/2012 du Parlement européen et du Conseil",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/2300/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2300",
-      "nature": "reglement"
-    },
-    {
       "celex": "32026R2339",
       "date": "2026-10-14",
       "titre": "Règlement d’exécution (UE) 2026/2339 de la Commission du 14 octobre 2026 concernant l’enregistrement de l’indication géographique Kopi Arabika Flores Manggarai (IGP) dans le registre de l’Union des indications géographiques conformément au règlement (UE) 2024/1143 du Parlement européen et du Conseil",
@@ -329,11 +329,11 @@
       "nature": "reglement"
     },
     {
-      "celex": "32026R2341",
+      "celex": "32026R2228",
       "date": "2026-10-14",
-      "titre": "Règlement d’exécution (UE) 2026/2341 de la Commission du 14 octobre 2026 concernant l’enregistrement de l’indication géographique Oliva Alta Daunia (AOP) dans le registre de l’Union des indications géographiques conformément au règlement (UE) 2024/1143 du Parlement européen et du Conseil",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/2341/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2341",
+      "titre": "Règlement d’exécution (UE) 2026/2228 de la Commission du 14 octobre 2026 modifiant le règlement d’exécution (UE) 2021/405 en ce qui concerne les listes des pays tiers ou régions de pays tiers en provenance desquels l’entrée dans l’Union d’envois de certains animaux et biens destinés à la consommation humaine est autorisée conformément au règlement (UE) 2017/625 du Parlement européen et du Conseil",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/2228/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2228",
       "nature": "reglement"
     }
   ]
