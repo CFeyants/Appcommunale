@@ -13,9 +13,17 @@
       "Les requêtes SPARQL longues dépassent régulièrement le délai d’attente du point d’accès public."
     ]
   },
-  "collecteLe": "2026-11-03T10:57:17.008Z",
+  "collecteLe": "2026-11-05T11:00:44.652Z",
   "depuis": "2026-01-01",
   "actes": [
+    {
+      "celex": "32026R2490",
+      "date": "2026-11-03",
+      "titre": "Règlement d’exécution (UE) 2026/2490 de la Commission du 3 novembre 2026 modifiant pour la 364e fois le règlement (CE) no 881/2002 du Conseil instituant certaines mesures restrictives spécifiques à l’encontre de certaines personnes et entités liées aux organisations EIIL (Daech) et Al-Qaida",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/2490/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2490",
+      "nature": "reglement"
+    },
     {
       "celex": "32026R2406",
       "date": "2026-10-30",
@@ -46,6 +54,14 @@
       "titre": "Règlement d’exécution (UE) 2026/2396 de la Commission du 29 octobre 2026 soumettant à enregistrement les importations de certains câbles en acier originaires de la République de l’Inde, du Royaume de Thaïlande et de la République de Turquie en vue de permettre la perception de droits antidumping sur les importations soumises à enregistrement",
       "urlEli": "http://data.europa.eu/eli/reg/2026/2396/oj",
       "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2396",
+      "nature": "reglement"
+    },
+    {
+      "celex": "32026R2401",
+      "date": "2026-10-29",
+      "titre": "Règlement d’exécution (UE) 2026/2401 de la Commission du 29 octobre 2026 établissant la liste et la description des variables et leurs spécifications techniques, les classifications statistiques, les ventilations et les objectifs de précision pour le thème structure du coût de la main-d’œuvre conformément au règlement (UE) 2025/941 du Parlement européen et du Conseil",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/2401/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2401",
       "nature": "reglement"
     },
     {
@@ -177,6 +193,14 @@
       "nature": "reglement"
     },
     {
+      "celex": "32026R2388",
+      "date": "2026-10-21",
+      "titre": "Règlement d’exécution (UE) 2026/2388 de la Commission du 21 octobre 2026 modifiant le règlement (CE) no 1210/2003 du Conseil concernant certaines restrictions spécifiques applicables aux relations économiques et financières avec l’Iraq",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/2388/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2388",
+      "nature": "reglement"
+    },
+    {
       "celex": "32026R2327",
       "date": "2026-10-21",
       "titre": "Règlement d’exécution (UE) 2026/2327 de la Commission du 21 octobre 2026 instituant un droit antidumping définitif sur les importations de certains agrumes préparés ou conservés (mandarines, etc.) originaires de la République populaire de Chine à la suite d’un réexamen au titre de l’expiration des mesures mené conformément à l’article 11, paragraphe 2, du règlement (UE) 2016/1036 du Parlement européen et du Conseil",
@@ -201,6 +225,14 @@
       "nature": "directive"
     },
     {
+      "celex": "32026R2473",
+      "date": "2026-10-21",
+      "titre": "Règlement (UE) 2026/2473 du Parlement européen et du Conseil du 21 octobre 2026 modifiant le règlement (UE) 2023/2124 concernant certaines dispositions relatives à la pêche dans la zone couverte par l’accord de la Commission générale des pêches pour la Méditerranée (CGPM)",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/2473/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2473",
+      "nature": "reglement"
+    },
+    {
       "celex": "32026R2379",
       "date": "2026-10-21",
       "titre": "Règlement d’exécution (UE) 2026/2379 de la Commission du 21 octobre 2026 concernant l’enregistrement de l’indication géographique Sümeg/Sümegi (AOP) dans le registre de l’Union des indications géographiques conformément au règlement (UE) 2024/1143 du Parlement européen et du Conseil",
@@ -214,14 +246,6 @@
       "titre": "Règlement d’exécution (UE) 2026/2380 de la Commission du 21 octobre 2026 concernant l’enregistrement de l’indication géographique Cigeľská prírodná minerálna voda/Minerálna voda Cigeľka/Cigeľka (AOP) dans le registre de l’Union des indications géographiques conformément au règlement (UE) 2024/1143 du Parlement européen et du Conseil",
       "urlEli": "http://data.europa.eu/eli/reg/2026/2380/oj",
       "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2380",
-      "nature": "reglement"
-    },
-    {
-      "celex": "32026R2388",
-      "date": "2026-10-21",
-      "titre": "Règlement d’exécution (UE) 2026/2388 de la Commission du 21 octobre 2026 modifiant le règlement (CE) no 1210/2003 du Conseil concernant certaines restrictions spécifiques applicables aux relations économiques et financières avec l’Iraq",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/2388/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2388",
       "nature": "reglement"
     },
     {
@@ -289,14 +313,6 @@
       "nature": "reglement"
     },
     {
-      "celex": "32026R2354",
-      "date": "2026-10-16",
-      "titre": "Règlement d’exécution (UE) 2026/2354 de la Commission du 16 octobre 2026 concernant les formats de communication d’informations sur les bénéficiaires effectifs",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/2354/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2354",
-      "nature": "reglement"
-    },
-    {
       "celex": "32026R2298",
       "date": "2026-10-16",
       "titre": "Règlement (UE) 2026/2298 de la Commission du 16 octobre 2026 modifiant l’annexe II du règlement (CE) no 1333/2008 du Parlement européen et du Conseil et l’annexe du règlement (UE) no 231/2012 de la Commission en ce qui concerne l’utilisation du curdlane",
@@ -313,27 +329,11 @@
       "nature": "reglement"
     },
     {
-      "celex": "32026R2333",
-      "date": "2026-10-15",
-      "titre": "Règlement d’exécution (UE) 2026/2333 du Conseil du 15 octobre 2026 mettant en œuvre le règlement (UE) n° 269/2014 concernant des mesures restrictives eu égard aux actions compromettant ou menaçant l’intégrité territoriale, la souveraineté et l’indépendance de l’Ukraine",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/2333/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2333",
-      "nature": "reglement"
-    },
-    {
-      "celex": "32026R2299",
-      "date": "2026-10-15",
-      "titre": "Règlement (UE) 2026/2299 de la Commission du 15 octobre 2026 modifiant les annexes II et III du règlement (CE) no 396/2005 du Parlement européen et du Conseil en ce qui concerne les limites maximales applicables aux résidus de difénoconazole présents dans ou sur certains produits",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/2299/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2299",
-      "nature": "reglement"
-    },
-    {
-      "celex": "32026R2289",
-      "date": "2026-10-15",
-      "titre": "Règlement (UE) 2026/2289 de la Commission du 15 octobre 2026 modifiant l’annexe II du règlement (CE) no 396/2005 du Parlement européen et du Conseil en ce qui concerne les limites maximales applicables aux résidus d’acéquinocyl, de deltaméthrine, de dodine, d’hydrazide maléique, de pinoxadène et de prothioconazole présents dans ou sur certains produits",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/2289/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2289",
+      "celex": "32026R2354",
+      "date": "2026-10-16",
+      "titre": "Règlement d’exécution (UE) 2026/2354 de la Commission du 16 octobre 2026 concernant les formats de communication d’informations sur les bénéficiaires effectifs",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/2354/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2354",
       "nature": "reglement"
     }
   ]
