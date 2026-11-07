@@ -8,14 +8,14 @@
   "codeNis": "23099",
   "fenetre": {
     "depuis": "2024-09-24",
-    "jusqua": "2026-11-06"
+    "jusqua": "2026-11-07"
   },
   "derniereFenetreCollectee": {
-    "depuis": "2026-09-07",
-    "le": "2026-11-06T10:57:34.358Z"
+    "depuis": "2026-09-08",
+    "le": "2026-11-07T10:16:26.393Z"
   },
   "totalSeancesSource": 1091,
-  "collecteLe": "2026-11-06T10:57:34.358Z",
+  "collecteLe": "2026-11-07T10:16:26.393Z",
   "statistiques": {
     "seances": 420,
     "points": 3413,
