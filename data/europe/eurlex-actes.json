@@ -13,7 +13,7 @@
       "Les requêtes SPARQL longues dépassent régulièrement le délai d’attente du point d’accès public."
     ]
   },
-  "collecteLe": "2026-11-07T10:17:22.904Z",
+  "collecteLe": "2026-11-08T10:27:42.342Z",
   "depuis": "2026-01-01",
   "actes": [
     {
@@ -217,6 +217,14 @@
       "nature": "reglement"
     },
     {
+      "celex": "32026R2388",
+      "date": "2026-10-21",
+      "titre": "Règlement d’exécution (UE) 2026/2388 de la Commission du 21 octobre 2026 modifiant le règlement (CE) no 1210/2003 du Conseil concernant certaines restrictions spécifiques applicables aux relations économiques et financières avec l’Iraq",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/2388/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2388",
+      "nature": "reglement"
+    },
+    {
       "celex": "32026R2327",
       "date": "2026-10-21",
       "titre": "Règlement d’exécution (UE) 2026/2327 de la Commission du 21 octobre 2026 instituant un droit antidumping définitif sur les importations de certains agrumes préparés ou conservés (mandarines, etc.) originaires de la République populaire de Chine à la suite d’un réexamen au titre de l’expiration des mesures mené conformément à l’article 11, paragraphe 2, du règlement (UE) 2016/1036 du Parlement européen et du Conseil",
@@ -241,6 +249,14 @@
       "nature": "directive"
     },
     {
+      "celex": "32026R2473",
+      "date": "2026-10-21",
+      "titre": "Règlement (UE) 2026/2473 du Parlement européen et du Conseil du 21 octobre 2026 modifiant le règlement (UE) 2023/2124 concernant certaines dispositions relatives à la pêche dans la zone couverte par l’accord de la Commission générale des pêches pour la Méditerranée (CGPM)",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/2473/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2473",
+      "nature": "reglement"
+    },
+    {
       "celex": "32026R2379",
       "date": "2026-10-21",
       "titre": "Règlement d’exécution (UE) 2026/2379 de la Commission du 21 octobre 2026 concernant l’enregistrement de l’indication géographique Sümeg/Sümegi (AOP) dans le registre de l’Union des indications géographiques conformément au règlement (UE) 2024/1143 du Parlement européen et du Conseil",
@@ -254,14 +270,6 @@
       "titre": "Règlement d’exécution (UE) 2026/2380 de la Commission du 21 octobre 2026 concernant l’enregistrement de l’indication géographique Cigeľská prírodná minerálna voda/Minerálna voda Cigeľka/Cigeľka (AOP) dans le registre de l’Union des indications géographiques conformément au règlement (UE) 2024/1143 du Parlement européen et du Conseil",
       "urlEli": "http://data.europa.eu/eli/reg/2026/2380/oj",
       "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2380",
-      "nature": "reglement"
-    },
-    {
-      "celex": "32026R2388",
-      "date": "2026-10-21",
-      "titre": "Règlement d’exécution (UE) 2026/2388 de la Commission du 21 octobre 2026 modifiant le règlement (CE) no 1210/2003 du Conseil concernant certaines restrictions spécifiques applicables aux relations économiques et financières avec l’Iraq",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/2388/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2388",
       "nature": "reglement"
     },
     {
@@ -294,14 +302,6 @@
       "titre": "Règlement (UE) 2026/2381 du Parlement européen et du Conseil du 21 octobre 2026 relatif à l’accélération des procédures d’octroi des autorisations pour les projets en matière de préparation de la défense",
       "urlEli": "http://data.europa.eu/eli/reg/2026/2381/oj",
       "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2381",
-      "nature": "reglement"
-    },
-    {
-      "celex": "32026R2473",
-      "date": "2026-10-21",
-      "titre": "Règlement (UE) 2026/2473 du Parlement européen et du Conseil du 21 octobre 2026 modifiant le règlement (UE) 2023/2124 concernant certaines dispositions relatives à la pêche dans la zone couverte par l’accord de la Commission générale des pêches pour la Méditerranée (CGPM)",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/2473/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2473",
       "nature": "reglement"
     },
     {
