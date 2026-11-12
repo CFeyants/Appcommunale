@@ -13,7 +13,7 @@
       "Les requêtes SPARQL longues dépassent régulièrement le délai d’attente du point d’accès public."
     ]
   },
-  "collecteLe": "2026-11-11T11:03:00.562Z",
+  "collecteLe": "2026-11-12T11:19:43.503Z",
   "depuis": "2026-01-01",
   "actes": [
     {
@@ -97,6 +97,38 @@
       "nature": "reglement"
     },
     {
+      "celex": "32026R2515",
+      "date": "2026-11-05",
+      "titre": "Règlement d’exécution (UE) 2026/2515 de la Commission du 5 novembre 2026 concernant l’enregistrement de l’indication géographique Lipovská minerálna voda Salvator/Salvator (AOP) dans le registre de l’Union des indications géographiques conformément au règlement (UE) 2024/1143 du Parlement européen et du Conseil",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/2515/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2515",
+      "nature": "reglement"
+    },
+    {
+      "celex": "32026R2514",
+      "date": "2026-11-05",
+      "titre": "Règlement d’exécution (UE) 2026/2514 de la Commission du 5 novembre 2026 concernant l’enregistrement de l’indication géographique Korytnica / Korytnická (AOP) dans le registre de l’Union des indications géographiques conformément au règlement (UE) 2024/1143 du Parlement européen et du Conseil",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/2514/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2514",
+      "nature": "reglement"
+    },
+    {
+      "celex": "32026R2513",
+      "date": "2026-11-05",
+      "titre": "Règlement d’exécution (UE) 2026/2513 de la Commission du 5 novembre 2026 concernant l’enregistrement de l’indication géographique Sulinka (AOP) dans le registre de l’Union des indications géographiques conformément au règlement (UE) 2024/1143 du Parlement européen et du Conseil",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/2513/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2513",
+      "nature": "reglement"
+    },
+    {
+      "celex": "32026R2516",
+      "date": "2026-11-05",
+      "titre": "Règlement d’exécution (UE) 2026/2516 de la Commission du 5 novembre 2026 concernant l’enregistrement de l’indication géographique Baldovská/Baldovská minerálna voda (AOP) dans le registre de l’Union des indications géographiques conformément au règlement (UE) 2024/1143 du Parlement européen et du Conseil",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/2516/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2516",
+      "nature": "reglement"
+    },
+    {
       "celex": "32026R2467",
       "date": "2026-11-05",
       "titre": "Règlement d’exécution (UE) 2026/2467 de la Commission du 5 novembre 2026 relatif à la compensation financière en faveur des consommateurs finals de carburants et aux quotas restitués pour les émissions ne relevant pas du chapitre IV bis de la directive 2003/87/CE du Parlement européen et du Conseil",
@@ -126,6 +158,14 @@
       "titre": "Règlement d’exécution (UE) 2026/2490 de la Commission du 3 novembre 2026 modifiant pour la 364e fois le règlement (CE) no 881/2002 du Conseil instituant certaines mesures restrictives spécifiques à l’encontre de certaines personnes et entités liées aux organisations EIIL (Daech) et Al-Qaida",
       "urlEli": "http://data.europa.eu/eli/reg/2026/2490/oj",
       "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2490",
+      "nature": "reglement"
+    },
+    {
+      "celex": "32026R2411",
+      "date": "2026-10-30",
+      "titre": "Règlement d’exécution (UE) 2026/2411 de la Commission du 30 octobre 2026 modifiant le règlement d’exécution (UE) 2025/427 en ce qui concerne des modifications administratives de l’autorisation de l’Union pour la famille de produits biocides dénommée Orochemie hand disinfectants",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/2411/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2411",
       "nature": "reglement"
     },
     {
@@ -294,46 +334,6 @@
       "titre": "Règlement d’exécution (UE) 2026/2371 de la Commission du 22 octobre 2026 modifiant l’annexe I du règlement d’exécution (UE) 2023/594 établissant des mesures spéciales de lutte contre la peste porcine africaine",
       "urlEli": "http://data.europa.eu/eli/reg/2026/2371/oj",
       "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2371",
-      "nature": "reglement"
-    },
-    {
-      "celex": "32026R2388",
-      "date": "2026-10-21",
-      "titre": "Règlement d’exécution (UE) 2026/2388 de la Commission du 21 octobre 2026 modifiant le règlement (CE) no 1210/2003 du Conseil concernant certaines restrictions spécifiques applicables aux relations économiques et financières avec l’Iraq",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/2388/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2388",
-      "nature": "reglement"
-    },
-    {
-      "celex": "32026R2327",
-      "date": "2026-10-21",
-      "titre": "Règlement d’exécution (UE) 2026/2327 de la Commission du 21 octobre 2026 instituant un droit antidumping définitif sur les importations de certains agrumes préparés ou conservés (mandarines, etc.) originaires de la République populaire de Chine à la suite d’un réexamen au titre de l’expiration des mesures mené conformément à l’article 11, paragraphe 2, du règlement (UE) 2016/1036 du Parlement européen et du Conseil",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/2327/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2327",
-      "nature": "reglement"
-    },
-    {
-      "celex": "32026R2384",
-      "date": "2026-10-21",
-      "titre": "Règlement d’exécution (UE) 2026/2384 de la Commission du 21 octobre 2026 modifiant pour la 363e fois le règlement (CE) no 881/2002 du Conseil instituant certaines mesures restrictives spécifiques à l’encontre de certaines personnes et entités liées aux organisations EIIL (Daech) et Al-Qaida",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/2384/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2384",
-      "nature": "reglement"
-    },
-    {
-      "celex": "32026L2450",
-      "date": "2026-10-21",
-      "titre": "Directive (UE) 2026/2450 du Parlement européen et du Conseil du 21 octobre 2026 modifiant la directive 2004/37/CE concernant la protection des travailleurs contre les risques liés à l’exposition à des agents cancérigènes ou mutagènes ou à des substances reprotoxiques au travail (Texte présentant de l'intérêt pour l'EEE)",
-      "urlEli": "http://data.europa.eu/eli/dir/2026/2450/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026L2450",
-      "nature": "directive"
-    },
-    {
-      "celex": "32026R2473",
-      "date": "2026-10-21",
-      "titre": "Règlement (UE) 2026/2473 du Parlement européen et du Conseil du 21 octobre 2026 modifiant le règlement (UE) 2023/2124 concernant certaines dispositions relatives à la pêche dans la zone couverte par l’accord de la Commission générale des pêches pour la Méditerranée (CGPM)",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/2473/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2473",
       "nature": "reglement"
     }
   ]
