@@ -13,31 +13,15 @@
       "Les requêtes SPARQL longues dépassent régulièrement le délai d’attente du point d’accès public."
     ]
   },
-  "collecteLe": "2026-11-15T10:59:23.433Z",
+  "collecteLe": "2026-11-16T11:27:17.881Z",
   "depuis": "2026-01-01",
   "actes": [
-    {
-      "celex": "32026R2502",
-      "date": "2026-11-12",
-      "titre": "Règlement d’exécution (UE) 2026/2502 de la Commission du 12 novembre 2026 annulant l’autorisation de l’Union pour le produit biocide unique dénommé Superficid express WIPES conformément au règlement (UE) no 528/2012 du Parlement européen et du Conseil et abrogeant le règlement d’exécution (UE) 2023/1105 de la Commission",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/2502/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2502",
-      "nature": "reglement"
-    },
     {
       "celex": "32026R2504",
       "date": "2026-11-12",
       "titre": "Règlement d’exécution (UE) 2026/2504 de la Commission du 12 novembre 2026 annulant l’autorisation de l’Union pour le produit biocide unique Sterillium liquid conformément au règlement (UE) no 528/2012 du Parlement européen et du Conseil et abrogeant le règlement d’exécution (UE) 2025/1867 de la Commission",
       "urlEli": "http://data.europa.eu/eli/reg/2026/2504/oj",
       "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2504",
-      "nature": "reglement"
-    },
-    {
-      "celex": "32026R2506",
-      "date": "2026-11-12",
-      "titre": "Règlement d’exécution (UE) 2026/2506 de la Commission du 12 novembre 2026 annulant l’autorisation de l’Union pour le produit biocide unique dénommé Superficid express conformément au règlement (UE) no 528/2012 du Parlement européen et du Conseil et abrogeant le règlement d’exécution (UE) 2023/1133 de la Commission",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/2506/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2506",
       "nature": "reglement"
     },
     {
@@ -49,27 +33,11 @@
       "nature": "reglement"
     },
     {
-      "celex": "32026R2517",
-      "date": "2026-11-12",
-      "titre": "Règlement d’exécution (UE) 2026/2517 de la Commission du 12 novembre 2026 relatif au non-renouvellement de l’approbation de la substance active buprofézine conformément au règlement (CE) no 1107/2009 du Parlement européen et du Conseil, et modifiant le règlement d’exécution (UE) no 540/2011 de la Commission",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/2517/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2517",
-      "nature": "reglement"
-    },
-    {
       "celex": "32026R2501",
       "date": "2026-11-12",
       "titre": "Règlement (UE) 2026/2501 de la Commission du 12 novembre 2026 modifiant l’annexe XVII du règlement (CE) no 1907/2006 du Parlement européen et du Conseil concernant l’enregistrement, l’évaluation et l’autorisation des substances chimiques, ainsi que les restrictions applicables à ces substances (REACH), en ce qui concerne le plomb dans certains articles de pêche",
       "urlEli": "http://data.europa.eu/eli/reg/2026/2501/oj",
       "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2501",
-      "nature": "reglement"
-    },
-    {
-      "celex": "32026R2509",
-      "date": "2026-11-12",
-      "titre": "Règlement d’exécution (UE) 2026/2509 de la Commission du 12 novembre 2026 accordant une protection dans l’Union à l’indication géographique اللبان العُماني (encens d’Oman) enregistrée au registre international des appellations d’origine et indications géographiques de l’acte de Genève",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/2509/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2509",
       "nature": "reglement"
     },
     {
@@ -81,19 +49,43 @@
       "nature": "reglement"
     },
     {
+      "celex": "32026R2517",
+      "date": "2026-11-12",
+      "titre": "Règlement d’exécution (UE) 2026/2517 de la Commission du 12 novembre 2026 relatif au non-renouvellement de l’approbation de la substance active buprofézine conformément au règlement (CE) no 1107/2009 du Parlement européen et du Conseil, et modifiant le règlement d’exécution (UE) no 540/2011 de la Commission",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/2517/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2517",
+      "nature": "reglement"
+    },
+    {
+      "celex": "32026R2509",
+      "date": "2026-11-12",
+      "titre": "Règlement d’exécution (UE) 2026/2509 de la Commission du 12 novembre 2026 accordant une protection dans l’Union à l’indication géographique اللبان العُماني (encens d’Oman) enregistrée au registre international des appellations d’origine et indications géographiques de l’acte de Genève",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/2509/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2509",
+      "nature": "reglement"
+    },
+    {
+      "celex": "32026R2502",
+      "date": "2026-11-12",
+      "titre": "Règlement d’exécution (UE) 2026/2502 de la Commission du 12 novembre 2026 annulant l’autorisation de l’Union pour le produit biocide unique dénommé Superficid express WIPES conformément au règlement (UE) no 528/2012 du Parlement européen et du Conseil et abrogeant le règlement d’exécution (UE) 2023/1105 de la Commission",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/2502/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2502",
+      "nature": "reglement"
+    },
+    {
+      "celex": "32026R2506",
+      "date": "2026-11-12",
+      "titre": "Règlement d’exécution (UE) 2026/2506 de la Commission du 12 novembre 2026 annulant l’autorisation de l’Union pour le produit biocide unique dénommé Superficid express conformément au règlement (UE) no 528/2012 du Parlement européen et du Conseil et abrogeant le règlement d’exécution (UE) 2023/1133 de la Commission",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/2506/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2506",
+      "nature": "reglement"
+    },
+    {
       "celex": "32026R2512",
       "date": "2026-11-10",
       "titre": "Règlement d’exécution (UE) 2026/2512 de la Commission du 10 novembre 2026 instituant un droit antidumping provisoire sur les importations de certains esters acryliques originaires de la République populaire de Chine, du Royaume d’Arabie saoudite, de la République d’Afrique du Sud et des États-Unis d’Amérique",
       "urlEli": "http://data.europa.eu/eli/reg/2026/2512/oj",
       "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2512",
-      "nature": "reglement"
-    },
-    {
-      "celex": "32026R2485",
-      "date": "2026-11-10",
-      "titre": "Règlement d’exécution (UE) 2026/2485 de la Commission du 10 novembre 2026 autorisant une exemption, conformément au règlement (UE) 2024/573 du Parlement européen et du Conseil, concernant l’utilisation de gaz à effet de serre fluorés dans certains refroidisseurs fixes utilisés pour le refroidissement et le contrôle de la température des machines-outils",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/2485/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2485",
       "nature": "reglement"
     },
     {
@@ -137,6 +129,14 @@
       "nature": "reglement"
     },
     {
+      "celex": "32026R2485",
+      "date": "2026-11-10",
+      "titre": "Règlement d’exécution (UE) 2026/2485 de la Commission du 10 novembre 2026 autorisant une exemption, conformément au règlement (UE) 2024/573 du Parlement européen et du Conseil, concernant l’utilisation de gaz à effet de serre fluorés dans certains refroidisseurs fixes utilisés pour le refroidissement et le contrôle de la température des machines-outils",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/2485/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2485",
+      "nature": "reglement"
+    },
+    {
       "celex": "32026R2523",
       "date": "2026-11-09",
       "titre": "Règlement d’exécution (UE) 2026/2523 de la Commission du 9 novembre 2026 modifiant les annexes IV, V et XIV du règlement d’exécution (UE) 2021/404 en ce qui concerne les mentions relatives à l’Afrique du Sud, au Canada, aux États-Unis et au Royaume-Uni dans les listes des pays tiers et territoires ou des zones de pays tiers ou territoire en provenance desquels l’entrée dans l’Union d’envois de certains animaux et produits d’origine animale est autorisée",
@@ -145,11 +145,11 @@
       "nature": "reglement"
     },
     {
-      "celex": "32026R2525",
+      "celex": "32026R2529",
       "date": "2026-11-06",
-      "titre": "Règlement d’exécution (UE) 2026/2525 de la Commission du 6 novembre 2026 concernant l’enregistrement de l’indication géographique Cicoria puntarelle molfettese (IGP) dans le registre de l’Union des indications géographiques conformément au règlement (UE) 2024/1143 du Parlement européen et du Conseil",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/2525/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2525",
+      "titre": "Règlement d’exécution (UE) 2026/2529 de la Commission du 6 novembre 2026 concernant l’enregistrement de l’indication géographique Mazzit/Mazzita (IGP) dans le registre de l’Union des indications géographiques conformément au règlement (UE) 2024/1143 du Parlement européen et du Conseil",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/2529/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2529",
       "nature": "reglement"
     },
     {
@@ -158,14 +158,6 @@
       "titre": "Règlement d’exécution (UE) 2026/2524 de la Commission du 6 novembre 2026 concernant l’enregistrement de l’indication géographique Fior di latte molisano (AOP) dans le registre de l’Union des indications géographiques conformément au règlement (UE) 2024/1143 du Parlement européen et du Conseil",
       "urlEli": "http://data.europa.eu/eli/reg/2026/2524/oj",
       "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2524",
-      "nature": "reglement"
-    },
-    {
-      "celex": "32026R2529",
-      "date": "2026-11-06",
-      "titre": "Règlement d’exécution (UE) 2026/2529 de la Commission du 6 novembre 2026 concernant l’enregistrement de l’indication géographique Mazzit/Mazzita (IGP) dans le registre de l’Union des indications géographiques conformément au règlement (UE) 2024/1143 du Parlement européen et du Conseil",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/2529/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2529",
       "nature": "reglement"
     },
     {
@@ -185,35 +177,11 @@
       "nature": "reglement"
     },
     {
-      "celex": "32026R2467",
-      "date": "2026-11-05",
-      "titre": "Règlement d’exécution (UE) 2026/2467 de la Commission du 5 novembre 2026 relatif à la compensation financière en faveur des consommateurs finals de carburants et aux quotas restitués pour les émissions ne relevant pas du chapitre IV bis de la directive 2003/87/CE du Parlement européen et du Conseil",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/2467/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2467",
-      "nature": "reglement"
-    },
-    {
-      "celex": "32026R2496",
-      "date": "2026-11-05",
-      "titre": "Règlement d’exécution (UE) 2026/2496 de la Commission du 5 novembre 2026 modifiant l’annexe I du règlement d’exécution (UE) 2023/594 établissant des mesures spéciales de lutte contre la peste porcine africaine",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/2496/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2496",
-      "nature": "reglement"
-    },
-    {
-      "celex": "32026R2409",
-      "date": "2026-11-05",
-      "titre": "Règlement d’exécution (UE) 2026/2409 de la Commission du 5 novembre 2026 soumettant à enregistrement les importations de certains polyéthers polyols originaires de la République populaire de Chine en vue de permettre la perception de droits antidumping sur les importations soumises à enregistrement",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/2409/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2409",
-      "nature": "reglement"
-    },
-    {
-      "celex": "32026R2515",
-      "date": "2026-11-05",
-      "titre": "Règlement d’exécution (UE) 2026/2515 de la Commission du 5 novembre 2026 concernant l’enregistrement de l’indication géographique Lipovská minerálna voda Salvator/Salvator (AOP) dans le registre de l’Union des indications géographiques conformément au règlement (UE) 2024/1143 du Parlement européen et du Conseil",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/2515/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2515",
+      "celex": "32026R2525",
+      "date": "2026-11-06",
+      "titre": "Règlement d’exécution (UE) 2026/2525 de la Commission du 6 novembre 2026 concernant l’enregistrement de l’indication géographique Cicoria puntarelle molfettese (IGP) dans le registre de l’Union des indications géographiques conformément au règlement (UE) 2024/1143 du Parlement européen et du Conseil",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/2525/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2525",
       "nature": "reglement"
     },
     {
@@ -230,6 +198,38 @@
       "titre": "Règlement d’exécution (UE) 2026/2513 de la Commission du 5 novembre 2026 concernant l’enregistrement de l’indication géographique Sulinka (AOP) dans le registre de l’Union des indications géographiques conformément au règlement (UE) 2024/1143 du Parlement européen et du Conseil",
       "urlEli": "http://data.europa.eu/eli/reg/2026/2513/oj",
       "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2513",
+      "nature": "reglement"
+    },
+    {
+      "celex": "32026R2409",
+      "date": "2026-11-05",
+      "titre": "Règlement d’exécution (UE) 2026/2409 de la Commission du 5 novembre 2026 soumettant à enregistrement les importations de certains polyéthers polyols originaires de la République populaire de Chine en vue de permettre la perception de droits antidumping sur les importations soumises à enregistrement",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/2409/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2409",
+      "nature": "reglement"
+    },
+    {
+      "celex": "32026R2467",
+      "date": "2026-11-05",
+      "titre": "Règlement d’exécution (UE) 2026/2467 de la Commission du 5 novembre 2026 relatif à la compensation financière en faveur des consommateurs finals de carburants et aux quotas restitués pour les émissions ne relevant pas du chapitre IV bis de la directive 2003/87/CE du Parlement européen et du Conseil",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/2467/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2467",
+      "nature": "reglement"
+    },
+    {
+      "celex": "32026R2515",
+      "date": "2026-11-05",
+      "titre": "Règlement d’exécution (UE) 2026/2515 de la Commission du 5 novembre 2026 concernant l’enregistrement de l’indication géographique Lipovská minerálna voda Salvator/Salvator (AOP) dans le registre de l’Union des indications géographiques conformément au règlement (UE) 2024/1143 du Parlement européen et du Conseil",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/2515/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2515",
+      "nature": "reglement"
+    },
+    {
+      "celex": "32026R2496",
+      "date": "2026-11-05",
+      "titre": "Règlement d’exécution (UE) 2026/2496 de la Commission du 5 novembre 2026 modifiant l’annexe I du règlement d’exécution (UE) 2023/594 établissant des mesures spéciales de lutte contre la peste porcine africaine",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/2496/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2496",
       "nature": "reglement"
     },
     {
@@ -297,6 +297,14 @@
       "nature": "reglement"
     },
     {
+      "celex": "32026R2390",
+      "date": "2026-10-28",
+      "titre": "Règlement d’exécution (UE) 2026/2390 de la Commission du 28 octobre 2026 soumettant à enregistrement les importations d’acide acétylsalicylique originaire de la République populaire de Chine en vue de permettre la perception de droits antidumping sur les importations soumises à enregistrement",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/2390/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2390",
+      "nature": "reglement"
+    },
+    {
       "celex": "32026R2470",
       "date": "2026-10-28",
       "titre": "Règlement d’exécution (UE) 2026/2470 de la Commission du 28 octobre 2026 modifiant le règlement d’exécution (UE) 2022/996 en ce qui concerne la date d’application de l’article 11, paragraphe 1, dudit règlement d’exécution",
@@ -313,14 +321,6 @@
       "nature": "reglement"
     },
     {
-      "celex": "32026R2390",
-      "date": "2026-10-28",
-      "titre": "Règlement d’exécution (UE) 2026/2390 de la Commission du 28 octobre 2026 soumettant à enregistrement les importations d’acide acétylsalicylique originaire de la République populaire de Chine en vue de permettre la perception de droits antidumping sur les importations soumises à enregistrement",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/2390/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2390",
-      "nature": "reglement"
-    },
-    {
       "celex": "32026R2466",
       "date": "2026-10-28",
       "titre": "Règlement d’exécution (UE) 2026/2466 de la Commission du 28 octobre 2026 modifiant les annexes V et XIV du règlement d’exécution (UE) 2021/404 en ce qui concerne les mentions relatives au Canada, au Royaume-Uni et aux États-Unis dans les listes des pays tiers, territoires et zones de pays tiers et territoires en provenance desquels l’entrée dans l’Union d’envois de volailles, de produits germinaux de volailles et de viandes fraîches de volailles et de gibier à plumes est autorisée",
@@ -329,11 +329,11 @@
       "nature": "reglement"
     },
     {
-      "celex": "32026R2376",
+      "celex": "32026R2389",
       "date": "2026-10-28",
-      "titre": "Règlement (UE) 2026/2376 de la Commission du 28 octobre 2026 modifiant le règlement (UE) 2022/1616 en ce qui concerne la gestion du registre de l’Union, la documentation relative à la conformité, les méthodes d’essai et les documents à présenter lors de la mise en libre pratique",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/2376/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2376",
+      "titre": "Règlement d’exécution (UE) 2026/2389 de la Commission du 28 octobre 2026 modifiant les règlements d’exécution (UE) 2016/1239, (UE) 2020/761, (UE) 2020/1988 et (UE) 2025/1272 afin de permettre aux autorités de délivrance des pays tiers d’utiliser ELAN sur la base du volontariat pendant la période transitoire",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/2389/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2389",
       "nature": "reglement"
     }
   ]
