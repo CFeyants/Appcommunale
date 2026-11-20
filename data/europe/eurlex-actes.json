@@ -13,9 +13,33 @@
       "Les requêtes SPARQL longues dépassent régulièrement le délai d’attente du point d’accès public."
     ]
   },
-  "collecteLe": "2026-11-19T11:45:24.748Z",
+  "collecteLe": "2026-11-20T11:45:04.149Z",
   "depuis": "2026-01-01",
   "actes": [
+    {
+      "celex": "32026R2562",
+      "date": "2026-11-19",
+      "titre": "Règlement d’exécution (UE) 2026/2562 de la Commission du 19 novembre 2026 modifiant le règlement d’exécution (UE) 2023/2297 en ce qui concerne la liste des ports voisins de transbordement de conteneurs",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/2562/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2562",
+      "nature": "reglement"
+    },
+    {
+      "celex": "32026R2560",
+      "date": "2026-11-19",
+      "titre": "Règlement d’exécution (UE) 2026/2560 de la Commission du 19 novembre 2026 portant ouverture et mode de gestion des contingents tarifaires de l’Union pour certains produits à base de riz originaires des pays bénéficiaires du SPG",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/2560/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2560",
+      "nature": "reglement"
+    },
+    {
+      "celex": "32026R2563",
+      "date": "2026-11-19",
+      "titre": "Règlement d’exécution (UE) 2026/2563 de la Commission du 19 novembre 2026 modifiant le règlement d’exécution (UE) 2025/1127 en ce qui concerne la liste des ports voisins de transbordement de conteneurs",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/2563/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2563",
+      "nature": "reglement"
+    },
     {
       "celex": "32026R2538",
       "date": "2026-11-17",
@@ -310,30 +334,6 @@
       "titre": "Règlement d’exécution (UE) 2026/2409 de la Commission du 5 novembre 2026 soumettant à enregistrement les importations de certains polyéthers polyols originaires de la République populaire de Chine en vue de permettre la perception de droits antidumping sur les importations soumises à enregistrement",
       "urlEli": "http://data.europa.eu/eli/reg/2026/2409/oj",
       "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2409",
-      "nature": "reglement"
-    },
-    {
-      "celex": "32026R2467",
-      "date": "2026-11-05",
-      "titre": "Règlement d’exécution (UE) 2026/2467 de la Commission du 5 novembre 2026 relatif à la compensation financière en faveur des consommateurs finals de carburants et aux quotas restitués pour les émissions ne relevant pas du chapitre IV bis de la directive 2003/87/CE du Parlement européen et du Conseil",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/2467/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2467",
-      "nature": "reglement"
-    },
-    {
-      "celex": "32026R2515",
-      "date": "2026-11-05",
-      "titre": "Règlement d’exécution (UE) 2026/2515 de la Commission du 5 novembre 2026 concernant l’enregistrement de l’indication géographique Lipovská minerálna voda Salvator/Salvator (AOP) dans le registre de l’Union des indications géographiques conformément au règlement (UE) 2024/1143 du Parlement européen et du Conseil",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/2515/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2515",
-      "nature": "reglement"
-    },
-    {
-      "celex": "32026R2496",
-      "date": "2026-11-05",
-      "titre": "Règlement d’exécution (UE) 2026/2496 de la Commission du 5 novembre 2026 modifiant l’annexe I du règlement d’exécution (UE) 2023/594 établissant des mesures spéciales de lutte contre la peste porcine africaine",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/2496/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2496",
       "nature": "reglement"
     }
   ]
