@@ -13,7 +13,7 @@
       "Les requêtes SPARQL longues dépassent régulièrement le délai d’attente du point d’accès public."
     ]
   },
-  "collecteLe": "2026-11-20T11:45:04.149Z",
+  "collecteLe": "2026-11-21T11:09:49.500Z",
   "depuis": "2026-01-01",
   "actes": [
     {
@@ -329,11 +329,11 @@
       "nature": "reglement"
     },
     {
-      "celex": "32026R2409",
+      "celex": "32026R2498",
       "date": "2026-11-05",
-      "titre": "Règlement d’exécution (UE) 2026/2409 de la Commission du 5 novembre 2026 soumettant à enregistrement les importations de certains polyéthers polyols originaires de la République populaire de Chine en vue de permettre la perception de droits antidumping sur les importations soumises à enregistrement",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/2409/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2409",
+      "titre": "Règlement d’exécution (UE) 2026/2498 de la Commission du 5 novembre 2026 portant modalités d’application du règlement (UE) 2023/956 du Parlement européen et du Conseil en ce qui concerne la conversion du prix du carbone payé dans un pays tiers en une réduction correspondante du nombre de certificats MACF à restituer, la preuve du paiement de ce prix du carbone, les qualifications de la personne indépendante et les conditions permettant de garantir l’indépendance et les qualifications de cette personne",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/2498/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2498",
       "nature": "reglement"
     }
   ]
