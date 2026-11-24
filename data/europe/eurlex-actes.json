@@ -13,7 +13,7 @@
       "Les requêtes SPARQL longues dépassent régulièrement le délai d’attente du point d’accès public."
     ]
   },
-  "collecteLe": "2026-11-23T12:52:38.878Z",
+  "collecteLe": "2026-11-24T13:47:43.167Z",
   "depuis": "2026-01-01",
   "actes": [
     {
@@ -25,11 +25,27 @@
       "nature": "reglement"
     },
     {
+      "celex": "32026R2614",
+      "date": "2026-11-23",
+      "titre": "Règlement d’exécution (UE) 2026/2614 de la Commission du 23 novembre 2026 instituant des mesures de sauvegarde provisoires en ce qui concerne les importations de certains nouveaux véhicules hybrides destinés au transport de personnes",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/2614/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2614",
+      "nature": "reglement"
+    },
+    {
       "celex": "32026R2578",
       "date": "2026-11-20",
       "titre": "Règlement d’exécution (UE) 2026/2578 de la Commission du 20 novembre 2026 modifiant le règlement d’exécution (UE) 2025/1977 en ce qui concerne une modification administrative de l’autorisation de l’Union pour le produit biocide unique dénommé Aqua-Clean",
       "urlEli": "http://data.europa.eu/eli/reg/2026/2578/oj",
       "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2578",
+      "nature": "reglement"
+    },
+    {
+      "celex": "32026R2624",
+      "date": "2026-11-20",
+      "titre": "Règlement d’exécution (UE) 2026/2624 de la Commission du 20 novembre 2026 modifiant les annexes V et XIV du règlement d’exécution (UE) 2021/404 en ce qui concerne les mentions relatives au Canada, au Royaume-Uni et aux États-Unis dans les listes des pays tiers, territoires et zones de pays tiers et territoires en provenance desquels l’entrée dans l’Union d’envois de volailles, de produits germinaux de volailles et de viandes fraîches de volailles et de gibier à plumes est autorisée",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/2624/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2624",
       "nature": "reglement"
     },
     {
@@ -318,22 +334,6 @@
       "titre": "Règlement d’exécution (UE) 2026/2474 de la Commission du 6 novembre 2026 octroyant une autorisation de l’Union pour le produit biocide dénommé Product 3 conformément au règlement (UE) no 528/2012 du Parlement européen et du Conseil",
       "urlEli": "http://data.europa.eu/eli/reg/2026/2474/oj",
       "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2474",
-      "nature": "reglement"
-    },
-    {
-      "celex": "32026R2525",
-      "date": "2026-11-06",
-      "titre": "Règlement d’exécution (UE) 2026/2525 de la Commission du 6 novembre 2026 concernant l’enregistrement de l’indication géographique Cicoria puntarelle molfettese (IGP) dans le registre de l’Union des indications géographiques conformément au règlement (UE) 2024/1143 du Parlement européen et du Conseil",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/2525/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2525",
-      "nature": "reglement"
-    },
-    {
-      "celex": "32026R2514",
-      "date": "2026-11-05",
-      "titre": "Règlement d’exécution (UE) 2026/2514 de la Commission du 5 novembre 2026 concernant l’enregistrement de l’indication géographique Korytnica / Korytnická (AOP) dans le registre de l’Union des indications géographiques conformément au règlement (UE) 2024/1143 du Parlement européen et du Conseil",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/2514/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2514",
       "nature": "reglement"
     }
   ]
