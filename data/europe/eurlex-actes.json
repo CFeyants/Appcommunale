@@ -13,9 +13,41 @@
       "Les requêtes SPARQL longues dépassent régulièrement le délai d’attente du point d’accès public."
     ]
   },
-  "collecteLe": "2026-11-25T13:01:18.226Z",
+  "collecteLe": "2026-11-26T12:41:24.348Z",
   "depuis": "2026-01-01",
   "actes": [
+    {
+      "celex": "32026R2593",
+      "date": "2026-11-25",
+      "titre": "Règlement (UE) 2026/2593 de la Commission du 25 novembre 2026 modifiant l’annexe XVII du règlement (CE) no 1907/2006 du Parlement européen et du Conseil en ce qui concerne la créosote et les substances apparentées",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/2593/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2593",
+      "nature": "reglement"
+    },
+    {
+      "celex": "32026R2626",
+      "date": "2026-11-25",
+      "titre": "Règlement d’exécution (UE) 2026/2626 de la Commission du 25 novembre 2026 annulant l’autorisation de l’Union pour le produit biocide unique dénommé Septihol IPA products conformément au règlement (UE) no 528/2012 du Parlement européen et du Conseil et abrogeant le règlement d’exécution (UE) 2025/1876 de la Commission",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/2626/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2626",
+      "nature": "reglement"
+    },
+    {
+      "celex": "32026R2636",
+      "date": "2026-11-25",
+      "titre": "Règlement d’exécution (UE) 2026/2636 de la Commission du 25 novembre 2026 rectifiant le règlement d’exécution (UE) 2025/2347 relatif aux redevances et droits perçus par l’Agence de l’Union européenne pour la sécurité aérienne",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/2636/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2636",
+      "nature": "reglement"
+    },
+    {
+      "celex": "32026R2632",
+      "date": "2026-11-25",
+      "titre": "Règlement (UE) 2026/2632 du Conseil du 25 novembre 2026 modifiant le règlement (UE) n° 833/2014 concernant des mesures restrictives eu égard aux actions de la Russie déstabilisant la situation en Ukraine",
+      "urlEli": "http://data.europa.eu/eli/reg/2026/2632/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2632",
+      "nature": "reglement"
+    },
     {
       "celex": "32026R2616",
       "date": "2026-11-23",
@@ -302,38 +334,6 @@
       "titre": "Règlement d’exécution (UE) 2026/2497 de la Commission du 10 novembre 2026 instituant un droit antidumping provisoire sur les importations de tubes en cuivre originaires de la République populaire de Chine, du Mexique, du Viêt Nam et d’Ouzbékistan",
       "urlEli": "http://data.europa.eu/eli/reg/2026/2497/oj",
       "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2497",
-      "nature": "reglement"
-    },
-    {
-      "celex": "32026R2485",
-      "date": "2026-11-10",
-      "titre": "Règlement d’exécution (UE) 2026/2485 de la Commission du 10 novembre 2026 autorisant une exemption, conformément au règlement (UE) 2024/573 du Parlement européen et du Conseil, concernant l’utilisation de gaz à effet de serre fluorés dans certains refroidisseurs fixes utilisés pour le refroidissement et le contrôle de la température des machines-outils",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/2485/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2485",
-      "nature": "reglement"
-    },
-    {
-      "celex": "32026R2523",
-      "date": "2026-11-09",
-      "titre": "Règlement d’exécution (UE) 2026/2523 de la Commission du 9 novembre 2026 modifiant les annexes IV, V et XIV du règlement d’exécution (UE) 2021/404 en ce qui concerne les mentions relatives à l’Afrique du Sud, au Canada, aux États-Unis et au Royaume-Uni dans les listes des pays tiers et territoires ou des zones de pays tiers ou territoire en provenance desquels l’entrée dans l’Union d’envois de certains animaux et produits d’origine animale est autorisée",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/2523/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2523",
-      "nature": "reglement"
-    },
-    {
-      "celex": "32026R2529",
-      "date": "2026-11-06",
-      "titre": "Règlement d’exécution (UE) 2026/2529 de la Commission du 6 novembre 2026 concernant l’enregistrement de l’indication géographique Mazzit/Mazzita (IGP) dans le registre de l’Union des indications géographiques conformément au règlement (UE) 2024/1143 du Parlement européen et du Conseil",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/2529/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2529",
-      "nature": "reglement"
-    },
-    {
-      "celex": "32026R2524",
-      "date": "2026-11-06",
-      "titre": "Règlement d’exécution (UE) 2026/2524 de la Commission du 6 novembre 2026 concernant l’enregistrement de l’indication géographique Fior di latte molisano (AOP) dans le registre de l’Union des indications géographiques conformément au règlement (UE) 2024/1143 du Parlement européen et du Conseil",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/2524/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2524",
       "nature": "reglement"
     }
   ]
