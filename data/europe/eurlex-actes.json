@@ -13,7 +13,7 @@
       "Les requêtes SPARQL longues dépassent régulièrement le délai d’attente du point d’accès public."
     ]
   },
-  "collecteLe": "2026-11-26T12:41:24.348Z",
+  "collecteLe": "2026-11-27T12:28:14.776Z",
   "depuis": "2026-01-01",
   "actes": [
     {
@@ -47,6 +47,14 @@
       "urlEli": "http://data.europa.eu/eli/reg/2026/2632/oj",
       "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2632",
       "nature": "reglement"
+    },
+    {
+      "celex": "32026L2610",
+      "date": "2026-11-25",
+      "titre": "Directive (UE) 2026/2610 du Parlement européen et du Conseil du 25 novembre 2026 modifiant la directive 1999/62/CE en ce qui concerne la variation des redevances pour les véhicules utilitaires lourds en fonction de leurs émissions de CO2 et en vue de clarifier et simplifier certaines dispositions (Texte présentant de l'intérêt pour l'EEE)",
+      "urlEli": "http://data.europa.eu/eli/dir/2026/2610/oj",
+      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026L2610",
+      "nature": "directive"
     },
     {
       "celex": "32026R2616",
@@ -326,14 +334,6 @@
       "titre": "Règlement d’exécution (UE) 2026/2489 de la Commission du 10 novembre 2026 accordant une dérogation limitée dans le temps, conformément à l’article 9, paragraphe 4, du règlement (UE) 2024/590 du Parlement européen et du Conseil relatif à des substances qui appauvrissent la couche d’ozone, à compter de la date limite pour l’utilisation critique d’extincteurs portatifs contenant du halon-1211 ou du halon-2402 pour la protection des cabines et des postes d’équipage dans les aéronefs de pays tiers",
       "urlEli": "http://data.europa.eu/eli/reg/2026/2489/oj",
       "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2489",
-      "nature": "reglement"
-    },
-    {
-      "celex": "32026R2497",
-      "date": "2026-11-10",
-      "titre": "Règlement d’exécution (UE) 2026/2497 de la Commission du 10 novembre 2026 instituant un droit antidumping provisoire sur les importations de tubes en cuivre originaires de la République populaire de Chine, du Mexique, du Viêt Nam et d’Ouzbékistan",
-      "urlEli": "http://data.europa.eu/eli/reg/2026/2497/oj",
-      "urlEurLex": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32026R2497",
       "nature": "reglement"
     }
   ]
